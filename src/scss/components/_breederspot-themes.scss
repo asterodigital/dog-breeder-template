@@ -1,0 +1,99 @@
+/* ==========================================================================
+   BreederSpot Themes
+   ========================================================================== */
+
+.icon-hover {
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+
+  &:hover {
+    color: var(--bs-light) !important;
+    background-color: var(--bs-primary) !important;
+  }
+}
+
+.card-hover {
+  cursor: pointer;
+  transition: background-color 0.25s ease, color 0.25s ease;
+
+  &:hover {
+    color: var(--bs-light) !important;
+    background-color: var(--bs-primary) !important;
+
+    // Make sure nested elements also change color
+    * {
+      color: var(--bs-light) !important;
+    }
+  }
+}
+
+@keyframes marquee-scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.paw-overlay-img {
+  top: 50%;
+  right: 20%;
+  z-index: 0;
+  max-width: 200px;
+  height: auto;
+  pointer-events: none;
+  opacity: 0.5;
+  transform: translateY(-50%);
+}
+
+@media (min-width: 992px) { // lg breakpoint
+  .nav-link-paw {
+    position: relative;
+    display: inline-block;
+    transition: color 0.25s ease;
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      width: 14px;
+      height: 14px;
+      margin-top: -8px;
+      pointer-events: none;
+      content: '';
+      background-image: url('/dist/assets/img/breederspot-images/paw-icon.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      opacity: 0;
+      transition: opacity 0.25s ease;
+      transform: translateX(-50%);
+    }
+
+    &:hover::after {
+      opacity: 1;
+    }
+  }
+}
+
+@media (min-width: 992px) {
+  .border-lg-end {
+    border-right: 1px solid var(--bs-border-color);
+  }
+}
+
+.w-90 {
+  width: 90% !important;
+}
+
+@media (min-width: 768px) {
+  .w-md-75 {
+    width: 75% !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .w-xl-50 {
+    width: 50% !important;
+  }
+}
