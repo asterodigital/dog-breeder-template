@@ -60,17 +60,16 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
                   class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
                 >
                   <li class="nav-item">
-                    <a
-                      class="nav-link nav-link-paw active"
-                      aria-current="page"
-                      href="/breederspot/6/home">Home</a
+                    <a class="nav-link nav-link-paw" aria-current="page" href="/breederspot/6/home"
+                      >Home</a
                     >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-link-paw" href="/breederspot/6/about">About</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/breederspot/6/puppies">Puppies</a>
+                    <a class="nav-link nav-link-paw active" href="/breederspot/6/puppies">Puppies</a
+                    >
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-link-paw" href="/breederspot/6/shop">Shop</a>
@@ -125,36 +124,13 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
           >
             <div class="row">
               <div class="col-lg-6 offset-lg-3">
-                <h1 class="display-4 fw-semibold">Welcome to BreederSpot</h1>
-                <p class="lead mb-4">
-                  We’re committed to raising well-socialized, healthy puppies in a loving, ethical
-                  environment—where every dog starts life with the care and respect they deserve.
+                <h1 class="display-4 fw-semibold">Available Puppies</h1>
+                <p class="lead mb-0">
+                  Meet our happy, healthy puppies—lovingly raised in a nurturing environment with
+                  the highest standards of care, socialization, and ethical breeding practices. Each
+                  one is ready to bring joy, companionship, and unconditional love to their forever
+                  home.
                 </p>
-                <a href="#" class="btn btn-lg btn-primary"
-                  >View Our Puppies<i class="ri-arrow-right-line ms-2"></i></a
-                >
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- About Section -->
-        <section class="bg-primary-subtle py-5">
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 fw-semibold mb-2">What Makes Us Different?</h2>
-                <p class="lead mb-4">
-                  We believe every puppy deserves a loving start and a forever home. Our approach to
-                  dog breeding is guided by compassion, responsibility, and a deep respect for the
-                  animals in our care. With a focus on health, temperament, and ethical practices,
-                  we raise each puppy in a nurturing, family-oriented environment where
-                  socialization and wellbeing come first.
-                </p>
-                <div>
-                  <a href="#" class="btn btn-lg btn-primary me-2">About Us</a>
-                  <a href="#" class="btn btn-lg btn-outline-primary">Our Philosophy</a>
-                </div>
               </div>
             </div>
           </div>
@@ -165,13 +141,8 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-semibold mb-2">Meet Our Adorable Puppies</h2>
-                <p class="lead text-center mb-4">
-                  Each of our puppies is raised with love, care, and early socialization—ready to
-                  bring joy to the right home.
-                </p>
                 <!-- Puppies' Cards -->
-                <div class="row g-4 mb-4">
+                <div class="row g-4">
                   <!-- Pet 1 -->
                   <div class="col-md-4">
                     <div class="card border h-100 position-relative p-0">
@@ -296,11 +267,130 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
                       </div>
                     </div>
                   </div>
-                </div>
-                <div class="text-center">
-                  <a href="#" class="btn btn-lg btn-outline-primary text-decoration-none">
-                    View All Puppies <i class="ri-arrow-right-line"></i>
-                  </a>
+
+                  <!-- Pet 4 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <img
+                          src="/dist/assets/img/breederspot-images/puppy-img-4.jpg"
+                          class="card-img-top rounded-0"
+                          style="max-height: 300px; object-fit: cover;"
+                          alt="Pet Image"
+                        />
+                      </figure>
+                      <span
+                        class="badge bg-success text-light position-absolute top-0 end-0 fs-6 m-2"
+                      >
+                        Available
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">Milo</h5>
+                          <p class="text-success fs-4 fw-semibold mb-0">$1100</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6"
+                            >Golden Retriever</span
+                          >
+                          <span class="badge text-primary bg-primary-subtle fs-6">4 Months</span>
+                        </div>
+                        <p class="card-text">
+                          Milo is a playful and loving pup with a knack for sneaking onto the couch.
+                        </p>
+                      </div>
+                      <div class="d-flex gap-3 px-3 pb-3">
+                        <a href="#" class="btn btn-lg btn-primary w-100">
+                          Inquire<i class="ri-arrow-right-line ms-2"></i>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-outline-primary">
+                          <i class="ri-heart-line"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pet 5 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <img
+                          src="/dist/assets/img/breederspot-images/puppy-img-5.jpg"
+                          class="card-img-top rounded-0"
+                          style="max-height: 300px; object-fit: cover;"
+                          alt="Pet Image"
+                        />
+                      </figure>
+                      <span
+                        class="badge bg-danger text-light position-absolute top-0 end-0 fs-6 m-2"
+                      >
+                        Reserved
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">Rosie</h5>
+                          <p class="text-success fs-4 fw-semibold mb-0">$1200</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6"
+                            >Golden Retriever</span
+                          >
+                          <span class="badge text-primary bg-primary-subtle fs-6">12 Weeks</span>
+                        </div>
+                        <p class="card-text">
+                          Rosie is an energetic pup who likes making new friends at the park.
+                        </p>
+                      </div>
+                      <div class="d-flex gap-3 px-3 pb-3">
+                        <a href="#" class="btn btn-lg btn-primary w-100">
+                          Inquire<i class="ri-arrow-right-line ms-2"></i>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-outline-primary">
+                          <i class="ri-heart-line"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Pet 6 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <img
+                          src="/dist/assets/img/breederspot-images/puppy-img-6.jpg"
+                          class="card-img-top rounded-0"
+                          style="max-height: 300px; object-fit: cover;"
+                          alt="Pet Image"
+                        />
+                      </figure>
+                      <span
+                        class="badge bg-success text-light position-absolute top-0 end-0 fs-6 m-2"
+                      >
+                        Available
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">Cooper</h5>
+                          <p class="text-success fs-4 fw-semibold mb-0">$1400</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6"
+                            >Golden Retriever</span
+                          >
+                          <span class="badge text-primary bg-primary-subtle fs-6">2 Months</span>
+                        </div>
+                        <p class="card-text">
+                          Cooper loves exploring the backyard jungle and guarding his favorite bone.
+                        </p>
+                      </div>
+                      <div class="d-flex gap-3 px-3 pb-3">
+                        <a href="#" class="btn btn-lg btn-primary w-100">
+                          Inquire<i class="ri-arrow-right-line ms-2"></i>
+                        </a>
+                        <a href="#" class="btn btn-lg btn-outline-primary">
+                          <i class="ri-heart-line"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -388,7 +478,7 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Process Section -->
-        <section class="bg-primary-pale py-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
@@ -450,153 +540,6 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
                 <div class="text-center">
                   <a href="#" class="btn btn-lg btn-primary text-decoration-none">
                     Fill Your Application <i class="ri-arrow-right-line"></i>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Gallery Section -->
-        <section class="bg-body py-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-semibold mb-2">Gallery Highlights</h2>
-                <p class="lead text-center mb-4">
-                  A glimpse into the joyful moments, playful paws, and growing pups that make our
-                  journey so special.
-                </p>
-                <div class="row g-4">
-                  <div class="col-sm-6 col-md-3">
-                    <figure class="img-scale rounded-4">
-                      <img
-                        src="/dist/assets/img/breederspot-images/dog-img-13.jpg"
-                        class="img-fluid"
-                        alt="Gallery Image"
-                      />
-                    </figure>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <figure class="img-scale rounded-4">
-                      <img
-                        src="/dist/assets/img/breederspot-images/dog-img-10.jpg"
-                        class="img-fluid"
-                        alt="Gallery Image"
-                      />
-                    </figure>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <figure class="img-scale rounded-4">
-                      <img
-                        src="/dist/assets/img/breederspot-images/dog-img-12.jpg"
-                        class="img-fluid"
-                        alt="Gallery Image"
-                      />
-                    </figure>
-                  </div>
-                  <div class="col-sm-6 col-md-3">
-                    <figure class="img-scale rounded-4">
-                      <img
-                        src="/dist/assets/img/breederspot-images/dog-img-11.jpg"
-                        class="img-fluid"
-                        alt="Gallery Image"
-                      />
-                    </figure>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="bg-body pb-5">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-semibold mb-2">
-                  What Our Puppy Families Are Saying
-                </h2>
-                <p class="lead text-center mb-4">
-                  Heartfelt stories from real families who’ve welcomed our puppies into their
-                  homes—with love, joy, and wagging tails.
-                </p>
-                <div class="row g-4 mb-4">
-                  <!-- Testimonial 1 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          “We couldn’t be happier with our puppy! The entire process was smooth, and
-                          it’s clear how much care goes into raising these dogs. Truly an amazing
-                          experience.”
-                        </p>
-
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar1.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Jane Smith</h6>
-                            <p class="text-muted mb-0">Austin, TX</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <!-- Testimonial 2 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          “From the first inquiry to bringing our puppy home, every step was
-                          professional. You can tell these dogs are raised with love—we're grateful
-                          to have found them.”
-                        </p>
-
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar7.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Nguyen Minh</h6>
-                            <p class="text-muted mb-0">San Diego, CA</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="text-center">
-                  <a href="#" class="btn btn-lg btn-outline-primary text-decoration-none">
-                    View All Testimonials <i class="ri-arrow-right-line"></i>
                   </a>
                 </div>
               </div>
