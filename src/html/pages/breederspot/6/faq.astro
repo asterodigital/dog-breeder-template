@@ -13,6 +13,44 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
     <main>
       <!-- Page Content -->
       <div class="content-wrapper">
+        <!-- Topbar -->
+        <div class="bg-primary-pale py-2 small text-muted d-none d-md-block">
+          <div class="container">
+            <div class="row align-items-center text-center text-md-start gx-3 gy-2">
+              <!-- Left: Phone & Email -->
+              <div
+                class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start flex-wrap gap-3"
+              >
+                <div>
+                  <i class="ri-phone-fill me-1"></i>
+                  <a href="tel:+12345678901" class="text-muted text-decoration-none"
+                    >+1 (234) 567-8901</a
+                  >
+                </div>
+                <div>
+                  <i class="ri-mail-fill me-1"></i>
+                  <a href="mailto:hello@email.com" class="text-muted text-decoration-none"
+                    >hello@email.com</a
+                  >
+                </div>
+              </div>
+
+              <!-- Right: Hours & Location -->
+              <div
+                class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-wrap gap-3 ms-md-auto"
+              >
+                <div>
+                  <i class="ri-time-fill me-1"></i>
+                  Mon–Fri: 9am–6pm
+                </div>
+                <div>
+                  <i class="ri-map-pin-fill me-1"></i>
+                  123 Main Street, Austin, TX
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
         <!-- Navbar -->
         <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
           <div class="container">
