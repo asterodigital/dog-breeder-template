@@ -1,0 +1,250 @@
+---
+import Head from '../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/1/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/1/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" aria-current="page" href="/1/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/puppies">Puppies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/shop">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/faq">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/blog">Blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-paw" href="/1/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-muted d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Section -->
+        <section class="my-5">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="row">
+                  <div class="col-6 offset-3">
+                    <figure class="p-3 mb-0">
+                      <img
+                        src="/dist/assets/img/breederspot-images/404-img.png"
+                        class="img-fluid"
+                        alt="404 Not Found"
+                      />
+                    </figure>
+                  </div>
+                </div>
+                <h1 class="mb-2"><em>Lost in the dog park of the internet?</em></h1>
+                <p class="lead mb-3">
+                  The page you're looking for doesn't exist or has been moved. Head back to the home
+                  page to start fresh.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                  <button class="btn btn-lg btn-primary"
+                    ><i class="ri-home-2-line me-2"></i>Back to Home</button
+                  >
+                  <button class="btn btn-lg btn-outline-primary"
+                    ><i class="ri-information-2-line me-2"></i>Learn More</button
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 px-3 px-lg-5 pt-5 pb-4">
+            <div class="col mb-3">
+              <a
+                href="/"
+                class="d-inline-flex align-items-center text-decoration-none mb-2"
+                aria-label="Your Company Logo"
+              >
+                <img
+                  src="/dist/assets/img/breederspot-images/logo.svg"
+                  alt="Your Company Logo"
+                  style="height: 28px;"
+                  class="me-2"
+                />
+              </a>
+              <p class="text-body-secondary mb-3">
+                Over 200 happy families have found their perfect pup with us — yours could be next.
+              </p>
+              <button class="btn btn-outline-primary">Get in touch</button>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+              <nav aria-label="Quick Links">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/1/home" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/about" class="nav-link p-0 text-body-secondary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/1/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col mb-3">
+              <nav aria-label="Legal">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col mb-3">
+              <h5 class="mb-3">Contact</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-body-secondary">
+                  <i class="ri-phone-fill text-primary me-2"></i>
+                  <a
+                    href="tel:+12345678901"
+                    class="text-body-secondary text-decoration-none text-break">+1 (234) 567-8901</a
+                  >
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                  <i class="ri-mail-fill text-primary me-2"></i>
+                  <a
+                    href="mailto:hello@email.com"
+                    class="text-body-secondary text-decoration-none text-break">hello@email.com</a
+                  >
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                  <address class="text-body-secondary">
+                    <i class="ri-map-pin-fill text-primary me-2"></i>
+                    123 Main Street, Austin, TX
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center bg-primary-subtle py-4">
+            <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>
