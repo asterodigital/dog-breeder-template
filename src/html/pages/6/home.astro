@@ -98,34 +98,54 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <ul
                   class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
                 >
+                  <!-- Home -->
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw active" aria-current="page" href="/6/home"
-                      >Home</a
+                    <a class="nav-link active" aria-current="page" href="/6/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/6/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/6/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="/6/testimonials">Testimonials</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/about">About</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/puppies">Puppies</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/breeding-philosophy"
-                      >Breeding Philosophy</a
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
                     >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/6/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/6/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/6/shop">Shop</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/testimonials">Testimonials</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/gallery">Gallery</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/shop">Shop</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/faq">FAQs</a>
-                  </li>
+
+                  <!-- Blog Dropdown -->
                   <li class="nav-item dropdown">
                     <a
                       class="nav-link dropdown-toggle"
@@ -150,8 +170,15 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       </li>
                     </ul>
                   </li>
+
+                  <!-- FAQs -->
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/6/contact">Contact</a>
+                    <a class="nav-link" href="/6/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/contact">Contact</a>
                   </li>
                 </ul>
 
