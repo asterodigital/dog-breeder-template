@@ -121,7 +121,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     <a class="nav-link nav-link-paw" href="/6/shop">Shop</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw active" href="/6/faq">FAQs</a>
+                    <a class="nav-link nav-link-paw" href="/6/faq">FAQs</a>
                   </li>
                   <li class="nav-item dropdown">
                     <a
@@ -136,8 +136,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="blogDropdown">
                       <li><a class="dropdown-item" href="/6/blog-1">Blog – No Sidebar</a></li>
-                      <li><a class="dropdown-item" href="/6/blog-2">Blog – Left Sidebar</a></li>
-                      <li><a class="dropdown-item" href="/6/blog-3">Blog – Right Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/6/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item active" href="/6/blog-3">Blog – Right Sidebar</a>
+                      </li>
                       <li><a class="dropdown-item" href="/6/post-1">Blog Post – No Sidebar</a></li>
                       <li>
                         <a class="dropdown-item" href="/6/post-2">Blog Post – Left Sidebar</a>
@@ -191,168 +195,217 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           >
             <div class="row">
               <div class="col-lg-6 offset-lg-3">
-                <h1 class="display-4 fw-semibold">Frequently Asked Questions</h1>
+                <h1 class="display-4 fw-semibold">Read Our Latest Blogs</h1>
                 <p class="lead mb-0">
-                  Whether you're welcoming your first puppy or are a seasoned dog owner, we've
-                  gathered answers to the most common questions about our ethical breeding
-                  standards, adoption process, health guarantees, and what to expect when bringing
-                  home your new companion.
+                  Explore thoughtful articles, expert insights, and behind-the-scenes stories from
+                  our team, all dedicated to the health, happiness, and ethical treatment of every
+                  dog we raise.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- FAQs Section -->
+        <!-- Blogs Section -->
         <section class="bg-body py-5">
           <div class="container">
-            <div class="row">
-              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h2 class="display-6 text-center fw-semibold mb-2">FAQs</h2>
-                <p class="text-center lead fs-5 mb-3">
-                  If you’re curious, concerned, or just want to learn more — you’re in the right
-                  place. We'll be happy to answer any questions you may have.
-                </p>
-                <ul class="nav nav-pills nav-fill justify-content-center flex-wrap gap-2 mb-3">
-                  <li class="nav-item">
-                    <a class="nav-link rounded-pill border active" aria-current="page" href="#"
-                      >General</a
-                    >
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link rounded-pill border" href="#">Payments</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link rounded-pill border" href="#">Policies</a>
-                  </li>
-                </ul>
-                <div
-                  class="accordion accordion-flush"
-                  id="accordionFlushExample"
-                  role="tablist"
-                  aria-multiselectable="true"
-                >
-                  <div class="accordion-item border rounded mb-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed rounded shadow-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseOne"
-                      >
-                        What steps do you take to ensure the health of your puppies?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseOne"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
-                        elit.
+            <div class="row gy-4">
+              <!-- Sidebar Column -->
+              <div class="col-lg-3 order-lg-2">
+                <div class="sticky-top z-1" style="top: 80px;">
+                  <!-- Search Card -->
+                  <div class="card border p-3 mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-search-line me-2"></i>Search Blog Posts
+                      </h5>
+                      <form>
+                        <div class="mb-3">
+                          <input
+                            type="text"
+                            class="form-control form-control-lg"
+                            placeholder="Search topics, titles..."
+                          />
+                        </div>
+                        <button type="submit" class="btn btn-lg btn-outline-primary w-100"
+                          >Search</button
+                        >
+                      </form>
+                    </div>
+                  </div>
+                  <!-- Tags Card -->
+                  <div class="card border p-3 mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-price-tag-3-line me-2"></i>Browse by Tags
+                      </h5>
+                      <div class="d-flex flex-wrap gap-2">
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Health</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Ethics</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Value</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Breeders</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Process</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
+                          >Puppies</a
+                        >
                       </div>
                     </div>
                   </div>
-                  <div class="accordion-item border rounded mb-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed rounded shadow-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseTwo"
-                      >
-                        Do your puppies come with vaccinations and health checks?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseTwo"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
-                        elit.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border rounded mb-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed rounded shadow-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseThree"
-                      >
-                        What kind of support do you provide after adoption?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseThree"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
-                        elit.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border rounded mb-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed rounded shadow-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseFour"
-                      >
-                        Can I meet the puppy’s parents before adoption?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseFour"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
-                        elit.
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item border rounded mb-3">
-                    <h2 class="accordion-header">
-                      <button
-                        class="accordion-button collapsed rounded shadow-none"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFive"
-                        aria-expanded="false"
-                        aria-controls="flush-collapseFive"
-                      >
-                        Do you offer a health guarantee or contract?
-                      </button>
-                    </h2>
-                    <div
-                      id="flush-collapseFive"
-                      class="accordion-collapse collapse"
-                      data-bs-parent="#accordionFlushExample"
-                    >
-                      <div class="accordion-body">
-                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
-                        elit.
-                      </div>
+
+                  <!-- Recent Posts Card -->
+                  <div class="card border p-3">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-history-line me-2"></i>Recent Posts
+                      </h5>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
+                            Why Health Testing Matters in Dog Breeding
+                          </a>
+                          <p class="text-muted mb-2">
+                            12 Jan 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
+                              >Health</span
+                            >
+                          </p>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
+                            Puppy Mills vs. Ethical Breeders: Learn the Difference
+                          </a>
+                          <p class="text-muted mb-2">
+                            20 Feb 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
+                              >Ethics</span
+                            >
+                          </p>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
+                            The True Cost of a Well-Bred Puppy
+                          </a>
+                          <p class="text-muted mb-2">
+                            6 Jan 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
+                              >Value</span
+                            >
+                          </p>
+                        </li>
+                      </ul>
                     </div>
                   </div>
                 </div>
+              </div>
+              <div class="col-lg-9 order-lg-1">
+                <div class="card border p-0 mb-4">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-3.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Health</span>
+                      <span class="text-muted">12 Jan 2025</span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        Why Health Testing Matters in Dog Breeding
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Explaining the importance of genetic and health screenings in ethical breeding
+                      practices.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+                <div class="card border p-0 mb-4">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-5-wide.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Ethics</span>
+                      <span class="text-muted">20 Feb 2025</span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        Puppy Mills vs. Ethical Breeders: Learn the Difference
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Comparing unethical breeding operations to responsible ones, with clear
+                      distinctions.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+                <div class="card border p-0">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-6-wide.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Value</span>
+                      <span class="text-muted">6 Jan 2025</span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        The True Cost of a Well-Bred Puppy
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Why puppies from ethical breeders cost more and what goes into responsible
+                      pricing.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5 d-flex justify-content-center" aria-label="Pagination">
+                  <ul class="pagination pagination-lg z-1">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
               </div>
             </div>
           </div>

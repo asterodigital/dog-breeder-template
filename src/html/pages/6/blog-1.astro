@@ -123,8 +123,33 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <li class="nav-item">
                     <a class="nav-link nav-link-paw" href="/6/faq">FAQs</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw active" href="/6/blog">Blog</a>
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li>
+                        <a class="dropdown-item active" href="/6/blog-1">Blog – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/6/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/6/blog-3">Blog – Right Sidebar</a></li>
+                      <li><a class="dropdown-item" href="/6/post-1">Blog Post – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/6/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/6/post-3">Blog Post – Right Sidebar</a>
+                      </li>
+                    </ul>
                   </li>
                   <li class="nav-item">
                     <a class="nav-link nav-link-paw" href="/6/contact">Contact</a>
@@ -184,119 +209,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         <!-- Blogs Section -->
         <section class="bg-body py-5">
           <div class="container">
-            <div class="row gy-4">
-              <!-- Sidebar Column -->
-              <div class="col-lg-3">
-                <div class="sticky-top z-1" style="top: 80px;">
-                  <!-- Search Card -->
-                  <div class="card border p-3 mb-4">
-                    <div class="card-body">
-                      <h5 class="card-title mb-3">
-                        <i class="ri-search-line me-2"></i>Search Blog Posts
-                      </h5>
-                      <form>
-                        <div class="mb-3">
-                          <input
-                            type="text"
-                            class="form-control form-control-lg"
-                            placeholder="Search topics, titles..."
-                          />
-                        </div>
-                        <button type="submit" class="btn btn-lg btn-outline-primary w-100"
-                          >Search</button
-                        >
-                      </form>
-                    </div>
-                  </div>
-                  <!-- Tags Card -->
-                  <div class="card border p-3 mb-4">
-                    <div class="card-body">
-                      <h5 class="card-title mb-3">
-                        <i class="ri-price-tag-3-line me-2"></i>Browse by Tags
-                      </h5>
-                      <div class="d-flex flex-wrap gap-2">
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Health</a
-                        >
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Ethics</a
-                        >
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Value</a
-                        >
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Breeders</a
-                        >
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Process</a
-                        >
-                        <a
-                          href="#"
-                          class="badge text-primary bg-primary-subtle fs-6 text-decoration-none px-3 py-2"
-                          >Puppies</a
-                        >
-                      </div>
-                    </div>
-                  </div>
-
-                  <!-- Recent Posts Card -->
-                  <div class="card border p-3 mb-3">
-                    <div class="card-body">
-                      <h5 class="card-title mb-3">
-                        <i class="ri-history-line me-2"></i>Recent Posts
-                      </h5>
-                      <ul class="list-group list-group-flush">
-                        <li class="list-group-item">
-                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
-                            Why Health Testing Matters in Dog Breeding
-                          </a>
-                          <p class="text-muted mb-2">
-                            12 Jan 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
-                              >Health</span
-                            >
-                          </p>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
-                            Puppy Mills vs. Ethical Breeders: Learn the Difference
-                          </a>
-                          <p class="text-muted mb-2">
-                            20 Feb 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
-                              >Ethics</span
-                            >
-                          </p>
-                        </li>
-                        <li class="list-group-item">
-                          <a href="#" class="text-decoration-none fs-5 fw-semibold d-block mb-1">
-                            The True Cost of a Well-Bred Puppy
-                          </a>
-                          <p class="text-muted mb-2">
-                            6 Jan 2025 • <span class="badge text-primary bg-primary-subtle fs-6"
-                              >Value</span
-                            >
-                          </p>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="text-center text-md-end">
-                    <button class="btn btn-lg btn-primary"
-                      >Check all blogs <i class="ri-arrow-right-line"></i></button
-                    >
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-9">
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
                 <div class="card border p-0 mb-4">
                   <img
                     src="/dist/assets/img/breederspot-images/dog-img-3.jpg"
@@ -307,7 +221,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                       <span class="badge text-primary bg-primary-subtle fs-6">Health</span>
-                      <span class="text-muted">12 Jan 2025</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>John Doe
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>12 Jan 2025</span>
+                      </span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
@@ -333,7 +252,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                       <span class="badge text-primary bg-primary-subtle fs-6">Ethics</span>
-                      <span class="text-muted">20 Feb 2025</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>John Doe
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>20 Feb 2025</span>
+                      </span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
@@ -359,7 +283,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
                       <span class="badge text-primary bg-primary-subtle fs-6">Value</span>
-                      <span class="text-muted">6 Jan 2025</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>John Doe
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>6 Jan 2025</span>
+                      </span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
@@ -467,9 +396,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </li>
                   <li class="nav-item mb-2">
                     <a href="/6/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
-                  </li>
-                  <li class="nav-item mb-2">
-                    <a href="/6/blog" class="nav-link p-0 text-body-secondary">Blog</a>
                   </li>
                   <li class="nav-item mb-2">
                     <a href="/6/contact" class="nav-link p-0 text-body-secondary">Contact</a>
