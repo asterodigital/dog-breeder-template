@@ -101,7 +101,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
                       <li><a class="dropdown-item" href="/1/puppies">Puppies</a></li>
-                      <li><a class="dropdown-item" href="/1/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item active" href="/1/gallery">Gallery</a></li>
                       <li><a class="dropdown-item" href="/1/shop">Shop</a></li>
                     </ul>
                   </li>
@@ -168,36 +168,180 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Main Section -->
-        <section class="my-5">
+        <!-- Gallery Section -->
+        <section class="bg-body py-5">
           <div class="container">
-            <div class="row text-center">
-              <div class="col-lg-6 offset-lg-3">
-                <div class="row">
-                  <div class="col-6 offset-3">
-                    <figure class="p-3 mb-0">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
+                  Gallery
+                </h1>
+                <h2 class="display-5 text-center fw-semibold mb-4">Our Golden Moments</h2>
+                <!-- Nav Pills -->
+                <ul class="nav nav-pills nav-fill justify-content-center flex-wrap gap-2 mb-3">
+                  <li class="nav-item">
+                    <a class="nav-link rounded-4 border active" href="#">All Photos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-4 border" href="#">Puppies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-4 border" href="#">Adults</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link rounded-4 border" href="#">Families</a>
+                  </li>
+                </ul>
+
+                <div class="row g-4">
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
                       <img
-                        src="/dist/assets/img/breederspot-images/404-img.png"
+                        src="/dist/assets/img/breederspot-images/dog-img-11.jpg"
                         class="img-fluid"
-                        alt="404 Not Found"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/dog-img-10.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-12 col-md-6">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/dog-img-9-wide.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/services-img-1.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/dog-img-8.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/dog-img-12.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
+                      />
+                    </figure>
+                  </div>
+                  <div class="col-sm-6 col-md-3">
+                    <figure class="img-scale rounded-4 h-100 w-100">
+                      <img
+                        src="/dist/assets/img/breederspot-images/dog-img-13.jpg"
+                        class="img-fluid"
+                        style="object-fit: cover;"
+                        alt="Gallery Image"
                       />
                     </figure>
                   </div>
                 </div>
-                <h1 class="mb-2"><em>Lost in the dog park of the internet?</em></h1>
-                <p class="lead mb-3">
-                  The page you're looking for doesn't exist or has been moved. Head back to the home
-                  page to start fresh.
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Share Your Photos Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <h2 class="display-6 text-center fw-semibold mb-2">Share Your Photos</h2>
+                <p class="lead text-center mb-4">
+                  Help us grow our gallery with joyful moments from your dog's life!
                 </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2">
-                  <button class="btn btn-lg btn-primary"
-                    ><i class="ri-home-2-line me-2"></i>Back to Home</button
-                  >
-                  <button class="btn btn-lg btn-outline-primary"
-                    ><i class="ri-information-2-line me-2"></i>Learn More</button
-                  >
+
+                <div class="card bg-primary-pale border-0 shadow-sm p-0">
+                  <div class="card-body p-3">
+                    <p class="mb-3">
+                      We'd love to feature your furry family member! Send us your favorite photos —
+                      whether it's your pup's first day home, playtime in the yard, or cozy moments
+                      on the couch.
+                    </p>
+
+                    <p class="mb-3">
+                      To share, simply email your images to <strong>hello@email.com</strong> with the
+                      following details:
+                    </p>
+
+                    <ul class="list-unstyled mb-3">
+                      <li><i class="ri-check-line text-primary me-2"></i>Dog's Name</li>
+                      <li>
+                        <i class="ri-check-line text-primary me-2"></i>Breed
+                      </li>
+                      <li>
+                        <i class="ri-check-line text-primary me-2"></i>Description
+                      </li>
+                    </ul>
+
+                    <small class="text-muted d-block">
+                      Submitted photos may be featured on our website or social channels. We will
+                      never share personal contact information.
+                    </small>
+                  </div>
                 </div>
               </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="text-light position-relative"
+          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+        >
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(0, 0, 0, 0.5);"
+          >
+          </div>
+          <div class="container text-center py-5 position-relative">
+            <div class="mt-2 mt-md-5">
+              <i class="ri-empathize-fill text-secondary fs-1"></i>
+            </div>
+            <h2 class="mb-3 display-6 fw-semibold">
+              Over 200 happy families have found their perfect pup with us — yours could be next.
+            </h2>
+            <p class="mb-4 lead">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
+              corporis dignissimos provident nulla nemo!
+            </p>
+            <div class="d-flex flex-wrap justify-content-center gap-2 mb-md-5">
+              <button class="btn btn-light btn-lg">
+                <i class="ri-sparkling-2-line text-secondary"></i> Get started
+              </button>
+              <button class="btn btn-outline-light btn-lg">
+                <i class="ri-arrow-right-line text-secondary"></i> Learn more
+              </button>
             </div>
           </div>
         </section>
