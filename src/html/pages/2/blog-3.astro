@@ -59,26 +59,93 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <ul
                   class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
                 >
+                  <!-- Home -->
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw" aria-current="page" href="/2/home">Home</a>
+                    <a class="nav-link" aria-current="page" href="/2/home">Home</a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/2/about">About</a>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/2/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/2/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="/2/testimonials">Testimonials</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/2/puppies">Puppies</a>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/2/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/2/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/2/shop">Shop</a></li>
+                    </ul>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/2/shop">Shop</a>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li>
+                        <a class="dropdown-item" href="/2/blog-1">Blog – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/2/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item active" href="/2/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/2/post-1">Blog Post – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/2/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/2/post-3">Blog Post – Right Sidebar</a>
+                      </li>
+                    </ul>
                   </li>
+
+                  <!-- FAQs -->
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/2/faq">FAQs</a>
+                    <a class="nav-link" href="/2/faq">FAQs</a>
                   </li>
+
+                  <!-- Contact -->
                   <li class="nav-item">
-                    <a class="nav-link nav-link-paw active" href="/2/blog">Blog</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link nav-link-paw" href="/2/contact">Contact</a>
+                    <a class="nav-link" href="/2/contact">Contact</a>
                   </li>
                 </ul>
 
@@ -108,19 +175,19 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </nav>
 
         <!-- Blogs Section -->
-        <section class="my-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="text-center">
-              <h1 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">Blogs</h1>
-              <h2 class="display-6 fw-bold mb-4">Stay informed with our latest blog posts</h2>
+              <h1 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2">Blogs</h1>
+              <h2 class="display-4 fw-bold mb-4">Read our latest articles and tips</h2>
             </div>
 
             <div class="row gy-4">
               <!-- Sidebar Column -->
-              <div class="col-lg-4">
+              <div class="col-lg-3 order-lg-2">
                 <div class="sticky-top z-1" style="top: 80px;">
                   <!-- Search Card -->
-                  <div class="card shadow-sm rounded-5 p-3 mb-4">
+                  <div class="card border p-3 mb-4">
                     <div class="card-body">
                       <h5 class="card-title mb-3">
                         <i class="ri-search-line me-2"></i>Search Blog Posts
@@ -129,19 +196,18 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         <div class="mb-3">
                           <input
                             type="text"
-                            class="form-control form-control-lg rounded-pill"
+                            class="form-control form-control-lg"
                             placeholder="Search topics, titles..."
                           />
                         </div>
-                        <button
-                          type="submit"
-                          class="btn btn-lg btn-outline-primary rounded-pill w-100">Search</button
+                        <button type="submit" class="btn btn-lg btn-outline-primary w-100"
+                          >Search</button
                         >
                       </form>
                     </div>
                   </div>
                   <!-- Tags Card -->
-                  <div class="card shadow-sm rounded-5 p-3 mb-4">
+                  <div class="card border p-3 mb-4">
                     <div class="card-body">
                       <h5 class="card-title mb-3">
                         <i class="ri-price-tag-3-line me-2"></i>Browse by Tags
@@ -149,32 +215,32 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       <div class="d-flex flex-wrap gap-2">
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Health</a
                         >
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Ethics</a
                         >
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Value</a
                         >
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Breeders</a
                         >
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Process</a
                         >
                         <a
                           href="#"
-                          class="badge text-primary border shadow-sm rounded-pill text-decoration-none px-3 py-2"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
                           >Puppies</a
                         >
                       </div>
@@ -182,7 +248,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
 
                   <!-- Recent Posts Card -->
-                  <div class="card shadow-sm rounded-5 p-3 mb-4">
+                  <div class="card border p-3">
                     <div class="card-body">
                       <h5 class="card-title mb-3">
                         <i class="ri-history-line me-2"></i>Recent Posts
@@ -192,54 +258,49 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                           <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
                             Why Health Testing Matters in Dog Breeding
                           </a>
-                          <small class="text-muted"
-                            >12 Jan 2025 • <span class="badge text-primary border shadow-sm"
+                          <p class="text-muted mb-2">
+                            12 Jan 2025 • <span class="badge text-primary bg-primary-subtle"
                               >Health</span
                             >
-                          </small>
+                          </p>
                         </li>
                         <li class="list-group-item">
                           <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
                             Puppy Mills vs. Ethical Breeders: Learn the Difference
                           </a>
-                          <small class="text-muted"
-                            >20 Feb 2025 • <span class="badge text-primary border shadow-sm"
+                          <p class="text-muted mb-2">
+                            20 Feb 2025 • <span class="badge text-primary bg-primary-subtle"
                               >Ethics</span
                             >
-                          </small>
+                          </p>
                         </li>
                         <li class="list-group-item">
                           <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
                             The True Cost of a Well-Bred Puppy
                           </a>
-                          <small class="text-muted"
-                            >6 Jan 2025 • <span class="badge text-primary border shadow-sm"
+                          <p class="text-muted mb-2">
+                            6 Jan 2025 • <span class="badge text-primary bg-primary-subtle"
                               >Value</span
                             >
-                          </small>
+                          </p>
                         </li>
                       </ul>
                     </div>
                   </div>
-                  <div class="text-center text-md-end">
-                    <button class="btn btn-lg btn-primary rounded-pill px-4"
-                      >Check all blogs <i class="ri-arrow-right-line"></i></button
-                    >
-                  </div>
                 </div>
               </div>
-              <div class="col-lg-8">
-                <div class="card shadow-sm rounded-5 p-0 mb-4">
+              <div class="col-lg-9 order-lg-1">
+                <div class="card border p-0 mb-4">
                   <img
                     src="/dist/assets/img/breederspot-images/dog-img-3.jpg"
-                    class="card-img-top rounded-top-5"
+                    class="card-img-top"
                     style="max-height: 400px; object-fit: cover;"
                     alt="blog image"
                   />
-                  <div class="card-body p-4">
+                  <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                      <span class="badge text-primary border shadow-sm">Health</span>
-                      <span class="text-muted small">12 Jan 2025</span>
+                      <span class="badge text-primary bg-primary-subtle fs-6">Health</span>
+                      <span class="text-muted">12 Jan 2025</span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
@@ -255,17 +316,17 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     >
                   </div>
                 </div>
-                <div class="card shadow-sm rounded-5 p-0 mb-4">
+                <div class="card border p-0 mb-4">
                   <img
                     src="/dist/assets/img/breederspot-images/dog-img-9-wide.jpg"
-                    class="card-img-top rounded-top-5"
+                    class="card-img-top"
                     style="max-height: 400px; object-fit: cover;"
                     alt="blog image"
                   />
-                  <div class="card-body p-4">
+                  <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                      <span class="badge text-primary border shadow-sm">Ethics</span>
-                      <span class="text-muted small">20 Feb 2025</span>
+                      <span class="badge text-primary bg-primary-subtle fs-6">Ethics</span>
+                      <span class="text-muted">20 Feb 2025</span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
@@ -281,17 +342,17 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     >
                   </div>
                 </div>
-                <div class="card shadow-sm rounded-5 p-0">
+                <div class="card border p-0">
                   <img
                     src="/dist/assets/img/breederspot-images/dog-img-13-wide.jpg"
-                    class="card-img-top rounded-top-5"
+                    class="card-img-top"
                     style="max-height: 400px; object-fit: cover;"
                     alt="blog image"
                   />
-                  <div class="card-body p-4">
+                  <div class="card-body p-3">
                     <div class="d-flex align-items-center justify-content-between mb-2">
-                      <span class="badge text-primary border shadow-sm">Value</span>
-                      <span class="text-muted small">6 Jan 2025</span>
+                      <span class="badge text-primary bg-primary-subtle fs-6">Value</span>
+                      <span class="text-muted">6 Jan 2025</span>
                     </div>
                     <h5 class="card-title fs-4 mb-2">
                       <a href="#" class="text-decoration-none text-body">
