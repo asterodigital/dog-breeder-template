@@ -95,9 +95,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   aria-label="Close"></button>
               </div>
               <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
-                <ul
-                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
-                >
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
                   <!-- Home -->
                   <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="/6/home">Home</a>
@@ -110,7 +108,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="aboutDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       About
@@ -133,7 +130,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="exploreDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Explore
@@ -152,7 +148,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="blogDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Blog
@@ -177,6 +172,54 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </li>
 
                   <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start d-flex d-lg-none">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/6/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/breeding-philosophy">Breeding Philosophy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/puppies">Puppies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/shop">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/blog-1">Blog – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/blog-2">Blog – Left Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/blog-3">Blog – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/post-1">Blog Post – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/post-2">Blog Post – Left Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/post-3">Blog Post – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/6/faq">FAQs</a>
+                  </li>
                   <li class="nav-item">
                     <a class="nav-link" href="/6/contact">Contact</a>
                   </li>
