@@ -286,6 +286,23 @@
 .dropdown-submenu {
   position: relative;
 
+  > .dropdown-toggle {
+    position: relative;
+
+    &::after {
+      display: none; // Hide Bootstrap's default down arrow
+    }
+
+    &::before {
+      position: absolute;
+      top: 50%;
+      right: 1.5rem;
+      font-size: 2rem;
+      content: '›';
+      transform: translateY(-50%);
+    }
+  }
+
   > .dropdown-menu {
     top: 0;
     left: 100%;
