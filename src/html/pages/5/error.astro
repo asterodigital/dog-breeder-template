@@ -1,0 +1,319 @@
+---
+import Head from '../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/5/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/5/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/5/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/5/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/5/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li><a class="dropdown-item" href="/5/testimonials">Testimonials</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/5/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/5/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/5/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li>
+                        <a class="dropdown-item" href="/5/blog-1">Blog – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/5/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/5/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li><a class="dropdown-item" href="/5/post-1">Blog Post – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/5/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/5/post-3">Blog Post – Right Sidebar</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/5/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/5/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-gray-500 d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Main Section -->
+        <section class="text-bg-dark py-5">
+          <div class="container">
+            <div class="row text-center">
+              <div class="col-lg-6 offset-lg-3">
+                <div class="row">
+                  <div class="col-6 offset-3">
+                    <figure class="p-3 mb-0">
+                      <img
+                        src="/dist/assets/img/breederspot-images/404-img.png"
+                        class="img-fluid"
+                        alt="404 Not Found"
+                      />
+                    </figure>
+                  </div>
+                </div>
+                <h1 class="mb-2"><em>Lost in the dog park of the internet?</em></h1>
+                <p class="lead mb-3">
+                  The page you're looking for doesn't exist or has been moved. Head back to the home
+                  page to start fresh.
+                </p>
+                <div class="d-flex flex-wrap justify-content-center gap-2">
+                  <button class="btn btn-lg btn-primary"
+                    ><i class="ri-home-2-line me-2"></i>Back to Home</button
+                  >
+                  <button class="btn btn-lg btn-outline-primary"
+                    ><i class="ri-information-2-line me-2"></i>Learn More</button
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-bg-dark">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 px-3 px-lg-5 pt-5 pb-4">
+              <div class="col mb-3">
+                <a
+                  href="/"
+                  class="d-inline-flex align-items-center text-decoration-none mb-2"
+                  aria-label="Your Company Logo"
+                >
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Your Company Logo"
+                    style="height: 28px;"
+                    class="me-2"
+                  />
+                </a>
+                <p class="mb-3">
+                  Over 200 happy families have found their perfect pup with us — yours could be
+                  next.
+                </p>
+                <button class="btn btn-lg btn-outline-light mb-2">Get in touch</button>
+              </div>
+
+              <div class="col mb-3"></div>
+
+              <div class="col mb-3">
+                <nav aria-label="Quick Links">
+                  <h5 class="mb-3">Quick Links</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="/5/home" class="nav-link text-light p-0">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/about" class="nav-link text-light p-0">About</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/puppies" class="nav-link text-light p-0">Puppies</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/shop" class="nav-link text-light p-0">Shop</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/faq" class="nav-link text-light p-0">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/blog" class="nav-link text-light p-0">Blog</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/5/contact" class="nav-link text-light p-0">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col mb-3">
+                <nav aria-label="Legal">
+                  <h5 class="mb-3">Legal</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Terms of Use</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Cookies Policy</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col mb-3">
+                <h5 class="mb-3">Contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <i class="ri-phone-fill text-primary me-2"></i>
+                    <a href="tel:+12345678901" class="text-decoration-none text-light text-break"
+                      >+1 (234) 567-8901</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <i class="ri-mail-fill text-primary me-2"></i>
+                    <a
+                      href="mailto:hello@email.com"
+                      class="text-decoration-none text-light text-break">hello@email.com</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <address class="text-light">
+                      <i class="ri-map-pin-fill text-primary me-2"></i>
+                      123 Main Street, Austin, TX
+                    </address>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-center bg-gray-800 py-4">
+            <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>
