@@ -1,41 +1,58 @@
 export const dropdownHover = () => {
   document.addEventListener('DOMContentLoaded', function () {
-    // Select all dropdown toggle elements within nav-items
-    const dropdownToggles = document.querySelectorAll('.nav-item.dropdown')
+    // Only enable hover on non-touch devices
+    if (!window.matchMedia('(hover: hover)').matches) return
 
-    // Check if any dropdowns were found
-    if (dropdownToggles.length > 0) {
-      dropdownToggles.forEach(function (dropdown) {
-        const toggleLink = dropdown.querySelector('.dropdown-toggle')
+    // Handle all dropdowns (including submenus)
+    document
+      .querySelectorAll('.navbar .dropdown, .navbar .dropdown-submenu')
+      .forEach(function (dropdown) {
+        let timeout
+        const toggle = dropdown.querySelector('.dropdown-toggle')
         const menu = dropdown.querySelector('.dropdown-menu')
 
-        if (!toggleLink || !menu) {
-          console.warn('Could not find toggle link or menu for a dropdown:', dropdown)
-          return
-        }
+        if (!toggle || !menu) return
 
-        toggleLink.addEventListener('click', function (e) {
-          e.preventDefault()
-        })
-
-        // --- Event Listener for Hovering IN ---
+        // Show dropdown on hover
         dropdown.addEventListener('mouseenter', function () {
-          // Add 'show' class to the menu
+          clearTimeout(timeout)
+          // Hide sibling submenus
+          if (dropdown.parentElement) {
+            dropdown.parentElement
+              .querySelectorAll('.dropdown.show, .dropdown-submenu.show')
+              .forEach(function (openDropdown) {
+                if (openDropdown !== dropdown) {
+                  openDropdown.classList.remove('show')
+                  const openMenu = openDropdown.querySelector('.dropdown-menu')
+                  if (openMenu) openMenu.classList.remove('show')
+                  const openToggle = openDropdown.querySelector('.dropdown-toggle')
+                  if (openToggle) openToggle.setAttribute('aria-expanded', 'false')
+                }
+              })
+          }
+          dropdown.classList.add('show')
           menu.classList.add('show')
-          // Update aria-expanded for accessibility
-          toggleLink.setAttribute('aria-expanded', 'true')
+          toggle.setAttribute('aria-expanded', 'true')
         })
 
-        // --- Event Listener for Hovering OUT ---
+        // Hide dropdown on mouseleave
         dropdown.addEventListener('mouseleave', function () {
-          // Remove 'show' class from the menu
-          menu.classList.remove('show')
-          // Update aria-expanded for accessibility
-          toggleLink.setAttribute('aria-expanded', 'false')
+          timeout = setTimeout(function () {
+            dropdown.classList.remove('show')
+            menu.classList.remove('show')
+            toggle.setAttribute('aria-expanded', 'false')
+          }, 150)
+        })
+
+        // Prevent click navigation for toggles with submenus
+        toggle.addEventListener('click', function (e) {
+          if (
+            dropdown.classList.contains('dropdown-submenu') ||
+            toggle.classList.contains('dropdown-toggle')
+          ) {
+            e.preventDefault()
+          }
         })
       })
-    } else {
-      console.log("No elements with class '.nav-item.dropdown' found.")
-    }
   })
 }

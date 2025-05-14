@@ -156,12 +156,25 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       <li><a class="dropdown-item" href="/6/blog-1">Blog – No Sidebar</a></li>
                       <li><a class="dropdown-item" href="/6/blog-2">Blog – Left Sidebar</a></li>
                       <li><a class="dropdown-item" href="/6/blog-3">Blog – Right Sidebar</a></li>
-                      <li><a class="dropdown-item" href="/6/post-1">Blog Post – No Sidebar</a></li>
-                      <li>
-                        <a class="dropdown-item" href="/6/post-2">Blog Post – Left Sidebar</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="/6/post-3">Blog Post – Right Sidebar</a>
+                      <li class="dropdown-submenu">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="blogPostsDropdown"
+                          role="button"
+                          aria-expanded="false">Blog Posts</a
+                        >
+                        <ul class="dropdown-menu" aria-labelledby="blogPostsDropdown">
+                          <li>
+                            <a class="dropdown-item" href="/6/post-1">Blog Post – No Sidebar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/6/post-2">Blog Post – Left Sidebar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/6/post-3">Blog Post – Right Sidebar</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
