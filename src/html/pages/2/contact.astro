@@ -168,45 +168,43 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Book Appointment Section -->
-        <section class="bg-body py-5 position-relative">
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
           <div
-            class="container bg-primary-subtle rounded-5 border border-primary-pale p-4 p-md-5 position-relative overflow-hidden"
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
           >
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-
-            <div class="row align-items-center position-relative">
-              <div class="col-md-8">
-                <div class="d-flex align-items-center gap-3 mb-1">
-                  <i class="ri-calendar-line text-primary fs-3"></i>
-                  <h4 class="fw-bold mb-0">Book a Free Appointment</h4>
-                </div>
-                <p class="fs-5 mb-0">
-                  Have questions about our breeding practices or puppies? We’re happy to chat.
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  Contact Us
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">Get in touch with us</h1>
+                <p class="fs-4 mb-0">
+                  We’d love to hear from you! Whether you have questions about our Golden
+                  Retrievers, the adoption process, or just want to say hello — we’re here to help
+                  and happy to chat.
                 </p>
-              </div>
-              <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                <a href="#" class="btn btn-primary btn-lg rounded-pill px-4 mb-1">Schedule Now</a>
-                <div>
-                  <small>*T&Cs Apply</small>
-                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Contact Form -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <i class="ri-customer-service-fill text-primary fs-1"></i>
-                <h1 class="display-6 fw-semibold mb-2">Contact Us</h1>
-                <p class="lead mb-4">
+                <i class="ri-mail-line text-primary fs-1"></i>
+                <h1 class="display-6 fw-bold mb-2">Send Us a Message</h1>
+                <p class="fs-5 mb-4">
                   Whether you have a question, need support, or just want to say hello — we’re here
                   for you.
                 </p>
@@ -275,6 +273,37 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     >
                   </div>
                 </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Book Appointment Section -->
+        <section class="bg-body py-5 position-relative">
+          <div
+            class="container bg-primary-subtle rounded-5 border border-primary-pale p-4 p-md-5 position-relative overflow-hidden"
+          >
+            <img
+              src="/dist/assets/img/breederspot-images/multiple-paws.png"
+              alt="Decorative Paws Image"
+              class="position-absolute paw-overlay-img"
+            />
+
+            <div class="row align-items-center position-relative">
+              <div class="col-md-8">
+                <div class="d-flex align-items-center gap-3 mb-1">
+                  <i class="ri-calendar-line text-primary fs-3"></i>
+                  <h4 class="fw-bold mb-0">Book a Free Appointment</h4>
+                </div>
+                <p class="fs-5 mb-0">
+                  Have questions about our breeding practices or puppies? We’re happy to chat.
+                </p>
+              </div>
+              <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="#" class="btn btn-primary btn-lg rounded-pill px-4 mb-1">Schedule Now</a>
+                <div>
+                  <small>*T&Cs Apply</small>
+                </div>
               </div>
             </div>
           </div>

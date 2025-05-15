@@ -168,32 +168,49 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
+          >
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  FAQs
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">Frequently asked questions</h1>
+                <p class="fs-4 mb-0">
+                  Find answers to the most common questions about our Golden Retrievers, adoption
+                  process, care tips, and what to expect as a new puppy parent.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- FAQs Section -->
         <section class="bg-body py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <div class="text-center">
-                  <h1 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
-                    FAQs
-                  </h1>
-                  <h2 class="display-6 fw-bold mb-3">Frequently Asked Questions</h2>
-                  <p class="lead fs-5 mb-3">
-                    Lorem ipsum dolor sit amet consectet adipisi elit dolorum quibus, libero
-                    corporis dignis.
-                  </p>
-                </div>
-                <ul class="nav nav-pills nav-fill justify-content-center mb-4">
+                <!-- Nav -->
+                <ul class="nav nav-tabs justify-content-center flex-wrap gap-2 mb-4">
                   <li class="nav-item">
-                    <a class="nav-link nav-link-lg rounded-pill active" aria-current="page" href="#"
-                      >General</a
-                    >
+                    <a class="nav-link fs-5 active" aria-current="page" href="#">General</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-link-lg rounded-pill" href="#">Payments</a>
+                    <a class="nav-link fs-5" href="#">Payments</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link nav-link-lg rounded-pill" href="#">Policies</a>
+                    <a class="nav-link fs-5" href="#">Policies</a>
                   </li>
                 </ul>
 
@@ -206,7 +223,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                        class="accordion-button bg-transparent collapsed rounded shadow-none fs-5 p-3"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseOne"
@@ -221,7 +238,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFAQs"
                     >
-                      <div class="accordion-body p-3">
+                      <div class="accordion-body fs-5 p-3">
                         Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
                         elit.
                       </div>
@@ -230,7 +247,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                        class="accordion-button bg-transparent collapsed rounded shadow-none fs-5 p-3"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseTwo"
@@ -245,7 +262,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFAQs"
                     >
-                      <div class="accordion-body p-3">
+                      <div class="accordion-body fs-5 p-3">
                         Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
                         elit.
                       </div>
@@ -254,7 +271,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                        class="accordion-button bg-transparent collapsed rounded shadow-none fs-5 p-3"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseThree"
@@ -269,7 +286,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFAQs"
                     >
-                      <div class="accordion-body p-3">
+                      <div class="accordion-body fs-5 p-3">
                         Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
                         elit.
                       </div>
@@ -278,7 +295,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <div class="accordion-item bg-transparent">
                     <h2 class="accordion-header">
                       <button
-                        class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                        class="accordion-button bg-transparent collapsed rounded shadow-none fs-5 p-3"
                         type="button"
                         data-bs-toggle="collapse"
                         data-bs-target="#flush-collapseFour"
@@ -293,7 +310,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       class="accordion-collapse collapse"
                       data-bs-parent="#accordionFAQs"
                     >
-                      <div class="accordion-body p-3">
+                      <div class="accordion-body fs-5 p-3">
                         Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
                         elit.
                       </div>
