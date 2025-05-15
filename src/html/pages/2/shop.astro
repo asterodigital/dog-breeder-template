@@ -168,31 +168,42 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Header Section -->
-        <section class="bg-body py-5 position-relative">
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
           <div
-            class="container bg-primary-subtle rounded-5 border border-primary-pale p-4 p-md-5 position-relative overflow-hidden"
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
           >
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-            <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Our Shop</h1>
-            <h2 class="text-center display-6 fw-bold mb-2">
-              Thoughtfully Chosen Essentials for You and Your Pup
-            </h2>
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  Our Shop
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">Thoughtfully chosen essentials for your pup</h1>
+                <p class="fs-4 mb-0">
+                  Thoughtfully selected products to support your Golden Retriever’s health,
+                  happiness, and everyday adventures — from puppy essentials to lifelong favorites.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- Shop Section -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="row gy-4">
               <!-- Sidebar / Filter Column -->
               <div class="col-lg-3">
                 <div class="sticky-top z-1" style="top: 80px;">
-                  <div class="card rounded-5 shadow-sm p-3">
+                  <div class="card rounded-5 border p-3">
                     <div class="card-body">
                       <h5 class="fs-4 fw-semibold mt-1 mb-3">Filter Products</h5>
 
@@ -272,8 +283,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <div class="row g-4">
                   <!-- Product 1 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-toy-1.jpg"
                           class="card-img-top rounded-0"
@@ -306,8 +317,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                   <!-- Product 2 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-toy-2.jpg"
                           class="card-img-top rounded-0"
@@ -338,8 +349,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                   <!-- Product 3 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-collar-3.jpg"
                           class="card-img-top rounded-0"
@@ -370,8 +381,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                   <!-- Product 4 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-toy-3.jpg"
                           class="card-img-top rounded-0"
@@ -402,8 +413,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                   <!-- Product 5 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-collar-1.jpg"
                           class="card-img-top rounded-0"
@@ -434,8 +445,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                   <!-- Product 6 -->
                   <div class="col-sm-6 col-xl-4">
-                    <div class="card rounded-5 shadow-sm h-100 p-0">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card rounded-5 border h-100 p-0">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/dog-collar-2.jpg"
                           class="card-img-top rounded-0"

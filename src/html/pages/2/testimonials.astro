@@ -170,151 +170,177 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Testimonials Section -->
-        <section class="bg-body py-5">
-          <div class="container">
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
+          >
             <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <div class="text-center">
-                  <h1 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2">
-                    Testimonials
-                  </h1>
-                  <h2 class="display-4 fw-bold mb-4">What Our Puppy Families Are Saying</h2>
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  Testimonials
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">What our puppy families are saying</h1>
+                <p class="fs-4 mb-4">
+                  Hear from the families who welcomed our Golden Retrievers into their hearts and
+                  homes — sharing their joyful experiences, cherished memories, and the deep bonds
+                  they've formed with their new companions.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary rounded-pill px-4">
+                    View Puppies <i class="ri-arrow-right-line"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light rounded-pill px-4">
+                    <i class="ri-information-2-line"></i> Learn More
+                  </button>
                 </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-                <div class="row g-4 mb-4">
-                  <!-- Testimonial 1 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border rounded-5 h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          “We couldn’t be happier with our puppy! The entire process was smooth, and
-                          it’s clear how much care goes into raising these dogs. Truly an amazing
-                          experience.”
-                        </p>
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar1.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Jane Smith</h6>
-                            <p class="text-muted mb-0">Austin, TX</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                            </div>
-                          </div>
+        <!-- Testimonials Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="row g-4 mb-4">
+              <!-- Testimonial 1 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      “We couldn’t be happier with our puppy! The entire process was smooth, and
+                      it’s clear how much care goes into raising these dogs. Truly an amazing
+                      experience.”
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar1.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
+                        <p class="text-muted mb-0">Austin, TX</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Testimonial 2 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border rounded-5 h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          “From the first inquiry to bringing our puppy home, every step was
-                          professional. You can tell these dogs are raised with love—we're grateful
-                          to have found them.”
-                        </p>
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar7.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Nguyen Minh</h6>
-                            <p class="text-muted mb-0">San Diego, CA</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-half-s-fill text-yellow"></i>
-                            </div>
-                          </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      “From the first inquiry to bringing our puppy home, every step was
+                      professional. You can tell these dogs are raised with love—we're grateful to
+                      have found them.”
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar7.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
+                        <p class="text-muted mb-0">San Diego, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Testimonial 3 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border rounded-5 h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          "What stood out was the transparency. Health screenings, temperament
-                          evaluations, early socialization — everything was handled with care. Our
-                          pup, Max, is a joy!"
-                        </p>
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar9.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Jack Smith</h6>
-                            <p class="text-muted mb-0">Atlanta, GA</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-half-s-fill text-yellow"></i>
-                            </div>
-                          </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      "What stood out was the transparency. Health screenings, temperament
+                      evaluations, early socialization — everything was handled with care. Our pup,
+                      Max, is a joy!"
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar9.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jack Smith</h6>
+                        <p class="text-muted mb-0">Atlanta, GA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
                         </div>
                       </div>
                     </div>
                   </div>
-                  <!-- Testimonial 4 -->
-                  <div class="col-md-6">
-                    <div class="card card-lift bg-primary-subtle border rounded-5 h-100 p-3">
-                      <div class="card-body d-flex flex-column justify-content-between">
-                        <!-- Testimonial Text -->
-                        <p class="card-text mb-3">
-                          "We'd never bought a dog before. But this organization made sure we
-                          understood every step. Our breeder was amazing, and now we have Luna —
-                          healthy and well-adjusted."
-                        </p>
-                        <!-- Author Info -->
-                        <div class="d-flex align-items-center mt-auto">
-                          <img
-                            src="/dist/assets/img/avatars/avatar5.jpg"
-                            alt="Avatar"
-                            class="rounded-circle me-3"
-                            width="64"
-                            height="64"
-                          />
-                          <div>
-                            <h6 class="fw-semibold mb-0">Aaron Thomas</h6>
-                            <p class="text-muted mb-0">San Francisco, CA</p>
-                            <div>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                              <i class="ri-star-s-fill text-yellow"></i>
-                            </div>
-                          </div>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      "We'd never bought a dog before. But this organization made sure we understood
+                      every step. Our breeder was amazing, and now we have Luna — healthy and
+                      well-adjusted."
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar5.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Aaron Thomas</h6>
+                        <p class="text-muted mb-0">San Francisco, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
                         </div>
                       </div>
                     </div>
@@ -326,10 +352,10 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Info Section -->
-        <section class="bg-primary-subtle py-5">
+        <section class="bg-primary-pale py-5">
           <div class="container">
             <div class="row g-4">
-              <div class="col-sm-6">
+              <div class="col-md-4">
                 <div class="text-center">
                   <div>
                     <i class="ri-star-fill text-yellow fs-3"></i>
@@ -343,13 +369,25 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                 </div>
               </div>
-              <div class="col-sm-6">
+
+              <div class="col-md-4">
                 <div class="text-center">
                   <div>
                     <i class="ri-group-fill text-primary fs-3"></i>
                   </div>
                   <div>
                     <span class="fw-semibold fs-5 ms-2">100+ Happy Families</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div>
+                    <i class="ri-shield-check-fill text-primary fs-3"></i>
+                  </div>
+                  <div>
+                    <span class="fw-semibold fs-5 ms-2">Health Guarantee</span>
                   </div>
                 </div>
               </div>
@@ -362,18 +400,18 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <div class="row">
               <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-bold mb-2">Video Testimonials</h2>
+                <h3 class="display-6 text-center fw-bold mb-2">Video Testimonials</h3>
                 <p class="fs-5 text-center mb-4">
                   Heartfelt stories from real families who’ve welcomed our puppies into their
                   homes—with love, joy, and wagging tails.
                 </p>
                 <div class="row g-4">
                   <div class="col-md-6">
-                    <div class="card bg-primary-subtle border rounded-5 h-100 p-0">
+                    <div class="card card-lift border rounded-5 h-100 p-0">
                       <div class="position-relative">
                         <a href="#" class="d-block">
                           <img
-                            src="/dist/assets/img/breederspot-images/dog-img-10.jpg"
+                            src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
                             alt="Testimonial Video Thumbnail"
                             class="card-img-top rounded-top-5"
                             style="object-fit: cover; height: 225px;"
@@ -386,9 +424,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         </a>
                       </div>
                       <div class="card-body p-3">
-                        <h5 class="card-title mb-2">The Johnson Family</h5>
-                        <p class="text-muted mb-2">Austin, Texas</p>
-                        <p class="card-text">
+                        <h5 class="card-title fs-4 mb-2">The Johnson Family</h5>
+                        <p class="text-muted mb-2">
+                          <i class="ri-map-pin-line me-1"></i>Austin, Texas
+                        </p>
+                        <p class="card-text fs-5">
                           “We couldn’t be happier with our new pup! From the first call to pickup
                           day, the care and professionalism were unmatched.”
                         </p>
@@ -396,11 +436,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     </div>
                   </div>
                   <div class="col-md-6">
-                    <div class="card bg-primary-subtle border rounded-5 h-100 p-0">
+                    <div class="card card-lift border rounded-5 h-100 p-0">
                       <div class="position-relative">
                         <a href="#" class="d-block">
                           <img
-                            src="/dist/assets/img/breederspot-images/dog-img-13.jpg"
+                            src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
                             alt="Testimonial Video Thumbnail"
                             class="card-img-top rounded-top-5"
                             style="object-fit: cover; height: 225px;"
@@ -413,9 +453,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         </a>
                       </div>
                       <div class="card-body p-3">
-                        <h5 class="card-title mb-2">The Williams Family</h5>
-                        <p class="text-muted mb-2">Las Vegas, Nevada</p>
-                        <p class="card-text">
+                        <h5 class="card-title fs-4 mb-2">The Williams Family</h5>
+                        <p class="text-muted mb-2">
+                          <i class="ri-map-pin-line me-1"></i>Las Vegas, Nevada
+                        </p>
+                        <p class="card-text fs-5">
                           “From the first inquiry to bringing our puppy home, every step was
                           professional. We're grateful to have found these dogs.”
                         </p>

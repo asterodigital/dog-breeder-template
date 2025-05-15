@@ -168,33 +168,43 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Header Section -->
-        <section class="bg-body py-5 position-relative">
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
           <div
-            class="container bg-primary-subtle rounded-5 border border-primary-pale p-4 p-md-5 position-relative overflow-hidden"
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
           >
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-            <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-              Available Puppies
-            </h1>
-            <h2 class="text-center display-6 fw-bold mb-2">
-              Meet Our Adorable Puppies Ready for Adoption
-            </h2>
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  Available Puppies
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">Meet our puppies ready for adoption</h1>
+                <p class="fs-4 mb-0">
+                  Meet our current Golden Retriever puppies who are ready to find their forever
+                  homes — lovingly raised, health-checked, and socialized to become joyful
+                  companions for individuals, couples, and families alike.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- Puppies Section -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="row gy-4">
               <!-- Sidebar / Filter Column -->
               <div class="col-lg-3">
                 <div class="sticky-top z-1" style="top: 80px;">
-                  <div class="card rounded-5 shadow-sm p-3">
+                  <div class="card rounded-5 border p-3">
                     <div class="card-body">
                       <h5 class="fs-4 fw-semibold mt-1 mb-3">Filter Puppies</h5>
                       <div class="mb-3">
@@ -238,8 +248,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <div class="row g-4">
                   <!-- Pet 1 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
                           class="card-img-top rounded-0"
@@ -282,8 +292,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
 
                   <!-- Pet 2 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-2.jpg"
                           class="card-img-top rounded-0"
@@ -325,8 +335,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
 
                   <!-- Pet 3 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-3.jpg"
                           class="card-img-top rounded-0"
@@ -368,8 +378,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
 
                   <!-- Pet 4 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-4.jpg"
                           class="card-img-top rounded-0"
@@ -411,8 +421,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
 
                   <!-- Pet 5 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-5.jpg"
                           class="card-img-top rounded-0"
@@ -454,8 +464,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
 
                   <!-- Pet 6 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 rounded-5 p-0 position-relative">
-                      <figure class="img-scale rounded-top-5 shadow-sm mb-0">
+                    <div class="card border h-100 rounded-5 p-0 position-relative">
+                      <figure class="img-scale rounded-top-5 mb-0">
                         <img
                           src="/dist/assets/img/breederspot-images/puppy-img-6.jpg"
                           class="card-img-top rounded-0"
@@ -506,6 +516,130 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     <li class="page-item"><a class="page-link" href="#">Next</a></li>
                   </ul>
                 </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Upcoming Litters Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
+                Upcoming Litters
+              </h2>
+              <h3 class="display-6 fw-bold mb-4">New golden pups coming soon!</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="card bg-primary-pale card-lift rounded-5 h-100 p-0">
+                      <img
+                        src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                        class="card-img-top rounded-top-5"
+                        style="max-height: 300px; width: 100%; object-fit: cover;"
+                        alt="The Willow Litter"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="card-title fs-3 fw-bold mb-1">The Willow Litter</h5>
+                        <p class="text-primary fs-5 fw-semibold mb-1">Parents: Luna × Finn</p>
+                        <p class="text-body-secondary mb-3">Expected Date: June 15, 2025</p>
+                        <p class="fs-5 mb-3">
+                          This pairing brings together two gentle Golden Retrievers - known for
+                          their calm personalities and beautiful coats.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary rounded-pill px-4">
+                          Join Waitlist <i class="ri-arrow-right-line align-middle ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card bg-primary-pale card-lift rounded-5 h-100 p-0">
+                      <img
+                        src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                        class="card-img-top rounded-top-5"
+                        style="max-height: 300px; width: 100%; object-fit: cover;"
+                        alt="The Maple Litter"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="card-title fs-3 fw-bold mb-1">The Maple Litter</h5>
+                        <p class="text-primary fs-5 fw-semibold mb-1">Parents: Caesar × Mini</p>
+                        <p class="text-body-secondary mb-3">Expected Date: July 2, 2025</p>
+                        <p class="fs-5 mb-3">
+                          These Golden Retriever pups will be loving, smart, and irresistibly sweet
+                          - perfect for allergy-sensitive homes.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary rounded-pill px-4">
+                          Join Waitlist <i class="ri-arrow-right-line align-middle ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Adoption Process Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
+                Adoption Process
+              </h2>
+              <h3 class="display-6 fw-bold mb-4">Your journey to puppy parenthood</h3>
+            </div>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift border rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <span class="display-5 fw-semibold text-primary">01.</span>
+                    <p class="fs-4 fw-semibold mb-2">Application</p>
+                    <p class="fs-5 mb-0">
+                      Start by filling out our quick form so we can learn more about you and match
+                      you with the right puppy.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift border rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <span class="display-5 fw-semibold text-primary">02.</span>
+                    <p class="fs-4 fw-semibold mb-2">Approval</p>
+                    <p class="fs-5 mb-0">
+                      We’ll review your application and reach out for a short conversation to ensure
+                      our puppies go to loving homes.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift border rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <span class="display-5 fw-semibold text-primary">03.</span>
+                    <p class="fs-4 fw-semibold mb-2">Waitlist</p>
+                    <p class="fs-5 mb-0">
+                      Once approved, you’ll join the waitlist for upcoming litters. We’ll keep you
+                      updated with litter announcements.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift border rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <span class="display-5 fw-semibold text-primary">04.</span>
+                    <p class="fs-4 fw-semibold mb-2">Homecoming</p>
+                    <p class="fs-5 mb-0">
+                      When your puppy is ready, you’ll be invited to meet them. After final checks,
+                      you’ll bring home a happy companion!
+                    </p>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
