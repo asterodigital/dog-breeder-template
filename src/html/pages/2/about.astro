@@ -169,26 +169,34 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </nav>
 
         <!-- Hero Section -->
-        <section class="bg-body py-5">
-          <div class="container text-center">
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
+          >
             <div class="row">
-              <div class="col-lg-8 offset-lg-2">
-                <h1 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
                   About Us
                 </h1>
-                <h2 class="display-4 fw-bold mb-3">What makes us different?</h2>
+                <h1 class="display-4 fw-bold mb-3">What makes us different?</h1>
                 <p class="fs-4 mb-4">
                   We believe every puppy deserves a loving start and a forever home. Our approach to
                   dog breeding is guided by compassion, responsibility, and a deep respect for the
-                  animals in our care. With a focus on health, temperament, and ethical practices,
-                  we raise each puppy in a nurturing, family-oriented environment where
-                  socialization and wellbeing come first.
+                  animals in our care.
                 </p>
                 <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
                   <button class="btn btn-lg btn-primary rounded-pill px-4">
                     View Puppies <i class="ri-arrow-right-line"></i>
                   </button>
-                  <button class="btn btn-lg btn-outline-primary rounded-pill px-4">
+                  <button class="btn btn-lg btn-outline-light rounded-pill px-4">
                     <i class="ri-information-2-line"></i> Learn More
                   </button>
                 </div>
@@ -197,45 +205,140 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Info Section -->
-        <section class="bg-dark py-5">
-          <div class="container text-light">
+        <!-- Our Story Section -->
+        <section class="bg-body py-5">
+          <div class="container">
             <div class="row g-4">
-              <div class="col-6 col-md-3 text-center">
-                <div class="d-inline-flex align-items-center">
-                  <div class="display-2 fw-semibold">400</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
-                </div>
-                <div class="fs-5">Dogs Adopted</div>
+              <!-- Text Column -->
+              <div class="col-lg-8">
+                <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
+                  Our Story
+                </h2>
+                <h3 class="display-6 fw-bold mb-3">How it all began for us</h3>
+                <p class="fs-5 mb-4">
+                  What began as a deep love for Golden Retrievers turned into a lifelong mission to
+                  raise puppies with heart, health, and purpose. Our journey started in a small home
+                  filled with wagging tails and has grown into a trusted breeding program known for
+                  compassion, care, and ethical standards.
+                </p>
+                <blockquote class="blockquote">
+                  <p class="mb-0">
+                    <em
+                      >“Every puppy is raised as part of our family—until they become part of
+                      yours.”</em
+                    >
+                  </p>
+                  <footer class="blockquote-footer mt-2">Founder</footer>
+                </blockquote>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-outline-primary rounded-pill px-4 text-decoration-none"
+                >
+                  Learn More<i class="ri-arrow-right-line ms-1"></i>
+                </a>
               </div>
-              <div class="col-6 col-md-3 text-center">
-                <div class="d-inline-flex align-items-center">
-                  <div class="display-2 fw-semibold">50</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
-                </div>
-                <div class="fs-5">Caretakers</div>
+              <!-- Image Column -->
+              <div class="col-lg-4 d-flex justify-content-center">
+                <figure class="img-scale rounded-5">
+                  <img
+                    src="/dist/assets/img/breederspot-images/golden-retriever-2.jpg"
+                    class="img-fluid"
+                    alt="Our Story"
+                  />
+                </figure>
               </div>
-              <div class="col-6 col-md-3 text-center">
-                <div class="d-inline-flex align-items-center">
-                  <div class="display-2 fw-semibold">24/7</div>
-                </div>
-                <div class="fs-5">Puppy Care Team</div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Our Facilities Section -->
+        <section class="bg-body pb-5">
+          <div class="container">
+            <div class="row mb-4 text-center">
+              <div class="text-center mb-4">
+                <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
+                  Our Core Values
+                </h2>
+                <h3 class="display-6 fw-bold mb-0">What guides every puppy we raise</h3>
               </div>
-              <div class="col-6 col-md-3 text-center">
-                <div class="d-inline-flex align-items-center">
-                  <div class="display-2 fw-semibold">100</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">%</span>
+            </div>
+            <div class="row g-5 text-center">
+              <!-- Value 1 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i
+                    class="ri-heart-2-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
                 </div>
-                <div class="fs-5">Cruelty-Free</div>
+                <h5 class="fw-semibold mb-2">Compassion First</h5>
+                <p class="fs-5 text-muted mb-0">
+                  Every puppy is raised with daily love and kindness.
+                </p>
+              </div>
+              <!-- Value 2 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i
+                    class="ri-shield-cross-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
+                </div>
+                <h5 class="fw-semibold mb-2">Health Is Priority</h5>
+                <p class="fs-5 text-muted mb-0">
+                  We ensure top-tier care and vet checks from day one.
+                </p>
+              </div>
+              <!-- Value 3 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i
+                    class="ri-verified-badge-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
+                </div>
+                <h5 class="fw-semibold mb-2">Ethical Breeding</h5>
+                <p class="fs-5 text-muted mb-0">We always follow responsible breeding practices.</p>
+              </div>
+              <!-- Value 4 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i class="ri-group-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
+                </div>
+                <h5 class="fw-semibold mb-2">Lifelong Partnerships</h5>
+                <p class="fs-5 text-muted mb-0">
+                  Our relationship doesn’t end at adoption—we’re here for life.
+                </p>
+              </div>
+              <!-- Value 5 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i class="ri-eye-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
+                </div>
+                <h5 class="fw-semibold mb-2">Transparency Always</h5>
+                <p class="fs-5 text-muted mb-0">
+                  Open communication and honest updates at every stage.
+                </p>
+              </div>
+              <!-- Value 6 -->
+              <div class="col-sm-6 col-lg-4">
+                <div class="mb-4">
+                  <i
+                    class="ri-emotion-happy-line text-primary bg-primary-pale rounded-circle p-3 display-6"
+                  ></i>
+                </div>
+                <h5 class="fw-semibold mb-2">Socialization Matters</h5>
+                <p class="fs-5 text-muted mb-0">
+                  Puppies are exposed to daily interactions and routines.
+                </p>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Our Philosophy Section -->
-        <section class="bg-body py-5">
+        <section class="bg-primary-soft py-5">
           <div class="container">
-            <div class="mb-4">
+            <div class="text-center mb-4">
               <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
                 Our Philosophy
               </h2>
@@ -249,9 +352,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
             </div>
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <div
-                  class="card bg-primary-subtle card-lift border border-primary-pale rounded-5 h-100 p-4"
-                >
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-heart-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Enriched Early Life</p>
@@ -266,9 +367,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div
-                  class="card bg-primary-subtle card-lift border border-primary-pale rounded-5 h-100 p-4"
-                >
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-hand-heart-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Transparency & Trust</p>
@@ -283,9 +382,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div
-                  class="card bg-primary-subtle card-lift border border-primary-pale rounded-5 h-100 p-4"
-                >
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-shield-cross-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Responsible Breeding</p>
@@ -300,9 +397,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div
-                  class="card bg-primary-subtle card-lift border border-primary-pale rounded-5 h-100 p-4"
-                >
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-empathize-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Lifetime Commitment</p>
@@ -320,83 +415,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Team Section -->
-        <section class="bg-body pb-5 pt-lg-5">
-          <div class="container">
-            <div class="row align-items-center">
-              <div class="col-lg-4 order-lg-2 ps-lg-4 mt-4 mt-lg-0">
-                <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
-                  Our Team
-                </h2>
-                <h3 class="display-6 fw-bold mb-3">The faces behind us</h3>
-                <p class="fs-5 mb-4">
-                  Behind every happy, healthy puppy is a team of passionate individuals dedicated to
-                  care, compassion, and responsible breeding.
-                </p>
-              </div>
-
-              <div class="col-lg-8 order-lg-1">
-                <div class="row g-4">
-                  <div class="col-6 col-md-3">
-                    <figure class="img-scale rounded-5 shadow-sm mb-3">
-                      <img
-                        src="/dist/assets/img/avatars/avatar6.jpg"
-                        class="card-img-top"
-                        alt="Team Member Image"
-                      />
-                    </figure>
-                    <div>
-                      <h6 class="fs-5">Rahul Mehta</h6>
-                      <p class="text-muted mb-0">Marketing Head</p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 pt-0 pt-md-5">
-                    <figure class="img-scale rounded-5 shadow-sm mb-3">
-                      <img
-                        src="/dist/assets/img/avatars/avatar7.jpg"
-                        class="card-img-top"
-                        alt="Team Member Image"
-                      />
-                    </figure>
-                    <div>
-                      <h6 class="fs-5">Nguyen Minh</h6>
-                      <p class="text-muted mb-0">Software Engineer</p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3">
-                    <figure class="img-scale rounded-5 shadow-sm mb-3">
-                      <img
-                        src="/dist/assets/img/avatars/avatar3.jpg"
-                        class="card-img-top"
-                        alt="Team Member Image"
-                      />
-                    </figure>
-                    <div>
-                      <h6 class="fs-5">Neha Gupta</h6>
-                      <p class="text-muted mb-0">Content Strategist</p>
-                    </div>
-                  </div>
-                  <div class="col-6 col-md-3 pt-0 pt-md-5">
-                    <figure class="img-scale rounded-5 shadow-sm mb-3">
-                      <img
-                        src="/dist/assets/img/avatars/avatar1.jpg"
-                        class="card-img-top"
-                        alt="Team Member Image"
-                      />
-                    </figure>
-                    <div>
-                      <h6 class="fs-5">Jane Smith</h6>
-                      <p class="text-muted mb-0">Product Designer</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <!-- Our Partners Section -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
               Our Partners
@@ -414,8 +434,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   nemo!
                 </p>
                 <div class="text-start text-md-end">
-                  <button class="btn btn-lg btn-outline-primary rounded-pill"
-                    >Learn more <i class="ri-arrow-right-line"></i></button
+                  <button class="btn btn-lg btn-outline-primary rounded-pill px-4"
+                    >Learn more<i class="ri-arrow-right-line ms-1"></i></button
                   >
                 </div>
               </div>
@@ -484,6 +504,50 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       class="img-fluid w-100 h-100"
                       alt="Logo"
                     />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-body pb-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="bg-primary-pale d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">
+                Testimonials
+              </h2>
+              <h3 class="display-6 fw-bold mb-4">What our puppy families say</h3>
+            </div>
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card bg-primary-subtle card-lift rounded-5 h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="fs-5 mb-3">
+                      “From the very first call to bringing our puppy home, the experience was
+                      seamless and full of care. It was clear these breeders truly love what they
+                      do. Our little Rosie came home healthy and happy—we truly couldn't be more
+                      grateful!”
+                    </p>
+                    <p class="fs-4 fw-semibold mb-1">Jenna M.</p>
+                    <p class="text-muted mb-0">Portland, OR</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card bg-primary-subtle card-lift rounded-5 h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="fs-5 mb-3">
+                      “From the moment we reached out, we felt completely supported. Every question
+                      we had was answered with patience. Our puppy arrived healthy, playful, and
+                      clearly well-loved. We couldn't have asked for a sweeter addition to our
+                      family!”
+                    </p>
+                    <p class="fs-4 fw-semibold mb-1">Mark R.</p>
+                    <p class="text-muted mb-0">Denver, CO</p>
                   </div>
                 </div>
               </div>
