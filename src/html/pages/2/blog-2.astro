@@ -56,12 +56,10 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   aria-label="Close"></button>
               </div>
               <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
-                <ul
-                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
-                >
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
                   <!-- Home -->
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/2/home">Home</a>
+                    <a class="nav-link" href="/2/home">Home</a>
                   </li>
 
                   <!-- About Dropdown -->
@@ -71,7 +69,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="aboutDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       About
@@ -94,7 +91,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="exploreDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Explore
@@ -113,25 +109,37 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       href="#"
                       id="blogDropdown"
                       role="button"
-                      data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
                       Blog
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li><a class="dropdown-item" href="/2/blog-1">Blog – No Sidebar</a></li>
                       <li>
-                        <a class="dropdown-item" href="/2/blog-1">Blog – No Sidebar</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item active" href="/2/blog-2">Blog – Left Sidebar</a>
+                        <a class="dropdown-item active" aria-current="page" href="/2/blog-2"
+                          >Blog – Left Sidebar</a
+                        >
                       </li>
                       <li><a class="dropdown-item" href="/2/blog-3">Blog – Right Sidebar</a></li>
-                      <li><a class="dropdown-item" href="/2/post-1">Blog Post – No Sidebar</a></li>
-                      <li>
-                        <a class="dropdown-item" href="/2/post-2">Blog Post – Left Sidebar</a>
-                      </li>
-                      <li>
-                        <a class="dropdown-item" href="/2/post-3">Blog Post – Right Sidebar</a>
+                      <li class="dropdown-submenu">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="blogPostsDropdown"
+                          role="button"
+                          aria-expanded="false">Blog Posts</a
+                        >
+                        <ul class="dropdown-menu" aria-labelledby="blogPostsDropdown">
+                          <li>
+                            <a class="dropdown-item" href="/2/post-1">Blog Post – No Sidebar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/2/post-2">Blog Post – Left Sidebar</a>
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/2/post-3">Blog Post – Right Sidebar</a>
+                          </li>
+                        </ul>
                       </li>
                     </ul>
                   </li>
@@ -147,12 +155,65 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </li>
                 </ul>
 
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start d-flex d-lg-none">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/breeding-philosophy">Breeding Philosophy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/testimonials">Testimonials</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/puppies">Puppies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/shop">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/blog-1">Blog – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/2/blog-2"
+                      >Blog – Left Sidebar</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/blog-3">Blog – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/post-1">Blog Post – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/post-2">Blog Post – Left Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/post-3">Blog Post – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/faq">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/2/contact">Contact</a>
+                  </li>
+                </ul>
+
                 <!-- Bottom Section -->
                 <div class="d-block d-lg-none mt-4">
-                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                  <a
+                    href="tel:+12345678901"
+                    class="btn btn-lg btn-outline-primary rounded-pill px-4 w-100 mb-2"
+                  >
                     <i class="ri-phone-fill me-2"></i>Book Consultation
                   </a>
-                  <a class="btn btn-primary rounded w-100" href="#"
+                  <a class="btn btn-lg btn-primary rounded-pill px-4 w-100" href="#"
                     ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
                   >
                 </div>
@@ -162,7 +223,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
             <div class="d-none d-lg-flex align-items-center gap-3">
               <div class="text-start">
                 <small class="text-muted d-block">Book Consultation</small>
-                <a href="tel:+12345678901" class="text-decoration-none text-primary fw-medium">
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
                   +1 (234) 567-8901
                 </a>
               </div>
