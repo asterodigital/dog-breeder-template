@@ -179,12 +179,20 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h1 class="text-primary text-center fs-5 fw-semibold mb-2">FAQs</h1>
-                <h2 class="display-6 text-center fw-semibold mb-2">Frequently Asked Questions</h2>
-                <p class="text-center lead fs-5 mb-3">
-                  Lorem ipsum dolor sit amet consectet adipisi elit dolorum quibus, libero corporis
-                  dignis.
-                </p>
+                <div class="text-center">
+                  <h2
+                    class="bg-gray-700 d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+                    style="letter-spacing: 0.05rem;"
+                  >
+                    FAQs
+                  </h2>
+                  <h3 class="display-6 fw-semibold mb-2">Frequently Asked Questions</h3>
+                  <p class="text-center lead fs-5 mb-4">
+                    Lorem ipsum dolor sit amet consectet adipisi elit dolorum quibus, libero dolor
+                    sit amet corporis dignis.
+                  </p>
+                </div>
+
                 <ul class="nav nav-pills nav-fill justify-content-center mb-3">
                   <li class="nav-item">
                     <a class="nav-link nav-link-lg active" aria-current="page" href="#">General</a>
@@ -330,15 +338,9 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Card Section -->
-        <section class="text-bg-dark pb-5 position-relative">
-          <div class="container bg-gray-800 rounded p-4 p-md-5 position-relative overflow-hidden">
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-
-            <div class="row align-items-center position-relative">
+        <section class="text-bg-dark pb-5 px-2">
+          <div class="container bg-gray-800 rounded-4 p-4 p-md-5">
+            <div class="row align-items-center">
               <div class="col-md-8">
                 <div class="d-flex align-items-center gap-3 mb-1">
                   <i class="ri-questionnaire-line text-primary fs-3"></i>
@@ -351,6 +353,56 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               </div>
               <div class="col-md-4 text-md-end mt-3 mt-md-0">
                 <a href="#" class="btn btn-primary btn-lg px-4 mb-1">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with the pack</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our shepherd family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
               </div>
             </div>
           </div>

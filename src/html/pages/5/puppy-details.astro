@@ -177,18 +177,18 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <!-- Back Button -->
             <div class="mb-4">
-              <a href="/5/puppies" class="btn btn-lg btn-outline-primary">
-                <i class="ri-arrow-left-line"></i> Back to Puppies
+              <a href="/5/puppies" class="btn btn-lg btn-outline-light">
+                <i class="ri-arrow-left-line me-1"></i>Back to Puppies
               </a>
             </div>
 
             <!-- Puppy Info Row -->
-            <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+            <div class="row row-cols-1 row-cols-md-2 g-2 align-items-center">
               <!-- Image Column -->
               <div class="col">
                 <figure class="img-scale rounded">
                   <img
-                    src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
+                    src="/dist/assets/img/breederspot-images/german-shepherd-puppy-1.jpg"
                     class="img-fluid"
                     alt="Charlie the Golden Retriever"
                   />
@@ -198,25 +198,25 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <!-- Details Column -->
               <div class="col">
                 <div class="d-flex align-items-center mb-2">
-                  <h2 class="display-6 fw-semibold mb-0 me-2">Charlie</h2>
-                  <span class="badge bg-gray-800"> Golden Retriever </span>
+                  <h2 class="display-6 fw-semibold mb-0 me-2">Olive</h2>
+                  <span class="badge bg-gray-800 fs-6">German Shepherd</span>
                 </div>
 
                 <p class="mb-3">
-                  Charlie is a happy-go-lucky pup who loves belly rubs, chasing squeaky toys, and
-                  making new friends. He’s been raised in a loving home environment and is already
+                  Olive is a happy-go-lucky pup who loves belly rubs, chasing squeaky toys, and
+                  making new friends. She’s been raised in a loving home environment and is already
                   starting basic training. If you're looking for a loyal and playful companion,
-                  Charlie’s your guy!
+                  Olive is the one!
                 </p>
 
                 <h4 class="fs-3 mb-3">$1,200.00</h4>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
                   <button class="btn btn-lg btn-primary"
-                    ><i class="ri-price-tag-3-line me-2"></i>Reserve</button
+                    ><i class="ri-price-tag-3-line me-1"></i>Reserve</button
                   >
-                  <button class="btn btn-lg btn-outline-primary"
-                    ><i class="ri-information-2-line me-2"></i>Learn More</button
+                  <button class="btn btn-lg btn-outline-light"
+                    ><i class="ri-information-2-line me-1"></i>Learn More</button
                   >
                 </div>
 
@@ -224,11 +224,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <tbody>
                     <tr>
                       <th scope="row">Gender</th>
-                      <td>Male</td>
+                      <td>Female</td>
                     </tr>
                     <tr>
                       <th scope="row">Age</th>
-                      <td>12 weeks</td>
+                      <td>4 weeks</td>
                     </tr>
                     <tr>
                       <th scope="row">Weight</th>
@@ -258,10 +258,16 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-                  Traits
-                </h4>
-                <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Charlie</h3>
+                <div class="text-center">
+                  <h2
+                    class="bg-gray-700 text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+                    style="letter-spacing: 0.05rem;"
+                  >
+                    Traits
+                  </h2>
+                  <h3 class="display-6 fw-semibold mb-3">Temperament of Olive</h3>
+                </div>
+
                 <label for="progressbar-trainability" class="form-label">Trainability</label>
                 <div
                   class="progress mb-3"
@@ -336,38 +342,50 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- CTA Section -->
-        <section class="text-bg-dark py-5">
-          <div class="container">
-            <div class="card text-bg-primary p-0 p-md-3">
-              <div class="card-body p-3">
-                <div class="row align-items-center g-4">
-                  <div class="col-lg-3 text-center">
-                    <i class="ri-map-pin-line text-yellow fs-2"></i>
-                    <p class="text-uppercase mb-0">Visit Us in</p>
-                    <p class="fw-semibold fs-5 mb-0">Austin, TX</p>
-                  </div>
-                  <div class="col-lg-3 fs-5">
-                    <div class="mb-2">
-                      <i class="ri-phone-fill text-yellow me-2"></i>
-                      <a href="tel:+12345678901" class="text-light text-decoration-none text-break"
-                        >+1 (234) 567-8901</a
-                      >
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with the pack</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our shepherd family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
                     </div>
-                    <div>
-                      <address class="mb-0">
-                        <i class="ri-map-pin-fill text-yellow me-2"></i>
-                        123 Main Street, Austin, TX
-                      </address>
-                    </div>
                   </div>
-                  <div class="col-lg-6">
-                    <p class="lead mb-0">
-                      Visit us in Austin to see where our pups are raised and meet the newest
-                      members of your family.
-                      <strong>Schedule your visit today — tails are already wagging!</strong>
-                    </p>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
                   </div>
-                </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
               </div>
             </div>
           </div>
