@@ -171,7 +171,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         <!-- Hero Section -->
         <section
           class="position-relative text-light text-center"
-          style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+          style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-3.jpg'); background-size: cover; background-position: center; height: 500px;"
         >
           <!-- Overlay -->
           <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -226,20 +226,32 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Info Section -->
-        <section class="bg-primary-subtle py-5">
-          <div class="container">
+        <section
+          class="py-5 position-relative"
+          style="
+            background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            overflow: hidden;
+          "
+        >
+          <!-- Full-section dark overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50 z-1"></div>
+
+          <div class="container text-white position-relative py-md-3" style="z-index: 2;">
             <div class="row g-4">
               <div class="col-6 col-md-3 text-center">
                 <div class="d-inline-flex align-items-center">
                   <div class="display-4 fw-semibold">400</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
+                  <span class="fs-1 fw-bold ms-1 align-self-center">+</span>
                 </div>
                 <div class="fs-5">Dogs Adopted</div>
               </div>
               <div class="col-6 col-md-3 text-center">
                 <div class="d-inline-flex align-items-center">
                   <div class="display-4 fw-semibold">50</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
+                  <span class="fs-1 fw-bold ms-1 align-self-center">+</span>
                 </div>
                 <div class="fs-5">Caretakers</div>
               </div>
@@ -252,7 +264,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <div class="col-6 col-md-3 text-center">
                 <div class="d-inline-flex align-items-center">
                   <div class="display-4 fw-semibold">100</div>
-                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">%</span>
+                  <span class="fs-1 fw-bold ms-1 align-self-center">%</span>
                 </div>
                 <div class="fs-5">Cruelty-Free</div>
               </div>
@@ -528,8 +540,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     <span class="display-5 fw-semibold text-primary">02.</span>
                     <p class="fs-4 fw-semibold mb-2">Approval</p>
                     <p class="mb-0">
-                      We’ll review your application and reach out for a short conversation to ensure
-                      our puppies go to loving homes.
+                      We’ll review your application and reach out for a conversation to ensure our
+                      puppies go to loving homes.
                     </p>
                   </div>
                 </div>
@@ -552,8 +564,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     <span class="display-5 fw-semibold text-primary">04.</span>
                     <p class="fs-4 fw-semibold mb-2">Homecoming</p>
                     <p class="mb-0">
-                      When your puppy is ready, you’ll be invited to meet them. After final checks,
-                      you’ll bring home a happy companion!
+                      When your puppy is ready, you’ll be invited to meet them. After checks, you’ll
+                      bring home a companion!
                     </p>
                   </div>
                 </div>
