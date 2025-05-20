@@ -287,12 +287,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         >
                       </figure>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 start-0 fs-6 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 start-0 fs-6 m-3"
                       >
                         12 weeks
                       </span>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 end-0 fs-5 p-2 m-3"
                       >
                         <i class="ri-men-line"></i>
                       </span>
@@ -336,12 +336,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         >
                       </figure>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 start-0 fs-6 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 start-0 fs-6 m-3"
                       >
                         8 weeks
                       </span>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 end-0 fs-5 p-2 m-3"
                       >
                         <i class="ri-women-line"></i>
                       </span>
@@ -384,12 +384,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                         >
                       </figure>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 start-0 fs-6 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 start-0 fs-6 m-3"
                       >
                         14 weeks
                       </span>
                       <span
-                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-3"
+                        class="badge bg-body text-primary rounded-pill position-absolute top-0 end-0 fs-5 p-2 m-3"
                       >
                         <i class="ri-men-line"></i>
                       </span>
@@ -658,7 +658,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
             </div>
 
             <div class="row g-4">
-              <div class="col-md-4">
+              <div class="col-lg-4">
                 <div class="card bg-primary-subtle card-lift rounded-5 h-100">
                   <div class="card-body">
                     <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
@@ -691,7 +691,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4">
                 <div class="card bg-primary-subtle card-lift rounded-5 h-100">
                   <div class="card-body">
                     <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
@@ -724,7 +724,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-lg-4">
                 <div class="card bg-primary-subtle card-lift rounded-5 h-100">
                   <div class="card-body">
                     <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
@@ -761,7 +761,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA/Form Section -->
         <section
           class="text-light position-relative"
           style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center;"
@@ -776,7 +776,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               Find your perfect pup—<em>ethically, responsibly, and with love</em>.
             </h2>
             <div class="row">
-              <div class="col-lg-4">
+              <div class="col-lg-5">
                 <form class="row text-start g-3">
                   <div class="col-md-6">
                     <label for="fullName" class="form-label">Full Name</label>
@@ -789,6 +789,15 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     />
                   </div>
                   <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number (optional)</label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="+1 (234) 567-8901"
+                    />
+                  </div>
+                  <div class="col-md-12">
                     <label for="email" class="form-label">Email Address</label>
                     <input
                       type="email"
@@ -796,25 +805,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       id="email"
                       placeholder="you@example.com"
                       required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="preferredBreed" class="form-label">Preferred Breed (optional)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="preferredBreed"
-                      placeholder="e.g., Golden Retriever"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone Number (optional)</label>
-                    <input
-                      type="tel"
-                      class="form-control form-control-lg"
-                      id="phone"
-                      placeholder="+1 (234) 567-8901"
                     />
                   </div>
                   <div class="col-md-12">

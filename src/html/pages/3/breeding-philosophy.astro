@@ -169,90 +169,105 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </nav>
 
         <!-- Hero Section -->
-        <!-- Intro Section -->
-        <section class="bg-primary-subtle py-5">
-          <div class="container text-center">
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
             <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-                  Breeding Philosophy
-                </h1>
-                <h2 class="display-5 fw-semibold mb-4">Raising Puppies the Right Way</h2>
-                <p class="lead mb-0">
-                  We believe that ethical breeding starts with love, continues with responsibility,
-                  and ends in a lifelong bond between dog and human. Our breeding practices are
-                  guided by transparency, veterinary excellence, and the emotional enrichment of
-                  every puppy. From prenatal care to early socialization, we follow science-backed,
-                  compassionate methods to ensure our puppies grow into confident, well-adjusted
-                  companions.
+              <div class="col-lg-6 offset-lg-3">
+                <h1 class="display-4 fw-semibold mb-3">Our breeding philosophy</h1>
+                <p class="fs-4 mb-4">
+                  At the heart of our work is a deep respect for every dog we raise—prioritizing
+                  health, temperament, and lifelong well-being over everything else.
                 </p>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary rounded-pill px-4">
+                    View Puppies<i class="ri-arrow-right-line ms-1"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light rounded-pill px-4">
+                    <i class="ri-information-2-line me-1"></i>Learn More
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Cards Section -->
-        <section class="bg-body py-5">
+        <!-- What Sets Us Apart Section -->
+        <section class="bg-primary-soft py-5">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-semibold mb-2">What Sets Us Apart</h2>
-                <p class="text-center mb-4">
-                  Our core values guide every step of the journey—from careful planning to joyful
-                  homecomings.
-                </p>
-                <div class="row g-4">
-                  <!-- Card 1 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift border h-100 p-3">
-                      <div class="card-body">
-                        <i class="ri-home-heart-line display-5 text-primary"></i>
-                        <h5 class="card-title fs-4 mt-2">Home-Like Spaces</h5>
-                        <p class="card-text mb-0">
-                          Puppies are raised in warm, home-like settings—not cages—so they grow up
-                          confident and social.
-                        </p>
-                      </div>
-                    </div>
+            <div class="text-center">
+              <h2
+                class="bg-primary-pale text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+              >
+                What Sets Us Apart
+              </h2>
+              <h3 class="display-6 fw-semibold mb-4">
+                Designed with comfort, safety, and enrichment in mind
+              </h3>
+            </div>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-home-heart-fill text-primary fs-1"></i>
+                    <p class="fs-5 fw-semibold mb-2">Home-Like Spaces</p>
+                    <p class="mb-2">
+                      Puppies are raised in warm, home-like settings—not cages—so they grow up
+                      confident and social.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
                   </div>
-                  <!-- Card 2 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift border h-100 p-3">
-                      <div class="card-body">
-                        <i class="ri-shield-check-line display-5 text-primary"></i>
-                        <h5 class="card-title fs-4 mt-2">Health &amp; Safety</h5>
-                        <p class="card-text mb-0">
-                          Clean, climate-controlled environments maintained with veterinary-approved
-                          hygiene practices.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-shield-check-fill text-primary fs-1"></i>
+                    <p class="fs-5 fw-semibold mb-2">Health &amp; Safety</p>
+                    <p class="mb-2">
+                      Clean, controlled environments maintained with veterinary-approved hygiene
+                      practices.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
                   </div>
-                  <!-- Card 3 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift border h-100 p-3">
-                      <div class="card-body">
-                        <i class="ri-tree-line display-5 text-primary"></i>
-                        <h5 class="card-title fs-4 mt-2">Outdoor Play</h5>
-                        <p class="card-text mb-0">
-                          Secure outdoor spaces where puppies can run, play, and develop motor
-                          skills through daily exercise.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-tree-fill text-primary fs-1"></i>
+                    <p class="fs-5 fw-semibold mb-2">Outdoor Play</p>
+                    <p class="mb-2">
+                      Secure outdoor spaces where puppies can run, play, and develop motor skills
+                      through daily exercise.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
                   </div>
-                  <!-- Card 4 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift border h-100 p-3">
-                      <div class="card-body">
-                        <i class="ri-user-heart-line display-5 text-primary"></i>
-                        <h5 class="card-title fs-4 mt-2">Socialization</h5>
-                        <p class="card-text mb-0">
-                          Daily human interaction and sensory exposure help puppies become
-                          emotionally balanced and people-loving.
-                        </p>
-                      </div>
-                    </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-primary-pale card-lift rounded-5 h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-user-heart-fill text-primary fs-1"></i>
+                    <p class="fs-5 fw-semibold mb-2">Socialization</p>
+                    <p class="mb-2">
+                      Daily human interaction and sensory exposure help puppies become emotionally
+                      balanced.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
                   </div>
                 </div>
               </div>
@@ -260,71 +275,61 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Puppy Development Protocol Section -->
-        <section class="py-5 bg-primary-subtle">
+        <!-- Protocol Section -->
+        <section class="bg-body py-5">
           <div class="container">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 text-center fw-semibold mb-2">Puppy Development Protocol</h2>
-                <p class="text-center mb-3">
-                  A structured, loving approach to raise well-rounded puppies—nurtured week by week
-                  for optimal growth and socialization.
-                </p>
+            <div class="text-center">
+              <h2
+                class="bg-primary-pale text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+              >
+                Puppy Development Protocol
+              </h2>
+              <h3 class="display-6 fw-semibold mb-4">
+                A structured, loving approach to raise well-rounded puppies
+              </h3>
+            </div>
 
-                <div class="row g-4">
-                  <!-- Week 0–2 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift bg-primary-soft border h-100 border">
-                      <div class="card-body">
-                        <div class="display-6 fw-semibold text-primary mb-1">01.</div>
-                        <h5 class="card-title fs-4">Week 0–2</h5>
-                        <p class="card-text">
-                          Puppies stay close to their mother, focusing on warmth, nursing, and
-                          bonding. We monitor health and begin gentle handling.
-                        </p>
-                      </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="d-grid gap-4">
+                  <div class="card bg-primary-subtle card-lift rounded-5 h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">01.</span>
+                      <p class="fs-4 fw-semibold mb-2">Week 0–2</p>
+                      <p class="mb-0">
+                        Puppies stay close to their mother, focusing on warmth, nursing, and
+                        bonding. We monitor health and begin gentle handling.
+                      </p>
                     </div>
                   </div>
-
-                  <!-- Week 3–4 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift bg-primary-soft border h-100 border">
-                      <div class="card-body">
-                        <div class="display-6 fw-semibold text-primary mb-1">02.</div>
-                        <h5 class="card-title fs-4">Week 3–4</h5>
-                        <p class="card-text">
-                          Eyes and ears open; puppies begin to walk. We introduce new textures to
-                          the puppies, gentle sounds, and human interaction daily.
-                        </p>
-                      </div>
+                  <div class="card bg-primary-subtle card-lift rounded-5 h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">02.</span>
+                      <p class="fs-4 fw-semibold mb-2">Week 3–4</p>
+                      <p class="mb-0">
+                        Eyes and ears open; puppies begin to walk. We introduce new textures to the
+                        puppies, gentle sounds, and human interaction daily.
+                      </p>
                     </div>
                   </div>
-
-                  <!-- Week 5–8 -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift bg-primary-soft border h-100 border">
-                      <div class="card-body">
-                        <div class="display-6 fw-semibold text-primary mb-1">03.</div>
-                        <h5 class="card-title fs-4">Week 5–8</h5>
-                        <p class="card-text">
-                          Puppies explore more actively. We begin crate exposure, introduce solid
-                          food, and increase socialization with people.
-                        </p>
-                      </div>
+                  <div class="card bg-primary-subtle card-lift rounded-5 h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">03.</span>
+                      <p class="fs-4 fw-semibold mb-2">Week 5–8</p>
+                      <p class="mb-0">
+                        Puppies explore more actively. We begin crate exposure, introduce solid
+                        food, and increase socialization with people.
+                      </p>
                     </div>
                   </div>
-
-                  <!-- Week 9+ -->
-                  <div class="col-sm-6 col-lg-3">
-                    <div class="card card-lift bg-primary-soft border h-100 border">
-                      <div class="card-body">
-                        <div class="display-6 fw-semibold text-primary mb-1">04.</div>
-                        <h5 class="card-title fs-4">Week 9+</h5>
-                        <p class="card-text">
-                          Puppies are ready to transition home. We offer support, resources, and
-                          guidance to families for continued development.
-                        </p>
-                      </div>
+                  <div class="card bg-primary-subtle card-lift rounded-5 h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">04.</span>
+                      <p class="fs-4 fw-semibold mb-2">Week 9+</p>
+                      <p class="mb-0">
+                        Puppies are ready to transition home. We offer support, resources, and
+                        guidance to families for continued development.
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -334,12 +339,20 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Comprehensive Health Testing Section -->
-        <section class="bg-body py-5">
+        <section class="bg-primary-subtle py-5">
           <div class="container">
             <div class="row g-4">
               <!-- Text Column -->
               <div class="col-lg-8">
-                <h2 class="display-6 fw-semibold mb-2">Comprehensive Health Testing</h2>
+                <div class="text-center text-lg-start">
+                  <h2
+                    class="bg-primary-pale text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+                  >
+                    Comprehensive Health Testing
+                  </h2>
+                  <h3 class="display-6 fw-semibold mb-3">Prioritizing health from the start</h3>
+                </div>
+
                 <p class="mb-3">
                   The health of our dogs is our top priority. Every parent dog undergoes thorough
                   genetic screening, regular veterinary checkups, and OFA/CERF certifications where
@@ -347,24 +360,28 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   from hereditary conditions and nurtured through responsible, science-backed care
                   from day one.
                 </p>
-                <ul class="list-unstyled mb-3">
+                <ul class="list-unstyled mb-4">
                   <li><i class="ri-check-line text-primary me-2"></i>Genetic Screening</li>
                   <li>
                     <i class="ri-check-line text-primary me-2"></i>Regular Veterinary Checkups
                   </li>
                   <li><i class="ri-check-line text-primary me-2"></i>OFA/CERF Certifications</li>
                 </ul>
-                <a href="#" class="btn btn-lg btn-outline-primary text-decoration-none">
-                  Learn More<i class="ri-arrow-right-line ms-2"></i>
+                <a
+                  href="#"
+                  class="btn btn-lg btn-outline-primary rounded-pill text-decoration-none px-4"
+                >
+                  Learn More<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
               <!-- Image Column -->
               <div class="col-lg-4 d-flex justify-content-center">
-                <figure class="img-scale rounded-4">
+                <figure class="img-scale rounded-5">
                   <img
-                    src="/dist/assets/img/breederspot-images/dog-img-11.jpg"
+                    src="/dist/assets/img/breederspot-images/french-bulldog-2.jpg"
                     class="img-fluid"
-                    alt="Health Testing"
+                    style="object-fit: cover;"
+                    alt="French Bulldog"
                   />
                 </figure>
               </div>
@@ -372,10 +389,10 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA/Form Section -->
         <section
           class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center;"
         >
           <div
             class="position-absolute top-0 start-0 w-100 h-100"
@@ -383,11 +400,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           >
           </div>
           <div class="container py-5 position-relative">
+            <h2 class="display-6 fw-semibold mb-4">
+              Find your perfect pup—<em>ethically, responsibly, and with love</em>.
+            </h2>
             <div class="row">
               <div class="col-lg-5">
-                <h2 class="display-6 fw-bold mb-4">
-                  Find your perfect pup—<em>ethically, responsibly, and with love</em>.
-                </h2>
                 <form class="row text-start g-3">
                   <div class="col-md-6">
                     <label for="fullName" class="form-label">Full Name</label>
@@ -400,6 +417,15 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     />
                   </div>
                   <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number (optional)</label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="+1 (234) 567-8901"
+                    />
+                  </div>
+                  <div class="col-md-12">
                     <label for="email" class="form-label">Email Address</label>
                     <input
                       type="email"
@@ -407,25 +433,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       id="email"
                       placeholder="you@example.com"
                       required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="preferredBreed" class="form-label">Preferred Breed (optional)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="preferredBreed"
-                      placeholder="e.g., Golden Retriever"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone Number (optional)</label>
-                    <input
-                      type="tel"
-                      class="form-control form-control-lg"
-                      id="phone"
-                      placeholder="+1 (234) 567-8901"
                     />
                   </div>
                   <div class="col-md-12">
@@ -437,8 +444,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       placeholder="Age, temperament, size, etc."></textarea>
                   </div>
                   <div class="col-12 text-start">
-                    <button type="submit" class="btn btn-primary btn-lg rounded px-4 mt-3">
-                      <i class="ri-sparkling-2-line me-1"></i> Find My Pup
+                    <button
+                      type="submit"
+                      class="btn btn-outline-light btn-lg rounded-pill px-4 mt-3"
+                    >
+                      <i class="ri-sparkling-2-line me-1"></i>Find My Pup
                     </button>
                   </div>
                 </form>
