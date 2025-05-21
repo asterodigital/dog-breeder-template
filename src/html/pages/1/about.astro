@@ -169,196 +169,130 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </nav>
 
         <!-- Hero Section -->
-        <section class="bg-body py-5">
-          <div class="container">
-            <figure class="img-scale rounded shadow-sm mb-4">
-              <img
-                src="/dist/assets/img/breederspot-images/dog-img-3-wide.jpg"
-                class="img-fluid"
-                alt="About Us Image"
-              />
-            </figure>
-            <div class="row align-items-center g-2">
-              <div class="col-lg-6 mb-4 mb-lg-0 pe-0 pe-lg-5">
-                <h1 class="display-6 fw-semibold mb-2">
-                  Our Story, Our Passion, and <span class="text-primary">Our Purpose</span>
-                </h1>
-                <p class="lead fs-5 mb-3">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
-                  corporis dignissimos provident nulla nemo! Quam impedit dolores vel sit amet
-                  consectetur adipisicing elit.
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1 class="display-4 fw-semibold mb-2">About us</h1>
+                <p class="fs-4 mb-4">
+                  We believe every puppy deserves a loving start. Our approach to dog breeding is
+                  guided by compassion, responsibility, and a deep respect for the animals in our
+                  care.
                 </p>
-                <button class="btn btn-primary rounded btn-lg">
-                  View Puppies <i class="ri-arrow-right-line"></i>
-                </button>
-              </div>
-              <div class="col-lg-6">
-                <div class="row text-lg-center">
-                  <!-- Column 1 -->
-                  <div class="col-lg-4 mb-3 mb-lg-0 border-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                      <div class="display-5 text-primary fw-semibold">500</div>
-                      <span class="text-secondary fs-4 fw-bold ms-1 align-self-center">+</span>
-                    </div>
-                    <div class="fs-5 text-muted">Dogs Placed in Loving Homes</div>
-                  </div>
-
-                  <!-- Column 2 -->
-                  <div class="col-lg-4 mb-3 mb-lg-0 border-lg-end">
-                    <div class="d-inline-flex align-items-center">
-                      <div class="display-5 text-primary fw-semibold">12</div>
-                      <span class="text-secondary fs-4 fw-bold ms-1 align-self-center">+</span>
-                    </div>
-                    <div class="fs-5 text-muted">Years of Ethical Breeding</div>
-                  </div>
-
-                  <!-- Column 3 -->
-                  <div class="col-lg-4">
-                    <div class="d-inline-flex align-items-center">
-                      <div class="display-5 text-primary fw-semibold">100%</div>
-                    </div>
-                    <div class="fs-5 text-muted">Health Screening Compliance</div>
-                  </div>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary">
+                    View Puppies<i class="ri-arrow-right-line ms-1"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light">
+                    <i class="ri-information-2-line me-1"></i>Learn More
+                  </button>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- Section 2 -->
-        <section class="bg-primary-subtle">
-          <div class="container p-4">
-            <div class="row">
-              <div class="col-sm-6 col-md-3 p-2">
-                <i class="ri-heart-fill text-primary fs-2 rounded"></i>
-                <p class="fs-5 fw-semibold mb-2">Health Guarantee</p>
-                <p class="fs-6 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd libero
-                  corpori digniss vident.
-                </p>
-                <a href="#" class="text-primary text-decoration-none">
-                  Learn more <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-              <div class="col-sm-6 col-md-3 p-2">
-                <i class="ri-hand-heart-fill text-primary fs-2 rounded"></i>
-                <p class="fs-5 fw-semibold mb-2">Lifetime Support</p>
-                <p class="fs-6 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd libero
-                  corpori digniss vident.
-                </p>
-                <a href="#" class="text-primary text-decoration-none">
-                  Learn more <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-              <div class="col-sm-6 col-md-3 p-2">
-                <i class="ri-shake-hands-fill text-primary fs-2 rounded"></i>
-                <p class="fs-5 fw-semibold mb-2">Vet Partnerships</p>
-                <p class="fs-6 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd libero
-                  corpori digniss vident.
-                </p>
-                <a href="#" class="text-primary text-decoration-none">
-                  Learn more <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-              <div class="col-sm-6 col-md-3 p-2">
-                <i class="ri-empathize-fill text-primary fs-2 rounded"></i>
-                <p class="fs-5 fw-semibold mb-2">Puppy Updates</p>
-                <p class="fs-6 mb-2">
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd libero
-                  corpori digniss vident.
-                </p>
-                <a href="#" class="text-primary text-decoration-none">
-                  Learn more <i class="ri-arrow-right-line"></i>
-                </a>
-              </div>
-            </div>
+        <!-- Our Story Section -->
+        <section class="bg-secondary-subtle py-5">
+          <div class="container">
+            <h2 class="display-6 fw-semibold mb-2">Our story</h2>
+            <p class="lead mb-3">
+              What began as a deep love for Beagles turned into a lifelong mission to raise puppies
+              with heart, health, and purpose. Our journey started in a small home filled with
+              wagging tails and has grown into a trusted breeding program known for compassion,
+              care, and ethical standards.
+            </p>
+            <blockquote class="blockquote">
+              <p class="mb-0">
+                <em
+                  >“Every puppy is raised as part of our family—until they become part of yours.”</em
+                >
+              </p>
+              <footer class="blockquote-footer mt-2">Founder</footer>
+            </blockquote>
+            <a href="#" class="btn btn-lg btn-outline-primary text-decoration-none">
+              Learn More<i class="ri-arrow-right-line ms-1"></i>
+            </a>
           </div>
         </section>
 
-        <!-- Process Section -->
+        <!-- Core Values Section -->
         <section class="bg-body py-5">
           <div class="container">
-            <h2 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-              Our Process
-            </h2>
-            <h3 class="display-6 text-center fw-semibold mb-4">
-              Purposeful breeding with care, transparency, and integrity
-            </h3>
-            <div class="row">
-              <div class="col-lg-8 offset-lg-2">
-                <div class="row g-2 mb-4">
-                  <div class="col-sm-6 col-md-3">
-                    <div class="card bg-primary-subtle card-hover shadow-sm h-100 p-3">
-                      <div class="card-body d-flex flex-column">
-                        <span class="display-6 fw-semibold text-primary">01.</span>
-                        <p class="card-title mb-2 pb-0 pb-xl-4">Intentional Breeding</p>
-
-                        <div class="mt-auto">
-                          <p class="card-text mt-0 mb-2">
-                            We begin with healthy, well-tempered parents chosen for responsible
-                            breeding.
-                          </p>
-                          <a href="#" class="text-primary text-decoration-none">
-                            Learn more <i class="ri-arrow-right-line"></i>
-                          </a>
-                        </div>
-                      </div>
+            <div class="text-center">
+              <h2 class="display-6 fw-semibold mb-4">Our core values</h2>
+            </div>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-heart-2-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Compassion First</h5>
+                      <p class="mb-0">Every puppy is raised with daily love and kindness.</p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="card bg-primary-subtle card-hover shadow-sm h-100 p-3 mt-0 mt-md-4">
-                      <div class="card-body d-flex flex-column">
-                        <span class="display-6 fw-semibold text-primary">02.</span>
-                        <p class="card-title mb-2 pb-0 pb-xl-4">Loving Early Care</p>
-
-                        <div class="mt-auto">
-                          <p class="card-text mt-0 mb-2">
-                            Puppies are raised in a nurturing home with socialization, play, and vet
-                            care.
-                          </p>
-                          <a href="#" class="text-primary text-decoration-none">
-                            Learn more <i class="ri-arrow-right-line"></i>
-                          </a>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-shield-cross-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Health Is Priority</h5>
+                      <p class="mb-0">We ensure top-tier care and vet checks from day one.</p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="card bg-primary-subtle card-hover shadow-sm h-100 p-3">
-                      <div class="card-body d-flex flex-column">
-                        <span class="display-6 fw-semibold text-primary">03.</span>
-                        <p class="card-title mb-2 pb-0 pb-xl-4">Health & Readiness</p>
-
-                        <div class="mt-auto">
-                          <p class="card-text mt-0 mb-2">
-                            Each pup is vaccinated, vet-checked, and then prepared for their
-                            transition.
-                          </p>
-                          <a href="#" class="text-primary text-decoration-none">
-                            Learn more <i class="ri-arrow-right-line"></i>
-                          </a>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-verified-badge-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Ethical Breeding</h5>
+                      <p class="mb-0">We always follow responsible breeding practices.</p>
                     </div>
                   </div>
-                  <div class="col-sm-6 col-md-3">
-                    <div class="card bg-primary-subtle card-hover shadow-sm h-100 p-3 mt-0 mt-md-4">
-                      <div class="card-body d-flex flex-column">
-                        <span class="display-6 fw-semibold text-primary">04.</span>
-                        <p class="card-title mb-2 pb-0 pb-xl-4">Guided Adoption</p>
-
-                        <div class="mt-auto">
-                          <p class="card-text mt-0 mb-2">
-                            We help match you with the right puppy and support you every step of the
-                            way.
-                          </p>
-                          <a href="#" class="text-primary text-decoration-none">
-                            Learn more <i class="ri-arrow-right-line"></i>
-                          </a>
-                        </div>
-                      </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-group-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Lifelong Partnerships</h5>
+                      <p class="mb-0">
+                        Our relationship doesn’t end at adoption—we’re here for life.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-eye-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Transparency Always</h5>
+                      <p class="mb-0">Open communication and honest updates at every stage.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-4">
+                <div class="card card-lift bg-secondary-subtle p-4">
+                  <div class="d-flex align-items-center">
+                    <i class="ri-emotion-happy-line text-primary fs-1 me-3"></i>
+                    <div>
+                      <h5 class="fw-semibold mb-1">Socialization Matters</h5>
+                      <p class="mb-0">Puppies are exposed to daily interactions and routines.</p>
                     </div>
                   </div>
                 </div>
@@ -367,93 +301,41 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Our Partners Section -->
-        <section class="bg-body py-5">
+        <!-- Features Section -->
+        <section class="bg-body pb-5">
           <div class="container">
-            <h2 class="text-primary text-uppercase fs-5 fw-semibold mb-2">Our Partners</h2>
-            <div class="row mb-4">
+            <div class="row g-4">
               <div class="col-md-6">
-                <h3 class="display-6 fw-semibold mb-2">
-                  We are aligned with partners who care as much as we do
-                </h3>
-              </div>
-              <div class="col-md-6">
-                <p class="mb-3">
-                  Lorem ipsum dolor sit amet consect adipisi elit libero corpori digniss. Sit amet
-                  consect adipisi elit. Dolorum quibusd, libero corporis dignissi provident nulla
-                  nemo!
-                </p>
-                <div class="text-start text-md-end">
-                  <button class="btn btn-lg btn-outline-primary"
-                    >Learn more <i class="ri-arrow-right-line"></i></button
+                <div
+                  class="card card-lift text-light"
+                  style="position: relative; height: 300px; background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center;"
+                >
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.4);"
                   >
-                </div>
-              </div>
-            </div>
-            <div class="row mb-4 g-3">
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-288.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
+                    <h5 class="card-title fs-2 mb-1">Health-First Breeding</h5>
+                    <p class="card-text">
+                      We prioritize genetic screening and veterinary oversight to ensure every puppy
+                      starts life strong and healthy.
+                    </p>
                   </div>
                 </div>
               </div>
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-367.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-287.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-335.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-334.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
-                  </div>
-                </div>
-              </div>
-              <div class="col-6 col-sm-4 col-lg-2">
-                <div class="card rounded shadow-sm bg-transparent h-100">
-                  <div class="card-body">
-                    <img
-                      src="/dist/assets/img/breederspot-images/logos/logoipsum-358.svg"
-                      class="img-fluid w-100 h-100"
-                      alt="Logo"
-                    />
+              <div class="col-md-6">
+                <div
+                  class="card card-lift text-light"
+                  style="position: relative; height: 300px; background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center;"
+                >
+                  <div
+                    class="card-img-overlay d-flex flex-column justify-content-end"
+                    style="background: rgba(0, 0, 0, 0.4);"
+                  >
+                    <h5 class="card-title fs-2 mb-1">Lifetime Breeder Support</h5>
+                    <p class="card-text">
+                      We're here for you beyond adoption—with guidance, resources, and a lifelong
+                      commitment to every dog we place.
+                    </p>
                   </div>
                 </div>
               </div>
@@ -461,91 +343,182 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Team Section -->
-        <section class="bg-body py-5">
+        <!-- Our Facilities Section -->
+        <section class="bg-body pb-5">
           <div class="container">
-            <h2 class="text-primary text-uppercase text-center fs-5 fw-semibold mb-2">Our Team</h2>
-            <h3 class="display-6 text-center fw-semibold mb-4">
-              The team that turns ideas into real-world results
-            </h3>
-            <div class="row g-3">
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar6.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Rahul Mehta</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Marketing Head</span>
+            <div class="text-center">
+              <h2 class="display-6 fw-semibold mb-4">Our facilities</h2>
+            </div>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-home-heart-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Home-Like Spaces</p>
+                    <p class="mb-2">
+                      Puppies are raised in warm, home-like settings—not cages—so they grow up
+                      confident and social.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more<i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar1.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Jane Smith</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Product Designer</span>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-shield-check-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Health & Safety</p>
+                    <p class="mb-2">
+                      Clean, controlled environments maintained with veterinary-approved hygiene
+                      practices.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more<i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar7.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Nguyen Minh</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Software Engineer</span>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-tree-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Outdoor Play</p>
+                    <p class="mb-2">
+                      Secure outdoor spaces where puppies can run, play, and develop motor skills
+                      through daily exercise.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more<i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar3.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Neha Gupta</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Content Strategist</span>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                  <div class="card-body">
+                    <i class="ri-user-heart-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Socialization</p>
+                    <p class="mb-2">
+                      Daily human interaction and sensory exposure help puppies become emotionally
+                      balanced.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more<i class="ri-arrow-right-line ms-1"></i>
+                    </a>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar2.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Amara Evans</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Sales Executive</span>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-body pb-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="display-6 fw-semibold mb-4">What people are saying about us?</h2>
+            </div>
+            <div class="row g-4">
+              <div class="col-lg-4">
+                <div class="card bg-secondary-subtle card-lift h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="mb-3">
+                      “From the very first call to bringing our puppy home, the experience was
+                      seamless and full of care. It was clear these breeders truly love what they
+                      do. Our little Rosie came home healthy and happy—we truly couldn't be more
+                      grateful!”
+                    </p>
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar1.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
+                        <p class="text-muted mb-0">Austin, TX</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="col-6 col-md-4 col-lg-2">
-                <figure class="img-grayscale">
-                  <img
-                    src="/dist/assets/img/avatars/avatar9.jpg"
-                    class="img-fluid rounded"
-                    alt="Team Member Image"
-                  />
-                </figure>
-                <h5 class="mb-2">
-                  <a href="#" class="text-decoration-none text-body">Jack Smith</a>
-                </h5>
-                <span class="badge text-primary border shadow-sm mb-0">Sales Lead</span>
+              <div class="col-lg-4">
+                <div class="card bg-secondary-subtle card-lift h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="mb-3">
+                      “From the moment we reached out, we felt completely supported. Every question
+                      we had was answered with patience. Our puppy arrived healthy, playful, and
+                      clearly well-loved. We couldn't have asked for a sweeter addition to our
+                      family!”
+                    </p>
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar7.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
+                        <p class="text-muted mb-0">San Diego, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4">
+                <div class="card bg-secondary-subtle card-lift h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="mb-3">
+                      “From the very first call to bringing our puppy home, the experience was
+                      seamless and full of care. It was clear these breeders truly love what they
+                      do. Our little Rosie came home healthy and happy—we truly couldn't be more
+                      grateful!”
+                    </p>
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar9.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jack Smith</h6>
+                        <p class="text-muted mb-0">Atlanta, GA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
@@ -565,34 +538,52 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section
-          class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
         >
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(0, 0, 0, 0.5);"
-          >
-          </div>
-          <div class="container text-center py-5 position-relative">
-            <div class="mt-2 mt-md-5">
-              <i class="ri-empathize-fill text-secondary fs-1"></i>
-            </div>
-            <h2 class="mb-3 display-6 fw-semibold">
-              Over 200 happy families have found their perfect pup with us — yours could be next.
-            </h2>
-            <p class="mb-4 lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
-              corporis dignissimos provident nulla nemo!
-            </p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-md-5">
-              <button class="btn btn-light btn-lg">
-                <i class="ri-sparkling-2-line text-secondary"></i> Get started
-              </button>
-              <button class="btn btn-outline-light btn-lg">
-                <i class="ri-arrow-right-line text-secondary"></i> Learn more
-              </button>
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with us</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
+              </div>
             </div>
           </div>
         </section>
