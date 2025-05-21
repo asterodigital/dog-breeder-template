@@ -175,8 +175,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           <div class="container">
             <!-- Back Button -->
             <div class="mb-4">
-              <a href="/3/puppies" class="btn btn-lg btn-outline-primary">
-                <i class="ri-arrow-left-line"></i> Back to Puppies
+              <a href="/3/puppies" class="btn btn-lg btn-outline-primary rounded-pill px-4">
+                <i class="ri-arrow-left-line me-1"></i>Back to Puppies
               </a>
             </div>
 
@@ -184,11 +184,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
             <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
               <!-- Image Column -->
               <div class="col">
-                <figure class="img-scale rounded shadow-sm">
+                <figure class="img-scale rounded-5 shadow-sm">
                   <img
-                    src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
+                    src="/dist/assets/img/breederspot-images/french-bulldog-puppy-1.jpg"
                     class="img-fluid"
-                    alt="Charlie the Golden Retriever"
+                    alt="Charlie the French Bulldog"
                   />
                 </figure>
               </div>
@@ -197,9 +197,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <div class="col">
                 <div class="d-flex align-items-center mb-2">
                   <h2 class="display-6 fw-semibold mb-0 me-2">Charlie</h2>
-                  <span class="badge bg-body border text-primary shadow-sm">
-                    Golden Retriever
-                  </span>
+                  <span class="badge text-primary rounded-pill border fs-6">French Bulldog</span>
                 </div>
 
                 <p class="mb-3">
@@ -212,11 +210,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <h4 class="fs-3 mb-3">$1,200.00</h4>
 
                 <div class="d-flex flex-wrap gap-2 mb-4">
-                  <button class="btn btn-lg btn-primary"
-                    ><i class="ri-price-tag-3-line me-2"></i>Reserve</button
+                  <button class="btn btn-lg btn-primary rounded-pill px-4"
+                    ><i class="ri-price-tag-3-line me-1"></i>Reserve</button
                   >
-                  <button class="btn btn-lg btn-outline-primary"
-                    ><i class="ri-information-2-line me-2"></i>Learn More</button
+                  <button class="btn btn-lg btn-outline-primary rounded-pill px-4"
+                    ><i class="ri-information-2-line me-1"></i>Learn More</button
                   >
                 </div>
 
@@ -254,14 +252,19 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Details Section -->
-        <section class="bg-secondary-subtle py-5">
+        <section class="bg-body pb-5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-                  Traits
-                </h4>
-                <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Charlie</h3>
+                <div class="text-center">
+                  <h2
+                    class="bg-primary-pale text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+                  >
+                    Traits
+                  </h2>
+                  <h3 class="display-6 fw-semibold mb-4">Temperament of Charlie</h3>
+                </div>
+
                 <label for="progressbar-trainability" class="form-label">Trainability</label>
                 <div
                   class="progress mb-3"
@@ -335,10 +338,10 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA Section -->
+        <!-- CTA/Form Section -->
         <section
           class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center;"
         >
           <div
             class="position-absolute top-0 start-0 w-100 h-100"
@@ -346,11 +349,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           >
           </div>
           <div class="container py-5 position-relative">
+            <h2 class="display-6 fw-semibold mb-4">
+              Find your perfect pup—<em>ethically, responsibly, and with love</em>.
+            </h2>
             <div class="row">
               <div class="col-lg-5">
-                <h2 class="display-6 fw-bold mb-4">
-                  Find your perfect pup—<em>ethically, responsibly, and with love</em>.
-                </h2>
                 <form class="row text-start g-3">
                   <div class="col-md-6">
                     <label for="fullName" class="form-label">Full Name</label>
@@ -363,6 +366,15 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     />
                   </div>
                   <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number (optional)</label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="+1 (234) 567-8901"
+                    />
+                  </div>
+                  <div class="col-md-12">
                     <label for="email" class="form-label">Email Address</label>
                     <input
                       type="email"
@@ -370,25 +382,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       id="email"
                       placeholder="you@example.com"
                       required
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="preferredBreed" class="form-label">Preferred Breed (optional)</label
-                    >
-                    <input
-                      type="text"
-                      class="form-control form-control-lg"
-                      id="preferredBreed"
-                      placeholder="e.g., Golden Retriever"
-                    />
-                  </div>
-                  <div class="col-md-6">
-                    <label for="phone" class="form-label">Phone Number (optional)</label>
-                    <input
-                      type="tel"
-                      class="form-control form-control-lg"
-                      id="phone"
-                      placeholder="+1 (234) 567-8901"
                     />
                   </div>
                   <div class="col-md-12">
@@ -400,8 +393,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       placeholder="Age, temperament, size, etc."></textarea>
                   </div>
                   <div class="col-12 text-start">
-                    <button type="submit" class="btn btn-primary btn-lg rounded px-4 mt-3">
-                      <i class="ri-sparkling-2-line me-1"></i> Find My Pup
+                    <button
+                      type="submit"
+                      class="btn btn-outline-light btn-lg rounded-pill px-4 mt-3"
+                    >
+                      <i class="ri-sparkling-2-line me-1"></i>Find My Pup
                     </button>
                   </div>
                 </form>
