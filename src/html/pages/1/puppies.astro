@@ -168,42 +168,45 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
-        <!-- Header Section -->
-        <section class="bg-body py-5 position-relative">
-          <div
-            class="container bg-secondary-subtle rounded p-4 p-md-5 position-relative overflow-hidden"
-          >
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-            <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-              Available Puppies
-            </h1>
-            <h2 class="text-center display-6 fw-semibold mb-2">
-              Meet Our Adorable Puppies Ready for Adoption
-            </h2>
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1 class="display-4 fw-semibold mb-2">Puppies available for adoption</h1>
+                <p class="fs-4 mb-0">
+                  Meet our current puppies who are ready to find their forever homes — lovingly
+                  raised, health-checked, and socialized to become joyful companions for
+                  individuals, couples, and families alike.
+                </p>
+              </div>
+            </div>
           </div>
         </section>
 
         <!-- Puppies Section -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="row gy-4">
               <!-- Sidebar / Filter Column -->
               <div class="col-lg-3">
                 <div class="sticky-top z-1" style="top: 80px;">
-                  <div class="card shadow-sm p-3">
+                  <div class="card bg-secondary-subtle p-3">
                     <div class="card-body">
                       <h5 class="fw-semibold mb-3">Filter Puppies</h5>
                       <div class="mb-3">
                         <label for="breed" class="form-label">Breed</label>
                         <select class="form-select form-select-lg" id="breed">
                           <option value="">All Breeds</option>
-                          <option>Golden Retriever</option>
-                          <option>German Shepherd</option>
+                          <option>Beagle</option>
                           <option>Labrador</option>
+                          <option>German Shepherd</option>
                         </select>
                       </div>
                       <div class="mb-3">
@@ -236,241 +239,252 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 <div class="row g-4">
                   <!-- Pet 1 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
-                        12 weeks
+                        <i class="ri-women-line"></i>
                       </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
-                      >
-                        <i class="ri-men-line"></i>
-                      </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Charlie</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >Golden Retriever</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Olive</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
-                        <p class="card-text text-muted mb-2">Austin, TX</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Charlie is a playful, curious pup who loves treats and chasing
-                          butterflies!
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
 
                   <!-- Pet 2 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-2.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
-                        4 weeks
+                        <i class="ri-men-line"></i>
                       </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
-                      >
-                        <i class="ri-women-line"></i>
-                      </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Luna</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >German Shepherd</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Caesar</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
-                        <p class="card-text text-muted mb-2">Boulder, CO</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Luna is a gentle and loving pup who enjoys cuddling up in cozy blankets.
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
 
                   <!-- Pet 3 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-3.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
-                      >
-                        6 months
-                      </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
                         <i class="ri-women-line"></i>
                       </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Daisy</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >German Shepherd</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Luna</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1400</p>
                         </div>
-                        <p class="card-text text-muted mb-2">Savannah, GA</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Daisy is an energetic pup who loves walks and making friends at the park.
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
 
                   <!-- Pet 4 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-4.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
-                        4 months
+                        <i class="ri-women-line"></i>
                       </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
-                      >
-                        <i class="ri-men-line"></i>
-                      </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Milo</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >Golden Retriever</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Olive</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
-                        <p class="card-text text-muted mb-2">Portland, OR</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Milo is a playful and loving pup with a knack for sneaking onto the couch.
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
 
                   <!-- Pet 5 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-5.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
-                        12 weeks
+                        <i class="ri-men-line"></i>
                       </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
-                      >
-                        <i class="ri-women-line"></i>
-                      </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Rosie</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >Golden Retriever</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Caesar</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
-                        <p class="card-text text-muted mb-2">Charlotte, NC</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Rosie is an energetic pup who likes making new friends at the park.
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
 
                   <!-- Pet 6 -->
                   <div class="col-sm-6 col-lg-4">
-                    <div class="card shadow-sm h-100 p-0 position-relative">
-                      <figure class="img-scale rounded-top-3 shadow-sm mb-0">
-                        <img
-                          src="/dist/assets/img/breederspot-images/puppy-img-6.jpg"
-                          class="card-img-top rounded-0"
-                          alt="Pet Image"
-                        />
+                    <div class="card bg-secondary-subtle h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/1/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                            class="card-img-top"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
                       </figure>
-
                       <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 start-0 fs-6 m-2"
+                        class="badge bg-body text-primary position-absolute top-0 end-0 fs-5 p-2 m-2"
                       >
-                        2 months
+                        <i class="ri-women-line"></i>
                       </span>
-                      <span
-                        class="badge bg-light text-primary shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
-                      >
-                        <i class="ri-men-line"></i>
-                      </span>
-
                       <div class="card-body p-3">
                         <div class="d-flex align-items-center justify-content-between mb-2">
-                          <h5 class="card-title mb-0">Cooper</h5>
-                          <span class="badge text-primary-emphasis bg-secondary-subtle border"
-                            >Golden Retriever</span
-                          >
+                          <h5 class="card-title fs-3 mb-0">
+                            <a href="/1/puppy-details" class="text-decoration-none text-body"
+                              >Luna</a
+                            >
+                          </h5>
+                          <p class="fs-4 fw-semibold mb-0">$1400</p>
                         </div>
-                        <p class="card-text text-muted mb-2">San Diego, CA</p>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
+                        </div>
                         <p class="card-text">
-                          Cooper loves exploring the backyard jungle and guarding his favorite bone.
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
                         </p>
                       </div>
                       <a href="/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        More Info <i class="ri-arrow-right-line"></i>
+                        More Info<i class="ri-arrow-right-line ms-1"></i>
                       </a>
                     </div>
                   </div>
@@ -491,34 +505,52 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section
-          class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
         >
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(0, 0, 0, 0.5);"
-          >
-          </div>
-          <div class="container text-center py-5 position-relative">
-            <div class="mt-2 mt-md-5">
-              <i class="ri-empathize-fill text-secondary fs-1"></i>
-            </div>
-            <h2 class="mb-3 display-6 fw-semibold">
-              Over 200 happy families have found their perfect pup with us — yours could be next.
-            </h2>
-            <p class="mb-4 lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
-              corporis dignissimos provident nulla nemo!
-            </p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-md-5">
-              <button class="btn btn-light btn-lg">
-                <i class="ri-sparkling-2-line text-secondary"></i> Get started
-              </button>
-              <button class="btn btn-outline-light btn-lg">
-                <i class="ri-arrow-right-line text-secondary"></i> Learn more
-              </button>
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with us</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
+              </div>
             </div>
           </div>
         </section>
