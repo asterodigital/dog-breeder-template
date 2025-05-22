@@ -168,17 +168,40 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </nav>
 
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1 class="display-4 fw-semibold mb-2">Frequently asked questions</h1>
+                <p class="fs-4 mb-4">
+                  Find answers to the most common questions about our puppies, adoption process,
+                  care tips, and what to expect as a new puppy parent.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary">
+                    View Puppies<i class="ri-arrow-right-line ms-1"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light">
+                    <i class="ri-information-2-line me-1"></i>Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <!-- FAQs Section -->
         <section class="bg-body py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h1 class="text-primary text-center fs-5 fw-semibold mb-2">FAQs</h1>
-                <h2 class="display-6 text-center fw-semibold mb-2">Frequently Asked Questions</h2>
-                <p class="text-center lead fs-5 mb-3">
-                  Lorem ipsum dolor sit amet consectet adipisi elit dolorum quibus, libero corporis
-                  dignis.
-                </p>
                 <ul class="nav nav-underline nav-fill justify-content-center mb-3">
                   <li class="nav-item">
                     <a class="nav-link nav-link-lg active" aria-current="page" href="#">General</a>
@@ -324,62 +347,72 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Card Section -->
-        <section class="bg-body pb-5 position-relative">
-          <div
-            class="container bg-secondary-subtle rounded p-4 p-md-5 position-relative overflow-hidden"
-          >
-            <img
-              src="/dist/assets/img/breederspot-images/multiple-paws.png"
-              alt="Decorative Paws Image"
-              class="position-absolute paw-overlay-img"
-            />
-
-            <div class="row align-items-center position-relative">
+        <section class="bg-body pb-5 mx-2 mx-md-0">
+          <div class="container text-bg-primary rounded-4 p-4 p-md-5">
+            <div class="row align-items-center">
               <div class="col-md-8">
                 <div class="d-flex align-items-center gap-3 mb-1">
-                  <i class="ri-questionnaire-line text-primary fs-3"></i>
+                  <i class="ri-questionnaire-line fs-3"></i>
                   <h4 class="fw-semibold mb-0">Didn't find the answer you were looking for?</h4>
                 </div>
-                <p class="fs-5 mb-0">
+                <p class="mb-0">
                   We're here to help—reach out to our team and we'll get back to you as soon as
                   possible.
                 </p>
               </div>
               <div class="col-md-4 text-md-end mt-3 mt-md-0">
-                <a href="#" class="btn btn-primary btn-lg px-4 mb-1">Contact Us</a>
+                <a href="#" class="btn btn-light btn-lg px-4 mb-1">Contact Us</a>
               </div>
             </div>
           </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section
-          class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
         >
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(0, 0, 0, 0.5);"
-          >
-          </div>
-          <div class="container text-center py-5 position-relative">
-            <div class="mt-2 mt-md-5">
-              <i class="ri-empathize-fill text-secondary fs-1"></i>
-            </div>
-            <h2 class="mb-3 display-6 fw-semibold">
-              Over 200 happy families have found their perfect pup with us — yours could be next.
-            </h2>
-            <p class="mb-4 lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
-              corporis dignissimos provident nulla nemo!
-            </p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-md-5">
-              <button class="btn btn-light btn-lg">
-                <i class="ri-sparkling-2-line text-secondary"></i> Get started
-              </button>
-              <button class="btn btn-outline-light btn-lg">
-                <i class="ri-arrow-right-line text-secondary"></i> Learn more
-              </button>
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with us</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
+              </div>
             </div>
           </div>
         </section>
