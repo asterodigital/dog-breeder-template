@@ -200,15 +200,84 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- Features Section -->
-        <section class="bg-body py-5">
+        <!-- Search Section -->
+        <section class="text-bg-primary py-5">
           <div class="container">
-            <div class="text-center">
-              <h2 class="display-6 fw-semibold mb-4">What do we excel in?</h2>
-            </div>
+            <h2 class="mb-3">Find your perfect pup</h2>
+            <form>
+              <div class="row g-3 align-items-end">
+                <!-- Breed -->
+                <div class="col-12 col-md-3">
+                  <label for="breed" class="form-label fs-5">Breed</label>
+                  <select class="form-select form-select-lg" id="breed" name="breed">
+                    <option selected disabled>Choose...</option>
+                    <option>Beagle</option>
+                    <option>Dachshund</option>
+                    <option>Labrador</option>
+                    <option>Poodle</option>
+                    <!-- Add more breeds as needed -->
+                  </select>
+                </div>
+
+                <!-- Location -->
+                <div class="col-12 col-md-3">
+                  <label for="location" class="form-label fs-5">Location</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="location"
+                    name="location"
+                    placeholder="City or ZIP"
+                  />
+                </div>
+
+                <!-- Price Range -->
+                <div class="col-6 col-md-2">
+                  <label for="minPrice" class="form-label fs-5">Min Price</label>
+                  <input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="minPrice"
+                    name="minPrice"
+                    placeholder="0"
+                  />
+                </div>
+                <div class="col-6 col-md-2">
+                  <label for="maxPrice" class="form-label fs-5">Max Price</label>
+                  <input
+                    type="number"
+                    class="form-control form-control-lg"
+                    id="maxPrice"
+                    name="maxPrice"
+                    placeholder="1000"
+                  />
+                </div>
+
+                <!-- Availability -->
+                <div class="col-12 col-md-2">
+                  <label for="availability" class="form-label fs-5">Availability</label>
+                  <select class="form-select form-select-lg" id="availability" name="availability">
+                    <option selected>Any</option>
+                    <option>Available Now</option>
+                    <option>Upcoming Litters</option>
+                  </select>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="col-12 text-end mt-3">
+                  <button type="submit" class="btn btn-lg btn-dark">Search</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </section>
+
+        <!-- Features Section -->
+        <section class="text-bg-dark py-5">
+          <div class="container">
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                <div class="card card-lift text-bg-gray-800 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-heart-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Health Guarantee</p>
@@ -223,7 +292,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                <div class="card card-lift text-bg-gray-800 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-hand-heart-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Lifetime Support</p>
@@ -238,7 +307,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                <div class="card card-lift text-bg-gray-800 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-shake-hands-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Vet Partnerships</p>
@@ -253,7 +322,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle card-lift h-100 p-4">
+                <div class="card card-lift text-bg-gray-800 h-100 p-4">
                   <div class="card-body">
                     <i class="ri-empathize-fill text-primary fs-1"></i>
                     <p class="fs-4 fw-semibold mb-2">Puppy Updates</p>
@@ -265,28 +334,6 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       Learn more<i class="ri-arrow-right-line ms-1"></i>
                     </a>
                   </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- What Makes Us Different -->
-        <section class="bg-secondary-subtle py-5">
-          <div class="container text-center">
-            <div class="row">
-              <div class="col-lg-10 offset-lg-1">
-                <h2 class="display-6 fw-semibold mb-2">What Makes Us Different?</h2>
-                <p class="mb-4">
-                  We believe every puppy deserves a loving start and a forever home. Our approach to
-                  dog breeding is guided by compassion, responsibility, and a deep respect for the
-                  animals in our care. With a focus on health, temperament, and ethical practices,
-                  we raise each puppy in a nurturing, family-oriented environment where
-                  socialization and wellbeing come first.
-                </p>
-                <div class="d-flex flex-wrap justify-content-center gap-2 mb-2">
-                  <button class="btn btn-lg btn-primary"> About Us </button>
-                  <button class="btn btn-lg btn-outline-primary"> Our Philosophy </button>
                 </div>
               </div>
             </div>
@@ -329,8 +376,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                           <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
                         <div class="d-flex flex-wrap gap-2 mb-2">
-                          <span class="badge text-primary bg-secondary-pale fs-6">Beagle</span>
-                          <span class="badge text-primary bg-secondary-pale fs-6">4 Weeks</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
                         </div>
                         <p class="card-text">
                           A curious little explorer who loves sniffing out new adventures and
@@ -369,8 +416,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                           <p class="fs-4 fw-semibold mb-0">$1200</p>
                         </div>
                         <div class="d-flex flex-wrap gap-2 mb-2">
-                          <span class="badge text-primary bg-secondary-pale fs-6">Beagle</span>
-                          <span class="badge text-primary bg-secondary-pale fs-6">4 Weeks</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
                         </div>
                         <p class="card-text">
                           A curious little explorer who loves sniffing out new adventures and
@@ -409,8 +456,8 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                           <p class="fs-4 fw-semibold mb-0">$1400</p>
                         </div>
                         <div class="d-flex flex-wrap gap-2 mb-2">
-                          <span class="badge text-primary bg-secondary-pale fs-6">Beagle</span>
-                          <span class="badge text-primary bg-secondary-pale fs-6">4 Weeks</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
+                          <span class="badge text-body bg-secondary-pale fs-6">4 Weeks</span>
                         </div>
                         <p class="card-text">
                           A curious little explorer who loves sniffing out new adventures and
@@ -423,13 +470,16 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                     </div>
                   </div>
                 </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-lg btn-outline-primary px-4 mt-4">See All Puppies</a>
+                </div>
               </div>
             </div>
           </div>
         </section>
 
         <!-- Upcoming Litters Section -->
-        <section class="bg-body pb-5">
+        <section class="text-bg-dark py-5">
           <div class="container">
             <div class="text-center">
               <h2 class="display-6 fw-semibold mb-4">New beagle pups coming soon!</h2>
@@ -452,15 +502,17 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                             <i class="ri-calendar-line me-1"></i>Jun 2025
                           </p>
                         </div>
-                        <p class="text-primary fw-semibold mb-2">Parents: Luna × Finn</p>
-                        <p class="mb-0">
+                        <span class="badge text-body bg-secondary-pale fs-6 mb-2"
+                          >Parents: Luna × Finn</span
+                        >
+                        <p class="mb-4">
                           This pairing brings together two gentle Beagles - known for their calm
                           personalities and beautiful coats.
                         </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100">
+                          Join Waitlist<i class="ri-arrow-right-line ms-1"></i>
+                        </a>
                       </div>
-                      <a href="#" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        Join Waitlist<i class="ri-arrow-right-line ms-1"></i>
-                      </a>
                     </div>
                   </div>
                   <div class="col-md-6">
@@ -478,15 +530,17 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                             <i class="ri-calendar-line me-1"></i>Sep 2025
                           </p>
                         </div>
-                        <p class="text-primary fw-semibold mb-2">Parents: Caesar × Mini</p>
-                        <p class="mb-0">
+                        <span class="badge text-body bg-secondary-pale fs-6 mb-2"
+                          >Parents: Caesar × Mini</span
+                        >
+                        <p class="mb-4">
                           These Beagles will be loving, smart, and irresistibly sweet - perfect for
                           allergy-sensitive homes.
                         </p>
+                        <a href="#" class="btn btn-lg btn-primary w-100">
+                          Join Waitlist<i class="ri-arrow-right-line ms-1"></i>
+                        </a>
                       </div>
-                      <a href="#" class="btn btn-lg btn-primary rounded-top-0 w-100">
-                        Join Waitlist<i class="ri-arrow-right-line ms-1"></i>
-                      </a>
                     </div>
                   </div>
                 </div>
@@ -496,7 +550,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Process Section -->
-        <section class="bg-body pb-5">
+        <section class="bg-body py-5">
           <div class="container">
             <div class="text-center">
               <h2 class="display-6 fw-semibold mb-4">Your journey to puppy parenthood</h2>
@@ -505,60 +559,48 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <div class="col-sm-6 col-lg-3">
                 <div class="card bg-secondary-subtle card-lift h-100 p-4">
                   <div class="card-body">
-                    <span class="display-5 fw-semibold text-primary">01.</span>
+                    <span class="display-4 fw-semibold text-primary">01.</span>
                     <p class="fs-4 fw-semibold mb-2">Application</p>
-                    <p class="mb-2">
+                    <p class="mb-0">
                       Start by filling out our quick form so we can learn more about you and match
                       you with the right puppy.
                     </p>
-                    <a href="#" class="text-primary text-decoration-none">
-                      Learn more<i class="ri-arrow-right-line ms-1"></i>
-                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
                 <div class="card bg-secondary-subtle card-lift h-100 p-4">
                   <div class="card-body">
-                    <span class="display-5 fw-semibold text-primary">02.</span>
+                    <span class="display-4 fw-semibold text-primary">02.</span>
                     <p class="fs-4 fw-semibold mb-2">Approval</p>
-                    <p class="mb-2">
+                    <p class="mb-0">
                       We’ll review your application and reach out for a conversation to ensure our
                       puppies go to loving homes.
                     </p>
-                    <a href="#" class="text-primary text-decoration-none">
-                      Learn more<i class="ri-arrow-right-line ms-1"></i>
-                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
                 <div class="card bg-secondary-subtle card-lift h-100 p-4">
                   <div class="card-body">
-                    <span class="display-5 fw-semibold text-primary">03.</span>
+                    <span class="display-4 fw-semibold text-primary">03.</span>
                     <p class="fs-4 fw-semibold mb-2">Waitlist</p>
-                    <p class="mb-2">
+                    <p class="mb-0">
                       Once approved, you’ll join the waitlist for upcoming litters. We’ll keep you
                       updated with litter announcements.
                     </p>
-                    <a href="#" class="text-primary text-decoration-none">
-                      Learn more<i class="ri-arrow-right-line ms-1"></i>
-                    </a>
                   </div>
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
                 <div class="card bg-secondary-subtle card-lift h-100 p-4">
                   <div class="card-body">
-                    <span class="display-5 fw-semibold text-primary">04.</span>
+                    <span class="display-4 fw-semibold text-primary">04.</span>
                     <p class="fs-4 fw-semibold mb-2">Homecoming</p>
-                    <p class="mb-2">
+                    <p class="mb-0">
                       When your puppy is ready, you’ll be invited to meet them. After checks, you’ll
                       bring home a companion!
                     </p>
-                    <a href="#" class="text-primary text-decoration-none">
-                      Learn more<i class="ri-arrow-right-line ms-1"></i>
-                    </a>
                   </div>
                 </div>
               </div>
@@ -567,7 +609,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Gallery Section -->
-        <section class="bg-secondary-subtle py-5">
+        <section class="text-bg-primary py-5">
           <div class="container">
             <div class="text-center">
               <h2 class="display-6 fw-semibold mb-4">Check out our gallery</h2>
@@ -649,9 +691,9 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
             </div>
             <div class="row g-4">
               <div class="col-lg-4">
-                <div class="card bg-secondary-subtle card-lift h-100">
+                <div class="card text-bg-primary card-lift h-100">
                   <div class="card-body">
-                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <i class="ri-double-quotes-l text-primary-pale fs-1 mb-0"></i>
                     <p class="mb-3">
                       “From the very first call to bringing our puppy home, the experience was
                       seamless and full of care. It was clear these breeders truly love what they
@@ -668,13 +710,13 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       />
                       <div>
                         <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
-                        <p class="text-muted mb-0">Austin, TX</p>
+                        <p class="mb-0">Austin, TX</p>
                         <div>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
                         </div>
                       </div>
                     </div>
@@ -682,9 +724,9 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-secondary-subtle card-lift h-100">
+                <div class="card text-bg-primary card-lift h-100">
                   <div class="card-body">
-                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <i class="ri-double-quotes-l text-primary-pale fs-1 mb-0"></i>
                     <p class="mb-3">
                       “From the moment we reached out, we felt completely supported. Every question
                       we had was answered with patience. Our puppy arrived healthy, playful, and
@@ -701,13 +743,13 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       />
                       <div>
                         <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
-                        <p class="text-muted mb-0">San Diego, CA</p>
+                        <p class="mb-0">San Diego, CA</p>
                         <div>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-half-fill text-yellow"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-half-fill text-primary-pale"></i>
                         </div>
                       </div>
                     </div>
@@ -715,9 +757,9 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-lg-4">
-                <div class="card bg-secondary-subtle card-lift h-100">
+                <div class="card text-bg-primary card-lift h-100">
                   <div class="card-body">
-                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <i class="ri-double-quotes-l text-primary-pale fs-1 mb-0"></i>
                     <p class="mb-3">
                       “From the very first call to bringing our puppy home, the experience was
                       seamless and full of care. It was clear these breeders truly love what they
@@ -734,13 +776,13 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                       />
                       <div>
                         <h6 class="fw-semibold fs-5 mb-0">Jack Smith</h6>
-                        <p class="text-muted mb-0">Atlanta, GA</p>
+                        <p class="mb-0">Atlanta, GA</p>
                         <div>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
-                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
+                          <i class="ri-star-fill text-primary-pale"></i>
                         </div>
                       </div>
                     </div>
