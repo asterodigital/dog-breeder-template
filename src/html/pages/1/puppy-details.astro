@@ -184,9 +184,9 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <div class="col">
                 <figure class="img-scale rounded shadow-sm">
                   <img
-                    src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
+                    src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
                     class="img-fluid"
-                    alt="Charlie the Golden Retriever"
+                    alt="Olive the Beagle"
                   />
                 </figure>
               </div>
@@ -194,17 +194,15 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
               <!-- Details Column -->
               <div class="col">
                 <div class="d-flex align-items-center mb-2">
-                  <h2 class="display-6 fw-semibold mb-0 me-2">Charlie</h2>
-                  <span class="badge bg-body border text-primary shadow-sm">
-                    Golden Retriever
-                  </span>
+                  <h2 class="display-6 fw-semibold mb-0 me-2">Olive</h2>
+                  <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
                 </div>
 
                 <p class="mb-3">
-                  Charlie is a happy-go-lucky pup who loves belly rubs, chasing squeaky toys, and
-                  making new friends. He’s been raised in a loving home environment and is already
+                  Olive is a happy-go-lucky pup who loves belly rubs, chasing squeaky toys, and
+                  making new friends. She’s been raised in a loving home environment and is already
                   starting basic training. If you're looking for a loyal and playful companion,
-                  Charlie’s your guy!
+                  Olive is the one!
                 </p>
 
                 <h4 class="fs-3 mb-3">$1,200.00</h4>
@@ -222,11 +220,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                   <tbody>
                     <tr>
                       <th scope="row">Gender</th>
-                      <td>Male</td>
+                      <td>Female</td>
                     </tr>
                     <tr>
                       <th scope="row">Age</th>
-                      <td>12 weeks</td>
+                      <td>4 weeks</td>
                     </tr>
                     <tr>
                       <th scope="row">Weight</th>
@@ -252,14 +250,11 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         </section>
 
         <!-- Details Section -->
-        <section class="bg-secondary-subtle py-5">
+        <section class="text-bg-dark py-5">
           <div class="container">
             <div class="row">
               <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-                <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
-                  Traits
-                </h4>
-                <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Charlie</h3>
+                <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Olive</h3>
                 <label for="progressbar-trainability" class="form-label">Trainability</label>
                 <div
                   class="progress mb-3"
@@ -333,34 +328,52 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
           </div>
         </section>
 
-        <!-- CTA -->
+        <!-- CTA Section -->
         <section
-          class="text-light position-relative"
-          style="background-image: url('/dist/assets/img/breederspot-images/dog-img-3.jpg'); background-size: cover; background-position: center;"
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
         >
-          <div
-            class="position-absolute top-0 start-0 w-100 h-100"
-            style="background-color: rgba(0, 0, 0, 0.5);"
-          >
-          </div>
-          <div class="container text-center py-5 position-relative">
-            <div class="mt-2 mt-md-5">
-              <i class="ri-empathize-fill text-secondary fs-1"></i>
-            </div>
-            <h2 class="mb-3 display-6 fw-semibold">
-              Over 200 happy families have found their perfect pup with us — yours could be next.
-            </h2>
-            <p class="mb-4 lead">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
-              corporis dignissimos provident nulla nemo!
-            </p>
-            <div class="d-flex flex-wrap justify-content-center gap-2 mb-md-5">
-              <button class="btn btn-light btn-lg">
-                <i class="ri-sparkling-2-line text-secondary"></i> Get started
-              </button>
-              <button class="btn btn-outline-light btn-lg">
-                <i class="ri-arrow-right-line text-secondary"></i> Learn more
-              </button>
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with us</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
+              </div>
             </div>
           </div>
         </section>
