@@ -346,18 +346,23 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
         <!-- Puppies Section -->
         <section class="bg-body pb-5">
           <div class="container">
-            <div class="text-center">
-              <h2 class="display-6 fw-semibold mb-4">Adorable puppies ready for adoption</h2>
+            <div
+              class="d-flex flex-column flex-md-row align-items-center justify-content-between mb-4"
+            >
+              <h2 class="display-6 fw-semibold mb-0">Puppies ready for adoption</h2>
+              <a href="/1/puppies" class="btn btn-lg btn-outline-primary d-none d-md-block"
+                >See All Puppies</a
+              >
             </div>
+
             <div class="row g-4">
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle h-100 position-relative p-0">
-                  <figure class="img-scale rounded-top-4 mb-0">
+                <div class="card card-expand bg-secondary-subtle position-relative p-0">
+                  <figure class="mb-0">
                     <a href="/1/puppy-details"
                       ><img
                         src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
                         class="card-img-top"
-                        style="max-height: 300px; object-fit: cover;"
                         alt="Pet Image"
                       /></a
                     >
@@ -389,13 +394,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle h-100 position-relative p-0">
-                  <figure class="img-scale rounded-top-4 mb-0">
+                <div class="card card-expand bg-secondary-subtle position-relative p-0">
+                  <figure class="mb-0">
                     <a href="/1/puppy-details"
                       ><img
                         src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
                         class="card-img-top"
-                        style="max-height: 300px; object-fit: cover;"
                         alt="Pet Image"
                       /></a
                     >
@@ -427,13 +431,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle h-100 position-relative p-0">
-                  <figure class="img-scale rounded-top-4 mb-0">
+                <div class="card card-expand bg-secondary-subtle position-relative p-0">
+                  <figure class="mb-0">
                     <a href="/1/puppy-details"
                       ><img
                         src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
                         class="card-img-top"
-                        style="max-height: 300px; object-fit: cover;"
                         alt="Pet Image"
                       /></a
                     >
@@ -465,13 +468,12 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
               <div class="col-sm-6 col-lg-3">
-                <div class="card bg-secondary-subtle h-100 position-relative p-0">
-                  <figure class="img-scale rounded-top-4 mb-0">
+                <div class="card card-expand bg-secondary-subtle position-relative p-0">
+                  <figure class="mb-0">
                     <a href="/1/puppy-details"
                       ><img
                         src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
                         class="card-img-top"
-                        style="max-height: 300px; object-fit: cover;"
                         alt="Pet Image"
                       /></a
                     >
@@ -503,7 +505,7 @@ import Scripts from '../../../html/layouts/front/partials/_scripts.astro'
                 </div>
               </div>
             </div>
-            <div class="text-center">
+            <div class="d-block d-md-none text-center">
               <a href="/1/puppies" class="btn btn-lg btn-outline-primary px-4 mt-4"
                 >See All Puppies</a
               >
