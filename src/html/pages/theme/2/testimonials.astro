@@ -1,0 +1,713 @@
+---
+import Head from '../../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/theme/2/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/theme/2/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/theme/2/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/2/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          class="dropdown-item active"
+                          aria-current="page"
+                          href="/theme/2/testimonials">Testimonials</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/theme/2/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/theme/2/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/theme/2/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li><a class="dropdown-item" href="/theme/2/blog-1">Blog – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/2/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/2/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li class="dropdown-submenu">
+                        <a
+                          class="dropdown-item dropdown-toggle"
+                          href="#"
+                          id="blogPostsDropdown"
+                          role="button"
+                          aria-expanded="false">Blog Posts</a
+                        >
+                        <ul class="dropdown-menu" aria-labelledby="blogPostsDropdown">
+                          <li>
+                            <a class="dropdown-item" href="/theme/2/post-1"
+                              >Blog Post – No Sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/theme/2/post-2"
+                              >Blog Post – Left Sidebar</a
+                            >
+                          </li>
+                          <li>
+                            <a class="dropdown-item" href="/theme/2/post-3"
+                              >Blog Post – Right Sidebar</a
+                            >
+                          </li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start d-flex d-lg-none">
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/home">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/about">About</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/breeding-philosophy">Breeding Philosophy</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/theme/2/testimonials"
+                      >Testimonials</a
+                    >
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/puppies">Puppies</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/gallery">Gallery</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/shop">Shop</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/blog-1">Blog – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/blog-2">Blog – Left Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/blog-3">Blog – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/post-1">Blog Post – No Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/post-2">Blog Post – Left Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/post-3">Blog Post – Right Sidebar</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/faq">FAQs</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/2/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a
+                    href="tel:+12345678901"
+                    class="btn btn-lg btn-outline-primary rounded-pill px-4 w-100 mb-2"
+                  >
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-lg btn-primary rounded-pill px-4 w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-muted d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded-pill px-4" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div
+            class="position-relative d-flex flex-column justify-content-center align-items-center h-100 px-3"
+          >
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1
+                  class="bg-primary-pale text-primary d-inline-flex rounded-pill fs-5 px-4 py-2 mb-2"
+                >
+                  Testimonials
+                </h1>
+                <h1 class="display-4 fw-bold mb-3">What our puppy families are saying</h1>
+                <p class="fs-4 mb-4">
+                  Hear from the families who welcomed our Golden Retrievers into their hearts and
+                  homes — sharing their joyful experiences, cherished memories, and the deep bonds
+                  they've formed with their new companions.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary rounded-pill px-4">
+                    View Puppies <i class="ri-arrow-right-line"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light rounded-pill px-4">
+                    <i class="ri-information-2-line"></i> Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="row g-4 mb-4">
+              <!-- Testimonial 1 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      “We couldn’t be happier with our puppy! The entire process was smooth, and
+                      it’s clear how much care goes into raising these dogs. Truly an amazing
+                      experience.”
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar1.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
+                        <p class="text-muted mb-0">Austin, TX</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 2 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      “From the first inquiry to bringing our puppy home, every step was
+                      professional. You can tell these dogs are raised with love—we're grateful to
+                      have found them.”
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar7.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
+                        <p class="text-muted mb-0">San Diego, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 3 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      "What stood out was the transparency. Health screenings, temperament
+                      evaluations, early socialization — everything was handled with care. Our pup,
+                      Max, is a joy!"
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar9.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jack Smith</h6>
+                        <p class="text-muted mb-0">Atlanta, GA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Testimonial 4 -->
+              <div class="col-md-6">
+                <div class="card card-lift bg-primary-pale rounded-5 h-100 p-3">
+                  <div class="card-body d-flex flex-column justify-content-between">
+                    <!-- Testimonial Text -->
+                    <p class="card-text fs-5 mb-3">
+                      "We'd never bought a dog before. But this organization made sure we understood
+                      every step. Our breeder was amazing, and now we have Luna — healthy and
+                      well-adjusted."
+                    </p>
+                    <!-- Author Info -->
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar5.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Aaron Thomas</h6>
+                        <p class="text-muted mb-0">San Francisco, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="bg-primary-pale py-5">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div>
+                    <i class="ri-star-fill text-yellow fs-3"></i>
+                    <i class="ri-star-fill text-yellow fs-3"></i>
+                    <i class="ri-star-fill text-yellow fs-3"></i>
+                    <i class="ri-star-fill text-yellow fs-3"></i>
+                    <i class="ri-star-half-fill text-yellow fs-3"></i>
+                  </div>
+                  <div>
+                    <span class="fw-semibold fs-5 ms-2">4.5/5 Average Rating</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div>
+                    <i class="ri-group-fill text-primary fs-3"></i>
+                  </div>
+                  <div>
+                    <span class="fw-semibold fs-5 ms-2">100+ Happy Families</span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="text-center">
+                  <div>
+                    <i class="ri-shield-check-fill text-primary fs-3"></i>
+                  </div>
+                  <div>
+                    <span class="fw-semibold fs-5 ms-2">Health Guarantee</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Testimonials Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <h3 class="display-6 text-center fw-bold mb-2">Video Testimonials</h3>
+                <p class="fs-5 text-center mb-4">
+                  Heartfelt stories from real families who’ve welcomed our puppies into their
+                  homes—with love, joy, and wagging tails.
+                </p>
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div class="card card-lift border rounded-5 h-100 p-0">
+                      <div class="position-relative">
+                        <a href="#" class="d-block">
+                          <img
+                            src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                            alt="Testimonial Video Thumbnail"
+                            class="card-img-top rounded-top-5"
+                            style="object-fit: cover; height: 225px;"
+                          />
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <i
+                              class="ri-play-fill fs-1 text-light bg-dark bg-opacity-75 rounded-circle p-2"
+                            ></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-body p-3">
+                        <h5 class="card-title fs-4 mb-2">The Johnson Family</h5>
+                        <p class="text-muted mb-2">
+                          <i class="ri-map-pin-line me-1"></i>Austin, Texas
+                        </p>
+                        <p class="card-text fs-5">
+                          “We couldn’t be happier with our new pup! From the first call to pickup
+                          day, the care and professionalism were unmatched.”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div class="card card-lift border rounded-5 h-100 p-0">
+                      <div class="position-relative">
+                        <a href="#" class="d-block">
+                          <img
+                            src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                            alt="Testimonial Video Thumbnail"
+                            class="card-img-top rounded-top-5"
+                            style="object-fit: cover; height: 225px;"
+                          />
+                          <div class="position-absolute top-50 start-50 translate-middle">
+                            <i
+                              class="ri-play-fill fs-1 text-light bg-dark bg-opacity-75 rounded-circle p-2"
+                            ></i>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="card-body p-3">
+                        <h5 class="card-title fs-4 mb-2">The Williams Family</h5>
+                        <p class="text-muted mb-2">
+                          <i class="ri-map-pin-line me-1"></i>Las Vegas, Nevada
+                        </p>
+                        <p class="card-text fs-5">
+                          “From the first inquiry to bringing our puppy home, every step was
+                          professional. We're grateful to have found these dogs.”
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+          class="text-light position-relative"
+          style="background-image: url('/dist/assets/img/breederspot-images/gradient.jpg'); background-size: cover; background-position: center;"
+        >
+          <div
+            class="position-absolute top-0 start-0 w-100 h-100"
+            style="background-color: rgba(0, 0, 0, 0.1);"
+          >
+          </div>
+          <div class="container py-5 position-relative">
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <h2 class="display-6 fw-bold mb-3">
+                  Find your perfect pup—<em>ethically, responsibly, and with love</em>.
+                </h2>
+                <p class="fs-5 mb-4">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusdam, libero
+                  corporis nemo!
+                </p>
+                <form class="row text-start g-3">
+                  <div class="col-md-6">
+                    <label for="fullName" class="form-label">Full Name</label>
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="fullName"
+                      placeholder="Jane Doe"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      id="email"
+                      placeholder="you@example.com"
+                      required
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="preferredBreed" class="form-label">Preferred Breed (optional)</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control form-control-lg"
+                      id="preferredBreed"
+                      placeholder="e.g., Golden Retriever"
+                    />
+                  </div>
+                  <div class="col-md-6">
+                    <label for="phone" class="form-label">Phone Number (optional)</label>
+                    <input
+                      type="tel"
+                      class="form-control form-control-lg"
+                      id="phone"
+                      placeholder="+1 (234) 567-8901"
+                    />
+                  </div>
+                  <div class="col-md-12">
+                    <label for="message" class="form-label">Tell us what you're looking for</label>
+                    <textarea
+                      class="form-control form-control-lg"
+                      id="message"
+                      rows="4"
+                      placeholder="Age, temperament, size, etc."></textarea>
+                  </div>
+                  <div class="col-12 text-center">
+                    <button
+                      type="submit"
+                      class="btn btn-outline-light btn-lg rounded-pill px-4 mt-3"
+                    >
+                      <i class="ri-sparkling-2-line me-1"></i> Find My Pup
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/home" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/about" class="nav-link p-0 text-body-secondary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Other Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/2/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5 class="mb-3">Newsletter</h5>
+                  <p class="text-body-secondary mb-3">
+                    Subscribe to our newsletter for the latest updates.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg rounded-pill"
+                      placeholder="Email address"
+                    />
+                    <button class="btn btn-lg btn-primary rounded-pill" type="button"
+                      >Subscribe</button
+                    >
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="text-center pt-4 mt-4 border-top">
+              <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>
