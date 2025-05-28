@@ -1,0 +1,824 @@
+---
+import Head from '../../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/theme/4/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/theme/4/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="/theme/4/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/theme/4/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/theme/4/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/theme/4/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/theme/4/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li><a class="dropdown-item" href="/theme/4/blog-1">Blog – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-1">Blog Post – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-3">Blog Post – Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/4/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/4/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-muted d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-primary text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Hero Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/poodle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h1 class="display-4 fw-bold mb-3">Raising Happy, Healthy Poodles</h1>
+                <p class="fs-4 mb-4">
+                  Dedicated to ethical breeding practices, lifelong support, and the well-being of
+                  every poodle we raise — right here in Austin, Texas.
+                </p>
+                <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+                  <button class="btn btn-lg btn-primary">
+                    View Puppies <i class="ri-arrow-right-line"></i>
+                  </button>
+                  <button class="btn btn-lg btn-outline-light">
+                    <i class="ri-information-2-line"></i> Learn More
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- What Makes Us Different Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div class="row align-items-center">
+              <div class="col-md-6">
+                <div class="row">
+                  <div class="col-lg-8 offset-lg-2">
+                    <figure class="img-scale rounded">
+                      <img
+                        src="/dist/assets/img/breederspot-images/poodle-2.jpg"
+                        class="img-fluid"
+                        alt="Dog Image"
+                      />
+                    </figure>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 mt-4 mt-md-0">
+                <h2 class="text-primary fs-5 text-uppercase mb-2">About Us</h2>
+                <h3 class="display-6 fw-bold mb-2">What makes us different?</h3>
+                <p class="lead mb-0">
+                  As a proud ethical poodle breeder in Austin, we prioritize health, temperament,
+                  and responsible practices over quantity. Our poodles are raised in a loving home
+                  environment, not kennels, with early socialization and top-tier veterinary care.
+                  We stand by every pup we place, offering ongoing support to new families and a
+                  lifetime of guidance. It’s not just about finding good homes—it’s about creating
+                  the best possible start for a well-loved life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Info Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="row g-4">
+              <div class="col-6 col-md-3 text-center">
+                <div class="d-inline-flex align-items-center">
+                  <div class="display-4 fw-bold">400</div>
+                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
+                </div>
+                <div class="fs-5">Dogs Adopted</div>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="d-inline-flex align-items-center">
+                  <div class="display-4 fw-bold">50</div>
+                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">+</span>
+                </div>
+                <div class="fs-5">Caretakers</div>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="d-inline-flex align-items-center">
+                  <div class="display-4 fw-bold">24/7</div>
+                </div>
+                <div class="fs-5">Puppy Care Team</div>
+              </div>
+              <div class="col-6 col-md-3 text-center">
+                <div class="d-inline-flex align-items-center">
+                  <div class="display-4 fw-bold">100</div>
+                  <span class="text-primary fs-1 fw-bold ms-1 align-self-center">%</span>
+                </div>
+                <div class="fs-5">Cruelty-Free</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Cards Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div>
+              <h2 class="text-primary fs-5 text-uppercase mb-2">Our Features</h2>
+              <h3 class="display-6 fw-bold mb-4">What do we excel in?</h3>
+            </div>
+            <div class="row g-4">
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift bg-primary-subtle p-4">
+                  <div class="card-body">
+                    <i class="ri-heart-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Health Guarantee</p>
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd
+                      libero corpori digniss vident.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift bg-primary-subtle p-4">
+                  <div class="card-body">
+                    <i class="ri-hand-heart-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Lifetime Support</p>
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd
+                      libero corpori digniss vident.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift bg-primary-subtle p-4">
+                  <div class="card-body">
+                    <i class="ri-shake-hands-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Vet Partnerships</p>
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd
+                      libero corpori digniss vident.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <div class="card card-lift bg-primary-subtle p-4">
+                  <div class="card-body">
+                    <i class="ri-empathize-fill text-primary fs-1"></i>
+                    <p class="fs-4 fw-semibold mb-2">Puppy Updates</p>
+                    <p class="mb-2">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum quibusd
+                      libero corpori digniss vident.
+                    </p>
+                    <a href="#" class="text-primary text-decoration-none">
+                      Learn more <i class="ri-arrow-right-line"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Puppies Section -->
+        <section class="bg-body pb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <div class="text-center">
+                  <h2 class="text-primary fs-5 text-uppercase mb-2">Featured Pets</h2>
+                  <h3 class="display-6 fw-bold mb-4">Puppies available for adoption</h3>
+                </div>
+
+                <!-- Puppies' Cards -->
+                <div class="row g-4 mb-4">
+                  <!-- Pet 1 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/theme/4/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/poodle-puppy-1.jpg"
+                            class="card-img-top rounded-0"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
+                      </figure>
+                      <span
+                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
+                      >
+                        <i class="ri-women-line"></i>
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">
+                            <a href="/theme/4/puppy-details" class="text-decoration-none text-body"
+                              >Olive</a
+                            >
+                          </h5>
+                          <p class="text-muted fs-4 fw-semibold mb-0">$1200</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6">Poodle</span>
+                          <span class="badge text-primary bg-primary-subtle fs-6">4 Weeks</span>
+                        </div>
+                        <p class="card-text">
+                          A curious little explorer who loves sniffing out new adventures and
+                          snuggling after.
+                        </p>
+                      </div>
+                      <a
+                        href="/theme/4/puppy-details"
+                        class="btn btn-lg btn-primary rounded-top-0 w-100"
+                      >
+                        More Info <i class="ri-arrow-right-line"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Pet 2 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/theme/4/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/poodle-puppy-2.jpg"
+                            class="card-img-top rounded-0"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
+                      </figure>
+                      <span
+                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
+                      >
+                        <i class="ri-men-line"></i>
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">
+                            <a href="/theme/4/puppy-details" class="text-decoration-none text-body"
+                              >Finn</a
+                            >
+                          </h5>
+                          <p class="text-muted fs-4 fw-semibold mb-0">$1400</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6">Poodle</span>
+                          <span class="badge text-primary bg-primary-subtle fs-6">4 Weeks</span>
+                        </div>
+                        <p class="card-text">
+                          Bright-eyed and always eager to play, Finn is a bundle of energy with a
+                          gentle heart.
+                        </p>
+                      </div>
+                      <a
+                        href="/theme/4/puppy-details"
+                        class="btn btn-lg btn-primary rounded-top-0 w-100"
+                      >
+                        More Info <i class="ri-arrow-right-line"></i>
+                      </a>
+                    </div>
+                  </div>
+                  <!-- Pet 3 -->
+                  <div class="col-md-4">
+                    <div class="card border h-100 position-relative p-0">
+                      <figure class="img-scale rounded-top-4 mb-0">
+                        <a href="/theme/4/puppy-details"
+                          ><img
+                            src="/dist/assets/img/breederspot-images/poodle-puppy-3.jpg"
+                            class="card-img-top rounded-0"
+                            style="max-height: 300px; object-fit: cover;"
+                            alt="Pet Image"
+                          /></a
+                        >
+                      </figure>
+                      <span
+                        class="badge bg-light text-primary rounded-pill shadow-sm position-absolute top-0 end-0 fs-5 p-2 m-2"
+                      >
+                        <i class="ri-women-line"></i>
+                      </span>
+                      <div class="card-body p-3">
+                        <div class="d-flex align-items-center justify-content-between mb-2">
+                          <h5 class="card-title fs-4 mb-0">
+                            <a href="/theme/4/puppy-details" class="text-decoration-none text-body"
+                              >Luna</a
+                            >
+                          </h5>
+                          <p class="text-muted fs-4 fw-semibold mb-0">$1200</p>
+                        </div>
+                        <div class="d-flex flex-wrap gap-2 mb-2">
+                          <span class="badge text-primary bg-primary-subtle fs-6">Poodle</span>
+                          <span class="badge text-primary bg-primary-subtle fs-6">4 Weeks</span>
+                        </div>
+                        <p class="card-text">
+                          Graceful and calm, Luna adores quiet moments and has a naturally nurturing
+                          vibe.
+                        </p>
+                      </div>
+                      <a
+                        href="/theme/4/puppy-details"
+                        class="btn btn-lg btn-primary rounded-top-0 w-100"
+                      >
+                        More Info <i class="ri-arrow-right-line"></i>
+                      </a>
+                    </div>
+                  </div>
+                </div>
+                <div class="text-center">
+                  <a href="#" class="btn btn-lg btn-outline-primary text-decoration-none">
+                    View All Puppies <i class="ri-arrow-right-line"></i>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Upcoming Litters Section -->
+        <section class="bg-primary-subtle py-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="text-primary fs-5 text-uppercase mb-2">Upcoming Litters</h2>
+              <h3 class="display-6 fw-bold mb-4">New poodle pups coming soon!</h3>
+            </div>
+            <div class="row">
+              <div class="col-lg-10 offset-lg-1">
+                <div class="row g-4">
+                  <div class="col-md-6">
+                    <div
+                      class="card bg-primary-subtle border border-primary-soft card-lift h-100 p-0"
+                    >
+                      <img
+                        src="/dist/assets/img/breederspot-images/poodle-2.jpg"
+                        class="card-img-top"
+                        style="max-height: 300px; width: 100%; object-fit: cover;"
+                        alt="The Willow Litter"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="card-title fs-3 fw-bold mb-1">The Willow Litter</h5>
+                        <p class="text-primary fs-5 fw-semibold mb-1">Parents: Rocky × Mini</p>
+                        <p class="text-body-secondary mb-2">Expected Date: June 15, 2025</p>
+                        <p class="mb-3">
+                          This pairing brings together two gentle Poodles - known for their calm
+                          personalities and beautiful coats.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                          Join Waitlist <i class="ri-arrow-right-line align-middle ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6">
+                    <div
+                      class="card bg-primary-subtle border border-primary-soft card-lift h-100 p-0"
+                    >
+                      <img
+                        src="/dist/assets/img/breederspot-images/poodle-2.jpg"
+                        class="card-img-top"
+                        style="max-height: 300px; width: 100%; object-fit: cover;"
+                        alt="The Maple Litter"
+                      />
+                      <div class="card-body p-4">
+                        <h5 class="card-title fs-3 fw-bold mb-1">The Maple Litter</h5>
+                        <p class="text-primary fs-5 fw-semibold mb-1">Parents: Caesar × Angel</p>
+                        <p class="text-body-secondary mb-2">Expected Date: July 2, 2025</p>
+                        <p class="mb-3">
+                          These Poodle pups will be loving, smart, and irresistibly sweet - perfect
+                          for allergy-sensitive homes.
+                        </p>
+                        <a href="#" class="btn btn-lg btn-primary">
+                          Join Waitlist <i class="ri-arrow-right-line align-middle ms-1"></i>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Process Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="text-primary fs-5 text-uppercase mb-2">Adoption Process</h2>
+              <h3 class="display-6 fw-bold mb-4">Your journey to puppy parenthood</h3>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="d-grid gap-4">
+                  <div class="card bg-primary-subtle card-lift h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">01.</span>
+                      <p class="fs-4 fw-semibold mb-2">Application</p>
+                      <p class="mb-0">
+                        Start by filling out our quick form so we can learn more about you and match
+                        you with the right puppy.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card bg-primary-subtle card-lift h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">02.</span>
+                      <p class="fs-4 fw-semibold mb-2">Approval</p>
+                      <p class="mb-0">
+                        We’ll review your application and reach out for a short conversation to
+                        ensure our puppies go to loving homes.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card bg-primary-subtle card-lift h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">03.</span>
+                      <p class="fs-4 fw-semibold mb-2">Waitlist</p>
+                      <p class="mb-0">
+                        Once approved, you’ll join the waitlist for upcoming litters. We’ll keep you
+                        updated with litter announcements.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="card bg-primary-subtle card-lift h-100 p-4">
+                    <div class="card-body">
+                      <span class="display-5 fw-semibold text-primary">04.</span>
+                      <p class="fs-4 fw-semibold mb-2">Homecoming</p>
+                      <p class="mb-0">
+                        When your puppy is ready, you’ll be invited to meet them. After final
+                        checks, you’ll bring home a happy companion!
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Testimonials Section -->
+        <section class="bg-body pb-5">
+          <div class="container">
+            <div class="text-center">
+              <h2 class="text-primary fs-5 text-uppercase mb-2">Testimonials</h2>
+              <h3 class="display-6 fw-bold mb-4">What people are saying about us?</h3>
+            </div>
+
+            <div class="row g-4">
+              <div class="col-md-6">
+                <div class="card bg-primary-subtle card-lift h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="mb-3">
+                      “From the very first call to bringing our puppy home, the experience was
+                      seamless and full of care. It was clear these breeders truly love what they
+                      do. Our little Rosie came home healthy and happy—we truly couldn't be more
+                      grateful!”
+                    </p>
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar1.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
+                        <p class="text-muted mb-0">Austin, TX</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="card bg-primary-subtle card-lift h-100">
+                  <div class="card-body">
+                    <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+                    <p class="mb-3">
+                      “From the moment we reached out, we felt completely supported. Every question
+                      we had was answered with patience. Our puppy arrived healthy, playful, and
+                      clearly well-loved. We couldn't have asked for a sweeter addition to our
+                      family!”
+                    </p>
+                    <div class="d-flex align-items-center mt-auto">
+                      <img
+                        src="/dist/assets/img/avatars/avatar7.jpg"
+                        alt="Avatar"
+                        class="rounded-circle me-3"
+                        width="64"
+                        height="64"
+                      />
+                      <div>
+                        <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
+                        <p class="text-muted mb-0">San Diego, CA</p>
+                        <div>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-fill text-yellow"></i>
+                          <i class="ri-star-half-fill text-yellow"></i>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/poodle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
+                <p class="fs-5 mb-4">
+                  Be the first to know about upcoming poodle puppies, early adoption openings, and
+                  expert puppy care tips.
+                </p>
+
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+
+                <!-- Small note -->
+                <p class="text-light mt-3 mb-0">We send only what matters—no spam, just poodles.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/home" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/about" class="nav-link p-0 text-body-secondary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Other Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5 class="mb-3">Newsletter</h5>
+                  <p class="text-body-secondary mb-3">
+                    Subscribe to our newsletter for the latest updates.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Email address"
+                    />
+                    <button class="btn btn-lg btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="text-center pt-4 mt-4 border-top">
+              <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>

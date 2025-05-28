@@ -1,0 +1,425 @@
+---
+import Head from '../../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/theme/4/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/theme/4/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/theme/4/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/theme/4/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/theme/4/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/theme/4/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/theme/4/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li>
+                        <a class="dropdown-item active" href="/theme/4/blog-1">Blog – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-1">Blog Post – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/4/post-3">Blog Post – Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/4/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/4/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-muted d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-primary text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Blogs Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Blogs</h1>
+            <h2 class="display-5 text-center fw-bold mb-4">Read our latest articles and tips</h2>
+            <div class="row">
+              <div class="col-lg-8 offset-lg-2">
+                <div class="card border p-0 mb-4">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-3.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Health</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>Jane Smith
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>12 Jan 2025</span>
+                      </span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        Why Health Testing Matters in Dog Breeding
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Explaining the importance of genetic and health screenings in ethical breeding
+                      practices.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+                <div class="card border p-0 mb-4">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-9-wide.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Ethics</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>Jane Smith
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>20 Feb 2025</span>
+                      </span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        Puppy Mills vs. Ethical Breeders: Learn the Difference
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Comparing unethical breeding operations to responsible ones, with clear
+                      distinctions.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+                <div class="card border p-0">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-13-wide.jpg"
+                    class="card-img-top"
+                    style="max-height: 400px; object-fit: cover;"
+                    alt="blog image"
+                  />
+                  <div class="card-body p-3">
+                    <div class="d-flex align-items-center justify-content-between mb-2">
+                      <span class="badge text-primary bg-primary-subtle fs-6">Value</span>
+                      <span class="d-flex gap-3 text-muted">
+                        <a href="#" class="text-decoration-none text-muted">
+                          <i class="ri-user-line me-1"></i>Jane Smith
+                        </a>
+                        <span><i class="ri-calendar-line me-1"></i>6 Jan 2025</span>
+                      </span>
+                    </div>
+                    <h5 class="card-title fs-4 mb-2">
+                      <a href="#" class="text-decoration-none text-body">
+                        The True Cost of a Well-Bred Puppy
+                      </a>
+                    </h5>
+                    <p class="text-muted mb-2">
+                      Why puppies from ethical breeders cost more and what goes into responsible
+                      pricing.
+                    </p>
+                    <a href="#" class="text-decoration-none text-primary mb-0"
+                      >Read more <i class="ri-arrow-right-line"></i></a
+                    >
+                  </div>
+                </div>
+
+                <!-- Pagination -->
+                <nav class="mt-5 d-flex justify-content-center" aria-label="Pagination">
+                  <ul class="pagination pagination-lg z-1">
+                    <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                  </ul>
+                </nav>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/poodle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
+                <p class="fs-5 mb-4">
+                  Be the first to know about upcoming poodle puppies, early adoption openings, and
+                  expert puppy care tips.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="text-light mt-3 mb-0">We send only what matters—no spam, just poodles.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="pt-5 pb-4">
+          <div class="container">
+            <div class="row">
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/home" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/about" class="nav-link p-0 text-body-secondary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Other Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/4/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-6 col-md-2 mb-3">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="col-md-5 offset-md-1 mb-3">
+                <form>
+                  <h5 class="mb-3">Newsletter</h5>
+                  <p class="text-body-secondary mb-3">
+                    Subscribe to our newsletter for the latest updates.
+                  </p>
+                  <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Email address"
+                    />
+                    <button class="btn btn-lg btn-primary" type="button">Subscribe</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+
+            <div class="text-center pt-4 mt-4 border-top">
+              <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+            </div>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>

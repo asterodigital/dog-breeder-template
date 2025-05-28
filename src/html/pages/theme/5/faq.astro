@@ -1,0 +1,524 @@
+---
+import Head from '../../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/theme/5/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/theme/5/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/theme/5/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/theme/5/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/theme/5/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/theme/5/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/theme/5/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/blog-1">Blog – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/post-1">Blog Post – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/post-2">Blog Post – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/5/post-3">Blog Post – Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link active" href="/theme/5/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/5/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-gray-500 d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- FAQs Section -->
+        <section class="text-bg-dark py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+                <div class="text-center">
+                  <h2
+                    class="bg-gray-700 d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+                    style="letter-spacing: 0.05rem;"
+                  >
+                    FAQs
+                  </h2>
+                  <h3 class="display-6 fw-semibold mb-2">Frequently Asked Questions</h3>
+                  <p class="text-center lead fs-5 mb-4">
+                    Lorem ipsum dolor sit amet consectet adipisi elit dolorum quibus, libero dolor
+                    sit amet corporis dignis.
+                  </p>
+                </div>
+
+                <ul class="nav nav-pills nav-fill justify-content-center mb-3">
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-lg active" aria-current="page" href="#">General</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-lg" href="#">Payments</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link nav-link-lg" href="#">Policies</a>
+                  </li>
+                </ul>
+
+                <div
+                  class="accordion accordion-flush"
+                  id="accordionFlushExample"
+                  role="tablist"
+                  aria-multiselectable="true"
+                >
+                  <div class="accordion-item border rounded mb-3">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed rounded shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseOne"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseOne"
+                      >
+                        What steps do you take to ensure the health of your puppies?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseOne"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
+                        elit.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border rounded mb-3">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed rounded shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseTwo"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseTwo"
+                      >
+                        Do your puppies come with vaccinations and health checks?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseTwo"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
+                        elit.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border rounded mb-3">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed rounded shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseThree"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseThree"
+                      >
+                        What kind of support do you provide after adoption?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseThree"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
+                        elit.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border rounded mb-3">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed rounded shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFour"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFour"
+                      >
+                        Can I meet the puppy’s parents before adoption?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFour"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
+                        elit.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="accordion-item border rounded mb-3">
+                    <h2 class="accordion-header">
+                      <button
+                        class="accordion-button collapsed rounded shadow-none"
+                        type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#flush-collapseFive"
+                        aria-expanded="false"
+                        aria-controls="flush-collapseFive"
+                      >
+                        Do you offer a health guarantee or contract?
+                      </button>
+                    </h2>
+                    <div
+                      id="flush-collapseFive"
+                      class="accordion-collapse collapse"
+                      data-bs-parent="#accordionFlushExample"
+                    >
+                      <div class="accordion-body">
+                        Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi
+                        elit.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Card Section -->
+        <section class="text-bg-dark pb-5 px-2">
+          <div class="container bg-gray-800 rounded-4 p-4 p-md-5">
+            <div class="row align-items-center">
+              <div class="col-md-8">
+                <div class="d-flex align-items-center gap-3 mb-1">
+                  <i class="ri-questionnaire-line text-primary fs-3"></i>
+                  <h4 class="fw-semibold mb-0">Didn't find the answer you were looking for?</h4>
+                </div>
+                <p class="fs-5 mb-0">
+                  We're here to help—reach out to our team and we'll get back to you as soon as
+                  possible.
+                </p>
+              </div>
+              <div class="col-md-4 text-md-end mt-3 mt-md-0">
+                <a href="#" class="btn btn-primary btn-lg px-4 mb-1">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section
+          class="position-relative text-light text-center"
+          style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+        >
+          <!-- Overlay -->
+          <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
+          <!-- Content -->
+          <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3">
+                <h5 class="display-6 fw-semibold mb-2">Stay connected with the pack</h5>
+                <p class="fs-5 mb-4">
+                  Subscribe to our newsletter for updates on upcoming litters, training tips, and
+                  stories from our shepherd family — straight to your inbox.
+                </p>
+                <!-- Email Form -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required=""
+                    />
+                    <div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div><div
+                      data-lastpass-icon-root=""
+                      style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+                    >
+                    </div>
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+                  </div>
+                </form>
+                <!-- Small note -->
+                <p class="mt-3 mb-0">We send only what matters. No spam, ever.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="text-bg-dark">
+          <div class="container">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 px-3 px-lg-5 pt-5 pb-4">
+              <div class="col mb-3">
+                <a
+                  href="/"
+                  class="d-inline-flex align-items-center text-decoration-none mb-2"
+                  aria-label="Your Company Logo"
+                >
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Your Company Logo"
+                    style="height: 28px;"
+                    class="me-2"
+                  />
+                </a>
+                <p class="mb-3">
+                  Over 200 happy families have found their perfect pup with us — yours could be
+                  next.
+                </p>
+                <button class="btn btn-lg btn-outline-light mb-2">Get in touch</button>
+              </div>
+
+              <div class="col mb-3"></div>
+
+              <div class="col mb-3">
+                <nav aria-label="Quick Links">
+                  <h5 class="mb-3">Quick Links</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/home" class="nav-link text-light p-0">Home</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/about" class="nav-link text-light p-0">About</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/puppies" class="nav-link text-light p-0">Puppies</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/shop" class="nav-link text-light p-0">Shop</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/faq" class="nav-link text-light p-0">FAQs</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/blog" class="nav-link text-light p-0">Blog</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="/theme/5/contact" class="nav-link text-light p-0">Contact</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col mb-3">
+                <nav aria-label="Legal">
+                  <h5 class="mb-3">Legal</h5>
+                  <ul class="nav flex-column">
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Terms of Use</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Privacy Policy</a>
+                    </li>
+                    <li class="nav-item mb-2">
+                      <a href="#" class="nav-link text-light p-0">Cookies Policy</a>
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+
+              <div class="col mb-3">
+                <h5 class="mb-3">Contact</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <i class="ri-phone-fill text-primary me-2"></i>
+                    <a href="tel:+12345678901" class="text-decoration-none text-light text-break"
+                      >+1 (234) 567-8901</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <i class="ri-mail-fill text-primary me-2"></i>
+                    <a
+                      href="mailto:hello@email.com"
+                      class="text-decoration-none text-light text-break">hello@email.com</a
+                    >
+                  </li>
+                  <li class="nav-item mb-2">
+                    <address class="text-light">
+                      <i class="ri-map-pin-fill text-primary me-2"></i>
+                      123 Main Street, Austin, TX
+                    </address>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="text-center bg-gray-800 py-4">
+            <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>

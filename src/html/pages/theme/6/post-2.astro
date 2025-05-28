@@ -1,0 +1,609 @@
+---
+import Head from '../../../../html/layouts/front/partials/_head.astro'
+import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <Head />
+  </head>
+  <body>
+    <!-- Main Content -->
+    <main>
+      <!-- Page Content -->
+      <div class="content-wrapper">
+        <!-- Topbar -->
+        <div class="bg-primary-pale py-2 small text-muted d-none d-md-block">
+          <div class="container">
+            <div class="row align-items-center text-center text-md-start gx-3 gy-2">
+              <!-- Left: Phone & Email -->
+              <div
+                class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start flex-wrap gap-3"
+              >
+                <div>
+                  <i class="ri-phone-fill me-1"></i>
+                  <a href="tel:+12345678901" class="text-muted text-decoration-none"
+                    >+1 (234) 567-8901</a
+                  >
+                </div>
+                <div>
+                  <i class="ri-mail-fill me-1"></i>
+                  <a href="mailto:hello@email.com" class="text-muted text-decoration-none"
+                    >hello@email.com</a
+                  >
+                </div>
+              </div>
+
+              <!-- Right: Hours & Location -->
+              <div
+                class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-wrap gap-3 ms-md-auto"
+              >
+                <div>
+                  <i class="ri-time-fill me-1"></i>
+                  Mon–Fri: 9am–6pm
+                </div>
+                <div>
+                  <i class="ri-map-pin-fill me-1"></i>
+                  123 Main Street, Austin, TX
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Navbar -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+          <div class="container">
+            <!-- Brand Logo or Text -->
+            <a class="navbar-brand d-flex align-items-center" href="/theme/6/home">
+              <img
+                src="/dist/assets/img/breederspot-images/logo.svg"
+                alt="Logo"
+                class="me-2 mt-1"
+                style="height: 28px;"
+              />
+            </a>
+
+            <!-- Offcanvas Toggler -->
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="offcanvas"
+              data-bs-target="#offcanvasNavbar"
+              aria-controls="offcanvasNavbar"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Offcanvas Menu -->
+            <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+              <div class="offcanvas-header">
+                <a class="navbar-brand d-flex align-items-center" href="/theme/6/home">
+                  <img
+                    src="/dist/assets/img/breederspot-images/logo.svg"
+                    alt="Logo"
+                    class="me-2"
+                    style="height: 28px;"
+                  />
+                </a>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="offcanvas"
+                  aria-label="Close"></button>
+              </div>
+              <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+                <ul
+                  class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center"
+                >
+                  <!-- Home -->
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/theme/6/home">Home</a>
+                  </li>
+
+                  <!-- About Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="aboutDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                      <li><a class="dropdown-item" href="/theme/6/about">About</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/breeding-philosophy"
+                          >Breeding Philosophy</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/testimonials">Testimonials</a>
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- Explore Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="exploreDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Explore
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                      <li><a class="dropdown-item" href="/theme/6/puppies">Puppies</a></li>
+                      <li><a class="dropdown-item" href="/theme/6/gallery">Gallery</a></li>
+                      <li><a class="dropdown-item" href="/theme/6/shop">Shop</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- Blog Dropdown -->
+                  <li class="nav-item dropdown">
+                    <a
+                      class="nav-link dropdown-toggle"
+                      href="#"
+                      id="blogDropdown"
+                      role="button"
+                      data-bs-toggle="dropdown"
+                      aria-expanded="false"
+                    >
+                      Blog
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                      <li><a class="dropdown-item" href="/theme/6/blog-1">Blog – No Sidebar</a></li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/blog-2">Blog – Left Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/blog-3">Blog – Right Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/post-1">Blog Post – No Sidebar</a>
+                      </li>
+                      <li>
+                        <a class="dropdown-item active" href="/theme/6/post-2"
+                          >Blog Post – Left Sidebar</a
+                        >
+                      </li>
+                      <li>
+                        <a class="dropdown-item" href="/theme/6/post-3">Blog Post – Right Sidebar</a
+                        >
+                      </li>
+                    </ul>
+                  </li>
+
+                  <!-- FAQs -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/6/faq">FAQs</a>
+                  </li>
+
+                  <!-- Contact -->
+                  <li class="nav-item">
+                    <a class="nav-link" href="/theme/6/contact">Contact</a>
+                  </li>
+                </ul>
+
+                <!-- Bottom Section -->
+                <div class="d-block d-lg-none mt-4">
+                  <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+                    <i class="ri-phone-fill me-2"></i>Book Consultation
+                  </a>
+                  <a class="btn btn-primary rounded w-100" href="#"
+                    ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="d-none d-lg-flex align-items-center gap-3">
+              <div class="text-start">
+                <small class="text-muted d-block">Book Consultation</small>
+                <a href="tel:+12345678901" class="text-decoration-none fw-medium">
+                  +1 (234) 567-8901
+                </a>
+              </div>
+
+              <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+            </div>
+          </div>
+        </nav>
+
+        <!-- Blogs Section -->
+        <section class="bg-body py-5">
+          <div class="container">
+            <div class="row gy-4">
+              <div class="col-lg-9 order-lg-2">
+                <!-- Blog Heading, Category, and Date -->
+                <div class="mb-4">
+                  <span class="badge text-primary bg-primary-subtle fs-6 mb-2">Health</span>
+                  <h1 class="fw-semibold mb-2">Why Health Testing Matters in Dog Breeding</h1>
+                  <p class="text-muted"><i class="ri-calendar-line me-1"></i>12 Jan 2025</p>
+                </div>
+
+                <!-- Cover Image -->
+                <div class="mb-4">
+                  <img
+                    src="/dist/assets/img/breederspot-images/dog-img-3.jpg"
+                    alt="Blog Cover"
+                    class="img-fluid rounded"
+                    style="max-height: 400px; object-fit: cover; width: 100%;"
+                  />
+                </div>
+
+                <!-- Blog Content -->
+                <div class="mb-4">
+                  <p>
+                    Breeding dogs responsibly requires more than just a passion for the breed — it
+                    demands a commitment to health and genetic screening. Health testing plays a
+                    pivotal role in reducing inherited diseases and ensuring the well-being of
+                    future litters.
+                  </p>
+                  <p>
+                    Through responsible breeding practices, including thorough health evaluations,
+                    breeders contribute to the long-term health of dog populations. Tests such as
+                    hip evaluations, genetic screenings, and cardiac exams help breeders make
+                    informed pairing decisions.
+                  </p>
+                  <p>
+                    Investing in health testing also builds trust with prospective puppy buyers,
+                    reinforces ethical breeding standards, and ultimately leads to healthier,
+                    happier pets.
+                  </p>
+                </div>
+
+                <!-- Share Button -->
+                <div class="mb-4">
+                  <button class="btn btn-outline-primary">
+                    <i class="ri-share-line me-1"></i> Share this post
+                  </button>
+                </div>
+
+                <!-- Author Section -->
+                <div class="d-flex align-items-center border-top pt-4 mb-5">
+                  <img
+                    src="/dist/assets/img/avatars/avatar1.jpg"
+                    alt="Author Image"
+                    class="rounded-circle me-3"
+                    width="64"
+                    height="64"
+                  />
+                  <div>
+                    <h6 class="mb-1">
+                      <a href="#" class="text-decoration-none text-body">Jane Smith</a>
+                    </h6>
+
+                    <p class="text-muted mb-0">
+                      Certified canine health advocate with 10+ years of experience.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- Similar Posts -->
+                <div class="mb-4">
+                  <h4 class="mb-4">Similar Posts</h4>
+                  <div class="row g-4">
+                    <div class="col-md-4">
+                      <div class="card border h-100 p-0">
+                        <img
+                          src="/dist/assets/img/breederspot-images/dog-img-9-wide.jpg"
+                          class="card-img-top"
+                          alt="Similar Post 1"
+                        />
+                        <div class="card-body p-3">
+                          <h5 class="card-title">
+                            Puppy Mills vs. Ethical Breeders: Learn the Difference
+                          </h5>
+                          <p class="card-text text-muted mb-2">
+                            Comparing unethical breeding operations to responsible ones, with clear
+                            distinctions.
+                          </p>
+                          <a href="#" class="btn btn-link text-primary p-0">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-md-4">
+                      <div class="card border h-100 p-0">
+                        <img
+                          src="/dist/assets/img/breederspot-images/dog-img-13-wide.jpg"
+                          class="card-img-top"
+                          alt="Similar Post 2"
+                        />
+                        <div class="card-body p-3">
+                          <h5 class="card-title">The True Cost of a Well-Bred Puppy</h5>
+                          <p class="card-text text-muted mb-2">
+                            Why puppies from ethical breeders cost more and what goes into
+                            responsible pricing.
+                          </p>
+                          <a href="#" class="btn btn-link text-primary p-0">Read more</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Sidebar Column -->
+              <div class="col-lg-3 order-lg-1">
+                <div class="sticky-top z-1" style="top: 80px;">
+                  <!-- Popular Posts Card -->
+                  <div class="card border p-3 mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-history-line me-2"></i>Popular Posts
+                      </h5>
+                      <ul class="list-group list-group-flush">
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
+                            Why Health Testing Matters in Dog Breeding
+                          </a>
+                          <p class="text-muted mb-2">
+                            12 Jan 2025 • <span class="badge text-primary bg-primary-subtle"
+                              >Health</span
+                            >
+                          </p>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
+                            Puppy Mills vs. Ethical Breeders: Learn the Difference
+                          </a>
+                          <p class="text-muted mb-2">
+                            20 Feb 2025 • <span class="badge text-primary bg-primary-subtle"
+                              >Ethics</span
+                            >
+                          </p>
+                        </li>
+                        <li class="list-group-item">
+                          <a href="#" class="text-decoration-none fw-semibold d-block mb-1">
+                            The True Cost of a Well-Bred Puppy
+                          </a>
+                          <p class="text-muted mb-2">
+                            6 Jan 2025 • <span class="badge text-primary bg-primary-subtle"
+                              >Value</span
+                            >
+                          </p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <!-- Tags Card -->
+                  <div class="card border p-3 mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-price-tag-3-line me-2"></i>Tags
+                      </h5>
+                      <div class="d-flex flex-wrap gap-2">
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Health</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Ethics</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Value</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Breeders</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Process</a
+                        >
+                        <a
+                          href="#"
+                          class="badge text-primary bg-primary-subtle text-decoration-none px-3 py-2"
+                          >Puppies</a
+                        >
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Categories Card -->
+                  <div class="card border p-3 mb-4">
+                    <div class="card-body">
+                      <h5 class="card-title mb-3">
+                        <i class="ri-folder-line me-2"></i>Categories
+                      </h5>
+                      <ul class="list-unstyled mb-0">
+                        <li class="mb-2">
+                          <a
+                            href="#"
+                            class="text-decoration-none text-body d-flex justify-content-between"
+                          >
+                            Health <span class="text-muted">(12)</span>
+                          </a>
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="#"
+                            class="text-decoration-none text-body d-flex justify-content-between"
+                          >
+                            Ethics <span class="text-muted">(8)</span>
+                          </a>
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="#"
+                            class="text-decoration-none text-body d-flex justify-content-between"
+                          >
+                            Value <span class="text-muted">(5)</span>
+                          </a>
+                        </li>
+                        <li class="mb-2">
+                          <a
+                            href="#"
+                            class="text-decoration-none text-body d-flex justify-content-between"
+                          >
+                            Puppies <span class="text-muted">(9)</span>
+                          </a>
+                        </li>
+                        <li>
+                          <a
+                            href="#"
+                            class="text-decoration-none text-body d-flex justify-content-between"
+                          >
+                            Nutrition <span class="text-muted">(4)</span>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="bg-primary-pale py-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 offset-lg-3 text-center">
+                <h2 class="display-6 fw-semibold mb-2">Your Puppy Journey Starts Here</h2>
+                <p class="lead mb-4">
+                  Sign up to get updates on upcoming litters, and tips for new dog parents.
+                </p>
+
+                <!-- Email Input -->
+                <form class="row g-2 justify-content-center">
+                  <div class="col-sm-9">
+                    <input
+                      type="email"
+                      class="form-control form-control-lg"
+                      placeholder="Enter your email"
+                      required
+                    />
+                  </div>
+                  <div class="col-sm-3">
+                    <button type="submit" class="btn btn-primary btn-lg w-100">Subscribe</button>
+                  </div>
+                </form>
+
+                <!-- Note below input -->
+                <p class="text-muted small mt-2">
+                  *We respect your privacy. No spam—just adorable puppies and helpful updates.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 px-3 px-lg-5 pt-5 pb-4">
+            <div class="col mb-3">
+              <a
+                href="/"
+                class="d-inline-flex align-items-center text-decoration-none mb-2"
+                aria-label="Your Company Logo"
+              >
+                <img
+                  src="/dist/assets/img/breederspot-images/logo.svg"
+                  alt="Your Company Logo"
+                  style="height: 28px;"
+                  class="me-2"
+                />
+              </a>
+              <p class="text-body-secondary mb-3">
+                Over 200 happy families have found their perfect pup with us — yours could be next.
+              </p>
+              <button class="btn btn-outline-primary">Get in touch</button>
+            </div>
+
+            <div class="col mb-3"></div>
+
+            <div class="col mb-3">
+              <nav aria-label="Quick Links">
+                <h5 class="mb-3">Quick Links</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/home" class="nav-link p-0 text-body-secondary">Home</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/about" class="nav-link p-0 text-body-secondary">About</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="/theme/6/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col mb-3">
+              <nav aria-label="Legal">
+                <h5 class="mb-3">Legal</h5>
+                <ul class="nav flex-column">
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+                  </li>
+                  <li class="nav-item mb-2">
+                    <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+
+            <div class="col mb-3">
+              <h5 class="mb-3">Contact</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2 text-body-secondary">
+                  <i class="ri-phone-fill text-primary me-2"></i>
+                  <a
+                    href="tel:+12345678901"
+                    class="text-body-secondary text-decoration-none text-break">+1 (234) 567-8901</a
+                  >
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                  <i class="ri-mail-fill text-primary me-2"></i>
+                  <a
+                    href="mailto:hello@email.com"
+                    class="text-body-secondary text-decoration-none text-break">hello@email.com</a
+                  >
+                </li>
+                <li class="nav-item mb-2 text-body-secondary">
+                  <address class="text-body-secondary">
+                    <i class="ri-map-pin-fill text-primary me-2"></i>
+                    123 Main Street, Austin, TX
+                  </address>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="text-center bg-primary-subtle py-4">
+            <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+          </div>
+        </footer>
+      </div>
+
+      <!-- All Scripts -->
+      <Scripts />
+    </main>
+  </body>
+</html>
