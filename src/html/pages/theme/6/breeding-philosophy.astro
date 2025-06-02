@@ -99,7 +99,7 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
                 >
                   <!-- Home -->
                   <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="/theme/6/home">Home</a>
+                    <a class="nav-link" href="/theme/6/home">Home</a>
                   </li>
 
                   <!-- About Dropdown -->
@@ -117,8 +117,10 @@ import Scripts from '../../../../html/layouts/front/partials/_scripts.astro'
                     <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
                       <li><a class="dropdown-item" href="/theme/6/about">About</a></li>
                       <li>
-                        <a class="dropdown-item active" href="/theme/6/breeding-philosophy"
-                          >Breeding Philosophy</a
+                        <a
+                          class="dropdown-item active"
+                          aria-current="page"
+                          href="/theme/6/breeding-philosophy">Breeding Philosophy</a
                         >
                       </li>
                       <li>
