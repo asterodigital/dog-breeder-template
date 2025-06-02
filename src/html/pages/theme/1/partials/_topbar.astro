@@ -1,7 +1,7 @@
 ---
 // import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 import Logo from './_topbar/_logo.astro'
-import { getPathPrefix } from '../../../../utils/path'
+import { getPathPrefix } from '../../../../../utils/path.js'
 ---
 
 <!-- Top Navigation -->
@@ -106,7 +106,8 @@ import { getPathPrefix } from '../../../../utils/path'
             <ul class="dropdown-menu" aria-labelledby="blogDropdown">
               <li>
                 <a class="dropdown-item" href={getPathPrefix('/theme/1/blog-1')}
-                  >Blog – No Sidebar</a>
+                  >Blog – No Sidebar</a
+                >
               </li>
               <li>
                 <a class="dropdown-item" href={getPathPrefix('/theme/1/blog-2')}
