@@ -1,5 +1,6 @@
 ---
-// import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+import { getPathPrefix } from '../../../../../utils/path.js'
+import Logo from './_topbar/_logo.astro'
 ---
 
 <!-- Footer -->
@@ -11,12 +12,7 @@
         class="d-inline-flex align-items-center text-decoration-none mb-2"
         aria-label="Your Company Logo"
       >
-        <img
-          src="/dist/assets/img/breederspot-images/logo.svg"
-          alt="Your Company Logo"
-          style="height: 28px;"
-          class="me-2"
-        />
+        <Logo />
       </a>
       <p class="text-body-secondary mb-3">
         Over 200 happy families have found their perfect pup with us — yours could be next.
@@ -31,25 +27,38 @@
         <h5 class="mb-3">Quick Links</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="/theme/1/home" class="nav-link p-0 text-body-secondary">Home</a>
+            <a href={getPathPrefix('/theme/1/home')} class="nav-link p-0 text-body-secondary"
+              >Home</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/about" class="nav-link p-0 text-body-secondary">About</a>
+            <a href={getPathPrefix('/theme/1/about')} class="nav-link p-0 text-body-secondary"
+              >About</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/puppies" class="nav-link p-0 text-body-secondary">Puppies</a>
+            <a href={getPathPrefix('/theme/1/puppies')} class="nav-link p-0 text-body-secondary"
+              >Puppies</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/shop" class="nav-link p-0 text-body-secondary">Shop</a>
+            <a href={getPathPrefix('/theme/1/shop')} class="nav-link p-0 text-body-secondary"
+              >Shop</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/faq" class="nav-link p-0 text-body-secondary">FAQs</a>
+            <a href={getPathPrefix('/theme/1/faq')} class="nav-link p-0 text-body-secondary">FAQs</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/blog" class="nav-link p-0 text-body-secondary">Blog</a>
+            <a href={getPathPrefix('/theme/1/blog')} class="nav-link p-0 text-body-secondary"
+              >Blog</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="/theme/1/contact" class="nav-link p-0 text-body-secondary">Contact</a>
+            <a href={getPathPrefix('/theme/1/contact')} class="nav-link p-0 text-body-secondary"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
