@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -189,7 +190,7 @@ import Layout from './layout.astro'
         <div class="col-lg-4 d-flex justify-content-center">
           <figure class="img-scale rounded-4">
             <img
-              src="/dist/assets/img/breederspot-images/poodle-2.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/poodle-2.jpg')}
               class="img-fluid"
               style="object-fit: cover;"
               alt="Health Testing"

@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="About" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -36,7 +37,7 @@ import Layout from './layout.astro'
         <div class="col-lg-4 d-flex justify-content-center">
           <figure class="img-scale rounded">
             <img
-              src="/dist/assets/img/breederspot-images/poodle-2.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/poodle-2.jpg')}
               class="img-fluid"
               style="object-fit: cover;"
               alt="Our Story"
@@ -228,7 +229,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-288.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-288.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -239,7 +240,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-367.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-367.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -250,7 +251,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-287.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-287.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -261,7 +262,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-335.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-335.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -272,7 +273,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-334.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-334.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -283,7 +284,7 @@ import Layout from './layout.astro'
           <div class="card rounded shadow-sm bg-transparent h-100">
             <div class="card-body">
               <img
-                src="/dist/assets/img/breederspot-images/logos/logoipsum-358.svg"
+                src={getAssetPrefix('/assets/img/breederspot-images/logos/logoipsum-358.svg')}
                 class="img-fluid w-100 h-100"
                 alt="Logo"
               />
@@ -313,7 +314,7 @@ import Layout from './layout.astro'
               </p>
               <div class="d-flex align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar1.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -345,7 +346,7 @@ import Layout from './layout.astro'
               </p>
               <div class="d-flex align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar7.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
