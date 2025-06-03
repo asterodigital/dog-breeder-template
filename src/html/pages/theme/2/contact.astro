@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Contact" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -115,7 +116,7 @@ import Layout from './layout.astro'
       class="container bg-primary-subtle rounded-5 border border-primary-pale p-4 p-md-5 position-relative overflow-hidden"
     >
       <img
-        src="/dist/assets/img/breederspot-images/multiple-paws.png"
+        src={getAssetPrefix('/assets/img/breederspot-images/multiple-paws.png')}
         alt="Decorative Paws Image"
         class="position-absolute paw-overlay-img"
       />

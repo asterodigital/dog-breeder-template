@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Puppies" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -83,9 +84,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card border h-100 rounded-5 p-0 position-relative">
                 <figure class="img-scale rounded-top-5 mb-0">
-                  <a href="/theme/2/puppy-details"
+                  <a href={getPathPrefix('/theme/2/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-1.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -106,7 +107,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title mb-0">
-                      <a href="/theme/2/puppy-details" class="text-decoration-none">Charlie</a>
+                      <a href={getPathPrefix('/theme/2/puppy-details')} class="text-decoration-none"
+                        >Charlie</a
+                      >
                     </h5>
                     <span class="badge text-primary-emphasis bg-secondary-subtle border"
                       >Golden Retriever</span
@@ -117,7 +120,7 @@ import Layout from './layout.astro'
                     Charlie is a playful, curious pup who loves treats and chasing butterflies!
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -132,7 +135,7 @@ import Layout from './layout.astro'
                 <figure class="img-scale rounded-top-5 mb-0">
                   <a href="#"
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-4.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-4.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -164,7 +167,7 @@ import Layout from './layout.astro'
                     Milo is a playful and loving pup with a knack for sneaking onto the couch.
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -179,7 +182,7 @@ import Layout from './layout.astro'
                 <figure class="img-scale rounded-top-5 mb-0">
                   <a href="#"
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-5.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-5.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -211,7 +214,7 @@ import Layout from './layout.astro'
                     Rosie is an energetic pup who likes making new friends at the park.
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -226,7 +229,7 @@ import Layout from './layout.astro'
                 <figure class="img-scale rounded-top-5 mb-0">
                   <a href="#"
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-6.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-6.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -258,7 +261,7 @@ import Layout from './layout.astro'
                     Cooper loves exploring the backyard jungle and guarding his favorite bone.
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -271,9 +274,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card border h-100 rounded-5 p-0 position-relative">
                 <figure class="img-scale rounded-top-5 mb-0">
-                  <a href="/theme/2/puppy-details"
+                  <a href={getPathPrefix('/theme/2/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-1.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -294,7 +297,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title mb-0">
-                      <a href="/theme/2/puppy-details" class="text-decoration-none">Pluto</a>
+                      <a href={getPathPrefix('/theme/2/puppy-details')} class="text-decoration-none"
+                        >Pluto</a
+                      >
                     </h5>
                     <span class="badge text-primary-emphasis bg-secondary-subtle border"
                       >Golden Retriever</span
@@ -305,7 +310,7 @@ import Layout from './layout.astro'
                     Pluto is a playful, curious pup who loves treats and chasing butterflies!
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -320,7 +325,7 @@ import Layout from './layout.astro'
                 <figure class="img-scale rounded-top-5 mb-0">
                   <a href="#"
                     ><img
-                      src="/dist/assets/img/breederspot-images/puppy-img-6.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-6.jpg')}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -352,7 +357,7 @@ import Layout from './layout.astro'
                     Rocky loves exploring the backyard jungle and guarding his favorite bone.
                   </p>
                   <a
-                    href="/theme/2/puppy-details"
+                    href={getPathPrefix('/theme/2/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -392,7 +397,7 @@ import Layout from './layout.astro'
             <div class="col-md-6">
               <div class="card bg-primary-pale card-lift rounded-5 h-100 p-0">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-3.jpg')}
                   class="card-img-top rounded-top-5"
                   style="max-height: 300px; width: 100%; object-fit: cover;"
                   alt="The Willow Litter"
@@ -414,7 +419,7 @@ import Layout from './layout.astro'
             <div class="col-md-6">
               <div class="card bg-primary-pale card-lift rounded-5 h-100 p-0">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-3.jpg')}
                   class="card-img-top rounded-top-5"
                   style="max-height: 300px; width: 100%; object-fit: cover;"
                   alt="The Maple Litter"

@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Gallery" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -55,7 +56,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-2.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -65,7 +66,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-4.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-4.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -75,7 +76,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-6">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -85,7 +86,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -95,7 +96,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-3.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -105,7 +106,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-2.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -115,7 +116,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/golden-retriever-4.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/golden-retriever-4.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"

@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -11,7 +12,10 @@ import Layout from './layout.astro'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href="/theme/2/shop" class="btn btn-lg btn-outline-primary rounded-pill px-4">
+        <a
+          href={getPathPrefix('/theme/2/shop')}
+          class="btn btn-lg btn-outline-primary rounded-pill px-4"
+        >
           <i class="ri-arrow-left-line"></i> Back to Shop
         </a>
       </div>
@@ -22,7 +26,7 @@ import Layout from './layout.astro'
         <div class="col">
           <figure class="img-scale rounded">
             <img
-              src="/dist/assets/img/breederspot-images/dog-toy-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1.jpg')}
               class="img-fluid"
               alt="Duck Toy"
             />
@@ -30,7 +34,7 @@ import Layout from './layout.astro'
           <div class="d-flex gap-2">
             <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
               <img
-                src="/dist/assets/img/breederspot-images/dog-toy-1-angle-1.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-1.jpg')}
                 class="img-fluid"
                 style="object-fit: cover;"
                 alt="Duck Toy"
@@ -38,7 +42,7 @@ import Layout from './layout.astro'
             </figure>
             <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
               <img
-                src="/dist/assets/img/breederspot-images/dog-toy-1-angle-2.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-2.jpg')}
                 class="img-fluid"
                 style="object-fit: cover;"
                 alt="Duck Toy"
@@ -46,7 +50,7 @@ import Layout from './layout.astro'
             </figure>
             <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
               <img
-                src="/dist/assets/img/breederspot-images/dog-toy-1-angle-3.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-3.jpg')}
                 class="img-fluid"
                 style="object-fit: cover;"
                 alt="Duck Toy"
@@ -261,7 +265,7 @@ import Layout from './layout.astro'
           <div class="card bg-primary-pale rounded-5 h-100 p-0">
             <figure class="img-scale rounded-top-5 mb-0">
               <img
-                src="/dist/assets/img/breederspot-images/dog-toy-2.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-2.jpg')}
                 class="card-img-top"
                 alt="Product Image"
               />
@@ -288,7 +292,7 @@ import Layout from './layout.astro'
           <div class="card bg-primary-pale rounded-5 h-100 p-0">
             <figure class="img-scale rounded-top-5 mb-0">
               <img
-                src="/dist/assets/img/breederspot-images/dog-collar-3.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-3.jpg')}
                 class="card-img-top"
                 alt="Product Image"
               />
@@ -315,7 +319,7 @@ import Layout from './layout.astro'
           <div class="card bg-primary-pale rounded-5 h-100 p-0">
             <figure class="img-scale rounded-top-5 mb-0">
               <img
-                src="/dist/assets/img/breederspot-images/dog-toy-3.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-3.jpg')}
                 class="card-img-top"
                 alt="Product Image"
               />
@@ -342,7 +346,7 @@ import Layout from './layout.astro'
           <div class="card bg-primary-pale rounded-5 h-100 p-0">
             <figure class="img-scale rounded-top-5 mb-0">
               <img
-                src="/dist/assets/img/breederspot-images/dog-collar-1.jpg"
+                src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-1.jpg')}
                 class="card-img-top"
                 alt="Product Image"
               />
