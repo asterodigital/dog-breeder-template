@@ -1,0 +1,102 @@
+---
+import { getPathPrefix } from '../../../../../utils/path.js'
+import Logo from './_topbar/_logo.astro'
+---
+
+<!-- Footer -->
+<footer class="text-bg-dark">
+  <div class="container">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 px-3 px-lg-5 pt-5 pb-4">
+      <div class="col mb-3">
+        <a
+          href="/"
+          class="d-inline-flex align-items-center text-decoration-none mb-2"
+          aria-label="Your Company Logo"
+        >
+          <Logo />
+        </a>
+        <p class="mb-3">
+          Over 200 happy families have found their perfect pup with us — yours could be next.
+        </p>
+        <button class="btn btn-lg btn-outline-light mb-2">Get in touch</button>
+      </div>
+
+      <div class="col mb-3"></div>
+
+      <div class="col mb-3">
+        <nav aria-label="Quick Links">
+          <h5 class="mb-3">Quick Links</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/home')} class="nav-link text-light p-0">Home</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/about')} class="nav-link text-light p-0">About</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/puppies')} class="nav-link text-light p-0">Puppies</a
+              >
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/shop')} class="nav-link text-light p-0">Shop</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/faq')} class="nav-link text-light p-0">FAQs</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/blog')} class="nav-link text-light p-0">Blog</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href={getPathPrefix('/theme/5/contact')} class="nav-link text-light p-0">Contact</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col mb-3">
+        <nav aria-label="Legal">
+          <h5 class="mb-3">Legal</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link text-light p-0">Terms of Use</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link text-light p-0">Privacy Policy</a>
+            </li>
+            <li class="nav-item mb-2">
+              <a href="#" class="nav-link text-light p-0">Cookies Policy</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <div class="col mb-3">
+        <h5 class="mb-3">Contact</h5>
+        <ul class="nav flex-column">
+          <li class="nav-item mb-2">
+            <i class="ri-phone-fill text-primary me-2"></i>
+            <a href="tel:+12345678901" class="text-decoration-none text-light text-break"
+              >+1 (234) 567-8901</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <i class="ri-mail-fill text-primary me-2"></i>
+            <a href="mailto:hello@email.com" class="text-decoration-none text-light text-break"
+              >hello@email.com</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <address class="text-light">
+              <i class="ri-map-pin-fill text-primary me-2"></i>
+              123 Main Street, Austin, TX
+            </address>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="text-center bg-gray-800 py-4">
+    <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+  </div>
+</footer>
