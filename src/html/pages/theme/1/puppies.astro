@@ -1,12 +1,13 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Puppies" description="Dedicated to raising happy, healthy puppies in loving homes.">
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -76,9 +77,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -91,8 +92,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Olive</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Olive</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1200</p>
@@ -106,7 +108,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -116,9 +121,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -131,8 +136,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Caesar</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Caesar</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1200</p>
@@ -146,7 +152,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -156,9 +165,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -171,8 +180,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Luna</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Luna</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1400</p>
@@ -186,7 +196,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -196,9 +209,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -211,8 +224,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Olive</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Olive</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1200</p>
@@ -226,7 +240,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -236,9 +253,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -251,8 +268,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Caesar</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Caesar</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1200</p>
@@ -266,7 +284,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -276,9 +297,9 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card bg-secondary-subtle h-100 position-relative p-0">
                 <figure class="img-scale rounded-top-4 mb-0">
-                  <a href="/theme/1/puppy-details"
+                  <a href={getPathPrefix('/theme/1/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                      src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                       class="card-img-top"
                       style="max-height: 300px; object-fit: cover;"
                       alt="Pet Image"
@@ -291,8 +312,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-3 mb-0">
-                      <a href="/theme/1/puppy-details" class="text-decoration-none text-body"
-                        >Luna</a
+                      <a
+                        href={getPathPrefix('/theme/1/puppy-details')}
+                        class="text-decoration-none text-body">Luna</a
                       >
                     </h5>
                     <p class="fs-4 fw-semibold mb-0">$1400</p>
@@ -306,7 +328,10 @@ import Layout from './layout.astro'
                     after.
                   </p>
                 </div>
-                <a href="/theme/1/puppy-details" class="btn btn-lg btn-primary rounded-top-0 w-100">
+                <a
+                  href={getPathPrefix('/theme/1/puppy-details')}
+                  class="btn btn-lg btn-primary rounded-top-0 w-100"
+                >
                   More Info<i class="ri-arrow-right-line ms-1"></i>
                 </a>
               </div>
@@ -331,7 +356,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

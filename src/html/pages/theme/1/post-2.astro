@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Post 2" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -18,7 +19,7 @@ import Layout from './layout.astro'
           <!-- Cover Image -->
           <div class="mb-4">
             <img
-              src="/dist/assets/img/breederspot-images/beagle-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}
               alt="Blog Cover"
               class="img-fluid rounded"
               style="max-height: 400px; object-fit: cover; width: 100%;"
@@ -55,7 +56,7 @@ import Layout from './layout.astro'
           <!-- Author Section -->
           <div class="d-flex align-items-center border-top pt-4 mb-5">
             <img
-              src="/dist/assets/img/avatars/avatar1.jpg"
+              src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
               alt="Author Image"
               class="rounded-circle me-3"
               width="64"
@@ -79,7 +80,7 @@ import Layout from './layout.astro'
               <div class="col-md-6">
                 <div class="card bg-secondary-subtle h-100 p-0">
                   <img
-                    src="/dist/assets/img/breederspot-images/dog-img-9-wide.jpg"
+                    src={getAssetPrefix('/assets/img/breederspot-images/dog-img-9-wide.jpg')}
                     class="card-img-top"
                     alt="Similar Post 1"
                   />
@@ -100,7 +101,7 @@ import Layout from './layout.astro'
               <div class="col-md-6">
                 <div class="card bg-secondary-subtle h-100 p-0">
                   <img
-                    src="/dist/assets/img/breederspot-images/dog-img-13-wide.jpg"
+                    src={getAssetPrefix('/assets/img/breederspot-images/dog-img-13-wide.jpg')}
                     class="card-img-top"
                     alt="Similar Post 2"
                   />
@@ -247,7 +248,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

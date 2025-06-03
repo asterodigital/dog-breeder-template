@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -9,7 +10,7 @@ import Layout from './layout.astro'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -210,7 +211,7 @@ import Layout from './layout.astro'
         <div class="col-lg-4 d-flex justify-content-center">
           <figure class="img-scale rounded">
             <img
-              src="/dist/assets/img/breederspot-images/beagle-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}
               class="img-fluid"
               style="object-fit: cover;"
               alt="Beagle"
@@ -224,7 +225,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

@@ -1,12 +1,13 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="About" description="Dedicated to raising happy, healthy puppies in loving homes.">
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size:
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size:
 cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
@@ -142,7 +143,7 @@ mb-1">Socialization Matters</h5>
           <div
             class="card card-lift text-light"
             style="position: relative; height: 300px;
-background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover;
+background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover;
 background-position: center;"
           >
             <div
@@ -161,7 +162,7 @@ background-position: center;"
           <div
             class="card card-lift text-light"
             style="position: relative; height: 300px; background-image:
-url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover;
+url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover;
 background-position: center;"
           >
             <div
@@ -274,7 +275,7 @@ h-100">
               <div class="d-flex align-items-center
 mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar1.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -308,7 +309,7 @@ h-100">
               <div class="d-flex align-items-center
 mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar7.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -343,7 +344,7 @@ mb-0"></i>
               <div class="d-flex
 align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar9.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar9.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -384,7 +385,7 @@ align-items-center mt-auto">
   <section
     class="position-relative text-light text-center"
     style="background-image:
-url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover;
+url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover;
 background-position: center; height: 500px;"
   >
     <!-- Overlay -->

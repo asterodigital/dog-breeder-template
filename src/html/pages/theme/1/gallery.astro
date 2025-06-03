@@ -1,12 +1,13 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Gallery" description="Dedicated to raising happy, healthy puppies in loving homes.">
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -42,7 +43,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -52,7 +53,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -62,7 +63,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-6">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-3.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -72,7 +73,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-3">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-puppy-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -82,7 +83,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-6">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-3.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -92,7 +93,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-3">
               <figure class="img-scale rounded-4 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/beagle-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -136,7 +137,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/beagle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
