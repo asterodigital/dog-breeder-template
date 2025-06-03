@@ -1,12 +1,13 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Shop" description="Dedicated to raising happy, healthy puppies in loving homes.">
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/german-shepherd-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -16,9 +17,9 @@ import Layout from './layout.astro'
         <div class="col-lg-6 offset-lg-3">
           <h1 class="display-4 fw-semibold mb-2">Puppy products & essentials</h1>
           <p class="fs-4 mb-0">
-            Carefully curated products to support every stage of your puppy’s journey. Explore
+            Carefully curated products to support every stage of your puppy's journey. Explore
             trusted, breeder-recommended supplies including nutrition, toys, and comfort items
-            designed with your pup’s wellbeing in mind.
+            designed with your pup's wellbeing in mind.
           </p>
         </div>
       </div>
@@ -302,7 +303,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/german-shepherd-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

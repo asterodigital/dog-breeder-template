@@ -7,7 +7,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/yorkshire-terrier-3.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-3.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -34,7 +34,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
           <h2 class="display-6 text-center fw-semibold mb-2">FAQs</h2>
           <p class="text-center lead fs-5 mb-3">
-            If you’re curious, concerned, or just want to learn more — you’re in the right place.
+            If you're curious, concerned, or just want to learn more — you're in the right place.
             We'll be happy to answer any questions you may have.
           </p>
           <ul class="nav nav-pills nav-fill justify-content-center flex-wrap gap-2 mb-3">
@@ -133,7 +133,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  Can I meet the puppy’s parents before adoption?
+                  Can I meet the puppy's parents before adoption?
                 </button>
               </h2>
               <div

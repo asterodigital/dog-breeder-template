@@ -10,7 +10,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/golden-retriever-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -211,7 +211,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- CTA Section -->
   <section
     class="text-light position-relative"
-    style="background-image: url('/dist/assets/img/breederspot-images/gradient.jpg'); background-size: cover; background-position: center;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/gradient.jpg')}'); background-size: cover; background-position: center;`}
   >
     <div
       class="position-absolute top-0 start-0 w-100 h-100"

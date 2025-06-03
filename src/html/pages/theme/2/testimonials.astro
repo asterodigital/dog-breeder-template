@@ -10,7 +10,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/golden-retriever-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/golden-retriever-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -52,7 +52,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
             <div class="card-body d-flex flex-column justify-content-between">
               <!-- Testimonial Text -->
               <p class="card-text fs-5 mb-3">
-                “We couldn’t be happier with our puppy! The entire process was smooth, and it’s
+                “We couldn't be happier with our puppy! The entire process was smooth, and it's
                 clear how much care goes into raising these dogs. Truly an amazing experience.”
               </p>
               <!-- Author Info -->
@@ -233,7 +233,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-10 offset-lg-1">
           <h3 class="display-6 text-center fw-bold mb-2">Video Testimonials</h3>
           <p class="fs-5 text-center mb-4">
-            Heartfelt stories from real families who’ve welcomed our puppies into their homes—with
+            Heartfelt stories from real families who've welcomed our puppies into their homes—with
             love, joy, and wagging tails.
           </p>
           <div class="row g-4">
@@ -260,7 +260,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                     <i class="ri-map-pin-line me-1"></i>Austin, Texas
                   </p>
                   <p class="card-text fs-5">
-                    “We couldn’t be happier with our new pup! From the first call to pickup day, the
+                    “We couldn't be happier with our new pup! From the first call to pickup day, the
                     care and professionalism were unmatched.”
                   </p>
                 </div>
@@ -304,7 +304,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- CTA Section -->
   <section
     class="text-light position-relative"
-    style="background-image: url('/dist/assets/img/breederspot-images/gradient.jpg'); background-size: cover; background-position: center;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/gradient.jpg')}'); background-size: cover; background-position: center;`}
   >
     <div
       class="position-absolute top-0 start-0 w-100 h-100"

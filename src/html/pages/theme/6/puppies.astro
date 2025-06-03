@@ -7,7 +7,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/yorkshire-terrier-3.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-3.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -328,7 +328,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                       <p class="card-text mb-3">
                         This pairing brings together two incredibly gentle, affectionate Yorkshire
                         Terriers. Known for their calm personalities and beautiful coats, Luna and
-                        Finn’s pups will be ideal for families or therapy work.
+                        Finn's pups will be ideal for families or therapy work.
                       </p>
                       <a href="#" class="btn btn-primary btn-lg align-self-start mt-auto"
                         >Join Waitlist</a
@@ -360,7 +360,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                       </p>
                       <p class="card-text mb-3">
                         These Yorkshire Terrier pups will be small, smart, and irresistibly sweet.
-                        Perfect for allergy-sensitive homes, they’re expected to have hypoallergenic
+                        Perfect for allergy-sensitive homes, they're expected to have hypoallergenic
                         coats and loving, intelligent personalities.
                       </p>
                       <a href="#" class="btn btn-primary btn-lg align-self-start mt-auto"
@@ -384,7 +384,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         <div class="col-lg-10 offset-lg-1">
           <h2 class="display-6 text-center fw-semibold mb-2">Our Adoption Process</h2>
           <p class="lead text-center mb-4">
-            We’re here to make your journey to puppy parenthood smooth, transparent, and
+            We're here to make your journey to puppy parenthood smooth, transparent, and
             joyful—every step of the way.
           </p>
           <div class="row g-4 mb-4">
@@ -406,7 +406,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                   <span class="display-6 fw-semibold text-primary">02.</span>
                   <h5 class="card-title fs-3">Approval</h5>
                   <p class="card-text mb-0">
-                    We’ll review your application and reach out for a short conversation to ensure
+                    We'll review your application and reach out for a short conversation to ensure
                     our puppies go to loving homes.
                   </p>
                 </div>
@@ -418,7 +418,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                   <span class="display-6 fw-semibold text-primary">03.</span>
                   <h5 class="card-title fs-3">Waitlist</h5>
                   <p class="card-text mb-0">
-                    Once approved, you’ll join the waitlist for upcoming litters. We’ll keep you
+                    Once approved, you'll join the waitlist for upcoming litters. We'll keep you
                     updated with litter announcements.
                   </p>
                 </div>
@@ -430,8 +430,8 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                   <span class="display-6 fw-semibold text-primary">04.</span>
                   <h5 class="card-title fs-3">Homecoming</h5>
                   <p class="card-text mb-0">
-                    When your puppy is ready, you’ll be invited to meet them. After final checks,
-                    you’ll bring home a happy companion!
+                    When your puppy is ready, you'll be invited to meet them. After final checks,
+                    you'll bring home a happy companion!
                   </p>
                 </div>
               </div>

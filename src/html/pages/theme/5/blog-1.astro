@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Blog 1" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -130,7 +131,7 @@ import Layout from './layout.astro'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/german-shepherd-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/german-shepherd-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

@@ -7,7 +7,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-3.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/french-bulldog-3.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -43,7 +43,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
             <h4 class="fw-semibold mb-0">Book a Free Appointment</h4>
           </div>
           <p class="mb-0">
-            Have questions about our breeding practices or puppies? We’re happy to chat — no
+            Have questions about our breeding practices or puppies? We're happy to chat — no
             pressure, no cost.
           </p>
         </div>
@@ -65,7 +65,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
           <i class="ri-customer-service-fill text-primary fs-1"></i>
           <h1 class="fw-semibold mb-2">Contact Us</h1>
           <p class="mb-4">
-            Whether you have a question, need support, or just want to say hello — we’re here for
+            Whether you have a question, need support, or just want to say hello — we're here for
             you.
           </p>
           <form>
@@ -275,7 +275,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   aria-expanded="false"
                   aria-controls="flush-collapseFour"
                 >
-                  Can I meet the puppy’s parents before adoption?
+                  Can I meet the puppy's parents before adoption?
                 </button>
               </h2>
               <div
@@ -311,7 +311,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- CTA/Form Section -->
   <section
     class="text-light position-relative"
-    style="background-image: url('/dist/assets/img/breederspot-images/french-bulldog-1.jpg'); background-size: cover; background-position: center;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/french-bulldog-1.jpg')}'); background-size: cover; background-position: center;`}
   >
     <div
       class="position-absolute top-0 start-0 w-100 h-100"

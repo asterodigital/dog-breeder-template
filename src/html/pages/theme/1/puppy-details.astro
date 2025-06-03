@@ -39,7 +39,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 
           <p class="mb-3">
             Olive is a happy-go-lucky pup who loves belly rubs, chasing squeaky toys, and making new
-            friends. She’s been raised in a loving home environment and is already starting basic
+            friends. She's been raised in a loving home environment and is already starting basic
             training. If you're looking for a loyal and playful companion, Olive is the one!
           </p>
 
@@ -157,7 +157,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- CTA Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url({getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/beagle-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>

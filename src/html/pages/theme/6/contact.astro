@@ -7,7 +7,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <!-- Hero Section -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/yorkshire-terrier-3.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-3.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
@@ -18,7 +18,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-6 offset-lg-3">
           <h1 class="display-4 fw-semibold">Get in Touch With Us</h1>
           <p class="lead mb-0">
-            Whether you have questions, need guidance, or just want to say hello — we’re here to
+            Whether you have questions, need guidance, or just want to say hello — we're here to
             help you on your journey to responsible puppy ownership.
           </p>
         </div>
@@ -36,7 +36,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
           <h1 class="display-6 fw-semibold mb-2">Contact Us</h1>
 
           <p class="lead mb-4">
-            Whether you have a question, need support, or just want to say hello — we’re here for
+            Whether you have a question, need support, or just want to say hello — we're here for
             you.
           </p>
 
@@ -152,7 +152,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 data-bs-parent="#faqAccordion"
               >
                 <div class="accordion-body">
-                  You may simply fill out our application form. Once reviewed, we’ll follow up with
+                  You may simply fill out our application form. Once reviewed, we'll follow up with
                   next steps.
                 </div>
               </div>
@@ -179,7 +179,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 data-bs-parent="#faqAccordion"
               >
                 <div class="accordion-body">
-                  Yes! We welcome scheduled visits. It’s important to us that you feel confident and
+                  Yes! We welcome scheduled visits. It's important to us that you feel confident and
                   connected.
                 </div>
               </div>
@@ -234,7 +234,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               >
                 <div class="accordion-body">
                   Yes, we provide regular updates with development milestones so you can follow your
-                  puppy’s early life.
+                  puppy's early life.
                 </div>
               </div>
             </div>

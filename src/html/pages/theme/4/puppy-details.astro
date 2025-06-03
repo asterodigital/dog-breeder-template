@@ -1,6 +1,7 @@
 ---
 import Layout from './layout.astro'
-import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+import { getAssetPrefix } from '../../../../utils/path.js'
+import { getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -161,7 +162,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- CTA -->
   <section
     class="position-relative text-light text-center"
-    style="background-image: url('/dist/assets/img/breederspot-images/poodle-1.jpg'); background-size: cover; background-position: center; height: 500px;"
+    style={`background-image: url('${getAssetPrefix('/assets/img/breederspot-images/poodle-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
