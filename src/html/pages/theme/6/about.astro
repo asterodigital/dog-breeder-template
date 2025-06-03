@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="About" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -56,7 +57,7 @@ import Layout from './layout.astro'
         <div class="col-lg-4 d-flex justify-content-center">
           <figure class="img-scale rounded-4">
             <img
-              src="/dist/assets/img/breederspot-images/yorkshire-terrier-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-1.jpg')}
               class="img-fluid"
               alt="Our Story"
             />
@@ -239,7 +240,7 @@ import Layout from './layout.astro'
                   <!-- Author Info -->
                   <div class="d-flex align-items-center mt-auto">
                     <img
-                      src="/dist/assets/img/avatars/avatar1.jpg"
+                      src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
                       alt="Avatar"
                       class="rounded-circle me-3"
                       width="64"
@@ -273,7 +274,7 @@ import Layout from './layout.astro'
                   <!-- Author Info -->
                   <div class="d-flex align-items-center mt-auto">
                     <img
-                      src="/dist/assets/img/avatars/avatar7.jpg"
+                      src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
                       alt="Avatar"
                       class="rounded-circle me-3"
                       width="64"

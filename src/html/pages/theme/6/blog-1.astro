@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Blog 1" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -33,7 +34,7 @@ import Layout from './layout.astro'
         <div class="col-lg-8 offset-lg-2">
           <div class="card border p-0 mb-4">
             <img
-              src="/dist/assets/img/breederspot-images/yorkshire-terrier-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-1.jpg')}
               class="card-img-top"
               style="max-height: 400px; object-fit: cover;"
               alt="blog image"
@@ -64,7 +65,7 @@ import Layout from './layout.astro'
           </div>
           <div class="card border p-0 mb-4">
             <img
-              src="/dist/assets/img/breederspot-images/yorkshire-terrier-2.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-2.jpg')}
               class="card-img-top"
               style="max-height: 400px; object-fit: cover;"
               alt="blog image"
@@ -95,7 +96,7 @@ import Layout from './layout.astro'
           </div>
           <div class="card border p-0">
             <img
-              src="/dist/assets/img/breederspot-images/yorkshire-terrier-3.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-3.jpg')}
               class="card-img-top"
               style="max-height: 400px; object-fit: cover;"
               alt="blog image"

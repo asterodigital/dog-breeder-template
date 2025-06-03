@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -11,7 +12,7 @@ import Layout from './layout.astro'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href="/theme/6/puppies" class="btn btn-lg btn-outline-primary">
+        <a href={getPathPrefix('/theme/6/puppy-details')} class="btn btn-lg btn-outline-primary">
           <i class="ri-arrow-left-line"></i> Back to Puppies
         </a>
       </div>
@@ -22,7 +23,7 @@ import Layout from './layout.astro'
         <div class="col">
           <figure class="img-scale rounded shadow-sm">
             <img
-              src="/dist/assets/img/breederspot-images/yorkshire-terrier-puppy-1.jpg"
+              src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-puppy-1.jpg')}
               class="img-fluid"
               alt="Charlie the Yorkshire Terrier"
             />
