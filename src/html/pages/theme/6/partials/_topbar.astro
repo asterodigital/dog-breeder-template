@@ -1,0 +1,205 @@
+---
+import Logo from './_topbar/_logo.astro'
+import { getPathPrefix } from '../../../../../utils/path'
+---
+
+<!-- Topbar -->
+<div class="bg-primary-pale py-2 small text-muted d-none d-md-block">
+  <div class="container">
+    <div class="row align-items-center text-center text-md-start gx-3 gy-2">
+      <!-- Left: Phone & Email -->
+      <div
+        class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start flex-wrap gap-3"
+      >
+        <div>
+          <i class="ri-phone-fill me-1"></i>
+          <a href="tel:+12345678901" class="text-muted text-decoration-none">+1 (234) 567-8901</a>
+        </div>
+        <div>
+          <i class="ri-mail-fill me-1"></i>
+          <a href="mailto:hello@email.com" class="text-muted text-decoration-none"
+            >hello@email.com</a
+          >
+        </div>
+      </div>
+
+      <!-- Right: Hours & Location -->
+      <div
+        class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-wrap gap-3 ms-md-auto"
+      >
+        <div>
+          <i class="ri-time-fill me-1"></i>
+          Mon–Fri: 9am–6pm
+        </div>
+        <div>
+          <i class="ri-map-pin-fill me-1"></i>
+          123 Main Street, Austin, TX
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+  <div class="container">
+    <!-- Brand Logo or Text -->
+    <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/6/home')}>
+      <Logo />
+    </a>
+
+    <!-- Offcanvas Toggler -->
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="offcanvas"
+      data-bs-target="#offcanvasNavbar"
+      aria-controls="offcanvasNavbar"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Offcanvas Menu -->
+    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar">
+      <div class="offcanvas-header">
+        <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/6/home')}>
+          <Logo />
+        </a>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+        ></button>
+      </div>
+      <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center">
+          <!-- Home -->
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href={getPathPrefix('/theme/6/home')}
+              >Home</a
+            >
+          </li>
+
+          <!-- About Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="aboutDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              About
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+              <li><a class="dropdown-item" href={getPathPrefix('/theme/6/about')}>About</a></li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/breeding-philosophy')}
+                  >Breeding Philosophy</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/testimonials')}
+                  >Testimonials</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- Explore Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="exploreDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Explore
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+              <li><a class="dropdown-item" href={getPathPrefix('/theme/6/puppies')}>Puppies</a></li>
+              <li><a class="dropdown-item" href={getPathPrefix('/theme/6/gallery')}>Gallery</a></li>
+              <li><a class="dropdown-item" href={getPathPrefix('/theme/6/shop')}>Shop</a></li>
+            </ul>
+          </li>
+
+          <!-- Blog Dropdown -->
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="blogDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Blog
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/blog-1')}
+                  >Blog – No Sidebar</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/blog-2')}
+                  >Blog – Left Sidebar</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/blog-3')}
+                  >Blog – Right Sidebar</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/post-1')}
+                  >Blog Post – No Sidebar</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/post-2')}
+                  >Blog Post – Left Sidebar</a
+                >
+              </li>
+              <li>
+                <a class="dropdown-item" href={getPathPrefix('/theme/6/post-3')}
+                  >Blog Post – Right Sidebar</a
+                >
+              </li>
+            </ul>
+          </li>
+
+          <!-- FAQs -->
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/6/faq')}>FAQs</a>
+          </li>
+
+          <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/6/contact')}>Contact</a>
+          </li>
+        </ul>
+
+        <!-- Bottom Section -->
+        <div class="d-block d-lg-none mt-4">
+          <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
+            <i class="ri-phone-fill me-2"></i>Book Consultation
+          </a>
+          <a class="btn btn-primary rounded w-100" href="#"
+            ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="d-none d-lg-flex align-items-center gap-3">
+      <div class="text-start">
+        <small class="text-muted d-block">Book Consultation</small>
+        <a href="tel:+12345678901" class="text-decoration-none fw-medium"> +1 (234) 567-8901 </a>
+      </div>
+
+      <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+    </div>
+  </div>
+</nav>
