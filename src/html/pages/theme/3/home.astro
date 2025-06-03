@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Home" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -120,9 +121,11 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card border h-100 rounded-5 p-0 position-relative">
                 <figure class="img-scale rounded-top-5 mb-0">
-                  <a href="/theme/3/puppy-details"
+                  <a href={getPathPrefix('/theme/3/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/french-bulldog-puppy-1.jpg"
+                      src={getAssetPrefix(
+                        '/assets/img/breederspot-images/french-bulldog-puppy-1.jpg'
+                      )}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -141,8 +144,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-5 mb-0">
-                      <a href="/theme/3/puppy-details" class="text-decoration-none text-body"
-                        >Charlie</a
+                      <a
+                        href={getPathPrefix('/theme/3/puppy-details')}
+                        class="text-decoration-none text-body">Charlie</a
                       >
                     </h5>
                     <span class="badge text-primary rounded-pill border fs-6">French Bulldog</span>
@@ -154,7 +158,7 @@ import Layout from './layout.astro'
                     Charlie is a playful, curious pup who loves treats and chasing butterflies!
                   </p>
                   <a
-                    href="/theme/3/puppy-details"
+                    href={getPathPrefix('/theme/3/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -166,9 +170,11 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card border h-100 rounded-5 p-0 position-relative">
                 <figure class="img-scale rounded-top-5 mb-0">
-                  <a href="/theme/3/puppy-details"
+                  <a href={getPathPrefix('/theme/3/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/french-bulldog-puppy-1.jpg"
+                      src={getAssetPrefix(
+                        '/assets/img/breederspot-images/french-bulldog-puppy-1.jpg'
+                      )}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -187,8 +193,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-5 mb-0">
-                      <a href="/theme/3/puppy-details" class="text-decoration-none text-body"
-                        >Luna</a
+                      <a
+                        href={getPathPrefix('/theme/3/puppy-details')}
+                        class="text-decoration-none text-body">Luna</a
                       >
                     </h5>
                     <span class="badge text-primary rounded-pill border fs-6">French Bulldog</span>
@@ -200,7 +207,7 @@ import Layout from './layout.astro'
                     Luna is a playful and loving pup with a knack for sneaking onto the couch.
                   </p>
                   <a
-                    href="/theme/3/puppy-details"
+                    href={getPathPrefix('/theme/3/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -212,9 +219,11 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-lg-4">
               <div class="card border h-100 rounded-5 p-0 position-relative">
                 <figure class="img-scale rounded-top-5 mb-0">
-                  <a href="/theme/3/puppy-details"
+                  <a href={getPathPrefix('/theme/3/puppy-details')}
                     ><img
-                      src="/dist/assets/img/breederspot-images/french-bulldog-puppy-1.jpg"
+                      src={getAssetPrefix(
+                        '/assets/img/breederspot-images/french-bulldog-puppy-1.jpg'
+                      )}
                       class="card-img-top rounded-0"
                       alt="Pet Image"
                     /></a
@@ -233,8 +242,9 @@ import Layout from './layout.astro'
                 <div class="card-body p-3">
                   <div class="d-flex align-items-center justify-content-between mb-2">
                     <h5 class="card-title fs-5 mb-0">
-                      <a href="/theme/3/puppy-details" class="text-decoration-none text-body"
-                        >Cooper</a
+                      <a
+                        href={getPathPrefix('/theme/3/puppy-details')}
+                        class="text-decoration-none text-body">Cooper</a
                       >
                     </h5>
                     <span class="badge text-primary rounded-pill border fs-6">French Bulldog</span>
@@ -246,7 +256,7 @@ import Layout from './layout.astro'
                     Cooper loves exploring the backyard jungle and guarding his favorite bone.
                   </p>
                   <a
-                    href="/theme/3/puppy-details"
+                    href={getPathPrefix('/theme/3/puppy-details')}
                     class="btn btn-lg btn-primary rounded-pill w-100"
                   >
                     More Info <i class="ri-arrow-right-line"></i>
@@ -275,7 +285,7 @@ import Layout from './layout.astro'
             <div class="col-md-6">
               <div class="card card-lift border rounded-5 h-100 p-0">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-2.jpg')}
                   class="card-img-top rounded-top-5"
                   style="max-height: 300px; width: 100%; object-fit: cover;"
                   alt="The Willow Litter"
@@ -301,7 +311,7 @@ import Layout from './layout.astro'
             <div class="col-md-6">
               <div class="card card-lift border rounded-5 h-100 p-0">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-2.jpg')}
                   class="card-img-top rounded-top-5"
                   style="max-height: 300px; width: 100%; object-fit: cover;"
                   alt="The Willow Litter"
@@ -411,7 +421,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-2.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -421,7 +431,7 @@ import Layout from './layout.astro'
             <div class="col-sm-6 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-3.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -431,7 +441,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-6">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -441,7 +451,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-1.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-1.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -451,7 +461,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-6">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-2.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-2.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -461,7 +471,7 @@ import Layout from './layout.astro'
             <div class="col-sm-12 col-md-3">
               <figure class="img-scale rounded-5 h-100 w-100">
                 <img
-                  src="/dist/assets/img/breederspot-images/french-bulldog-3.jpg"
+                  src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-3.jpg')}
                   class="img-fluid"
                   style="object-fit: cover;"
                   alt="Gallery Image"
@@ -496,7 +506,7 @@ import Layout from './layout.astro'
               </p>
               <div class="d-flex align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar1.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -528,7 +538,7 @@ import Layout from './layout.astro'
               </p>
               <div class="d-flex align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar7.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
@@ -560,7 +570,7 @@ import Layout from './layout.astro'
               </p>
               <div class="d-flex align-items-center mt-auto">
                 <img
-                  src="/dist/assets/img/avatars/avatar9.jpg"
+                  src={getAssetPrefix('/assets/img/avatars/avatar9.jpg')}
                   alt="Avatar"
                   class="rounded-circle me-3"
                   width="64"
