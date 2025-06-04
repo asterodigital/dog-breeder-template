@@ -1,5 +1,6 @@
 ---
 import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout
@@ -15,7 +16,7 @@ import Layout from './layout.astro'
             <div class="col-6 offset-3">
               <figure class="p-3 mb-0">
                 <img
-                  src="/dist/assets/img/breederspot-images/maintenance-img.png"
+                  src={getAssetPrefix('/assets/img/breederspot-images/maintenance-img.png')}
                   class="img-fluid"
                   alt="Maintenance Illustration"
                 />
