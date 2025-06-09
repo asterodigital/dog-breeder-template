@@ -1,88 +1,134 @@
 ---
+import Logo from './_topbar/_logo.astro'
 import { getPathPrefix } from '../../../../../utils/path.js'
 ---
 
-<!-- Footer -->
-<footer class="pt-5 pb-4">
+<!-- Footer --><!-- Footer -->
+<footer class="bg-body pt-5 border-top">
   <div class="container">
-    <div class="row">
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="mb-3">Quick Links</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/home')} class="nav-link p-0 text-body-secondary"
-              >Home</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/about')} class="nav-link p-0 text-body-secondary"
-              >About</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/contact')} class="nav-link p-0 text-body-secondary"
-              >Contact</a
-            >
-          </li>
-        </ul>
+    <div class="row gy-4">
+      <!-- Logo and Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <Logo />
+        <p class="text-muted my-3 pe-lg-4">
+          Dedicated to ethical breeding practices, and the well-being of every poodle we raise —
+          right here in Austin, Texas.
+        </p>
+        <button class="btn btn-lg btn-outline-primary">
+          Learn More <i class="ri-arrow-right-line"></i>
+        </button>
       </div>
 
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="mb-3">Other Links</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/blog')} class="nav-link p-0 text-body-secondary"
-              >Blog</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/puppies')} class="nav-link p-0 text-body-secondary"
-              >Puppies</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/shop')} class="nav-link p-0 text-body-secondary"
-              >Shop</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/4/faq')} class="nav-link p-0 text-body-secondary">FAQs</a
-            >
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-6 col-md-2 mb-3">
-        <h5 class="mb-3">Legal</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
-          </li>
-          <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
-          </li>
-        </ul>
-      </div>
-
-      <div class="col-md-5 offset-md-1 mb-3">
-        <form>
-          <h5 class="mb-3">Newsletter</h5>
-          <p class="text-body-secondary mb-3">
-            Subscribe to our newsletter for the latest updates.
-          </p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <input type="email" class="form-control form-control-lg" placeholder="Email address" />
-            <button class="btn btn-lg btn-primary" type="button">Subscribe</button>
+      <!-- Navigation Links -->
+      <div class="col-lg-4 col-md-6">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/home')}
+                  class="text-body text-decoration-none d-block mb-2">Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/about')}
+                  class="text-body text-decoration-none d-block mb-2">About</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/faq')}
+                  class="text-body text-decoration-none d-block mb-2">FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/testimonials')}
+                  class="text-body text-decoration-none d-block mb-2">Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/contact')}
+                  class="text-body text-decoration-none d-block">Contact</a
+                >
+              </li>
+            </ul>
           </div>
-        </form>
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/blog-1')}
+                  class="text-body text-decoration-none d-block mb-2">Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/breeding-philosophy')}
+                  class="text-body text-decoration-none d-block mb-2">Breeding Philosophy</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/gallery')}
+                  class="text-body text-decoration-none d-block mb-2">Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/puppies')}
+                  class="text-body text-decoration-none d-block mb-2">Puppies</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/2/shop')}
+                  class="text-body text-decoration-none d-block mb-2">Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4">
+        <h5 class="fs-5 mb-2">Contact Us</h5>
+        <p class="text-muted mb-3">
+          Whether you have a question, need support, or just want to say hello — we're here for you.
+        </p>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2">
+            <a href="tel:+12345678901" class="text-body text-decoration-none">
+              <i class="ri-phone-fill text-primary me-2"></i>+1 (234) 567-8901
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="mailto:hello@email.com" class="text-body text-decoration-none">
+              <i class="ri-mail-fill text-primary me-2"></i>hello@email.com
+            </a>
+          </li>
+          <li>
+            <i class="ri-map-pin-fill text-primary me-2"></i>123 Main Street, Austin, TX
+          </li>
+        </ul>
       </div>
     </div>
-
-    <div class="text-center pt-4 mt-4 border-top">
-      <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+  </div>
+  <!-- Footer Bottom -->
+  <div class="text-bg-dark border-top py-4 mt-4">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+    >
+      <p class="text-light mb-2 mb-md-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-decoration-none text-light me-3">Terms & Conditions</a>
+        <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+      </div>
     </div>
   </div>
 </footer>
