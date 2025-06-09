@@ -1,6 +1,7 @@
 ---
 import Head from './partials/_head.astro'
 import TopNav from './partials/_topbar.astro'
+import CTA from './partials/_cta.astro'
 import Footer from './partials/_footer.astro'
 import Scripts from './partials/_scripts.astro'
 
@@ -34,6 +35,7 @@ const pageSeo = {
       <div class="content-wrapper bg-body">
         <slot />
       </div>
+      <CTA />
       <Footer />
     </main>
     <!-- All Scripts -->
