@@ -33,7 +33,8 @@ import { getPathPrefix } from '../../../../../utils/path'
         ></button>
       </div>
       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
-        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center">
+        <!-- Links for regular screens -->
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
           <!-- Home -->
           <li class="nav-item">
             <a class="nav-link" href={getPathPrefix('/theme/1/home')}>Home</a>
@@ -137,6 +138,58 @@ import { getPathPrefix } from '../../../../../utils/path'
           </li>
 
           <!-- Contact -->
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/contact')}>Contact</a>
+          </li>
+        </ul>
+
+        <!-- Links for smaller screens -->
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start d-flex d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/home')}>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/about')}>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/breeding-philosophy')}
+              >Breeding Philosophy</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/puppies')}>Puppies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/gallery')}>Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/shop')}>Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/blog-1')}>Blog – No Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/blog-2')}>Blog – Left Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/blog-3')}>Blog – Right Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/post-1')}>Blog Post – No Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/post-2')}>Blog Post – Left Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/post-3')}>Blog Post – Right Sidebar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/1/faq')}>FAQs</a>
+          </li>
           <li class="nav-item">
             <a class="nav-link" href={getPathPrefix('/theme/1/contact')}>Contact</a>
           </li>
