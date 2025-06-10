@@ -37,22 +37,13 @@ import Logo from './_topbar/_logo.astro'
             >
           </li>
           <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/puppies')} class="nav-link p-0 text-body-secondary"
-              >Puppies</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/shop')} class="nav-link p-0 text-body-secondary"
-              >Shop</a
-            >
-          </li>
-          <li class="nav-item mb-2">
             <a href={getPathPrefix('/theme/1/faq')} class="nav-link p-0 text-body-secondary">FAQs</a
             >
           </li>
           <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/blog')} class="nav-link p-0 text-body-secondary"
-              >Blog</a
+            <a
+              href={getPathPrefix('/theme/1/testimonials')}
+              class="nav-link p-0 text-body-secondary">Testimonials</a
             >
           </li>
           <li class="nav-item mb-2">
@@ -65,17 +56,34 @@ import Logo from './_topbar/_logo.astro'
     </div>
 
     <div class="col mb-3">
-      <nav aria-label="Legal">
-        <h5 class="mb-3">Legal</h5>
+      <nav aria-label="Explore">
+        <h5 class="mb-3">Explore</h5>
         <ul class="nav flex-column">
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Terms of Use</a>
+            <a href={getPathPrefix('/theme/1/blog-1')} class="nav-link p-0 text-body-secondary"
+              >Blog</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Privacy Policy</a>
+            <a
+              href={getPathPrefix('/theme/1/breeding-philosophy')}
+              class="nav-link p-0 text-body-secondary">Breeding Philosophy</a
+            >
           </li>
           <li class="nav-item mb-2">
-            <a href="#" class="nav-link p-0 text-body-secondary">Cookies Policy</a>
+            <a href={getPathPrefix('/theme/1/gallery')} class="nav-link p-0 text-body-secondary"
+              >Gallery</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href={getPathPrefix('/theme/1/puppies')} class="nav-link p-0 text-body-secondary"
+              >Puppies</a
+            >
+          </li>
+          <li class="nav-item mb-2">
+            <a href={getPathPrefix('/theme/1/shop')} class="nav-link p-0 text-body-secondary"
+              >Shop</a
+            >
           </li>
         </ul>
       </nav>
