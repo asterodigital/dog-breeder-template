@@ -4,99 +4,141 @@ import Logo from './_topbar/_logo.astro'
 ---
 
 <!-- Footer -->
-<footer class="text-bg-dark">
+<footer class="text-bg-dark pt-5">
   <div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-5 px-3 px-lg-5 pt-5 pb-4">
-      <div class="col mb-3">
-        <a
-          href="/"
-          class="d-inline-flex align-items-center text-decoration-none mb-2"
-          aria-label="Your Company Logo"
-        >
-          <Logo />
-        </a>
+    <div class="row gy-4">
+      <!-- Logo and Contact Info -->
+      <div class="col-lg-5 pe-lg-5">
+        <Logo />
+        <p class="my-3">Subscribe to our newsletter for updates on upcoming litters.</p>
+        <form class="mb-3 mb-lg-0">
+          <div class="mb-3">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              placeholder="Enter your email"
+              required=""
+            />
+          </div>
+          <button
+            type="submit"
+            class="btn btn-primary w-100 d-flex align-items-center justify-content-center"
+          >
+            <i class="ri-send-plane-fill me-2"></i>Subscribe
+          </button>
+        </form>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-lg-4">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/home')}
+                  class="text-light text-decoration-none d-block mb-2">Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/about')}
+                  class="text-light text-decoration-none d-block mb-2">About</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/faq')}
+                  class="text-light text-decoration-none d-block mb-2">FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/testimonials')}
+                  class="text-light text-decoration-none d-block mb-2">Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/contact')}
+                  class="text-light text-decoration-none d-block">Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/blog-1')}
+                  class="text-light text-decoration-none d-block mb-2">Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/breeding-philosophy')}
+                  class="text-light text-decoration-none d-block mb-2">Breeding Philosophy</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/gallery')}
+                  class="text-light text-decoration-none d-block mb-2">Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/puppies')}
+                  class="text-light text-decoration-none d-block mb-2">Puppies</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/5/shop')}
+                  class="text-light text-decoration-none d-block mb-2">Shop</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Us -->
+      <div class="col-lg-3">
+        <h5 class="fs-5 mb-3">Contact Us</h5>
         <p class="mb-3">
-          Over 200 happy families have found their perfect pup with us — yours could be next.
+          Whether you have a question, need support, or just want to say hello — we're here for you.
         </p>
-        <button class="btn btn-lg btn-outline-light mb-2">Get in touch</button>
-      </div>
-
-      <div class="col mb-3"></div>
-
-      <div class="col mb-3">
-        <nav aria-label="Quick Links">
-          <h5 class="mb-3">Quick Links</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/home')} class="nav-link text-light p-0">Home</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/about')} class="nav-link text-light p-0">About</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/puppies')} class="nav-link text-light p-0">Puppies</a
-              >
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/shop')} class="nav-link text-light p-0">Shop</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/faq')} class="nav-link text-light p-0">FAQs</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/blog')} class="nav-link text-light p-0">Blog</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href={getPathPrefix('/theme/5/contact')} class="nav-link text-light p-0">Contact</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="col mb-3">
-        <nav aria-label="Legal">
-          <h5 class="mb-3">Legal</h5>
-          <ul class="nav flex-column">
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link text-light p-0">Terms of Use</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link text-light p-0">Privacy Policy</a>
-            </li>
-            <li class="nav-item mb-2">
-              <a href="#" class="nav-link text-light p-0">Cookies Policy</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
-
-      <div class="col mb-3">
-        <h5 class="mb-3">Contact</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <i class="ri-phone-fill text-primary me-2"></i>
-            <a href="tel:+12345678901" class="text-decoration-none text-light text-break"
-              >+1 (234) 567-8901</a
-            >
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2">
+            <a href="tel:+12345678901" class="text-light text-decoration-none">
+              <i class="ri-phone-fill text-primary me-2"></i>+1 (234) 567-8901
+            </a>
           </li>
-          <li class="nav-item mb-2">
-            <i class="ri-mail-fill text-primary me-2"></i>
-            <a href="mailto:hello@email.com" class="text-decoration-none text-light text-break"
-              >hello@email.com</a
-            >
+          <li class="mb-2">
+            <a href="mailto:hello@email.com" class="text-light text-decoration-none">
+              <i class="ri-mail-fill text-primary me-2"></i>hello@email.com
+            </a>
           </li>
-          <li class="nav-item mb-2">
-            <address class="text-light">
-              <i class="ri-map-pin-fill text-primary me-2"></i>
-              123 Main Street, Austin, TX
-            </address>
+          <li>
+            <i class="ri-map-pin-fill text-primary me-2"></i>123 Main Street, Austin, TX
           </li>
         </ul>
       </div>
     </div>
   </div>
-  <div class="text-center bg-gray-800 py-4">
-    <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+  <!-- Footer Bottom -->
+  <div class="bg-gray-800 py-4 mt-4">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+    >
+      <p class="text-light mb-2 mb-md-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-decoration-none text-light me-3">Terms & Conditions</a>
+        <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+      </div>
+    </div>
   </div>
 </footer>
