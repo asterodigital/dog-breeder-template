@@ -12,11 +12,11 @@ import { getPathPrefix } from '../../../../../utils/path'
         class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start flex-wrap gap-3"
       >
         <div>
-          <i class="ri-phone-fill me-1"></i>
+          <i class="ri-phone-fill text-primary me-1"></i>
           <a href="tel:+12345678901" class="text-muted text-decoration-none">+1 (234) 567-8901</a>
         </div>
         <div>
-          <i class="ri-mail-fill me-1"></i>
+          <i class="ri-mail-fill text-primary me-1"></i>
           <a href="mailto:hello@email.com" class="text-muted text-decoration-none"
             >hello@email.com</a
           >
@@ -28,11 +28,11 @@ import { getPathPrefix } from '../../../../../utils/path'
         class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-wrap gap-3 ms-md-auto"
       >
         <div>
-          <i class="ri-time-fill me-1"></i>
+          <i class="ri-time-fill text-primary me-1"></i>
           Mon–Fri: 9am–6pm
         </div>
         <div>
-          <i class="ri-map-pin-fill me-1"></i>
+          <i class="ri-map-pin-fill text-primary me-1"></i>
           123 Main Street, Austin, TX
         </div>
       </div>
@@ -70,7 +70,8 @@ import { getPathPrefix } from '../../../../../utils/path'
         ></button>
       </div>
       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
-        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start justify-content-lg-center">
+        <!-- For lg+ screens -->
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
           <!-- Home -->
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href={getPathPrefix('/theme/6/home')}
@@ -181,24 +182,72 @@ import { getPathPrefix } from '../../../../../utils/path'
           </li>
         </ul>
 
+        <!-- For smaller screens -->
+        <ul class="navbar-nav flex-grow-1 justify-content-start d-flex d-lg-none">
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/home')}>Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/about')}>About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/breeding-philosophy')}
+              >Breeding Philosophy</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/testimonials')}>Testimonials</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/puppies')}>Puppies</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/gallery')}>Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/shop')}>Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/blog-1')}>Blog – No Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/blog-2')}>Blog – Left Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/blog-3')}>Blog – Right Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/post-1')}>Blog Post – No Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/post-2')}>Blog Post – Left Sidebar</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/post-3')}>Blog Post – Right Sidebar</a
+            >
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/faq')}>FAQs</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href={getPathPrefix('/theme/3/contact')}>Contact</a>
+          </li>
+        </ul>
+
         <!-- Bottom Section -->
         <div class="d-block d-lg-none mt-4">
           <a href="tel:+12345678901" class="btn btn-outline-primary rounded w-100 mb-2">
-            <i class="ri-phone-fill me-2"></i>Book Consultation
+            <i class="ri-phone-fill me-2"></i>Contact Us
           </a>
           <a class="btn btn-primary rounded w-100" href="#"
-            ><i class="ri-sparkling-2-fill me-2"></i> Get Started Now</a
+            ><i class="ri-sparkling-2-fill me-2"></i>Get Started</a
           >
         </div>
       </div>
     </div>
 
-    <div class="d-none d-lg-flex align-items-center gap-3">
-      <div class="text-start">
-        <small class="text-muted d-block">Book Consultation</small>
-        <a href="tel:+12345678901" class="text-decoration-none fw-medium"> +1 (234) 567-8901 </a>
-      </div>
-
+    <div class="d-none d-lg-flex align-items-center gap-2">
+      <a class="btn btn-lg btn-outline-primary rounded" href="#">Contact Us</a>
       <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
     </div>
   </div>
