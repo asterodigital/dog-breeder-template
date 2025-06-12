@@ -1,7 +1,7 @@
 ---
 import Logo from './_topbar/_logo.astro'
 import { getPathPrefix } from '../../../../../utils/path'
-const currentPath = Astro.url.pathname.replace(/\/+$/, '')
+const currentPath = Astro.url.pathname
 ---
 
 <!-- Top Navigation -->
@@ -41,7 +41,7 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
           <!-- Home -->
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/home') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/home' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/home')}>Home</a
             >
           </li>
@@ -61,19 +61,19 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
             <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/about') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/about' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/about')}>About</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/breeding-philosophy') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/testimonials') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/testimonials' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
                 >
               </li>
@@ -95,19 +95,19 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
             <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/puppies') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/puppies' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/puppies')}>Puppies</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/gallery') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/gallery' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/gallery')}>Gallery</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/shop') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/shop' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/shop')}>Shop</a
                 >
               </li>
@@ -129,37 +129,37 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
             <ul class="dropdown-menu" aria-labelledby="blogDropdown">
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/blog-1') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/blog-1' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/blog-1')}>Blog – No Sidebar</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/blog-2') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/blog-2' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/blog-2')}>Blog – Left Sidebar</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/blog-3') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/blog-3' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/blog-3')}>Blog – Right Sidebar</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/post-1') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/post-1' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/post-1')}>Blog Post – No Sidebar</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/post-2') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/post-2' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/post-2')}>Blog Post – Left Sidebar</a
                 >
               </li>
               <li>
                 <a
-                  class={`dropdown-item${currentPath === getPathPrefix('/theme/1/post-3') ? ' active' : ''}`}
+                  class={`dropdown-item${currentPath === '/theme/1/post-3' ? ' active' : ''}`}
                   href={getPathPrefix('/theme/1/post-3')}>Blog Post – Right Sidebar</a
                 >
               </li>
@@ -169,7 +169,7 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
           <!-- FAQs -->
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/faq') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/faq' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/faq')}>FAQs</a
             >
           </li>
@@ -177,7 +177,7 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
           <!-- Contact -->
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/contact') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/contact' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/contact')}>Contact</a
             >
           </li>
@@ -187,91 +187,91 @@ const currentPath = Astro.url.pathname.replace(/\/+$/, '')
         <ul class="navbar-nav flex-grow-1 pe-3 justify-content-start d-flex d-lg-none">
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/home') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/home' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/home')}>Home</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/about') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/about' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/about')}>About</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/breeding-philosophy') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/testimonials') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/testimonials' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/puppies') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/puppies' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/puppies')}>Puppies</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/gallery') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/gallery' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/gallery')}>Gallery</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/shop') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/shop' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/shop')}>Shop</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/blog-1') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/blog-1' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/blog-1')}>Blog – No Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/blog-2') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/blog-2' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/blog-2')}>Blog – Left Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/blog-3') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/blog-3' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/blog-3')}>Blog – Right Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/post-1') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/post-1' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/post-1')}>Blog Post – No Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/post-2') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/post-2' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/post-2')}>Blog Post – Left Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/post-3') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/post-3' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/post-3')}>Blog Post – Right Sidebar</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/faq') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/faq' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/faq')}>FAQs</a
             >
           </li>
           <li class="nav-item">
             <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/1/contact') ? ' active' : ''}`}
+              class={`nav-link${currentPath === '/theme/1/contact' ? ' active' : ''}`}
               href={getPathPrefix('/theme/1/contact')}>Contact</a
             >
           </li>
