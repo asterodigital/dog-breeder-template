@@ -1,10 +1,11 @@
 ---
 import Logo from './_topbar/_logo.astro'
 import { getPathPrefix } from '../../../../../utils/path'
+const currentPath = Astro.url.pathname
 ---
 
 <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm py-lg-3 z-3">
   <div class="container">
     <!-- Brand Logo or Text -->
     <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/2/home')}>
@@ -35,35 +36,64 @@ import { getPathPrefix } from '../../../../../utils/path'
       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
         <ul class="navbar-nav navbar-underline justify-content-end">
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/home')}>Home</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/home') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/home')}>Home</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/about')}>About</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/about') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/about')}>About</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/blog-1')}>Blog</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/blog-1') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/blog-1')}>Blog</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/breeding-philosophy')}>Philosophy</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/breeding-philosophy') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/breeding-philosophy')}>Philosophy</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/faq')}>FAQs</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/faq') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/faq')}>FAQs</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/gallery')}>Gallery</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/gallery') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/gallery')}>Gallery</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/puppies')}>Puppies</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/puppies') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/puppies')}>Puppies</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/shop')}>Shop</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/shop') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/shop')}>Shop</a
+            >
           </li>
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/testimonials')}>Testimonials</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/testimonials') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/testimonials')}>Testimonials</a
+            >
           </li>
-
           <li class="nav-item">
-            <a class="nav-link" href={getPathPrefix('/theme/2/contact')}>Contact</a>
+            <a
+              class={`nav-link${currentPath === getPathPrefix('/theme/2/contact') ? ' active' : ''}`}
+              href={getPathPrefix('/theme/2/contact')}>Contact</a
+            >
           </li>
         </ul>
       </div>
