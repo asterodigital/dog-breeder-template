@@ -4,6 +4,12 @@ import { getPathPrefix } from '../../../../../utils/path'
 const currentPath = Astro.url.pathname
 ---
 
+<p
+  style="background: #ff0; color: #000; padding: 1rem; position: fixed; bottom: 0; left: 0; z-index: 9999;"
+>
+  <strong>DEBUG MODE: Current Path is:</strong> "{currentPath}"
+</p>
+
 <!-- Top Navigation -->
 <nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
   <div class="container">
