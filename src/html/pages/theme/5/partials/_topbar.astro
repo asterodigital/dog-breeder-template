@@ -5,7 +5,9 @@ const currentPath = Astro.url.pathname
 ---
 
 <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark z-3">
+<nav
+  class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark border-bottom border-gray-700 z-3"
+>
   <div class="container">
     <!-- Brand Logo or Text -->
     <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/5/home')}>
@@ -25,7 +27,7 @@ const currentPath = Astro.url.pathname
     </button>
 
     <!-- Offcanvas Menu -->
-    <div class="offcanvas offcanvas-start bg-dark" tabindex="-1" id="offcanvasNavbar">
+    <div class="offcanvas offcanvas-end bg-dark" tabindex="-1" id="offcanvasNavbar">
       <div class="offcanvas-header">
         <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/5/home')}>
           <Logo />
@@ -35,7 +37,7 @@ const currentPath = Astro.url.pathname
       </div>
       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
         <!-- For lg+ screens -->
-        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-center d-none d-lg-flex">
+        <ul class="navbar-nav flex-grow-1 pe-3 justify-content-end d-none d-lg-flex">
           <!-- Home -->
           <li class="nav-item">
             <a
@@ -171,14 +173,6 @@ const currentPath = Astro.url.pathname
               href={getPathPrefix('/theme/5/faq')}>FAQs</a
             >
           </li>
-
-          <!-- Contact -->
-          <li class="nav-item">
-            <a
-              class={`nav-link${currentPath === getPathPrefix('/theme/5/contact') ? ' active' : ''}`}
-              href={getPathPrefix('/theme/5/contact')}>Contact</a
-            >
-          </li>
         </ul>
 
         <!-- For smaller screens -->
@@ -301,10 +295,15 @@ const currentPath = Astro.url.pathname
           placeholder="Search puppies, info..."
           aria-label="Search"
         />
-        <button class="btn btn-lg btn-primary" type="submit">
+        <button class="btn btn-lg btn-outline-primary" type="submit">
           <i class="ri-search-line"></i>
         </button>
       </form>
+      <div class="ms-2 ps-2 border-start border-gray-700">
+        <a href={getPathPrefix('/theme/5/contact')} class="btn btn-lg btn-primary text-nowrap"
+          >Contact Us</a
+        >
+      </div>
     </div>
   </div>
 </nav>
