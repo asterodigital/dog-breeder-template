@@ -4,111 +4,30 @@ import { getPathPrefix } from '../../../../../utils/path'
 const currentPath = Astro.url.pathname
 ---
 
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg bg-body shadow-sm sticky-top z-3">
-  <div class="container position-relative">
-    <!-- Logo (centered on lg+) -->
-    <a class="navbar-brand mx-auto navbar-center" href={getPathPrefix('/theme/4/home')}>
-      <Logo />
-    </a>
+<div class="sticky-top z-3">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body">
+    <div class="container position-relative">
+      <!-- Logo (centered on lg+) -->
+      <a class="navbar-brand mx-auto navbar-center" href={getPathPrefix('/theme/4/home')}>
+        <Logo />
+      </a>
 
-    <!-- Offcanvas Toggler -->
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="offcanvas"
-      data-bs-target="#mainOffcanvas"
-      aria-controls="mainOffcanvas"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Offcanvas Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#mainOffcanvas"
+        aria-controls="mainOffcanvas"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <!-- Desktop Links -->
-    <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between w-100">
-      <ul class="navbar-nav navbar-highlight me-auto">
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/home') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/home')}>Home</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/about') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/about')}>About</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/breeding-philosophy') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/breeding-philosophy')}>Philosophy</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/shop') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/shop')}>Shop</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/puppies') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/puppies')}>Puppies</a
-          >
-        </li>
-      </ul>
-
-      <ul class="navbar-nav navbar-highlight ms-auto">
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/testimonials') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/testimonials')}>Testimonials</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/gallery') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/gallery')}>Gallery</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/faq') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/faq')}>FAQs</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/blog-1') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/blog-1')}>Blog</a
-          >
-        </li>
-        <li class="nav-item">
-          <a
-            class={`nav-link${currentPath === getPathPrefix('/theme/4/contact') ? ' active' : ''}`}
-            href={getPathPrefix('/theme/4/contact')}>Contact</a
-          >
-        </li>
-      </ul>
-    </div>
-
-    <!-- Offcanvas Menu -->
-    <div
-      class="offcanvas offcanvas-start d-lg-none"
-      tabindex="-1"
-      id="mainOffcanvas"
-      aria-labelledby="mainOffcanvasLabel"
-    >
-      <div class="offcanvas-header">
-        <a class="navbar-brand" href={getPathPrefix('/theme/4/home')}>
-          <Logo />
-        </a>
-        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
-        ></button>
-      </div>
-      <div class="offcanvas-body">
-        <ul class="navbar-nav">
+      <!-- Desktop Links -->
+      <div class="collapse navbar-collapse d-none d-lg-flex justify-content-between w-100">
+        <ul class="navbar-nav navbar-highlight me-auto">
           <li class="nav-item">
             <a
               class={`nav-link${currentPath === getPathPrefix('/theme/4/home') ? ' active' : ''}`}
@@ -139,6 +58,9 @@ const currentPath = Astro.url.pathname
               href={getPathPrefix('/theme/4/puppies')}>Puppies</a
             >
           </li>
+        </ul>
+
+        <ul class="navbar-nav navbar-highlight ms-auto">
           <li class="nav-item">
             <a
               class={`nav-link${currentPath === getPathPrefix('/theme/4/testimonials') ? ' active' : ''}`}
@@ -171,6 +93,107 @@ const currentPath = Astro.url.pathname
           </li>
         </ul>
       </div>
+
+      <!-- Offcanvas Menu -->
+      <div
+        class="offcanvas offcanvas-end d-lg-none"
+        tabindex="-1"
+        id="mainOffcanvas"
+        aria-labelledby="mainOffcanvasLabel"
+      >
+        <div class="offcanvas-header">
+          <a class="navbar-brand" href={getPathPrefix('/theme/4/home')}>
+            <Logo />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/home') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/home')}>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/about') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/about')}>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/breeding-philosophy') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/breeding-philosophy')}>Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/shop') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/shop')}>Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/puppies') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/puppies')}>Puppies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/testimonials') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/testimonials')}>Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/gallery') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/gallery')}>Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/faq') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/faq')}>FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/blog-1') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/blog-1')}>Blog</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/contact') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/contact')}>Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- Search Bar and Contact Info -->
+  <div class="text-bg-primary">
+    <div class="container">
+      <div class="row align-items-center py-2">
+        <!-- Search Bar -->
+        <div class="col-12 col-sm-6 offset-sm-6 col-md-4 offset-md-8">
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-light" type="submit">
+              <i class="ri-search-line"></i>
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
   </div>
-</nav>
+</div>
