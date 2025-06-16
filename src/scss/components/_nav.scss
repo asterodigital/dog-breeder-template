@@ -157,6 +157,7 @@
       transition: background-color 0.25s ease;
 
       &:hover {
+        color: var(--bs-primary);
         background-color: var(--bs-primary-bg-subtle);
       }
 
