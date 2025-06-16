@@ -161,7 +161,37 @@ const currentPath = Astro.url.pathname
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === getPathPrefix('/theme/4/blog-1') ? ' active' : ''}`}
-                href={getPathPrefix('/theme/4/blog-1')}>Blog</a
+                href={getPathPrefix('/theme/4/blog-1')}>Blog – No Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/blog-2') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/blog-2')}>Blog – Left Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/blog-3') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/blog-3')}>Blog – Right Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/post-1') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/post-1')}>Blog Post – No Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/post-2') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/post-2')}>Blog Post – Left Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === getPathPrefix('/theme/4/post-3') ? ' active' : ''}`}
+                href={getPathPrefix('/theme/4/post-3')}>Blog Post – Right Sidebar</a
               >
             </li>
             <li class="nav-item">
