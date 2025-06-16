@@ -5,7 +5,7 @@ const currentPath = Astro.url.pathname
 ---
 
 <!-- Navbar -->
-<nav class="navbar sticky-top navbar-expand-lg navbar-light bg-body shadow-sm z-3">
+<nav class="navbar navbar-expand-lg navbar-light bg-body shadow-sm sticky-top z-3">
   <div class="container">
     <!-- Brand Logo -->
     <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/3/home')}>
@@ -33,7 +33,7 @@ const currentPath = Astro.url.pathname
         <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
         ></button>
       </div>
-      <div class="offcanvas-body d-flex flex-column justify-content-between overflow-auto h-100">
+      <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
         <div class="d-flex w-100 align-items-center">
           <!-- Search for lg+ screens -->
           <form class="d-none d-lg-flex ms-2" role="search">
