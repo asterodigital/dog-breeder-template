@@ -10,7 +10,9 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
   <div class="bg-body py-2">
     <div class="container">
       <div class="d-flex align-items-center">
-        <Logo />
+        <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/1/home')}>
+          <Logo />
+        </a>
         <button class="btn btn-lg btn-primary rounded-pill px-3 ms-auto"
           >Get Started<i class="ri-arrow-right-line ms-2"></i></button
         >
