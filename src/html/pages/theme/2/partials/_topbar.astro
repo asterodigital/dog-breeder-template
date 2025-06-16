@@ -1,7 +1,8 @@
 ---
 import Logo from './_topbar/_logo.astro'
 import { getPathPrefix } from '../../../../../utils/path'
-const currentPath = Astro.url.pathname
+const rawPath = Astro.url.pathname
+const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
 ---
 
 <div class="sticky-top z-3">
@@ -51,67 +52,67 @@ const currentPath = Astro.url.pathname
 
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/home') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/home' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/home')}>Home</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/about') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/about' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/about')}>About</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/blog-1') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/blog-1' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/blog-1')}>Blog</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/post-1') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/post-1' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/post-1')}>Post</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/breeding-philosophy') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/breeding-philosophy' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/breeding-philosophy')}>Philosophy</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/faq') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/faq' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/faq')}>FAQs</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/gallery') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/gallery' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/gallery')}>Gallery</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/puppies') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/puppies' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/puppies')}>Puppies</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/shop') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/shop' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/shop')}>Shop</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/testimonials') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/testimonials' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/testimonials')}>Testimonials</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === getPathPrefix('/theme/2/contact') ? ' active' : ''}`}
+                class={`nav-link${currentPath === '/theme/2/contact' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/2/contact')}>Contact</a
               >
             </li>
