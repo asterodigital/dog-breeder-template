@@ -5,116 +5,137 @@ import Logo from './_topbar/_logo.astro'
 
 <!-- Footer -->
 <footer>
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-5 px-3 px-lg-5 pt-5 pb-4">
-    <div class="col mb-3 mb-sm-4">
-      <a
-        href="/"
-        class="d-inline-flex align-items-center text-decoration-none mb-2"
-        aria-label="Your Company Logo"
-      >
-        <Logo />
-      </a>
-      <p class="text-body-secondary mb-3">
-        Over 200 happy families have found their perfect pup with us — yours could be next.
-      </p>
-      <button class="btn btn-lg btn-outline-primary">Get in touch</button>
-    </div>
-
-    <div class="col mb-3"></div>
-
-    <div class="col mb-3">
-      <nav aria-label="Quick Links">
-        <h5 class="mb-3">Quick Links</h5>
+  <div class="container py-5">
+    <div class="row gy-4">
+      <div class="col-md-4">
+        <a
+          href={getPathPrefix('/theme/1/home')}
+          class="d-inline-flex align-items-center text-decoration-none mb-2"
+        >
+          <Logo />
+        </a>
+        <p class="text-body pe-lg-5 my-3">Raising happy, healthy puppies with love and care.</p>
         <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/home')} class="nav-link p-0 text-body-secondary"
-              >Home</a
+          <li class="nav-item text-body-secondary mb-2">
+            <i class="ri-phone-fill text-primary me-2"></i>
+            <a href="tel:+12345678901" class="text-body-secondary text-decoration-none text-break"
+              >+1 (234) 567-8901</a
             >
           </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/about')} class="nav-link p-0 text-body-secondary"
-              >About</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/faq')} class="nav-link p-0 text-body-secondary">FAQs</a
-            >
-          </li>
-          <li class="nav-item mb-2">
+          <li class="nav-item text-body-secondary mb-2">
+            <i class="ri-mail-fill text-primary me-2"></i>
             <a
-              href={getPathPrefix('/theme/1/testimonials')}
-              class="nav-link p-0 text-body-secondary">Testimonials</a
+              href="mailto:hello@email.com"
+              class="text-body-secondary text-decoration-none text-break">hello@email.com</a
             >
           </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/contact')} class="nav-link p-0 text-body-secondary"
-              >Contact</a
-            >
+          <li class="nav-item text-body-secondary">
+            <address class="text-body-secondary mb-0">
+              <i class="ri-map-pin-fill text-primary me-2"></i>
+              123 Main Street, Austin, TX
+            </address>
           </li>
         </ul>
-      </nav>
-    </div>
+      </div>
 
-    <div class="col mb-3">
-      <nav aria-label="Explore">
-        <h5 class="mb-3">Explore</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/blog-1')} class="nav-link p-0 text-body-secondary"
-              >Blog</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a
-              href={getPathPrefix('/theme/1/breeding-philosophy')}
-              class="nav-link p-0 text-body-secondary">Breeding Philosophy</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/gallery')} class="nav-link p-0 text-body-secondary"
-              >Gallery</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/puppies')} class="nav-link p-0 text-body-secondary"
-              >Puppies</a
-            >
-          </li>
-          <li class="nav-item mb-2">
-            <a href={getPathPrefix('/theme/1/shop')} class="nav-link p-0 text-body-secondary"
-              >Shop</a
-            >
-          </li>
-        </ul>
-      </nav>
-    </div>
+      <div class="col-md-5">
+        <div class="row">
+          <div class="col-6">
+            <nav aria-label="Quick Links">
+              <h5 class="mb-3">Quick Links</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a href={getPathPrefix('/theme/1/home')} class="nav-link p-0 text-body-secondary"
+                    >Home</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href={getPathPrefix('/theme/1/about')} class="nav-link p-0 text-body-secondary"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href={getPathPrefix('/theme/1/faq')} class="nav-link p-0 text-body-secondary"
+                    >FAQs</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/testimonials')}
+                    class="nav-link p-0 text-body-secondary">Testimonials</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/contact')}
+                    class="nav-link p-0 text-body-secondary">Contact</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="col-6">
+            <nav aria-label="Explore">
+              <h5 class="mb-3">Explore</h5>
+              <ul class="nav flex-column">
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/blog-1')}
+                    class="nav-link p-0 text-body-secondary">Blog</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/breeding-philosophy')}
+                    class="nav-link p-0 text-body-secondary">Breeding Philosophy</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/gallery')}
+                    class="nav-link p-0 text-body-secondary">Gallery</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a
+                    href={getPathPrefix('/theme/1/puppies')}
+                    class="nav-link p-0 text-body-secondary">Puppies</a
+                  >
+                </li>
+                <li class="nav-item mb-2">
+                  <a href={getPathPrefix('/theme/1/shop')} class="nav-link p-0 text-body-secondary"
+                    >Shop<span class="badge bg-primary ms-2">new</span></a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </div>
 
-    <div class="col mb-3">
-      <h5 class="mb-3">Contact</h5>
-      <ul class="nav flex-column">
-        <li class="nav-item mb-2 text-body-secondary">
-          <i class="ri-phone-fill text-primary me-2"></i>
-          <a href="tel:+12345678901" class="text-body-secondary text-decoration-none text-break"
-            >+1 (234) 567-8901</a
-          >
-        </li>
-        <li class="nav-item mb-2 text-body-secondary">
-          <i class="ri-mail-fill text-primary me-2"></i>
-          <a
-            href="mailto:hello@email.com"
-            class="text-body-secondary text-decoration-none text-break">hello@email.com</a
-          >
-        </li>
-        <li class="nav-item mb-2 text-body-secondary">
-          <address class="text-body-secondary">
-            <i class="ri-map-pin-fill text-primary me-2"></i>
-            123 Main Street, Austin, TX
-          </address>
-        </li>
-      </ul>
+      <div class="col-md-3">
+        <h5 class="mb-3">Reach Us</h5>
+        <div class="ratio ratio-16x9 rounded overflow-hidden">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!2m12!1m3!1d11034.5656!2d-97.7431!3d30.2672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5e4c51e3b7b%3A0x8d2fd94b632cf761!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1615555555555"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
     </div>
   </div>
-  <div class="text-center bg-primary-subtle py-4">
-    <p class="mb-0">© 2025 Company, Inc. All rights reserved.</p>
+  <!-- Footer Bottom -->
+  <div class="border-top py-4">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+    >
+      <p class="text-muted mb-2 mb-md-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-decoration-none text-muted me-3">Terms & Conditions</a>
+        <a href="#" class="text-decoration-none text-muted">Privacy Policy</a>
+      </div>
+    </div>
   </div>
 </footer>
