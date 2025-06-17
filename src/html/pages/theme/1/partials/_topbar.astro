@@ -107,11 +107,29 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
                 href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
               >
             </li>
-            <li class="nav-item">
+            <li class="nav-item mb-2 mb-lg-0">
               <a
                 class={`nav-link${currentPath === '/theme/1/contact' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/1/contact')}>Contact</a
               >
+            </li>
+            <li class="nav-item my-lg-auto ms-lg-auto">
+              <div class="d-flex align-items-center">
+                <i class="ri-global-line text-secondary fs-5 me-2"></i>
+                <!-- Language Dropdown -->
+                <select
+                  class="form-select bg-dark text-light border-secondary pe-4"
+                  aria-label="Select Language"
+                >
+                  <option value="en" selected>English</option>
+                  <option value="es">Español</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="ja">日本語</option>
+                  <option value="zh">中文</option>
+                  <option value="ar">العربية</option>
+                </select>
+              </div>
             </li>
           </ul>
         </div>
