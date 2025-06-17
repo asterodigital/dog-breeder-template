@@ -9,8 +9,13 @@ import { getPathPrefix } from '../../../../../utils/path.js'
     <div class="row gy-4">
       <!-- Logo and Contact Info -->
       <div class="col-lg-4 col-md-6">
-        <Logo />
-        <p class="text-muted my-3 pe-lg-4">
+        <a
+          href={getPathPrefix('/theme/4/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="text-muted mt-2 mb-3 pe-lg-4">
           Dedicated to ethical breeding practices, and the well-being of every poodle we raise —
           right here in Austin, Texas.
         </p>
@@ -87,7 +92,8 @@ import { getPathPrefix } from '../../../../../utils/path.js'
               <li>
                 <a
                   href={getPathPrefix('/theme/2/shop')}
-                  class="text-body text-decoration-none d-block mb-2">Shop</a
+                  class="text-body text-decoration-none d-block mb-2"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
                 >
               </li>
             </ul>

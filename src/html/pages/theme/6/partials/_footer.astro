@@ -9,8 +9,13 @@ import Logo from './_topbar/_logo.astro'
     <div class="row gy-4">
       <!-- Logo and Contact Info -->
       <div class="col-lg-4 col-md-6">
-        <Logo />
-        <p class="text-body my-3 pe-lg-4">
+        <a
+          href={getPathPrefix('/theme/6/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="text-body mt-2 mb-3 pe-lg-4">
           Dedicated to ethical breeding practices, and the well-being of every puppy we raise.
         </p>
         <ul class="list-unstyled mt-3">
@@ -98,7 +103,8 @@ import Logo from './_topbar/_logo.astro'
               <li>
                 <a
                   href={getPathPrefix('/theme/6/shop')}
-                  class="text-body text-decoration-none d-block mb-2">Shop</a
+                  class="text-body text-decoration-none d-block"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
                 >
               </li>
             </ul>

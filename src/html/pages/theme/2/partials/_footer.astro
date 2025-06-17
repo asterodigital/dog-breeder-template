@@ -9,7 +9,12 @@ import Logo from './_topbar/_logo.astro'
     <div class="row gy-4">
       <!-- Logo and Contact Info -->
       <div class="col-lg-4 col-md-6">
-        <Logo />
+        <a
+          href={getPathPrefix('/theme/2/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
         <ul class="list-unstyled mt-3">
           <li class="mb-2">
             <a href="tel:+12345678901" class="text-body text-decoration-none">
@@ -95,7 +100,8 @@ import Logo from './_topbar/_logo.astro'
               <li>
                 <a
                   href={getPathPrefix('/theme/2/shop')}
-                  class="text-body text-decoration-none d-block mb-2">Shop</a
+                  class="text-body text-decoration-none d-block mb-2"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
                 >
               </li>
             </ul>

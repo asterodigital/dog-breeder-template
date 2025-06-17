@@ -9,8 +9,13 @@ import Logo from './_topbar/_logo.astro'
     <div class="row gy-4">
       <!-- Logo and Contact Info -->
       <div class="col-lg-5 pe-lg-5">
-        <Logo />
-        <p class="my-3">Subscribe to our newsletter for updates on upcoming litters.</p>
+        <a
+          href={getPathPrefix('/theme/5/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="mt-2 mb-3">Subscribe to our newsletter for updates on upcoming litters.</p>
         <form class="mb-3 mb-lg-0">
           <div class="mb-3">
             <input
@@ -97,7 +102,8 @@ import Logo from './_topbar/_logo.astro'
               <li>
                 <a
                   href={getPathPrefix('/theme/5/shop')}
-                  class="text-light text-decoration-none d-block mb-2">Shop</a
+                  class="text-light text-decoration-none d-block mb-2"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
                 >
               </li>
             </ul>

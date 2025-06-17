@@ -9,8 +9,13 @@ import Logo from './_topbar/_logo.astro'
     <div class="row mb-4">
       <!-- Left Column -->
       <div class="col-md-5">
-        <Logo />
-        <p class="text-body mt-3 pe-lg-4">
+        <a
+          href={getPathPrefix('/theme/3/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="text-body mt-2 pe-lg-4">
           We're committed to raising healthy, happy French Bulldogs. Reach out with questions or to
           express interest in an upcoming litter.
         </p>
@@ -124,7 +129,7 @@ import Logo from './_topbar/_logo.astro'
           </li>
           <li>
             <a href={getPathPrefix('/theme/3/shop')} class="text-light text-decoration-none d-block"
-              >Shop</a
+              >Shop<span class="badge bg-primary ms-2">new</span></a
             >
           </li>
         </ul>
