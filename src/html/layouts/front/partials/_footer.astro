@@ -1,16 +1,18 @@
 ---
-// import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+import { getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <!-- Footer -->
 <footer class="bg-secondary-subtle border-top py-3">
   <ul class="nav justify-content-center border-bottom pb-3 mb-3">
-    <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Home</a></li>
     <li class="nav-item">
-      <a href="/docs" class="nav-link px-2 text-body-secondary">Documentation</a>
+      <a href={getPathPrefix('/')} class="nav-link px-2 text-body-secondary">Home</a>
     </li>
     <li class="nav-item">
-      <a href="/docs" class="nav-link px-2 text-body-secondary">Get Started</a>
+      <a href={getPathPrefix('/docs')} class="nav-link px-2 text-body-secondary">Documentation</a>
+    </li>
+    <li class="nav-item">
+      <a href={getPathPrefix('/docs')} class="nav-link px-2 text-body-secondary">Get Started</a>
     </li>
   </ul>
   <p class="text-center text-body-secondary mb-0">© 2025 BreederSpot</p>
