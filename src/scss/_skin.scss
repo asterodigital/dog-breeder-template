@@ -10,8 +10,6 @@
   /* Derived primary colors - automatically calculated from --bs-primary */
   --bs-primary-text-emphasis: color-mix(in srgb, var(--bs-primary) 70%, #000);
   --bs-primary-bg-subtle: color-mix(in srgb, var(--bs-primary) 10%, #fff);
-  --bs-primary-bg-soft: color-mix(in srgb, var(--bs-primary) 15%, #fff);
-  --bs-primary-bg-pale: color-mix(in srgb, var(--bs-primary) 20%, #fff);
   --bs-primary-border-subtle: color-mix(in srgb, var(--bs-primary) 30%, #fff);
 
   /* Derived secondary colors - automatically calculated from --bs-secondary */
