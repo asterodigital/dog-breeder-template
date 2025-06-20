@@ -37,8 +37,8 @@ $dark-bg-subtle:          tint-color($dark, 90%) !default;
 // scss-docs-end theme-bg-subtle-variables
 
 // scss-docs-start theme-soft-variables
-$primary-soft:       tint-color($primary, 90%) !default;
-$secondary-soft:     tint-color($secondary, 90%) !default;
+$primary-soft:       color-mix(in srgb, var(--bs-primary) 10%, #fff) !default;
+$secondary-soft:     color-mix(in srgb, var(--bs-secondary) 10%, #fff) !default;
 $indigo-soft:        tint-color($indigo, 90%) !default;
 $blue-soft:          tint-color($blue, 90%) !default;
 $sky-soft:           tint-color($sky, 90%) !default;
@@ -61,8 +61,8 @@ $gray-soft:          $gray-200 !default;
 // scss-docs-end theme-soft-variables
 
 // scss-docs-start theme-pale-variables
-$primary-pale:         tint-color($primary, 84%) !default;
-$secondary-pale:       tint-color($secondary, 84%) !default;
+$primary-pale:         color-mix(in srgb, var(--bs-primary) 16%, #fff) !default;
+$secondary-pale:       color-mix(in srgb, var(--bs-secondary) 16%, #fff) !default;
 $indigo-pale:          tint-color($indigo, 84%) !default;
 $blue-pale:            tint-color($blue, 84%) !default;
 $sky-pale:             tint-color($sky, 84%) !default;
@@ -97,8 +97,8 @@ $dark-border-subtle:      tint-color($dark, 70%) !default;
 // scss-docs-end theme-border-subtle-variables
 
 // scss-docs-start theme-border-soft-variables
-$primary-border-soft:   tint-color($primary, 70%) !default;
-$secondary-border-soft: tint-color($secondary, 70%) !default;
+$primary-border-soft:   color-mix(in srgb, var(--bs-primary) 30%, #fff) !default;
+$secondary-border-soft: color-mix(in srgb, var(--bs-secondary) 30%, #fff) !default;
 $indigo-border-soft:    tint-color($indigo, 70%) !default;
 $blue-border-soft:      tint-color($blue, 70%) !default;
 $sky-border-soft:       tint-color($sky, 70%) !default;
@@ -121,8 +121,8 @@ $gray-border-soft:      $gray-200 !default;
 // scss-docs-end theme-border-soft-variables
 
 // scss-docs-start theme-border-pale-variables
-$primary-border-pale:   tint-color($primary, 60%) !default;
-$secondary-border-pale: tint-color($secondary, 60%) !default;
+$primary-border-pale:   color-mix(in srgb, var(--bs-primary) 40%, #fff) !default;
+$secondary-border-pale: color-mix(in srgb, var(--bs-secondary) 40%, #fff) !default;
 $indigo-border-pale:    tint-color($indigo, 60%) !default;
 $blue-border-pale:      tint-color($blue, 60%) !default;
 $sky-border-pale:       tint-color($sky, 60%) !default;

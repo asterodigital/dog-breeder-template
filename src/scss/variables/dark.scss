@@ -55,8 +55,8 @@ $dark-bg-subtle-dark:               mix($gray-800, $black) !default;
 // scss-docs-end theme-bg-subtle-dark-variables
 
 // scss-docs-start theme-soft-dark-variables
-$primary-soft-dark:       shade-color($primary, 80%) !default;
-$secondary-soft-dark:     shade-color($secondary, 80%) !default;
+$primary-soft-dark:       color-mix(in srgb, var(--bs-primary) 20%, #000) !default;
+$secondary-soft-dark:     color-mix(in srgb, var(--bs-secondary) 20%, #000) !default;
 $indigo-soft-dark:        shade-color($indigo, 80%) !default;
 $blue-soft-dark:          shade-color($blue, 80%) !default;
 $sky-soft-dark:           shade-color($sky, 80%) !default;
@@ -79,8 +79,8 @@ $gray-soft-dark:          $gray-800 !default;
 // scss-docs-end theme-soft-dark-variables
 
 // scss-docs-start theme-pale-dark-variables
-$primary-pale-dark:       shade-color($primary, 70%) !default;
-$secondary-pale-dark:     shade-color($secondary, 70%) !default;
+$primary-pale-dark:       color-mix(in srgb, var(--bs-primary) 30%, #000) !default;
+$secondary-pale-dark:     color-mix(in srgb, var(--bs-secondary) 30%, #000) !default;
 $indigo-pale-dark:        shade-color($indigo, 70%) !default;
 $blue-pale-dark:          shade-color($blue, 70%) !default;
 $sky-pale-dark:           shade-color($sky, 70%) !default;
@@ -114,8 +114,8 @@ $dark-border-subtle-dark:           $gray-800 !default;
 // scss-docs-end theme-border-subtle-dark-variables
 
 // scss-docs-start theme-border-soft-dark-variables
-$primary-border-soft-dark:        shade-color($primary, 40%) !default;
-$secondary-border-soft-dark:      shade-color($secondary, 40%) !default;
+$primary-border-soft-dark:        color-mix(in srgb, var(--bs-primary) 60%, #000) !default;
+$secondary-border-soft-dark:      color-mix(in srgb, var(--bs-secondary) 60%, #000) !default;
 $indigo-border-soft-dark:         shade-color($indigo, 40%) !default;
 $blue-border-soft-dark:           shade-color($blue, 40%) !default;
 $sky-border-soft-dark:            shade-color($sky, 40%) !default;
@@ -138,8 +138,8 @@ $gray-border-soft-dark:           $gray-800 !default;
 // scss-docs-end theme-border-soft-dark-variables
 
 // scss-docs-start theme-border-pale-dark-variables
-$primary-border-pale-dark:        shade-color($primary, 30%) !default;
-$secondary-border-pale-dark:      shade-color($secondary, 30%) !default;
+$primary-border-pale-dark:        color-mix(in srgb, var(--bs-primary) 70%, #000) !default;
+$secondary-border-pale-dark:      color-mix(in srgb, var(--bs-secondary) 70%, #000) !default;
 $indigo-border-pale-dark:         shade-color($indigo, 30%) !default;
 $blue-border-pale-dark:           shade-color($blue, 30%) !default;
 $sky-border-pale-dark:            shade-color($sky, 30%) !default;
