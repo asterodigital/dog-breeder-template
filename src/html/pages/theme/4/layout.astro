@@ -25,6 +25,15 @@ const pageSeo = {
 <html lang="en" dir={isRtl ? 'rtl' : 'ltr'}>
   <head>
     <Head {...pageSeo} {pageCss} isRtl={isRtl} />
+    <style>
+      :root,
+      [data-bs-theme='light'] {
+        --bs-primary: #1b69c2;
+        --bs-primary-rgb: 27, 105, 194;
+        --bs-secondary: #757575;
+        --bs-secondary-rgb: 117, 117, 117;
+      }
+    </style>
   </head>
   <body>
     <!-- Main Content -->
