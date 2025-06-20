@@ -1,6 +1,6 @@
 ---
 import Layout from './layout.astro'
-import { getAssetPrefix } from '../../../../utils/path.js'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
 ---
 
 <Layout title="Blog 2" description="Dedicated to raising happy, healthy puppies in loving homes.">
@@ -127,7 +127,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 <span class="text-muted">12 Jan 2025</span>
               </div>
               <h5 class="card-title fs-3 mb-2">
-                <a href="#" class="text-decoration-none text-body">
+                <a href={getPathPrefix('/theme/3/post-2')} class="text-decoration-none text-body">
                   Why Health Testing Matters in Dog Breeding
                 </a>
               </h5>
@@ -135,7 +135,9 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 Explaining the importance of genetic and health screenings in ethical breeding
                 practices.
               </p>
-              <a href="#" class="text-decoration-none text-primary mb-0"
+              <a
+                href={getPathPrefix('/theme/3/post-2')}
+                class="text-decoration-none text-primary mb-0"
                 >Read more <i class="ri-arrow-right-line"></i></a
               >
             </div>
