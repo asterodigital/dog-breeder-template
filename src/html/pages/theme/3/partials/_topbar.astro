@@ -36,18 +36,6 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
       </div>
       <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
         <div class="d-flex w-100 align-items-center">
-          <!-- Search for lg+ screens -->
-          <form class="d-none d-lg-flex ms-2" role="search">
-            <input
-              class="form-control form-control-lg rounded-pill me-1"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-primary rounded-pill btn-lg" type="submit">
-              <i class="ri-search-line"></i>
-            </button>
-          </form>
           <!-- Desktop Nav Links -->
           <ul class="navbar-nav navbar-highlight d-none d-lg-flex ms-auto">
             <li class="nav-item">
@@ -186,20 +174,6 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
 
           <!-- Mobile Nav Links -->
           <ul class="navbar-nav d-lg-none w-100">
-            <!-- Search for Smaller Screens -->
-            <li class="mb-2">
-              <form class="d-flex" role="search">
-                <input
-                  class="form-control form-control-lg rounded-pill me-1"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button class="btn btn-primary rounded-pill btn-lg" type="submit">
-                  <i class="ri-search-line"></i>
-                </button>
-              </form>
-            </li>
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === '/theme/3/home' ? ' active' : ''}`}
