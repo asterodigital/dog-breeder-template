@@ -11,7 +11,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <section class="bg-body py-5">
     <div class="container">
       <!-- Back Button -->
-      <div class="mb-4">
+      <div class="mb-4" data-aos="fade-in" data-aos-duration="600">
         <a href={getPathPrefix('/theme/1/puppies')} class="btn btn-lg btn-outline-primary">
           <i class="ri-arrow-left-line"></i> Back to Puppies
         </a>
@@ -20,7 +20,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <!-- Puppy Info Row -->
       <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
         <!-- Image Column -->
-        <div class="col">
+        <div class="col" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="600">
           <figure class="img-scale rounded shadow-sm">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/beagle-puppy-1.jpg')}
@@ -31,7 +31,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="d-flex align-items-center mb-2">
             <h2 class="display-6 fw-semibold mb-0 me-2">Olive</h2>
             <span class="badge text-body bg-secondary-pale fs-6">Beagle</span>
@@ -92,7 +92,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Olive</h3>
+          <h3
+            class="display-6 fw-semibold text-center mb-3"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
+            Temperament of Olive
+          </h3>
           <label for="progressbar-trainability" class="form-label">Trainability</label>
           <div
             class="progress mb-3"
@@ -164,7 +170,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <!-- Content -->
     <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
       <div class="row">
-        <div class="col-lg-6 offset-lg-3">
+        <div class="col-lg-6 offset-lg-3" data-aos="fade-in" data-aos-duration="600">
           <h5 class="display-6 fw-semibold mb-2">Stay connected with us</h5>
           <p class="fs-5 mb-4">
             Subscribe to our newsletter for updates on upcoming litters, training tips, and stories
@@ -180,10 +186,6 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 required=""
               />
               <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
                 data-lastpass-icon-root=""
                 style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
               >
