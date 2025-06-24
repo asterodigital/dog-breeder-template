@@ -6,7 +6,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
 <Layout title="Contact" description="Dedicated to raising happy, healthy puppies in loving homes.">
   <!-- Book Appointment Section -->
   <section class="bg-body pt-5 position-relative">
-    <div class="container bg-primary-subtle rounded-4 p-4 p-md-5 position-relative overflow-hidden">
+    <div
+      class="container bg-primary-subtle rounded-4 p-4 p-md-5 position-relative overflow-hidden"
+      data-aos="fade-down"
+      data-aos-duration="800"
+    >
       <img
         src={getAssetPrefix('/assets/img/breederspot-images/multiple-paws.png')}
         alt="Decorative Paws Image"
@@ -38,7 +42,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   <section class="bg-body py-5">
     <div class="container">
       <div class="row g-4">
-        <div class="col-md-6">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="800">
           <i class="ri-customer-service-fill text-primary fs-1"></i>
           <h1 class="display-6 fw-bold mb-2">Contact Us</h1>
           <p class="mb-4">
@@ -105,7 +109,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row text-center g-4">
         <!-- Phone -->
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="0" data-aos-duration="800">
           <i class="ri-phone-line text-primary display-5 mb-3"></i>
           <h5 class="fw-semibold mb-1">Phone</h5>
           <p class="mb-0 text-muted">
@@ -113,7 +117,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
           </p>
         </div>
         <!-- Email -->
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="800">
           <i class="ri-mail-line text-primary display-5 mb-3"></i>
           <h5 class="fw-semibold mb-1">Email</h5>
           <p class="mb-0 text-muted">
@@ -123,7 +127,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
           </p>
         </div>
         <!-- Location -->
-        <div class="col-sm-4">
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="800">
           <i class="ri-map-pin-line text-primary display-5 mb-3"></i>
           <h5 class="fw-semibold mb-1">Location</h5>
           <p class="mb-0 text-muted">
@@ -139,13 +143,37 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-lg-8 offset-lg-2">
-          <h2 class="text-primary text-center fw-semibold fs-5 mb-2">FAQs</h2>
-          <h2 class="fw-bold text-center display-6 mb-2">Frequently Asked Questions</h2>
-          <p class="text-center mb-4">
+          <h2
+            class="text-primary text-center fw-semibold fs-5 mb-2"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            FAQs
+          </h2>
+          <h2
+            class="fw-bold text-center display-6 mb-2"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
+            Frequently Asked Questions
+          </h2>
+          <p
+            class="text-center mb-4"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             Answers to some of the most common questions we receive about our puppies, process, and
             philosophy.
           </p>
-          <div class="accordion" id="faqAccordion">
+          <div
+            class="accordion"
+            id="faqAccordion"
+            data-aos="fade-in"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             <!-- FAQ 1 -->
             <div class="accordion-item">
               <h2 class="accordion-header" id="faq1-heading">
@@ -264,7 +292,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
