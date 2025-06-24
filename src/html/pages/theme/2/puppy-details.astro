@@ -15,6 +15,8 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         <a
           href={getPathPrefix('/theme/2/puppies')}
           class="btn btn-lg btn-outline-primary rounded-pill px-4"
+          data-aos="fade-in"
+          data-aos-duration="200"
         >
           <i class="ri-arrow-left-line"></i> Back to Puppies
         </a>
@@ -24,7 +26,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
         <!-- Image Column -->
         <div class="col">
-          <figure class="img-scale rounded">
+          <figure class="img-scale rounded" data-aos="zoom-in" data-aos-duration="600">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/puppy-img-1.jpg')}
               class="img-fluid"
@@ -34,7 +36,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="600">
           <div class="d-flex align-items-center mb-2">
             <h2 class="display-6 fw-bold mb-0 me-2">Charlie</h2>
             <span class="badge text-primary-emphasis bg-secondary-subtle border"
@@ -98,8 +100,21 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <div class="row">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
           <div class="text-center">
-            <h3 class="bg-primary-subtle d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3">Traits</h3>
-            <h3 class="display-6 fw-bold mb-3">Temperament of Charlie</h3>
+            <h3
+              class="bg-primary-subtle d-inline-flex rounded-pill fs-5 px-4 py-2 mb-3"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
+              Traits
+            </h3>
+            <h3
+              class="display-6 fw-bold mb-3"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="600"
+            >
+              Temperament of Charlie
+            </h3>
           </div>
 
           <label for="progressbar-trainability" class="form-label fs-5">Trainability</label>
