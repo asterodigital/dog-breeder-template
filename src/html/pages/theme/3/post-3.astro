@@ -14,9 +14,22 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-9">
           <!-- Blog Heading, Category, and Date -->
           <div class="mb-4">
-            <span class="badge text-primary bg-primary-subtle fs-6 mb-2">Health</span>
-            <h1 class="fw-semibold mb-2">Why Health Testing Matters in Dog Breeding</h1>
-            <p class="text-muted"><i class="ri-calendar-line me-1"></i>12 Jan 2025</p>
+            <span
+              class="badge text-primary bg-primary-subtle fs-6 mb-2"
+              data-aos="fade-down"
+              data-aos-duration="600">Health</span
+            >
+            <h1
+              class="fw-semibold mb-2"
+              data-aos="fade-down"
+              data-aos-delay="200"
+              data-aos-duration="600"
+            >
+              Why Health Testing Matters in Dog Breeding
+            </h1>
+            <p class="text-muted" data-aos="fade-in" data-aos-delay="200" data-aos-duration="600">
+              <i class="ri-calendar-line me-1"></i>12 Jan 2025
+            </p>
           </div>
 
           <!-- Cover Image -->
@@ -26,11 +39,13 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               alt="Blog Cover"
               class="img-fluid rounded-5"
               style="max-height: 400px; object-fit: cover; width: 100%;"
+              data-aos="fade-in"
+              data-aos-duration="600"
             />
           </div>
 
           <!-- Blog Content -->
-          <div class="mb-4">
+          <div class="mb-4" data-aos="fade-up" data-aos-duration="600">
             <p>
               Breeding dogs responsibly requires more than just a passion for the breed — it demands
               a commitment to health and genetic screening. Health testing plays a pivotal role in
@@ -51,13 +66,21 @@ import { getAssetPrefix } from '../../../../utils/path.js'
 
           <!-- Share Button -->
           <div class="mb-4">
-            <button class="btn btn-lg btn-outline-primary rounded-pill px-4">
+            <button
+              class="btn btn-lg btn-outline-primary rounded-pill px-4"
+              data-aos="fade-up"
+              data-aos-duration="600"
+            >
               <i class="ri-share-line me-1"></i>Share this post
             </button>
           </div>
 
           <!-- Author Section -->
-          <div class="d-flex align-items-center border-top pt-4 mb-5">
+          <div
+            class="d-flex align-items-center border-top pt-4 mb-5"
+            data-aos="fade-up"
+            data-aos-duration="600"
+          >
             <img
               src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
               alt="Author Image"
@@ -78,10 +101,15 @@ import { getAssetPrefix } from '../../../../utils/path.js'
 
           <!-- Similar Posts -->
           <div class="mb-4">
-            <h4 class="mb-4">Similar Posts</h4>
+            <h4 class="mb-4" data-aos="fade-up" data-aos-duration="600">Similar Posts</h4>
             <div class="row g-4">
               <div class="col-md-6">
-                <div class="card border rounded-5 h-100 p-0">
+                <div
+                  class="card border rounded-5 h-100 p-0"
+                  data-aos="flip-up"
+                  data-aos-delay="100"
+                  data-aos-duration="600"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-1.jpg')}
                     class="card-img-top rounded-top-5"
@@ -99,7 +127,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="card border rounded-5 h-100 p-0">
+                <div
+                  class="card border rounded-5 h-100 p-0"
+                  data-aos="flip-up"
+                  data-aos-delay="200"
+                  data-aos-duration="600"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/french-bulldog-1.jpg')}
                     class="card-img-top rounded-top-5"
@@ -123,7 +156,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-3">
           <div class="sticky-top z-1" style="top: 80px;">
             <!-- Popular Posts Card -->
-            <div class="card border rounded-5 p-3 mb-4">
+            <div
+              class="card border rounded-5 p-3 mb-4"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-history-line me-2"></i>Popular Posts
@@ -157,7 +194,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               </div>
             </div>
             <!-- Tags Card -->
-            <div class="card border rounded-5 p-3 mb-4">
+            <div
+              class="card border rounded-5 p-3 mb-4"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
               <div class="card-body">
                 <h5 class="card-title mb-3"><i class="ri-price-tag-3-line me-2"></i>Tags</h5>
                 <div class="d-flex flex-wrap gap-2">
@@ -195,7 +236,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               </div>
             </div>
             <!-- Categories Card -->
-            <div class="card border rounded-5 p-3 mb-4">
+            <div
+              class="card border rounded-5 p-3 mb-4"
+              data-aos="fade-left"
+              data-aos-duration="600"
+            >
               <div class="card-body">
                 <h5 class="card-title mb-3"><i class="ri-folder-line me-2"></i>Categories</h5>
                 <ul class="list-unstyled mb-0">
