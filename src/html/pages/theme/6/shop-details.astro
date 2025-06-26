@@ -12,7 +12,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href={getPathPrefix('/theme/6/shop')} class="btn btn-lg btn-outline-primary">
+        <a
+          href={getPathPrefix('/theme/6/shop')}
+          class="btn btn-lg btn-outline-primary"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           <i class="ri-arrow-left-line"></i> Back to Shop
         </a>
       </div>
@@ -21,7 +26,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <!-- Image Column -->
         <div class="col">
-          <figure class="img-scale rounded shadow-sm">
+          <figure class="img-scale rounded shadow-sm" data-aos="zoom-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1.jpg')}
               class="img-fluid"
@@ -29,7 +34,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
             />
           </figure>
           <div class="d-flex gap-2">
-            <figure class="img-scale rounded shadow-sm mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded shadow-sm mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-1.jpg')}
                 class="img-fluid"
@@ -37,7 +47,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 alt="Duck Toy"
               />
             </figure>
-            <figure class="img-scale rounded shadow-sm mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded shadow-sm mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-2.jpg')}
                 class="img-fluid"
@@ -45,7 +61,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 alt="Duck Toy"
               />
             </figure>
-            <figure class="img-scale rounded shadow-sm mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded shadow-sm mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-3.jpg')}
                 class="img-fluid"
@@ -57,7 +79,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-duration="800">
           <span class="text-muted text-uppercase">Toys</span>
           <h2 class="display-6 fw-semibold mt-1 mb-2">Duck Toy</h2>
 
@@ -133,8 +155,21 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- Details Section -->
   <section class="bg-secondary-subtle py-5">
     <div class="container">
-      <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Product Details</h4>
-      <h3 class="display-6 fw-semibold text-center mb-4">More details about the product</h3>
+      <h4
+        class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Product Details
+      </h4>
+      <h3
+        class="display-6 fw-semibold text-center mb-4"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
+        More details about the product
+      </h3>
       <!-- Nav Tabs -->
       <ul class="nav nav-underline mb-4" id="productTab" role="tablist">
         <li class="nav-item" role="presentation">
@@ -244,14 +279,25 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- Similar Items Section -->
   <section class="bg-body py-5">
     <div class="container">
-      <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">
+      <h4
+        class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
         Similar Products
       </h4>
-      <h3 class="display-6 fw-semibold text-center mb-4">Explore similar items</h3>
+      <h3
+        class="display-6 fw-semibold text-center mb-4"
+        data-aos="fade-down"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
+        Explore similar items
+      </h3>
       <div class="row g-4 mb-4">
         <!-- Product 1 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card shadow-sm h-100 p-0">
+          <div class="card shadow-sm h-100 p-0" data-aos="flip-up" data-aos-duration="800">
             <figure class="img-scale rounded-top-3 shadow-sm mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-2.jpg')}
@@ -280,7 +326,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 2 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card shadow-sm h-100 p-0">
+          <div
+            class="card shadow-sm h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-3 shadow-sm mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-3.jpg')}
@@ -309,7 +360,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 3 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card shadow-sm h-100 p-0">
+          <div
+            class="card shadow-sm h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-3 shadow-sm mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-3.jpg')}
@@ -338,7 +394,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 4 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card shadow-sm h-100 p-0">
+          <div
+            class="card shadow-sm h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-3 shadow-sm mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-1.jpg')}
@@ -367,7 +428,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
       </div>
       <div class="text-end">
-        <button class="btn btn-lg btn-outline-primary"
+        <button class="btn btn-lg btn-outline-primary" data-aos="fade-in" data-aos-duration="800"
           >See all products <i class="ri-arrow-right-line"></i></button
         >
       </div>
@@ -379,13 +440,20 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3 text-center">
-          <h2 class="display-6 fw-semibold mb-2">Your Puppy Journey Starts Here</h2>
-          <p class="lead mb-4">
+          <h2 class="display-6 fw-semibold mb-2" data-aos="fade-up" data-aos-duration="800">
+            Your Puppy Journey Starts Here
+          </h2>
+          <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             Sign up to get updates on upcoming litters, and tips for new dog parents.
           </p>
 
           <!-- Email Input -->
-          <form class="row g-2 justify-content-center">
+          <form
+            class="row g-2 justify-content-center"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <div class="col-sm-9">
               <input
                 type="email"
@@ -400,7 +468,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
           </form>
 
           <!-- Note below input -->
-          <p class="text-muted small mt-2">
+          <p
+            class="text-muted small mt-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             *We respect your privacy. No spam—just adorable puppies and helpful updates.
           </p>
         </div>

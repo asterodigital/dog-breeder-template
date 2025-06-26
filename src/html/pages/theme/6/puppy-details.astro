@@ -12,7 +12,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href={getPathPrefix('/theme/6/puppies')} class="btn btn-lg btn-outline-primary">
+        <a
+          href={getPathPrefix('/theme/6/puppies')}
+          class="btn btn-lg btn-outline-primary"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           <i class="ri-arrow-left-line"></i> Back to Puppies
         </a>
       </div>
@@ -21,7 +26,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
         <!-- Image Column -->
         <div class="col">
-          <figure class="img-scale rounded shadow-sm">
+          <figure class="img-scale rounded shadow-sm" data-aos="zoom-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/yorkshire-terrier-puppy-1.jpg')}
               class="img-fluid"
@@ -31,7 +36,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-duration="800">
           <div class="d-flex align-items-center mb-2">
             <h2 class="display-6 fw-semibold mb-0 me-2">Charlie</h2>
             <span class="badge bg-body border text-primary shadow-sm"> Yorkshire Terrier </span>
@@ -92,8 +97,21 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Traits</h4>
-          <h3 class="display-6 fw-semibold text-center mb-3">Temperament of Charlie</h3>
+          <h4
+            class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2"
+            data-aos="fade-down"
+            data-aos-duration="800"
+          >
+            Traits
+          </h4>
+          <h3
+            class="display-6 fw-semibold text-center mb-3"
+            data-aos="fade-down"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            Temperament of Charlie
+          </h3>
           <label for="progressbar-trainability" class="form-label">Trainability</label>
           <div
             class="progress mb-3"
@@ -160,13 +178,20 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-lg-6 offset-lg-3 text-center">
-          <h2 class="display-6 fw-semibold mb-2">Your Puppy Journey Starts Here</h2>
-          <p class="lead mb-4">
+          <h2 class="display-6 fw-semibold mb-2" data-aos="fade-up" data-aos-duration="800">
+            Your Puppy Journey Starts Here
+          </h2>
+          <p class="lead mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
             Sign up to get updates on upcoming litters, and tips for new dog parents.
           </p>
 
           <!-- Email Input -->
-          <form class="row g-2 justify-content-center">
+          <form
+            class="row g-2 justify-content-center"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <div class="col-sm-9">
               <input
                 type="email"
@@ -181,7 +206,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
           </form>
 
           <!-- Note below input -->
-          <p class="text-muted small mt-2">
+          <p
+            class="text-muted small mt-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             *We respect your privacy. No spam—just adorable puppies and helpful updates.
           </p>
         </div>
