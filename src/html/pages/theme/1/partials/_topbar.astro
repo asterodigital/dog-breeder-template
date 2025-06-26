@@ -45,8 +45,134 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
           ></button>
         </div>
         <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
-          <!-- Nav Links -->
-          <ul class="navbar-nav flex-grow-1">
+          <!-- Desktop Nav Links -->
+          <ul class="navbar-nav d-none d-lg-flex flex-grow-1">
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/home' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/home')}>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/about' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/about')}>About</a
+              >
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="blogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Blog
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/blog-1' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/blog-1')}>Blog - No Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/blog-2' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/blog-2')}>Blog - Left Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/blog-3' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/blog-3')}>Blog - Right Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/post-1' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/post-1')}>Blog Post - No Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/post-2' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/post-2')}>Blog Post - Left Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/1/post-3' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/1/post-3')}>Blog Post - Right Sidebar</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/faq' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/faq')}>FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/gallery' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/gallery')}>Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/puppies' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/puppies')}>Puppies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/shop' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/shop')}>Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/testimonials' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
+              >
+            </li>
+            <li class="nav-item mb-2 mb-lg-0">
+              <a
+                class={`nav-link${currentPath === '/theme/1/contact' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/contact')}>Contact</a
+              >
+            </li>
+            <li class="nav-item my-lg-auto ms-lg-auto">
+              <div class="d-flex align-items-center">
+                <i class="ri-global-line text-secondary fs-5 me-2"></i>
+                <!-- Language Dropdown -->
+                <select
+                  class="form-select bg-dark text-light border-secondary pe-4"
+                  aria-label="Select Language"
+                >
+                  <option value="en" selected>English</option>
+                  <option value="es">Español</option>
+                  <option value="fr">Français</option>
+                  <option value="de">Deutsch</option>
+                  <option value="ja">日本語</option>
+                  <option value="zh">中文</option>
+                  <option value="ar">العربية</option>
+                </select>
+              </div>
+            </li>
+          </ul>
+
+          <!-- Mobile Nav Links -->
+          <ul class="navbar-nav d-lg-none">
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === '/theme/1/home' ? ' active' : ''}`}
@@ -62,19 +188,43 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === '/theme/1/blog-1' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/blog-1')}>Blog</a
+                href={getPathPrefix('/theme/1/blog-1')}>Blog – No Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/blog-2' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/blog-2')}>Blog – Left Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/blog-3' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/blog-3')}>Blog – Right Sidebar</a
               >
             </li>
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === '/theme/1/post-1' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/post-1')}>Post</a
+                href={getPathPrefix('/theme/1/post-1')}>Blog Post – No Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/post-2' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/post-2')}>Blog Post – Left Sidebar</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/post-3' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/post-3')}>Blog Post – Right Sidebar</a
               >
             </li>
             <li class="nav-item">
               <a
                 class={`nav-link${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/breeding-philosophy')}>Philosophy</a
+                href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
               >
             </li>
             <li class="nav-item">
