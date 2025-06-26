@@ -15,13 +15,20 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
-          <h1 class="display-4 fw-semibold mb-2">Our special moments</h1>
-          <p class="fs-4 mb-4">
+          <h1 class="display-4 fw-semibold mb-2" data-aos="fade-down" data-aos-duration="800">
+            Our special moments
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-down" data-aos-delay="100" data-aos-duration="800">
             Explore heartwarming snapshots of our dogs thriving in their forever homes — from
             playful pups to proud companions, these moments reflect the love, care, and lifelong
             bonds.
           </p>
-          <div class="d-flex justify-content-center flex-wrap gap-2 mb-2">
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-down"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <button class="btn btn-lg btn-primary">
               View Puppies<i class="ri-arrow-right-line ms-1"></i>
             </button>
@@ -39,7 +46,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-lg-10 offset-lg-1">
-          <ul class="nav nav-pills justify-content-center flex-wrap gap-2 mb-4">
+          <ul
+            class="nav nav-pills justify-content-center flex-wrap gap-2 mb-4"
+            data-aos="fade-in"
+            data-aos-duration="800"
+          >
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="#">All Photos</a>
             </li>
@@ -58,7 +69,11 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-puppy-1.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix(
                       '/assets/img/breederspot-images/german-shepherd-puppy-1.jpg'
@@ -80,7 +95,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-2.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/german-shepherd-2.jpg')}
                     class="img-fluid"
@@ -100,7 +120,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-1.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="200"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/german-shepherd-1.jpg')}
                     class="img-fluid"
@@ -120,7 +145,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-1.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="300"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/german-shepherd-1.jpg')}
                     class="img-fluid"
@@ -140,7 +170,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-puppy-2.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="400"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix(
                       '/assets/img/breederspot-images/german-shepherd-puppy-2.jpg'
@@ -162,7 +197,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-2.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="500"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/german-shepherd-2.jpg')}
                     class="img-fluid"
@@ -182,7 +222,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                   '/assets/img/breederspot-images/german-shepherd-puppy-3.jpg'
                 )}
               >
-                <figure class="img-scale rounded-4 h-100 w-100">
+                <figure
+                  class="img-scale rounded-4 h-100 w-100"
+                  data-aos="fade-in"
+                  data-aos-delay="600"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix(
                       '/assets/img/breederspot-images/german-shepherd-puppy-3.jpg'
@@ -219,26 +264,40 @@ import { getAssetPrefix } from '../../../../utils/path.js'
           <h2
             class="bg-gray-700 text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
             style="letter-spacing: 0.05rem;"
+            data-aos="fade-right"
+            data-aos-duration="800"
           >
             Share Your Photos
           </h2>
 
-          <h3 class="display-6 fw-semibold mb-3">Share your special dog moments with us</h3>
+          <h3
+            class="display-6 fw-semibold mb-3"
+            data-aos="fade-right"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            Share your special dog moments with us
+          </h3>
 
-          <p class="mb-3">
+          <p class="mb-3" data-aos="fade-right" data-aos-delay="200" data-aos-duration="800">
             We'd love to feature your furry family member! Send us your favorite photos — whether
             it's your pup's first day home, playtime in the yard, or cozy moments on the couch.
           </p>
-          <p class="mb-3">
+          <p class="mb-3" data-aos="fade-right" data-aos-delay="300" data-aos-duration="800">
             To share, simply email your images to <strong>hello@email.com</strong> with the following
             details:
           </p>
-          <ul class="list-unstyled mb-3">
+          <ul
+            class="list-unstyled mb-3"
+            data-aos="fade-right"
+            data-aos-delay="400"
+            data-aos-duration="800"
+          >
             <li><i class="ri-check-line text-primary me-2"></i>Dog's Name</li>
             <li><i class="ri-check-line text-primary me-2"></i>Dog's Age</li>
             <li><i class="ri-check-line text-primary me-2"></i>Description</li>
           </ul>
-          <small class="d-block">
+          <small class="d-block" data-aos="fade-right" data-aos-delay="500" data-aos-duration="800">
             Submitted photos may be featured on our website or social channels. We will never share
             personal contact information.
           </small>
@@ -255,7 +314,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-delay="100"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-semibold mb-2">Stay connected with the pack</h5>
@@ -273,14 +337,6 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 required=""
               />
               <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
                 data-lastpass-icon-root=""
                 style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
               >

@@ -12,7 +12,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href={getPathPrefix('/theme/5/shop')} class="btn btn-lg btn-outline-light">
+        <a
+          href={getPathPrefix('/theme/5/shop')}
+          class="btn btn-lg btn-outline-light"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           <i class="ri-arrow-left-line me-1"></i>Back to Shop
         </a>
       </div>
@@ -21,7 +26,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
       <div class="row row-cols-1 row-cols-md-2 g-4">
         <!-- Image Column -->
         <div class="col">
-          <figure class="img-scale rounded">
+          <figure class="img-scale rounded" data-aos="zoom-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1.jpg')}
               class="img-fluid"
@@ -29,7 +34,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
             />
           </figure>
           <div class="d-flex gap-2">
-            <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-1.jpg')}
                 class="img-fluid"
@@ -37,7 +47,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 alt="Duck Toy"
               />
             </figure>
-            <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-2.jpg')}
                 class="img-fluid"
@@ -45,7 +61,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 alt="Duck Toy"
               />
             </figure>
-            <figure class="img-scale rounded mb-0" style="height: 80px; width: 80px;">
+            <figure
+              class="img-scale rounded mb-0"
+              style="height: 80px; width: 80px;"
+              data-aos="fade-in"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-1-angle-3.jpg')}
                 class="img-fluid"
@@ -57,7 +79,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-down" data-aos-duration="800">
           <span class="badge bg-gray-800 fs-6">Toys</span>
           <h2 class="display-6 fw-semibold mt-1 mb-2">Duck Toy</h2>
 
@@ -137,10 +159,19 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         <h2
           class="bg-gray-700 text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
           style="letter-spacing: 0.05rem;"
+          data-aos="fade-down"
+          data-aos-duration="800"
         >
           Product Details
         </h2>
-        <h3 class="display-6 fw-semibold mb-3">More details about the product</h3>
+        <h3
+          class="display-6 fw-semibold mb-3"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          More details about the product
+        </h3>
       </div>
 
       <!-- Nav Tabs -->
@@ -256,16 +287,25 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         <h2
           class="bg-gray-700 text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
           style="letter-spacing: 0.05rem;"
+          data-aos="fade-down"
+          data-aos-duration="800"
         >
           Similar Products
         </h2>
-        <h3 class="display-6 fw-semibold mb-4">Explore similar items</h3>
+        <h3
+          class="display-6 fw-semibold mb-4"
+          data-aos="fade-down"
+          data-aos-delay="100"
+          data-aos-duration="800"
+        >
+          Explore similar items
+        </h3>
       </div>
 
       <div class="row g-4 mb-4">
         <!-- Product 1 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card text-bg-dark h-100 p-0">
+          <div class="card text-bg-dark h-100 p-0" data-aos="flip-up" data-aos-duration="800">
             <figure class="img-scale rounded-top-4 mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-2.jpg')}
@@ -292,7 +332,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 2 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card text-bg-dark h-100 p-0">
+          <div
+            class="card text-bg-dark h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-4 mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-3.jpg')}
@@ -319,7 +364,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 3 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card text-bg-dark h-100 p-0">
+          <div
+            class="card text-bg-dark h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-4 mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-toy-3.jpg')}
@@ -346,7 +396,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
         <!-- Product 4 -->
         <div class="col-sm-6 col-xl-3">
-          <div class="card text-bg-dark h-100 p-0">
+          <div
+            class="card text-bg-dark h-100 p-0"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="800"
+          >
             <figure class="img-scale rounded-top-4 mb-0">
               <img
                 src={getAssetPrefix('/assets/img/breederspot-images/dog-collar-1.jpg')}
@@ -373,7 +428,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
         </div>
       </div>
       <div class="text-end">
-        <button class="btn btn-lg btn-outline-light"
+        <button class="btn btn-lg btn-outline-light" data-aos="fade-in" data-aos-duration="800"
           >See all products <i class="ri-arrow-right-line"></i></button
         >
       </div>
@@ -388,7 +443,12 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-75"></div>
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-delay="100"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-semibold mb-2">Stay connected with the pack</h5>
@@ -406,18 +466,6 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 required=""
               />
               <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
                 data-lastpass-icon-root=""
                 style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
               >
