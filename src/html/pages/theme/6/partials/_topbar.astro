@@ -255,8 +255,8 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === '/theme/6/testimonials' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/6/testimonials')}>Testimonials</a
+                class={`nav-link${currentPath === '/theme/6/shop' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/6/shop')}>Shop</a
               >
             </li>
             <li class="nav-item">
@@ -267,14 +267,20 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
             </li>
             <li class="nav-item">
               <a
+                class={`nav-link${currentPath === '/theme/6/testimonials' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/6/testimonials')}>Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
                 class={`nav-link${currentPath === '/theme/6/gallery' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/6/gallery')}>Gallery</a
               >
             </li>
             <li class="nav-item">
               <a
-                class={`nav-link${currentPath === '/theme/6/shop' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/6/shop')}>Shop</a
+                class={`nav-link${currentPath === '/theme/6/faq' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/6/faq')}>FAQs</a
               >
             </li>
             <li class="nav-item">
@@ -311,12 +317,6 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
               <a
                 class={`nav-link${currentPath === '/theme/6/post-3' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/6/post-3')}>Post – 3</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/6/faq' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/6/faq')}>FAQs</a
               >
             </li>
             <li class="nav-item">

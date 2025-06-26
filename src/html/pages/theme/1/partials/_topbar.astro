@@ -187,6 +187,42 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
             </li>
             <li class="nav-item">
               <a
+                class={`nav-link${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/shop' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/shop')}>Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/puppies' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/puppies')}>Puppies</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/testimonials' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/gallery' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/gallery')}>Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/1/faq' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/1/faq')}>FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
                 class={`nav-link${currentPath === '/theme/1/blog-1' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/1/blog-1')}>Blog – 1</a
               >
@@ -219,42 +255,6 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
               <a
                 class={`nav-link${currentPath === '/theme/1/post-3' ? ' active' : ''}`}
                 href={getPathPrefix('/theme/1/post-3')}>Post – 3</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/breeding-philosophy' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/breeding-philosophy')}>Breeding Philosophy</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/faq' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/faq')}>FAQs</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/gallery' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/gallery')}>Gallery</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/puppies' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/puppies')}>Puppies</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/shop' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/shop')}>Shop</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class={`nav-link${currentPath === '/theme/1/testimonials' ? ' active' : ''}`}
-                href={getPathPrefix('/theme/1/testimonials')}>Testimonials</a
               >
             </li>
             <li class="nav-item mb-2 mb-lg-0">
