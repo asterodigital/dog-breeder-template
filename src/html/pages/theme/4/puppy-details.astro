@@ -13,7 +13,12 @@ import { getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <!-- Back Button -->
       <div class="mb-4">
-        <a href={getPathPrefix('/theme/4/puppies')} class="btn btn-lg btn-outline-primary">
+        <a
+          href={getPathPrefix('/theme/4/puppies')}
+          class="btn btn-lg btn-outline-primary"
+          data-aos="fade-in"
+          data-aos-duration="800"
+        >
           <i class="ri-arrow-left-line"></i> Back to Puppies
         </a>
       </div>
@@ -22,7 +27,7 @@ import { getPathPrefix } from '../../../../utils/path.js'
       <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
         <!-- Image Column -->
         <div class="col">
-          <figure class="img-scale rounded shadow-sm">
+          <figure class="img-scale rounded shadow-sm" data-aos="zoom-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/poodle-puppy-1.jpg')}
               class="img-fluid"
@@ -32,7 +37,7 @@ import { getPathPrefix } from '../../../../utils/path.js'
         </div>
 
         <!-- Details Column -->
-        <div class="col">
+        <div class="col" data-aos="fade-up" data-aos-duration="800">
           <div class="d-flex align-items-center mb-2">
             <h2 class="display-6 fw-bold mb-0 me-2">Olive</h2>
             <span class="badge text-primary-emphasis bg-secondary-subtle border">Poodle</span>
@@ -96,8 +101,21 @@ import { getPathPrefix } from '../../../../utils/path.js'
     <div class="container">
       <div class="row">
         <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-          <h4 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Traits</h4>
-          <h3 class="display-6 fw-bold text-center mb-3">Temperament of Olive</h3>
+          <h4
+            class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
+            Traits
+          </h4>
+          <h3
+            class="display-6 fw-bold text-center mb-3"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="800"
+          >
+            Temperament of Olive
+          </h3>
           <label for="progressbar-trainability" class="form-label">Trainability</label>
           <div
             class="progress mb-3"
@@ -166,8 +184,13 @@ import { getPathPrefix } from '../../../../utils/path.js'
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
@@ -175,6 +198,7 @@ import { getPathPrefix } from '../../../../utils/path.js'
             Be the first to know about upcoming poodle puppies, early adoption openings, and expert
             puppy care tips.
           </p>
+
           <!-- Email Form -->
           <form class="row g-2 justify-content-center">
             <div class="col-sm-9">
@@ -182,22 +206,14 @@ import { getPathPrefix } from '../../../../utils/path.js'
                 type="email"
                 class="form-control form-control-lg"
                 placeholder="Enter your email"
-                required=""
+                required
               />
-              <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div>
             </div>
             <div class="col-sm-3">
               <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
             </div>
           </form>
+
           <!-- Small note -->
           <p class="text-light mt-3 mb-0">We send only what matters—no spam, just poodles.</p>
         </div>

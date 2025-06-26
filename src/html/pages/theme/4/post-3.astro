@@ -14,9 +14,17 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-9">
           <!-- Blog Heading, Category, and Date -->
           <div class="mb-4">
-            <span class="badge text-primary bg-primary-subtle fs-6 mb-2">Health</span>
-            <h1 class="fw-bold mb-2">Why Health Testing Matters in Dog Breeding</h1>
-            <p class="text-muted"><i class="ri-calendar-line me-1"></i>12 Jan 2025</p>
+            <span
+              class="badge text-primary bg-primary-subtle fs-6 mb-2"
+              data-aos="fade-in"
+              data-aos-duration="800">Health</span
+            >
+            <h1 class="fw-bold mb-2" data-aos="fade-up" data-aos-duration="800">
+              Why Health Testing Matters in Dog Breeding
+            </h1>
+            <p class="text-muted" data-aos="fade-up" data-aos-delay="100" data-aos-duration="800">
+              <i class="ri-calendar-line me-1"></i>12 Jan 2025
+            </p>
           </div>
 
           <!-- Cover Image -->
@@ -26,23 +34,26 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               alt="Blog Cover"
               class="img-fluid rounded"
               style="max-height: 400px; object-fit: cover; width: 100%;"
+              data-aos="fade-in"
+              data-aos-delay="100"
+              data-aos-duration="800"
             />
           </div>
 
           <!-- Blog Content -->
           <div class="mb-4">
-            <p>
+            <p data-aos="fade-up" data-aos-duration="800">
               Breeding dogs responsibly requires more than just a passion for the breed — it demands
               a commitment to health and genetic screening. Health testing plays a pivotal role in
               reducing inherited diseases and ensuring the well-being of future litters.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="800">
               Through responsible breeding practices, including thorough health evaluations,
               breeders contribute to the long-term health of dog populations. Tests such as hip
               evaluations, genetic screenings, and cardiac exams help breeders make informed pairing
               decisions.
             </p>
-            <p>
+            <p data-aos="fade-up" data-aos-duration="800">
               Investing in health testing also builds trust with prospective puppy buyers,
               reinforces ethical breeding standards, and ultimately leads to healthier, happier
               pets.
@@ -51,13 +62,21 @@ import { getAssetPrefix } from '../../../../utils/path.js'
 
           <!-- Share Button -->
           <div class="mb-4">
-            <button class="btn btn-lg btn-outline-primary">
+            <button
+              class="btn btn-lg btn-outline-primary"
+              data-aos="fade-up"
+              data-aos-duration="800"
+            >
               <i class="ri-share-line me-1"></i> Share this post
             </button>
           </div>
 
           <!-- Author Section -->
-          <div class="d-flex align-items-center border-top pt-4 mb-5">
+          <div
+            class="d-flex align-items-center border-top pt-4 mb-5"
+            data-aos="fade-up"
+            data-aos-duration="800"
+          >
             <img
               src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
               alt="Author Image"
@@ -78,10 +97,15 @@ import { getAssetPrefix } from '../../../../utils/path.js'
 
           <!-- Similar Posts -->
           <div class="mb-4">
-            <h4 class="mb-4">Similar Posts</h4>
+            <h4 class="mb-4" data-aos="fade-up" data-aos-duration="800">Similar Posts</h4>
             <div class="row g-4">
               <div class="col-md-4">
-                <div class="card border h-100 p-0">
+                <div
+                  class="card border h-100 p-0"
+                  data-aos="flip-up"
+                  data-aos-delay="100"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/dog-img-9-wide.jpg')}
                     class="card-img-top"
@@ -98,7 +122,12 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card border h-100 p-0">
+                <div
+                  class="card border h-100 p-0"
+                  data-aos="flip-up"
+                  data-aos-delay="200"
+                  data-aos-duration="800"
+                >
                   <img
                     src={getAssetPrefix('/assets/img/breederspot-images/dog-img-13-wide.jpg')}
                     class="card-img-top"
@@ -121,7 +150,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
         <div class="col-lg-3">
           <div class="sticky-top z-1" style="top: 80px;">
             <!-- Popular Posts Card -->
-            <div class="card border p-3 mb-4">
+            <div class="card border p-3 mb-4" data-aos="fade-left" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-history-line me-2"></i>Popular Posts
@@ -155,7 +184,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               </div>
             </div>
             <!-- Tags Card -->
-            <div class="card border p-3 mb-4">
+            <div class="card border p-3 mb-4" data-aos="fade-left" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-price-tag-3-line me-2"></i>Tags
@@ -195,7 +224,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
               </div>
             </div>
             <!-- Categories Card -->
-            <div class="card border p-3 mb-4">
+            <div class="card border p-3 mb-4" data-aos="fade-left" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-folder-line me-2"></i>Categories
@@ -257,8 +286,13 @@ import { getAssetPrefix } from '../../../../utils/path.js'
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
@@ -266,6 +300,7 @@ import { getAssetPrefix } from '../../../../utils/path.js'
             Be the first to know about upcoming poodle puppies, early adoption openings, and expert
             puppy care tips.
           </p>
+
           <!-- Email Form -->
           <form class="row g-2 justify-content-center">
             <div class="col-sm-9">
@@ -273,22 +308,14 @@ import { getAssetPrefix } from '../../../../utils/path.js'
                 type="email"
                 class="form-control form-control-lg"
                 placeholder="Enter your email"
-                required=""
+                required
               />
-              <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div>
             </div>
             <div class="col-sm-3">
               <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
             </div>
           </form>
+
           <!-- Small note -->
           <p class="text-light mt-3 mb-0">We send only what matters—no spam, just poodles.</p>
         </div>

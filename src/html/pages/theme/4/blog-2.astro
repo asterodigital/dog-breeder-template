@@ -7,14 +7,27 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   <!-- Blogs Section -->
   <section class="bg-body py-5">
     <div class="container">
-      <h1 class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2">Blogs</h1>
-      <h2 class="display-5 text-center fw-bold mb-4">Read our latest articles and tips</h2>
+      <h1
+        class="text-primary text-center text-uppercase fw-semibold fs-5 mb-2"
+        data-aos="fade-down"
+        data-aos-duration="800"
+      >
+        Blogs
+      </h1>
+      <h2
+        class="display-5 text-center fw-bold mb-4"
+        data-aos="fade-down"
+        data-aos-delay="100"
+        data-aos-duration="800"
+      >
+        Read our latest articles and tips
+      </h2>
       <div class="row gy-4">
         <!-- Sidebar Column -->
         <div class="col-lg-3">
           <div class="sticky-top z-1" style="top: 80px;">
             <!-- Search Card -->
-            <div class="card border p-3 mb-4">
+            <div class="card border p-3 mb-4" data-aos="fade-right" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-search-line me-2"></i>Search Blog Posts
@@ -32,7 +45,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
               </div>
             </div>
             <!-- Tags Card -->
-            <div class="card border p-3 mb-4">
+            <div class="card border p-3 mb-4" data-aos="fade-right" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-price-tag-3-line me-2"></i>Browse by Tags
@@ -73,7 +86,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
             </div>
 
             <!-- Recent Posts Card -->
-            <div class="card border p-3">
+            <div class="card border p-3" data-aos="fade-right" data-aos-duration="800">
               <div class="card-body">
                 <h5 class="card-title mb-3">
                   <i class="ri-history-line me-2"></i>Recent Posts
@@ -109,7 +122,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
           </div>
         </div>
         <div class="col-lg-9">
-          <div class="card border p-0 mb-4">
+          <div class="card border p-0 mb-4" data-aos="fade-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/dog-img-3.jpg')}
               class="card-img-top"
@@ -137,7 +150,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
               >
             </div>
           </div>
-          <div class="card border p-0 mb-4">
+          <div class="card border p-0 mb-4" data-aos="fade-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/dog-img-9-wide.jpg')}
               class="card-img-top"
@@ -163,7 +176,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
               >
             </div>
           </div>
-          <div class="card border p-0">
+          <div class="card border p-0" data-aos="fade-in" data-aos-duration="800">
             <img
               src={getAssetPrefix('/assets/img/breederspot-images/dog-img-13-wide.jpg')}
               class="card-img-top"
@@ -211,8 +224,13 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
   >
     <!-- Overlay -->
     <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
     <!-- Content -->
-    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+    <div
+      class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+      data-aos="fade-in"
+      data-aos-duration="800"
+    >
       <div class="row">
         <div class="col-lg-6 offset-lg-3">
           <h5 class="display-6 fw-bold mb-2">Don't Miss Our Next Litter</h5>
@@ -220,6 +238,7 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
             Be the first to know about upcoming poodle puppies, early adoption openings, and expert
             puppy care tips.
           </p>
+
           <!-- Email Form -->
           <form class="row g-2 justify-content-center">
             <div class="col-sm-9">
@@ -227,22 +246,14 @@ import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
                 type="email"
                 class="form-control form-control-lg"
                 placeholder="Enter your email"
-                required=""
+                required
               />
-              <div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div><div
-                data-lastpass-icon-root=""
-                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
-              >
-              </div>
             </div>
             <div class="col-sm-3">
               <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
             </div>
           </form>
+
           <!-- Small note -->
           <p class="text-light mt-3 mb-0">We send only what matters—no spam, just poodles.</p>
         </div>
