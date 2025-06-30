@@ -1,0 +1,529 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="About"
+  description="Dedicated to raising healthy, well-socialized Persian kittens in loving homes."
+>
+  <!-- Hero Section -->
+  <section
+    class="position-relative text-light text-center"
+    style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
+  >
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Content -->
+    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="display-4 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1200">
+            Our Passion for Cats
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            We are dedicated to raising exceptional Persian kittens with gentle temperaments,
+            luxurious coats, and loving personalities.
+          </p>
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <a
+              href={getPathPrefix('/theme/7/kittens')}
+              class="btn btn-lg btn-primary rounded-pill px-4"
+            >
+              View Kittens<i class="ri-arrow-right-line ms-1"></i>
+            </a>
+            <a
+              href={getPathPrefix('/theme/7/about')}
+              class="btn btn-lg btn-outline-light rounded-pill px-4"
+            >
+              <i class="ri-information-2-line me-1"></i>Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <h2
+        class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+        data-aos="fade-up"
+        data-aos-duration="1200"
+      >
+        Our Story
+      </h2>
+      <h3
+        class="display-5 fw-semibold mb-2"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1200"
+      >
+        A Lifelong Love for Persians
+      </h3>
+      <p class="lead mb-3" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+        Our journey began with a single Persian kitten and a dream to share the breed's beauty and
+        grace with others. Over the years, we have built a cattery known for ethical breeding,
+        health-focused practices, and a commitment to the well-being of every cat and kitten in our
+        care.
+      </p>
+      <blockquote
+        class="blockquote"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1200"
+      >
+        <p class="mb-0">
+          <em
+            >"Each kitten is raised as a cherished family member—until they become part of yours."</em
+          >
+        </p>
+        <footer class="blockquote-footer mt-2">Cattery Founder</footer>
+      </blockquote>
+      <a
+        href={getPathPrefix('/theme/7/about')}
+        class="btn btn-lg btn-outline-primary rounded-pill px-4 text-decoration-none"
+        data-aos="fade-up"
+        data-aos-delay="200"
+        data-aos-duration="1200"
+      >
+        Learn More<i class="ri-arrow-right-line ms-1"></i>
+      </a>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6">
+          <div
+            class="card text-light rounded-5"
+            style={`position: relative; height: 300px; background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}'); background-size: cover; background-position: center;`}
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <div
+              class="card-img-overlay rounded-5 d-flex flex-column justify-content-end"
+              style="background: rgba(0, 0, 0, 0.4);"
+            >
+              <h5 class="card-title fs-2 mb-1">Health-First Breeding</h5>
+              <p class="card-text">
+                We prioritize genetic screening, PKD testing, and veterinary oversight to ensure
+                every kitten starts life healthy and strong.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div
+            class="card text-light rounded-5"
+            style={`position: relative; height: 300px; background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}'); background-size: cover; background-position: center;`}
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div
+              class="card-img-overlay rounded-5 d-flex flex-column justify-content-end"
+              style="background: rgba(0, 0, 0, 0.4);"
+            >
+              <h5 class="card-title fs-2 mb-1">Lifetime Cattery Support</h5>
+              <p class="card-text">
+                We offer guidance, resources, and a lifelong commitment to every kitten and family
+                we serve.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Core Values Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="text-center">
+        <h2
+          class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Our Core Values
+        </h2>
+        <h3
+          class="display-5 fw-semibold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          What Guides Every Kitten We Raise
+        </h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-heart-2-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Gentle Socialization</h5>
+                <p class="mb-0">
+                  Kittens are raised with daily affection and positive human interaction.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-shield-cross-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Health & Wellness</h5>
+                <p class="mb-0">
+                  We ensure top-tier veterinary care and health checks from day one.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-verified-badge-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Ethical Breeding</h5>
+                <p class="mb-0">
+                  We uphold the highest standards of responsible, ethical breeding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-group-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Lifelong Support</h5>
+                <p class="mb-0">
+                  Our relationship continues long after adoption—we're here for life.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="500"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-eye-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Transparency</h5>
+                <p class="mb-0">Open communication and honest updates at every stage.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 p-4"
+            data-aos="flip-up"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+          >
+            <div class="d-flex align-items-center">
+              <i class="ri-emotion-happy-line text-primary fs-1 me-3"></i>
+              <div>
+                <h5 class="fw-semibold mb-1">Enrichment</h5>
+                <p class="mb-0">
+                  Kittens are exposed to toys, play, and routines for confident development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Facilities Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="text-center">
+        <h2
+          class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Our Cattery
+        </h2>
+        <h3
+          class="display-5 fw-semibold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          Designed for Comfort, Safety, and Enrichment
+        </h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-home-heart-fill text-primary fs-1"></i>
+              <p class="fs-5 fw-semibold mb-2">Home-Like Spaces</p>
+              <p class="mb-2">
+                Kittens are raised in warm, home-like settings - so they grow up confident and
+                social.
+              </p>
+              <a href="#" class="text-primary text-decoration-none">
+                Learn more <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-shield-check-fill text-primary fs-1"></i>
+              <p class="fs-5 fw-semibold mb-2">Health & Safety</p>
+              <p class="mb-2">
+                Clean, controlled environments maintained with veterinary-approved hygiene
+                practices.
+              </p>
+              <a href="#" class="text-primary text-decoration-none">
+                Learn more <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-tree-fill text-primary fs-1"></i>
+              <p class="fs-5 fw-semibold mb-2">Play & Enrichment</p>
+              <p class="mb-2">
+                Safe indoor and outdoor play areas encourage healthy exercise and curiosity.
+              </p>
+              <a href="#" class="text-primary text-decoration-none">
+                Learn more <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+            data-aos="flip-up"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-user-heart-fill text-primary fs-1"></i>
+              <p class="fs-5 fw-semibold mb-2">Socialization</p>
+              <p class="mb-2">
+                Daily gentle handling and sensory exposure help kittens become emotionally balanced.
+              </p>
+              <a href="#" class="text-primary text-decoration-none">
+                Learn more <i class="ri-arrow-right-line"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="text-center">
+        <h2
+          class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Testimonials
+        </h2>
+        <h3
+          class="display-5 fw-semibold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          What Families Say About Our Kittens
+        </h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+              <p class="mb-3">
+                "Our Persian kitten is the sweetest, most beautiful companion. The cattery's support
+                and care made the entire process wonderful. Highly recommended!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="64"
+                  height="64"
+                />
+                <div>
+                  <h6 class="fw-semibold fs-5 mb-0">Jane Smith</h6>
+                  <p class="text-muted mb-0">Austin, TX</p>
+                  <div>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+              <p class="mb-3">
+                "We were so impressed by the cattery's transparency and dedication. Our kitten
+                arrived healthy, playful, and perfectly socialized."
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="64"
+                  height="64"
+                />
+                <div>
+                  <h6 class="fw-semibold fs-5 mb-0">Nguyen Minh</h6>
+                  <p class="text-muted mb-0">San Diego, CA</p>
+                  <div>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-half-fill text-yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div
+            class="card card-hover bg-primary-subtle rounded-5 h-100"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-0"></i>
+              <p class="mb-3">
+                "Our Persian kitten is the sweetest, most beautiful companion. The cattery's support
+                and care made the entire process wonderful. Highly recommended!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar9.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="64"
+                  height="64"
+                />
+                <div>
+                  <h6 class="fw-semibold fs-5 mb-0">Jack Smith</h6>
+                  <p class="text-muted mb-0">Atlanta, GA</p>
+                  <div>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                    <i class="ri-star-fill text-yellow"></i>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Map Section -->
+  <section class="bg-body pt-2 pt-lg-4">
+    <div class="container-fluid px-0">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!2m12!1m3!1d11034.5656!2d-97.7431!3d30.2672!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b5e4c51e3b7b%3A0x8d2fd94b632cf761!2sAustin%2C%20TX!5e0!3m2!1sen!2sus!4v1615555555555"
+        width="100%"
+        height="400"
+        style="border:0;"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+  </section>
+</Layout>

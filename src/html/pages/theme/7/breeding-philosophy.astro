@@ -1,0 +1,328 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Our Breeding Philosophy"
+  description="Our approach to raising exceptional Persian kittens."
+>
+  <!-- Hero Section -->
+  <section
+    class="position-relative text-light text-center"
+    style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
+  >
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Content -->
+    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="display-4 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1200">
+            Our Breeding Philosophy
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            Excellence in every detail—health, temperament, and beauty for every Persian kitten.
+          </p>
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <button class="btn btn-lg btn-primary rounded-pill px-4">
+              View Kittens<i class="ri-arrow-right-line ms-1"></i>
+            </button>
+            <button class="btn btn-lg btn-outline-light rounded-pill px-4">
+              <i class="ri-information-2-line me-1"></i>Learn More
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Philosophy Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="text-center">
+        <h2
+          class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          What's Our Philosophy
+        </h2>
+        <h3
+          class="display-5 fw-semibold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          Raising Kittens with Heart and Integrity
+        </h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div data-aos="flip-up" data-aos-delay="100" data-aos-duration="1200">
+            <i class="ri-home-heart-fill text-primary fs-1"></i>
+            <p class="fs-5 fw-semibold mb-2">Home-Like Spaces</p>
+            <p class="mb-2">
+              Kittens are raised in warm, home-like settings - so they grow up confident and social.
+            </p>
+            <a href={getPathPrefix('/theme/7/about')} class="text-primary text-decoration-none">
+              Learn more <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div data-aos="flip-up" data-aos-delay="200" data-aos-duration="1200">
+            <i class="ri-shield-check-fill text-primary fs-1"></i>
+            <p class="fs-5 fw-semibold mb-2">Health & Safety</p>
+            <p class="mb-2">
+              Clean, controlled environments maintained with veterinary-approved hygiene practices.
+            </p>
+            <a href={getPathPrefix('/theme/7/about')} class="text-primary text-decoration-none">
+              Learn more <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div data-aos="flip-up" data-aos-delay="300" data-aos-duration="1200">
+            <i class="ri-tree-fill text-primary fs-1"></i>
+            <p class="fs-5 fw-semibold mb-2">Outdoor Play</p>
+            <p class="mb-2">
+              Secure outdoor spaces where kittens can play and develop motor skills through
+              exercise.
+            </p>
+            <a href={getPathPrefix('/theme/7/about')} class="text-primary text-decoration-none">
+              Learn more <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div data-aos="flip-up" data-aos-delay="400" data-aos-duration="1200">
+            <i class="ri-user-heart-fill text-primary fs-1"></i>
+            <p class="fs-5 fw-semibold mb-2">Socialization</p>
+            <p class="mb-2">
+              Daily human interaction and sensory exposure help kittens become emotionally balanced.
+            </p>
+            <a href={getPathPrefix('/theme/7/about')} class="text-primary text-decoration-none">
+              Learn more <i class="ri-arrow-right-line"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- What Makes Us Different Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}
+            alt="Persian Cat"
+            class="rounded-5 w-100"
+            style="object-fit: cover; height: 340px;"
+          />
+        </div>
+        <div class="col-md-6 ps-lg-5" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="display-5 fw-semibold mb-3">What Makes Us Different?</h2>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2">
+              <i class="ri-heart-2-line text-primary me-2"></i>Carefully selected bloodlines for
+              health and beauty
+            </li>
+            <li class="mb-2">
+              <i class="ri-emotion-happy-line text-primary me-2"></i>Early socialization for gentle,
+              loving companions
+            </li>
+            <li class="mb-2">
+              <i class="ri-shield-check-line text-primary me-2"></i>Transparent, supportive adoption
+              process
+            </li>
+            <li class="mb-2">
+              <i class="ri-hand-heart-line text-primary me-2"></i>Lifelong breeder support for every
+              family
+            </li>
+          </ul>
+          <a
+            href={getPathPrefix('/theme/7/kittens')}
+            class="btn btn-lg btn-primary rounded-pill px-4">See Kittens</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Protocol Section -->
+  <section class="bg-body pt-3 pb-5">
+    <div class="container">
+      <div class="text-center">
+        <h2
+          class="bg-primary-subtle text-uppercase d-inline-flex rounded-pill fs-6 px-4 py-2 mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1200"
+        >
+          Kitten Development Protocol
+        </h2>
+        <h3
+          class="display-5 fw-semibold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+          data-aos-duration="1200"
+        >
+          A structured approach to raise well-rounded kittens
+        </h3>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="d-grid gap-4">
+            <div
+              class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <span class="display-5 fw-semibold text-primary">01.</span>
+                <p class="fs-4 fw-semibold mb-2">Week 0–2</p>
+                <p class="mb-0">
+                  Kittens stay close to their mother, focusing on warmth, nursing, and bonding. We
+                  monitor health and begin gentle handling.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <span class="display-5 fw-semibold text-primary">02.</span>
+                <p class="fs-4 fw-semibold mb-2">Week 3–4</p>
+                <p class="mb-0">
+                  Eyes and ears open; kittens begin to walk. We introduce new textures to the
+                  kittens, gentle sounds, and human interaction daily.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <span class="display-5 fw-semibold text-primary">03.</span>
+                <p class="fs-4 fw-semibold mb-2">Week 5–8</p>
+                <p class="mb-0">
+                  Kittens explore more actively. We begin crate exposure, introduce solid food, and
+                  increase socialization with people.
+                </p>
+              </div>
+            </div>
+            <div
+              class="card card-hover bg-primary-subtle rounded-5 h-100 p-4"
+              data-aos="flip-up"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <div class="card-body">
+                <span class="display-5 fw-semibold text-primary">04.</span>
+                <p class="fs-4 fw-semibold mb-2">Week 9+</p>
+                <p class="mb-0">
+                  Kittens are ready to transition home. We offer support, resources, and guidance to
+                  families for continued development.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health Guarantee Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6 order-md-2" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}
+            alt="Persian Cat"
+            class="rounded-5 w-100"
+            style="object-fit: cover; height: 320px;"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="display-6 fw-semibold mb-3">Our Health Guarantee</h2>
+          <p class="mb-3">
+            Every kitten is thoroughly examined by a licensed veterinarian, receives age-appropriate
+            vaccinations, and is PKD-negative by parentage or testing. We provide a written health
+            guarantee and lifetime support for every family.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="ri-dna-line text-primary me-2"></i>Comprehensive health screening for all
+              breeding cats
+            </li>
+            <li class="mb-2">
+              <i class="ri-hospital-line text-primary me-2"></i>Genetic testing for PKD and other
+              breed-specific conditions
+            </li>
+            <li class="mb-2">
+              <i class="ri-article-line text-primary me-2"></i>Transparent health records and
+              documentation
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifelong Support & Community Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}
+            alt="Persian Cat"
+            class="rounded-5 w-100"
+            style="object-fit: cover; height: 320px;"
+          />
+        </div>
+        <div class="col-md-6 ps-lg-5" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="display-6 fw-semibold mb-3">Lifelong Support & Community</h2>
+          <p class="mb-3">
+            Our commitment extends far beyond adoption. We offer guidance on nutrition, grooming,
+            and care, and welcome all families into our supportive Persian cat community.
+          </p>
+          <ul class="list-unstyled">
+            <li class="mb-2">
+              <i class="ri-hand-heart-line text-primary me-2"></i>Ongoing advice for every stage of
+              your cat’s life
+            </li>
+            <li class="mb-2">
+              <i class="ri-article-line text-primary me-2"></i>Access to exclusive resources and
+              educational materials
+            </li>
+            <li class="mb-2">
+              <i class="ri-community-line text-primary me-2"></i>Invitations to community events and
+              updates
+            </li>
+          </ul>
+          <a
+            href={getPathPrefix('/theme/7/contact')}
+            class="btn btn-lg btn-primary rounded-pill px-4 mt-2">Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
