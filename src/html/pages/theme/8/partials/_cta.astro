@@ -1,0 +1,58 @@
+---
+import { getAssetPrefix } from '../../../../../utils/path.js'
+---
+
+<!-- CTA Section -->
+<section class="text-bg-primary position-relative">
+  <div
+    class="position-absolute top-0 start-0 w-100 h-100"
+    style="background-color: rgba(0, 0, 0, 0.15);"
+  >
+  </div>
+  <div class="container py-5 position-relative">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        <h2 class="display-5 fw-semibold mb-3">Find your perfect Siamese cat.</h2>
+        <p class="fs-5 mb-4">
+          Ready to welcome a Siamese kitten into your home? Share your preferences and let us help
+          you find the ideal feline companion.
+        </p>
+        <form class="row text-start g-3">
+          <div class="col-md-6">
+            <label for="fullName" class="form-label">Full Name</label>
+            <input
+              type="text"
+              class="form-control form-control-lg"
+              id="fullName"
+              placeholder="Jane Doe"
+              required
+            />
+          </div>
+          <div class="col-md-6">
+            <label for="email" class="form-label">Email Address</label>
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              id="email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+          <div class="col-md-12">
+            <label for="message" class="form-label">Tell us what you're looking for</label>
+            <textarea
+              class="form-control form-control-lg"
+              id="message"
+              rows="2"
+              placeholder="Personality, age, household needs, etc."></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <button type="submit" class="btn btn-outline-light btn-lg rounded-pill px-4 mt-3">
+              <i class="ri-sparkling-2-line me-1"></i> Find My Siamese
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
