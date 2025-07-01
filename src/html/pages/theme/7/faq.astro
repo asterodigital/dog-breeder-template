@@ -1,0 +1,199 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout title="FAQs" description="Dedicated to raising happy, healthy kittens in loving homes.">
+  <!-- Hero Section -->
+  <section
+    class="position-relative text-light text-center"
+    style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
+  >
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Content -->
+    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="display-4 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1200">
+            Frequently Asked Questions
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            Find answers to the most common questions about our kittens, adoption process and more
+            tips.
+          </p>
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <a
+              href={getPathPrefix('/theme/7/kittens')}
+              class="btn btn-lg btn-primary rounded-pill px-4"
+            >
+              View Kittens<i class="ri-arrow-right-line ms-1"></i>
+            </a>
+            <a
+              href={getPathPrefix('/theme/7/about')}
+              class="btn btn-lg btn-outline-light rounded-pill px-4"
+            >
+              <i class="ri-information-2-line me-1"></i>Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQs Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <!-- Nav -->
+          <ul
+            class="nav nav-tabs justify-content-center flex-wrap gap-2 mb-4"
+            data-aos="fade-up"
+            data-aos-duration="1200"
+          >
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">General</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="#">Payments</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Policies</a></li>
+          </ul>
+          <div
+            class="accordion accordion-flush"
+            id="accordionFAQs"
+            role="tablist"
+            aria-multiselectable="true"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  What steps do you take to ensure the health of your kittens?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFAQs"
+              >
+                <div class="accordion-body p-3">
+                  Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi elit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Do your kittens come with vaccinations and health checks?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFAQs"
+              >
+                <div class="accordion-body p-3">
+                  Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi elit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  What kind of support do you provide after adoption?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFAQs"
+              >
+                <div class="accordion-body p-3">
+                  Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi elit.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item bg-transparent">
+              <h2 class="accordion-header">
+                <button
+                  class="accordion-button bg-transparent collapsed rounded shadow-none p-3"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseFour"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseFour"
+                >
+                  Can I meet the kitten's parents before adoption?
+                </button>
+              </h2>
+              <div
+                id="flush-collapseFour"
+                class="accordion-collapse collapse"
+                data-bs-parent="#accordionFAQs"
+              >
+                <div class="accordion-body p-3">
+                  Lorem ipsum dolor sit amet consectet adipisi libero corporis digniss provi elit.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Card Section -->
+  <section class="bg-body pb-5">
+    <div
+      class="container bg-primary-subtle rounded-5 p-4 p-md-5"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="d-flex align-items-center gap-3 mb-1">
+            <i class="ri-questionnaire-line text-primary fs-3"></i>
+            <h4 class="fw-semibold mb-0">Didn't find the answer you were looking for?</h4>
+          </div>
+          <p class="mb-0">
+            We're here to help—reach out to our team and we'll get back to you as soon as possible.
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a
+            href={getPathPrefix('/theme/7/contact')}
+            class="btn btn-primary btn-lg rounded-pill px-4 mb-1">Contact Us</a
+          >
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

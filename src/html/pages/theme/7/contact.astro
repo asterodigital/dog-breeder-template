@@ -1,0 +1,180 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout title="Contact" description="Dedicated to raising happy, healthy kittens in loving homes.">
+  <!-- Hero Section -->
+  <section
+    class="position-relative text-light text-center"
+    style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
+  >
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Content -->
+    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="display-4 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1200">
+            Get in Touch
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            Whether you have questions, need guidance, or just want to say hello — we're here to
+            help you.
+          </p>
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <a
+              href={getPathPrefix('/theme/7/kittens')}
+              class="btn btn-lg btn-primary rounded-pill px-4"
+            >
+              View Kittens<i class="ri-arrow-right-line ms-1"></i>
+            </a>
+            <a
+              href={getPathPrefix('/theme/7/about')}
+              class="btn btn-lg btn-outline-light rounded-pill px-4"
+            >
+              <i class="ri-information-2-line me-1"></i>Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Book Appointment Section -->
+  <section class="bg-body pt-5">
+    <div
+      class="container bg-primary-subtle rounded-5 p-4 p-md-5"
+      data-aos="fade-up"
+      data-aos-duration="1200"
+    >
+      <div class="row align-items-center">
+        <div class="col-md-8">
+          <div class="d-flex align-items-center gap-3 mb-1">
+            <i class="ri-calendar-line text-primary fs-3"></i>
+            <h4 class="fw-semibold mb-0">Book a Free Appointment</h4>
+          </div>
+          <p class="mb-0">
+            Have questions about our breeding practices or kittens? We're happy to chat — no
+            pressure, no cost.
+          </p>
+        </div>
+        <div class="col-md-4 text-md-end mt-3 mt-md-0">
+          <a href="#" class="btn btn-primary btn-lg px-4 mb-1">Schedule Now</a>
+          <div>
+            <small>*T&Cs Apply</small>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-6" data-aos="fade-right" data-aos-duration="1200">
+          <i class="ri-customer-service-fill text-primary fs-1"></i>
+          <h1 class="display-5 fw-semibold mb-3">Contact Us</h1>
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control form-control-lg"
+                id="name"
+                placeholder="John Doe"
+              />
+              <div
+                data-lastpass-icon-root=""
+                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+              >
+              </div><div
+                data-lastpass-icon-root=""
+                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+              >
+              </div><div
+                data-lastpass-icon-root=""
+                style="position: relative !important; height: 0px !important; width: 0px !important; float: left !important;"
+              >
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control form-control-lg"
+                id="email"
+                placeholder="you@example.com"
+              />
+            </div>
+            <div class="mb-4">
+              <label for="message" class="form-label">Message</label>
+              <textarea
+                class="form-control form-control-lg"
+                id="message"
+                rows="3"
+                placeholder="Write your message here..."></textarea>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg">Submit</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-6 pt-4 pt-md-0" data-aos="fade-left" data-aos-duration="1200">
+          <div class="ratio ratio-1x1">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23181.182903463836!2d-97.75408308207732!3d30.268331893788808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1746533935359!5m2!1sen!2sin"
+              width="600"
+              height="600"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row text-center g-4">
+        <!-- Phone -->
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="100" data-aos-duration="1200">
+          <i class="ri-phone-fill text-primary display-6 mb-3"></i>
+          <h5 class="fw-semibold mb-1">Phone</h5>
+          <p class="mb-0">
+            <a href="tel:+12345678901" class="text-decoration-none text-body">+1 (234) 567-8901</a>
+          </p>
+        </div>
+        <!-- Email -->
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="200" data-aos-duration="1200">
+          <i class="ri-mail-fill text-primary display-6 mb-3"></i>
+          <h5 class="fw-semibold mb-1">Email</h5>
+          <p class="mb-0">
+            <a href="mailto:hello@yourcompany.com" class="text-decoration-none text-body"
+              >hello@yourcompany.com</a
+            >
+          </p>
+        </div>
+        <!-- Location -->
+        <div class="col-sm-4" data-aos="zoom-in" data-aos-delay="300" data-aos-duration="1200">
+          <i class="ri-map-pin-fill text-primary display-6 mb-3"></i>
+          <h5 class="fw-semibold mb-1">Location</h5>
+          <p class="mb-0">
+            1234 Market Street, Suite 500 <br />San Francisco, CA 94103, USA
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

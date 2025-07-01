@@ -1,0 +1,236 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout title="Gallery" description="Dedicated to raising happy, healthy kittens in loving homes.">
+  <!-- Hero Section -->
+  <section
+    class="position-relative text-light text-center"
+    style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}'); background-size: cover; background-position: center; height: 500px;`}
+  >
+    <!-- Overlay -->
+    <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+    <!-- Content -->
+    <div class="position-relative d-flex flex-column justify-content-center h-100 px-3">
+      <div class="row">
+        <div class="col-lg-6 offset-lg-3">
+          <h1 class="display-4 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1200">
+            Our Special Moments
+          </h1>
+          <p class="fs-4 mb-4" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1200">
+            Explore heartwarming snapshots of our kittens thriving in their forever homes.
+          </p>
+          <div
+            class="d-flex justify-content-center flex-wrap gap-2 mb-2"
+            data-aos="fade-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <a
+              href={getPathPrefix('/theme/7/kittens')}
+              class="btn btn-lg btn-primary rounded-pill px-4"
+            >
+              View Kittens<i class="ri-arrow-right-line ms-1"></i>
+            </a>
+            <a
+              href={getPathPrefix('/theme/7/about')}
+              class="btn btn-lg btn-outline-light rounded-pill px-4"
+            >
+              <i class="ri-information-2-line me-1"></i>Learn More
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row g-4">
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-3.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-1.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}
+              >
+                <figure class="img-scale rounded-5 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/1/persian-2.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Photos Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="card rounded-5 bg-primary-subtle p-4">
+            <h2 class="display-5 fw-semibold mb-2" data-aos="fade-up" data-aos-duration="1200">
+              Share Your Photos
+            </h2>
+            <div class="card-body">
+              <p class="mb-3" data-aos="fade-right" data-aos-duration="1200">
+                We'd love to feature your furry kitten! Send us your favorite photos — whether it's
+                your kitten's first day home, playtime in the yard, or cozy moments on the couch.
+              </p>
+              <p class="mb-3" data-aos="fade-right" data-aos-duration="1200">
+                To share, simply email your images to <strong>hello@email.com</strong> with the following
+                details:
+              </p>
+              <ul class="list-unstyled mb-3" data-aos="fade-right" data-aos-duration="1200">
+                <li><i class="ri-check-line text-primary me-2"></i>Cat's Name</li>
+                <li><i class="ri-check-line text-primary me-2"></i>Breed</li>
+                <li><i class="ri-check-line text-primary me-2"></i>Description</li>
+              </ul>
+              <small class="text-muted d-block" data-aos="fade-right" data-aos-duration="1200">
+                Submitted photos may be featured on our website or social channels. We will never
+                share personal contact information.
+              </small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img id="modalImage" src="" class="img-fluid rounded-5 w-100" alt="Full Size Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
