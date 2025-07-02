@@ -1,0 +1,220 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Testimonials"
+  description="Dedicated to raising happy, healthy Siamese kittens in loving homes."
+>
+  <!-- Testimonials Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <h1
+        class="display-5 fw-semibold text-center mb-4"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        What Our Families Say
+      </h1>
+      <div class="row g-4">
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="100"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "Our kitten is very sweet and also well-adjusted. The breeder's support made a lot
+                of difference. Great experience!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">Jane Smith</h6>
+                  <p class="mb-0">Austin, TX</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "We really loved the regular updates and photos. Our Siamese cat is the perfect
+                addition to our happy family!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar7.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">Nguyen Minh</h6>
+                  <p class="mb-0">San Diego, CA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="300"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "Our kitten arrived very healthy, playful, and clearly well-loved. We couldn't have
+                asked for a better experience!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar9.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">Jack Smith</h6>
+                  <p class="mb-0">Atlanta, GA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="400"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "The adoption process was smooth and professional. Our kitten, Mochi, is healthy and
+                so affectionate. Highly recommended!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar2.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">Elena Petrova</h6>
+                  <p class="mb-0">Seattle, WA</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "We received detailed care instructions and ongoing support. Our Siamese, Oliver, is
+                thriving and so playful!"
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar8.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">John Doe</h6>
+                  <p class="mb-0">Chicago, IL</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <div
+            class="card bg-primary-subtle rounded-4 h-100"
+            data-aos="flip-up"
+            data-aos-delay="600"
+            data-aos-duration="1000"
+          >
+            <div class="card-body">
+              <i class="ri-double-quotes-l text-primary fs-1 mb-3"></i>
+              <p class="mb-3">
+                "Our family is so grateful for the breeder's dedication. The kittens are
+                well-socialized and adapted quickly to our home."
+              </p>
+              <div class="d-flex align-items-center mt-auto">
+                <img
+                  src={getAssetPrefix('/assets/img/avatars/avatar1.jpg')}
+                  alt="Avatar"
+                  class="rounded-circle me-3"
+                  width="56"
+                  height="56"
+                />
+                <div>
+                  <h6 class="fw-semibold mb-0">Sarah Meyer</h6>
+                  <p class="mb-0">Denver, CO</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Experience Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container text-center">
+      <h2 class="display-5 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+        Share Your Experience
+      </h2>
+      <p class="mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+        We love hearing from our kitten families! If you’d like to share your story or feedback,
+        please get in touch.
+      </p>
+      <a
+        href={getPathPrefix('/theme/8/contact')}
+        class="btn btn-primary btn-lg"
+        data-aos="fade-in"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
+        Contact Us
+      </a>
+    </div>
+  </section>
+</Layout>

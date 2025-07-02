@@ -1,0 +1,153 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
+import { getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Kitten Details"
+  description="Dedicated to raising happy, healthy kittens in loving homes."
+>
+  <!-- Main Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <!-- Back Button -->
+      <div class="mb-4">
+        <a
+          href={getPathPrefix('/theme/8/kittens')}
+          class="btn btn-lg btn-outline-primary"
+          data-aos="fade-in"
+          data-aos-duration="600"
+        >
+          <i class="ri-arrow-left-line me-1"></i>Back to Kittens
+        </a>
+      </div>
+
+      <!-- Kitten Info Row -->
+      <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+        <!-- Image Column -->
+        <div class="col">
+          <figure class="img-scale rounded-4" data-aos="zoom-in" data-aos-duration="1200">
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/2/siamese-1.jpg')}
+              class="img-fluid"
+              alt="Luna the Siamese Kitten"
+            />
+          </figure>
+        </div>
+
+        <!-- Details Column -->
+        <div class="col" data-aos="fade-up" data-aos-duration="1200">
+          <div class="d-flex align-items-center mb-2">
+            <h2 class="display-5 fw-semibold mb-0 me-2">Luna</h2>
+            <span class="badge text-primary border fs-6">Siamese</span>
+          </div>
+
+          <p class="mb-3">
+            Luna is a sweet and gentle Siamese kitten with sparkling eyes. She loves to play with
+            feather toys, nap in sunny spots, and purr in your lap. Raised in a loving home, Luna is
+            well-socialized and ready to bring joy to her forever family.
+          </p>
+
+          <h4 class="fs-3 mb-3">$1,800.00</h4>
+
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-lg btn-primary"
+              ><i class="ri-price-tag-3-line me-1"></i>Reserve</button
+            >
+            <button class="btn btn-lg btn-outline-primary"
+              ><i class="ri-information-2-line me-1"></i>Learn More</button
+            >
+          </div>
+
+          <table class="table table-hover border">
+            <tbody>
+              <tr>
+                <th scope="row">Gender</th>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <th scope="row">Age</th>
+                <td>8 weeks</td>
+              </tr>
+              <tr>
+                <th scope="row">Color</th>
+                <td>Cream</td>
+              </tr>
+              <tr>
+                <th scope="row">Vaccinations</th>
+                <td>Up to date</td>
+              </tr>
+              <tr>
+                <th scope="row">Location</th>
+                <td>Austin, TX</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">Availability</th>
+                <td>Ready to go home now</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+          <div class="text-center">
+            <h2 class="display-5 fw-semibold mb-4" data-aos="fade-up" data-aos-duration="1200">
+              Temperament of Luna
+            </h2>
+          </div>
+
+          <label for="progressbar-affection" class="form-label">Affection</label>
+          <div
+            class="progress mb-3"
+            id="progressbar-affection"
+            role="progressbar"
+            aria-label="progress bar"
+            aria-valuenow="95"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 12px"
+          >
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 95%">
+            </div>
+          </div>
+          <label for="progressbar-playfulness" class="form-label">Playfulness</label>
+          <div
+            class="progress mb-3"
+            id="progressbar-playfulness"
+            role="progressbar"
+            aria-label="progress bar"
+            aria-valuenow="90"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 12px"
+          >
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 90%">
+            </div>
+          </div>
+          <label for="progressbar-adaptability" class="form-label">Adaptability</label>
+          <div
+            class="progress mb-3"
+            id="progressbar-adaptability"
+            role="progressbar"
+            aria-label="progress bar"
+            aria-valuenow="85"
+            aria-valuemin="0"
+            aria-valuemax="100"
+            style="height: 12px"
+          >
+            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 85%">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

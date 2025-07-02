@@ -1,0 +1,202 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Gallery"
+  description="Dedicated to raising healthy, well-socialized Siamese kittens in loving homes."
+>
+  <!-- Gallery Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-lg-10 offset-lg-1 text-center">
+          <h1 class="display-5 fw-semibold mb-2" data-aos="fade-up" data-aos-duration="1000">
+            Gallery
+          </h1>
+          <p
+            class="fs-5 text-muted mb-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="900"
+          >
+            Explore moments from our cattery and our extended kitten families. Every photo
+            celebrates the beauty, personality, and joy of Siamese cats raised with love.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-10 offset-lg-1">
+          <div class="row g-4">
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-1.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-1.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-2.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-2.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-4.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-4.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-3.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-3.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-1.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-1.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+            <div
+              class="col-sm-6 col-md-4"
+              data-aos="zoom-in"
+              data-aos-delay="100"
+              data-aos-duration="1200"
+            >
+              <a
+                href="#"
+                data-bs-toggle="modal"
+                data-bs-target="#imageModal"
+                data-img-src={getAssetPrefix('/assets/img/cat-theme/2/siamese-2.jpg')}
+              >
+                <figure class="img-scale rounded-4 h-100 w-100">
+                  <img
+                    src={getAssetPrefix('/assets/img/cat-theme/2/siamese-2.jpg')}
+                    class="img-fluid"
+                    style="object-fit: cover;"
+                    alt="Gallery Image"
+                  />
+                </figure>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Share Your Photos Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container text-center">
+      <h2 class="display-6 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+        Share Your Moments
+      </h2>
+      <p class="fs-5 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+        We love seeing our kittens in their new homes! If you’d like your photo featured in our
+        gallery, please send it to us along with your cat’s name and a short story.
+      </p>
+      <a
+        href="#"
+        class="btn btn-primary btn-lg"
+        data-aos="fade-in"
+        data-aos-delay="200"
+        data-aos-duration="800"
+      >
+        Submit Your Photo
+      </a>
+    </div>
+  </section>
+
+  <!-- Image Modal -->
+  <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+      <div class="modal-content bg-transparent border-0">
+        <div class="modal-body p-0">
+          <img id="modalImage" src="" class="img-fluid rounded-5 w-100" alt="Full Size Image" />
+        </div>
+      </div>
+    </div>
+  </div>
+</Layout>
