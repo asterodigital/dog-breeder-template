@@ -1,0 +1,25 @@
+---
+import { getAssetPrefix, getPathPrefix } from '../../../../../utils/path.js'
+---
+
+<!-- CTA/Form Section -->
+<section
+  class="text-light position-relative"
+  style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}'); background-size: cover; background-position: center;`}
+>
+  <!-- Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+  <!-- Content -->
+  <div class="container position-relative py-5">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 text-center">
+        <h2 class="display-6 fw-semibold mb-4">
+          Find your perfect Bengal kitten—<em>ethically, responsibly, and with love</em>.
+        </h2>
+        <a href={getPathPrefix('/theme/9/kittens')} class="btn btn-lg btn-primary">
+          View Kittens<i class="ri-arrow-right-line ms-1"></i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>

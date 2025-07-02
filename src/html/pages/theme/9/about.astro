@@ -1,0 +1,250 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="About"
+  description="Dedicated to raising happy, healthy Siamese kittens in loving homes."
+>
+  <!-- Welcome Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h1 class="display-5 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+            About Us
+          </h1>
+          <p class="fs-5 mb-4" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+            Here, wild beauty meets gentle temperament. We are passionate about raising Bengal cats
+            that are healthy, social, and ready to thrive in loving homes.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <i class="ri-shield-check-line text-primary me-2"></i>Health & temperament focused
+            </li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <i class="ri-emotion-happy-line text-primary me-2"></i>Raised in-home, never caged
+            </li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+              <i class="ri-hand-heart-line text-primary me-2"></i>Lifelong support for every family
+            </li>
+          </ul>
+          <a
+            href={getPathPrefix('/theme/9/kittens')}
+            class="btn btn-primary btn-lg"
+            data-aos="fade-in"
+            data-aos-delay="500"
+            data-aos-duration="800"
+          >
+            Meet Our Kittens
+          </a>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+            alt="Bengal Cat"
+            class="img-fluid rounded-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Values Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 order-2 order-lg-1 text-center">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/3/bengal-3.jpg')}
+            alt="Bengal Cat"
+            class="img-fluid rounded-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-lg-7 order-1 order-lg-2 ps-lg-5 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+            Our Core Values
+          </h2>
+          <div class="row g-4">
+            <div class="col-md-6">
+              <div
+                class="bg-body rounded-4 p-4 h-100"
+                data-aos="fade-up"
+                data-aos-delay="100"
+                data-aos-duration="900"
+              >
+                <i class="ri-heart-2-line text-primary fs-2 mb-2"></i>
+                <h5 class="fw-semibold mb-2">Ethical Breeding</h5>
+                <p class="mb-0">
+                  We follow strict ethical standards and prioritize the well-being of every cat and
+                  kitten.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="bg-body rounded-4 p-4 h-100"
+                data-aos="fade-up"
+                data-aos-delay="200"
+                data-aos-duration="900"
+              >
+                <i class="ri-group-line text-primary fs-2 mb-2"></i>
+                <h5 class="fw-semibold mb-2">Community & Education</h5>
+                <p class="mb-0">
+                  We empower new owners with knowledge and ongoing support for a lifetime of Bengal
+                  joy.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="bg-body rounded-4 p-4 h-100"
+                data-aos="fade-up"
+                data-aos-delay="300"
+                data-aos-duration="900"
+              >
+                <i class="ri-stethoscope-line text-primary fs-2 mb-2"></i>
+                <h5 class="fw-semibold mb-2">Health & Wellness</h5>
+                <p class="mb-0">
+                  All breeding cats are health-tested and kittens receive top veterinary care from
+                  day one.
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div
+                class="bg-body rounded-4 p-4 h-100"
+                data-aos="fade-up"
+                data-aos-delay="400"
+                data-aos-duration="900"
+              >
+                <i class="ri-empathize-line text-primary fs-2 mb-2"></i>
+                <h5 class="fw-semibold mb-2">Personal Connection</h5>
+                <p class="mb-0">
+                  We build lasting relationships with our kitten families and love seeing our
+                  Bengals thrive.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Our Bengals Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 mb-4 mb-lg-0">
+          <h2 class="display-5 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+            About Our Bengal Kittens
+          </h2>
+          <p class="mb-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+            Our breeding cats are selected for their health, temperament, and stunning wild-inspired
+            coats. Each Bengal is a cherished member of our family.
+          </p>
+          <ul class="list-unstyled mb-4">
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="200" data-aos-duration="800">
+              <i class="ri-star-smile-line text-primary me-2"></i>Champion bloodlines
+            </li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="800">
+              <i class="ri-brush-4-line text-primary me-2"></i>Unique rosette & marble patterns
+            </li>
+            <li class="mb-2" data-aos="fade-up" data-aos-delay="400" data-aos-duration="800">
+              <i class="ri-emotion-happy-line text-primary me-2"></i>Affectionate, social
+              personalities
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-5 text-center">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}
+            alt="Bengal Cat"
+            class="img-fluid rounded-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Adoption Journey Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-5 order-2 order-lg-1 text-center">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+            alt="Bengal Cat"
+            class="img-fluid rounded-4"
+            data-aos="zoom-in"
+            data-aos-duration="1000"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-lg-7 order-1 order-lg-2 mb-4 mb-lg-0 ps-lg-5">
+          <h2 class="display-5 fw-semibold mb-3" data-aos="fade-up" data-aos-duration="1000">
+            Your Bengal Kitten Adoption Journey
+          </h2>
+          <ol class="list-group list-group-numbered mb-4 text-start">
+            <li
+              class="list-group-item bg-transparent border-0 ps-0"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="800"
+            >
+              <strong>Inquiry:</strong> Contact us to learn more about our available kittens and upcoming
+              litters.
+            </li>
+            <li
+              class="list-group-item bg-transparent border-0 ps-0"
+              data-aos="fade-up"
+              data-aos-delay="200"
+              data-aos-duration="800"
+            >
+              <strong>Meet & Match:</strong> We help you find the Bengal kitten that best fits your family
+              and lifestyle.
+            </li>
+            <li
+              class="list-group-item bg-transparent border-0 ps-0"
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-duration="800"
+            >
+              <strong>Preparation:</strong> We provide guidance and resources to prepare for your kitten’s
+              arrival.
+            </li>
+            <li
+              class="list-group-item bg-transparent border-0 ps-0"
+              data-aos="fade-up"
+              data-aos-delay="400"
+              data-aos-duration="800"
+            >
+              <strong>Homecoming:</strong> Your Bengal joins your family, and we remain available for
+              lifelong support.
+            </li>
+          </ol>
+          <a
+            href={getPathPrefix('/theme/9/contact')}
+            class="btn btn-primary btn-lg"
+            data-aos="fade-in"
+            data-aos-delay="500"
+            data-aos-duration="800"
+          >
+            Start Your Journey
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
