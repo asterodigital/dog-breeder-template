@@ -1,0 +1,138 @@
+---
+import Logo from './_topbar/_logo.astro'
+import { getPathPrefix } from '../../../../../utils/path.js'
+---
+
+<!-- Footer -->
+<footer class="bg-body pt-5 border-top">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo and Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <a
+          href={getPathPrefix('/theme/10/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="text-muted mt-2 mb-3 pe-lg-4">
+          Dedicated to ethical breeding practices, and the well-being of every kitten we raise —
+          right here in Austin, Texas.
+        </p>
+        <button class="btn btn-lg btn-outline-primary">
+          Learn More <i class="ri-arrow-right-line"></i>
+        </button>
+      </div>
+      <!-- Navigation Links -->
+      <div class="col-lg-4 col-md-6">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/home')}
+                  class="text-body text-decoration-none d-block mb-2">Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/about')}
+                  class="text-body text-decoration-none d-block mb-2">About</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/faq')}
+                  class="text-body text-decoration-none d-block mb-2">FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/testimonials')}
+                  class="text-body text-decoration-none d-block mb-2">Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/contact')}
+                  class="text-body text-decoration-none d-block">Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/blog-1')}
+                  class="text-body text-decoration-none d-block mb-2">Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/breeding-philosophy')}
+                  class="text-body text-decoration-none d-block mb-2">Breeding Philosophy</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/gallery')}
+                  class="text-body text-decoration-none d-block mb-2">Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/kitten')}
+                  class="text-body text-decoration-none d-block mb-2">Kitten</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/10/shop')}
+                  class="text-body text-decoration-none d-block mb-2"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Newsletter -->
+      <div class="col-lg-4">
+        <h5 class="fs-5 mb-2">Contact Us</h5>
+        <p class="text-muted mb-3">
+          Whether you have a question, need support, or just want to say hello — we're here for you.
+        </p>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2">
+            <a href="tel:+12345678901" class="text-body text-decoration-none">
+              <i class="ri-phone-fill text-primary me-2"></i>+1 (234) 567-8901
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="mailto:hello@email.com" class="text-body text-decoration-none">
+              <i class="ri-mail-fill text-primary me-2"></i>hello@email.com
+            </a>
+          </li>
+          <li>
+            <i class="ri-map-pin-fill text-primary me-2"></i>123 Main Street, Austin, TX
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- Footer Bottom -->
+  <div class="text-bg-dark border-top py-4 mt-4">
+    <div
+      class="container d-flex flex-column flex-md-row justify-content-between align-items-center text-center text-md-start"
+    >
+      <p class="text-light mb-2 mb-md-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+      <div>
+        <a href="#" class="text-decoration-none text-light me-3">Terms & Conditions</a>
+        <a href="#" class="text-decoration-none text-light">Privacy Policy</a>
+      </div>
+    </div>
+  </div>
+</footer>

@@ -1,0 +1,47 @@
+---
+import { getAssetPrefix } from '../../../../../utils/path.js'
+---
+
+<!-- CTA -->
+<section
+  class="position-relative text-light text-center"
+  style={`background-image: url('${getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}'); background-size: cover; background-position: center; height: 400px;`}
+>
+  <!-- Overlay -->
+  <div class="position-absolute top-0 start-0 w-100 h-100 bg-dark opacity-50"></div>
+
+  <!-- Content -->
+  <div
+    class="position-relative d-flex flex-column justify-content-center h-100 px-3"
+    data-aos="fade-in"
+    data-aos-duration="1200"
+  >
+    <div class="row">
+      <div class="col-lg-6 offset-lg-3">
+        <h5 class="display-5 fw-semibold mb-2">Don't Miss Our Next Litter</h5>
+        <p class="fs-5 mb-4">
+          Be the first to know about upcoming kittens, early adoption openings, and expert kitten
+          care tips.
+        </p>
+
+        <!-- Email Form -->
+        <form class="row g-2 justify-content-center">
+          <div class="col-sm-9">
+            <input
+              type="email"
+              class="form-control form-control-lg"
+              placeholder="Enter your email"
+              required
+            />
+          </div>
+          <div class="col-sm-3">
+            <button type="submit" class="btn btn-primary btn-lg w-100">Notify Me</button>
+          </div>
+        </form>
+
+        <!-- Small note -->
+        <p class="text-light mt-3 mb-0">We send only what matters—no spam.</p>
+      </div>
+    </div>
+  </div>
+</section>
