@@ -1,0 +1,121 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Breeding Philosophy"
+  description="Ethical, loving Abyssinian cat breeders in Austin, TX. Discover our kittens, philosophy, and community."
+>
+  <!-- Philosophy Hero Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Our Breeding Philosophy</h2>
+          <h3 class="display-5 fw-semibold mb-3">Ethics, Health & Heart</h3>
+          <p class="fs-5 mb-0">
+            We believe that every Abyssinian kitten deserves a loving start and a bright future. Our
+            breeding program is built on a foundation of ethics, health, and a deep respect for the
+            breed. We are committed to raising kittens who are healthy, well-socialized, and ready
+            to thrive in their forever homes.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Pillars Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Our Pillars</h2>
+          <h3 class="display-5 fw-semibold mb-3">What Guides Our Program</h3>
+          <ul class="list-unstyled fs-5 mb-0">
+            <li class="mb-2">
+              <i class="ri-shield-check-fill text-primary me-2"></i>Health guarantee & genetic
+              screening
+            </li>
+            <li class="mb-2">
+              <i class="ri-user-smile-fill text-primary me-2"></i>Early socialization with people &
+              pets
+            </li>
+            <li class="mb-2">
+              <i class="ri-home-heart-fill text-primary me-2"></i>Raised in a loving, cage-free home
+            </li>
+            <li>
+              <i class="ri-leaf-fill text-primary me-2"></i>Commitment to ethical, responsible
+              breeding
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Health & Wellness Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-3.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Health & Wellness</h2>
+          <h3 class="display-5 fw-semibold mb-3">A Foundation for Life</h3>
+          <p class="fs-5 mb-0">
+            All our kittens receive regular veterinary care, vaccinations, and are raised on a
+            premium diet. We screen for genetic conditions and provide a health guarantee, ensuring
+            every kitten has the best possible start.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lifelong Support Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Lifelong Support</h2>
+          <h3 class="display-5 fw-semibold mb-3">Here for You & Your Kitten</h3>
+          <p class="fs-5 mb-0">
+            Our relationship doesn’t end at adoption. We offer guidance, resources, and a supportive
+            community for all our families—ensuring every Abyssinian thrives in their new home.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

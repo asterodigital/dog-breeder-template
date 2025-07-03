@@ -1,0 +1,225 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="About"
+  description="Ethical, loving Abyssinian cat breeders in Austin, TX. Discover our kittens, philosophy, and community."
+>
+  <!-- Our Story Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-3.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Our Story</h2>
+          <h3 class="display-5 fw-semibold mb-3">Passion for Abyssinian Cats</h3>
+          <p class="fs-5 mb-0">
+            Founded in Austin, our cattery began with a love for the unique beauty and personality
+            of Abyssinian cats. We are a small, family-run breeder dedicated to raising kittens in a
+            loving, home environment—never in cages. Our mission is to share the joy of this
+            remarkable breed with families who value health, temperament, and lifelong support.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Philosophy Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 order-md-2 mb-4 mb-md-0" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6 order-md-1" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Our Philosophy</h2>
+          <h3 class="display-5 fw-semibold mb-3">Health, Socialization & Ethics</h3>
+          <ul class="list-unstyled fs-5 mb-0">
+            <li class="mb-2">
+              <i class="ri-shield-check-fill text-primary me-2"></i> Health guarantee & regular vet checks
+            </li>
+            <li class="mb-2">
+              <i class="ri-user-smile-fill text-primary me-2"></i> Socialized with children, adults,
+              and pets
+            </li>
+            <li class="mb-2">
+              <i class="ri-home-heart-fill text-primary me-2"></i> Raised in our home, never in cages
+            </li>
+            <li>
+              <i class="ri-leaf-fill text-primary me-2"></i> Focused on temperament, well-being, and
+              ethical breeding
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Featured Kittens Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="text-primary fs-5 text-uppercase mb-2">Featured Kittens</h2>
+        <h3 class="display-5 fw-semibold" data-aos="fade-up" data-aos-duration="1000">
+          Meet Our Abyssinian Cats
+        </h3>
+      </div>
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+              alt="Kitten Luna"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body d-flex flex-column h-100">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a
+                    href={getPathPrefix('/theme/10/kitten-details')}
+                    class="text-body text-decoration-none">Luna</a
+                  >
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">8 weeks old</span>
+                <p class="mb-0">A playful cream-color female with a gentle, affectionate nature.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/10/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100 mt-auto">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+              alt="Kitten Felix"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body d-flex flex-column h-100">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Felix</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">10 weeks old</span>
+                <p class="mb-0">A curious male with striking eyes and a loving personality.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/10/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100 mt-auto">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+              alt="Kitten Willow"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body d-flex flex-column h-100">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Willow</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">7 weeks old</span>
+                <p class="mb-0">A sweet and affectionate female, very gentle and loves cuddles.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/10/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100 mt-auto">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-3">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+              alt="Kitten Jasper"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body d-flex flex-column h-100">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Jasper</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">9 weeks old</span>
+                <p class="mb-0">A bold cream male, playful and outgoing with a soft coat.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/10/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100 mt-auto">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Commitment Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Our Commitment</h2>
+          <h3 class="display-5 fw-semibold mb-3">Lifelong Support & Community</h3>
+          <p class="fs-5 mb-0">
+            We’re here for you and your kitten, from the first inquiry to years after adoption. We
+            offer guidance, resources, and a welcoming community for all our families. Your journey
+            with your Abyssinian starts here—and we’re with you every step of the way.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

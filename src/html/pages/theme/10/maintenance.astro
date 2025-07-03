@@ -1,0 +1,47 @@
+---
+import Layout from './layout.astro'
+---
+
+<Layout
+  title="Maintenance"
+  description="Dedicated to raising happy, healthy kittens in loving homes."
+>
+  <section class="bg-body d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
+          <h1
+            class="display-5 fw-semibold"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            We're Under Maintenance
+          </h1>
+          <p
+            class="mb-4 text-muted"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            Our website is currently undergoing scheduled maintenance. We appreciate your patience.
+          </p>
+          <form
+            class="d-flex justify-content-center gap-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <input
+              type="email"
+              class="form-control form-control-lg w-100"
+              placeholder="Enter your email"
+              required
+            />
+            <button type="submit" class="btn btn-lg btn-primary">Notify</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

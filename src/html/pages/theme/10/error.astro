@@ -1,0 +1,64 @@
+---
+import Layout from './layout.astro'
+import { getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout title="Error" description="Dedicated to raising happy, healthy kittens in loving homes.">
+  <section class="bg-body d-flex align-items-center py-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-xl-6 offset-lg-2 offset-xl-3">
+          <h1
+            class="display-2 fw-semibold mb-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            404
+          </h1>
+          <h2 class="mb-3" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1200">
+            Oops, page not found!
+          </h2>
+          <p
+            class="mb-3 text-muted"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            The page you are looking for does not exist. Here are the possible reasons for that:
+          </p>
+          <ul
+            class="list-unstyled text-muted mb-4"
+            data-aos="fade-up"
+            data-aos-delay="250"
+            data-aos-duration="1100"
+          >
+            <li class="mb-2">
+              <i class="ri-arrow-right-s-line text-primary me-1"></i> The link you used was broken or
+              expired
+            </li>
+            <li class="mb-2">
+              <i class="ri-arrow-right-s-line text-primary me-1"></i> You typed in the address incorrectly
+            </li>
+            <li>
+              <i class="ri-arrow-right-s-line text-primary me-1"></i> The page was moved or renamed
+            </li>
+          </ul>
+          <div
+            class="d-flex gap-2"
+            data-aos="fade-up"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <a href={getPathPrefix('/theme/10/home')} class="btn btn-lg btn-primary"
+              ><i class="ri-home-2-line me-2"></i>Go to Home</a
+            >
+            <a href={getPathPrefix('/theme/10/contact')} class="btn btn-lg btn-outline-primary"
+              ><i class="ri-information-2-line me-2"></i>Contact Us</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

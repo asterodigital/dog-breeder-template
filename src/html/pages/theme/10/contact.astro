@@ -1,0 +1,130 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Contact"
+  description="Ethical, loving Abyssinian cat breeders in Austin, TX. Discover our kittens, philosophy, and community."
+>
+  <!-- Contact Hero Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-2.jpg')}
+            class="img-fluid rounded-4"
+            alt="Abyssinian Cat"
+            style="max-height: 340px; width: 100%; object-fit: cover;"
+          />
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Contact Us</h2>
+          <h3 class="display-5 fw-semibold mb-2">Get in Touch</h3>
+          <p class="fs-5 mb-0">
+            Whether you have questions about our kittens, want to schedule a visit, or need advice
+            on caring for your Abyssinian cat, we’re here to help. Reach out and we’ll respond as
+            soon as possible!
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Form Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <div class="card border rounded-4 p-4" data-aos="fade-up" data-aos-duration="1200">
+            <h4 class="fw-semibold mb-3">Send Us a Message</h4>
+            <form>
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <label for="name" class="form-label">Name</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="name"
+                    placeholder="Your Name"
+                    required
+                  />
+                </div>
+                <div class="col-md-6">
+                  <label for="email" class="form-label">Email</label>
+                  <input
+                    type="email"
+                    class="form-control form-control-lg"
+                    id="email"
+                    placeholder="you@email.com"
+                    required
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="subject" class="form-label">Subject</label>
+                  <input
+                    type="text"
+                    class="form-control form-control-lg"
+                    id="subject"
+                    placeholder="Subject"
+                  />
+                </div>
+                <div class="col-12">
+                  <label for="message" class="form-label">Message</label>
+                  <textarea
+                    class="form-control form-control-lg"
+                    id="message"
+                    rows="3"
+                    placeholder="Your message here.."
+                    required></textarea>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg mt-4">Send Message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Visit Us Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-md-6 mb-4 mb-md-0" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="text-primary fs-5 text-uppercase mb-2">Visit Our Cattery</h2>
+          <h3 class="display-5 fw-semibold mb-2">Located in Austin, TX</h3>
+          <p class="fs-5 mb-3">
+            We welcome visitors by appointment. Come meet our Abyssinian cats, see our home
+            environment, and experience the difference for yourself.
+          </p>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-2">
+              <i class="ri-map-pin-2-fill text-primary me-2"></i> Austin, Texas 78701
+            </li>
+            <li class="mb-2">
+              <i class="ri-mail-fill text-primary me-2"></i>
+              <a href="mailto:hello@email.com" class="text-decoration-none text-primary"
+                >hello@email.com</a
+              >
+            </li>
+            <li><i class="ri-phone-fill text-primary me-2"></i>+1 (234) 567-8901</li>
+          </ul>
+        </div>
+        <div class="col-md-6" data-aos="fade-left" data-aos-duration="1200">
+          <div class="ratio ratio-4x3 rounded-4 overflow-hidden">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23181.182903463836!2d-97.75408308207732!3d30.268331893788808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8644b599a0cc032f%3A0x5d9b464bd469d57a!2sAustin%2C%20TX%2C%20USA!5e0!3m2!1sen!2sin!4v1746533935359!5m2!1sen!2sin"
+              width="100%"
+              height="100%"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
