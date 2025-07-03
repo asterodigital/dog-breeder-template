@@ -1,0 +1,273 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout title="Kittens" description="Dedicated to raising happy, healthy kittens in loving homes.">
+  <!-- Kittens Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="display-5 fw-semibold" data-aos="fade-up" data-aos-duration="1200">
+          Meet Our Bengal Kittens
+        </h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}
+              alt="Kitten Luna"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a
+                    href={getPathPrefix('/theme/9/kitten-details')}
+                    class="text-body text-decoration-none">Luna</a
+                  >
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">8 weeks old</span>
+                <p class="mb-0">A playful blue-cream female with a gentle, affectionate nature.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+              alt="Kitten Felix"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Felix</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">10 weeks old</span>
+                <p class="mb-0">
+                  A curious white male with striking eyes and a loving personality.
+                </p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}
+              alt="Kitten Willow"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Willow</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">7 weeks old</span>
+                <p class="mb-0">A sweet tortoiseshell female, very gentle and loves to cuddle.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="400"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+              alt="Kitten Jasper"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Jasper</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">9 weeks old</span>
+                <p class="mb-0">A bold cream male, playful and outgoing with a soft coat.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}
+              alt="Kitten Daisy"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Daisy</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">8 weeks old</span>
+                <p class="mb-0">A gentle calico female, loves to play and nap in sunny spots.</p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div
+            class="card border rounded-4 h-100 p-0"
+            data-aos="zoom-in"
+            data-aos-delay="600"
+            data-aos-duration="1200"
+          >
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+              alt="Kitten Milo"
+              class="card-img-top"
+              style="object-fit: cover; height: 220px;"
+            />
+            <div class="card-body">
+              <div class="p-3">
+                <h5 class="fw-semibold mb-1">
+                  <a href="#" class="text-body text-decoration-none">Milo</a>
+                </h5>
+                <span class="badge text-primary bg-primary-pale mb-1">11 weeks old</span>
+                <p class="mb-0">
+                  A fluffy blue male, very social and loves attention from everyone.
+                </p>
+              </div>
+              <a
+                href={getPathPrefix('/theme/9/kitten-details')}
+                class="btn btn-primary rounded-top-0 rounded-bottom-4 w-100">Inquire</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Upcoming Litters Section -->
+  <section class="bg-body pb-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h2 class="display-5 fw-semibold" data-aos="fade-up" data-aos-duration="1200">
+          Upcoming Litters
+        </h2>
+      </div>
+      <div class="row g-4">
+        <!-- Upcoming Litter Card 1 -->
+        <div class="col-md-6">
+          <div
+            class="card border h-100 overflow-hidden position-relative p-0"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            data-aos-duration="1200"
+          >
+            <div class="row g-0 h-100">
+              <div class="col-5 d-flex align-items-stretch">
+                <img
+                  src={getAssetPrefix('/assets/img/cat-theme/3/bengal-1.jpg')}
+                  alt="The Willow Litter"
+                  class="img-fluid h-100 w-100 object-fit-cover"
+                  style="min-height: 220px; object-fit: cover;"
+                />
+              </div>
+              <div class="col-7 d-flex align-items-center">
+                <div class="card-body p-4">
+                  <h5 class="fs-3 mb-2">The Willow Litter</h5>
+                  <p class="mb-2 text-muted"><strong>Expected:</strong> July 14, 2025</p>
+                  <p class="mb-3">
+                    This pairing brings together two incredibly gentle, affectionate Bengal Cats.
+                    Anticipate playful, loving kittens with beautiful markings.
+                  </p>
+                  <a href={getPathPrefix('/theme/9/contact')} class="btn btn-lg btn-primary"
+                    >Inquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Upcoming Litter Card 2 -->
+        <div class="col-md-6">
+          <div
+            class="card border h-100 overflow-hidden position-relative p-0"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1200"
+          >
+            <div class="row g-0 h-100">
+              <div class="col-5 d-flex align-items-stretch">
+                <img
+                  src={getAssetPrefix('/assets/img/cat-theme/3/bengal-2.jpg')}
+                  alt="The Maple Litter"
+                  class="img-fluid h-100 w-100 object-fit-cover"
+                  style="min-height: 220px; object-fit: cover;"
+                />
+              </div>
+              <div class="col-7 d-flex align-items-center">
+                <div class="card-body p-4">
+                  <h5 class="fs-3 mb-2">The Maple Litter</h5>
+                  <p class="mb-2 text-muted"><strong>Expected:</strong> July 2, 2025</p>
+                  <p class="mb-3">
+                    This pairing brings together two incredibly gentle, affectionate Bengal Cats.
+                    Expect kittens with vibrant personalities and stunning coats.
+                  </p>
+                  <a href={getPathPrefix('/theme/9/contact')} class="btn btn-lg btn-primary"
+                    >Inquire</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
