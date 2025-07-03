@@ -1,0 +1,212 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="Kitten Details"
+  description="Dedicated to raising happy, healthy kittens in loving homes."
+>
+  <!-- Main Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <!-- Back Button -->
+      <div class="mb-4">
+        <a
+          href={getPathPrefix('/theme/10/kittens')}
+          class="btn btn-lg btn-outline-primary"
+          data-aos="fade-in"
+          data-aos-duration="600"
+        >
+          <i class="ri-arrow-left-line me-1"></i>Back to Kittens
+        </a>
+      </div>
+
+      <!-- Kitten Info Row -->
+      <div class="row row-cols-1 row-cols-md-2 g-4 align-items-center">
+        <!-- Image Column -->
+        <div class="col">
+          <figure class="img-scale rounded-4" data-aos="zoom-in" data-aos-duration="1200">
+            <img
+              src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+              class="img-fluid"
+              alt="Luna the Abyssinian Kitten"
+            />
+          </figure>
+        </div>
+
+        <!-- Details Column -->
+        <div class="col" data-aos="fade-up" data-aos-duration="1200">
+          <div class="d-flex align-items-center mb-2">
+            <h2 class="display-5 fw-semibold mb-0 me-2">Luna</h2>
+            <span class="badge text-primary bg-primary-subtle fs-6">Abyssinian</span>
+          </div>
+
+          <p class="mb-3">
+            Luna is a sweet and gentle Abyssinian kitten with sparkling eyes. She loves to play with
+            feather toys, nap in sunny spots, and purr in your lap. Raised in a loving home, Luna is
+            well-socialized and ready to bring joy to her forever family.
+          </p>
+
+          <h4 class="fs-3 mb-3">$1,800.00</h4>
+
+          <div class="d-flex flex-wrap gap-2 mb-4">
+            <button class="btn btn-lg btn-primary"
+              ><i class="ri-price-tag-3-line me-1"></i>Reserve</button
+            >
+            <button class="btn btn-lg btn-outline-primary"
+              ><i class="ri-information-2-line me-1"></i>Learn More</button
+            >
+          </div>
+
+          <table class="table table-hover border">
+            <tbody>
+              <tr>
+                <th scope="row">Gender</th>
+                <td>Female</td>
+              </tr>
+              <tr>
+                <th scope="row">Age</th>
+                <td>8 weeks</td>
+              </tr>
+              <tr>
+                <th scope="row">Color</th>
+                <td>Cream</td>
+              </tr>
+              <tr>
+                <th scope="row">Vaccinations</th>
+                <td>Up to date</td>
+              </tr>
+              <tr>
+                <th scope="row">Location</th>
+                <td>Austin, TX</td>
+              </tr>
+              <tr class="table-secondary">
+                <th scope="row">Availability</th>
+                <td>Ready to go home now</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Kitten Highlights Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="text-center mb-4">
+        <h3
+          class="text-primary fs-5 text-uppercase mb-2"
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Highlights
+        </h3>
+        <h4 class="display-5 fw-semibold" data-aos="fade-up" data-aos-duration="1200">
+          Kitten Highlights
+        </h4>
+      </div>
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col" data-aos="fade-up" data-aos-delay="100" data-aos-duration="900">
+          <div class="card bg-transparent h-100 px-4 py-0">
+            <i class="ri-heart-3-fill text-primary fs-1 mb-2"></i>
+            <h5 class="fw-semibold mb-2">Affectionate</h5>
+            <p class="mb-0">
+              Luna loves to snuggle and purrs the moment you pick her up. She bonds quickly with her
+              people.
+            </p>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="200" data-aos-duration="900">
+          <div class="card bg-transparent h-100 px-4 py-0">
+            <i class="ri-gamepad-fill text-primary fs-1 mb-2"></i>
+            <h5 class="fw-semibold mb-2">Playful</h5>
+            <p class="mb-0">
+              Always ready for a game, Luna loves feather toys, tunnels, and chasing sunbeams around
+              the house.
+            </p>
+          </div>
+        </div>
+        <div class="col" data-aos="fade-up" data-aos-delay="300" data-aos-duration="900">
+          <div class="card bg-transparent h-100 px-4 py-0">
+            <i class="ri-leaf-fill text-primary fs-1 mb-2"></i>
+            <h5 class="fw-semibold mb-2">Adaptable</h5>
+            <p class="mb-0">
+              Luna always adjusts easily to new environments and gets along well with children and
+              other pets.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Meet the Parents Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-10">
+          <div class="text-center mb-4">
+            <h3
+              class="text-primary fs-5 text-uppercase mb-2"
+              data-aos="fade-up"
+              data-aos-duration="1000"
+            >
+              Parents
+            </h3>
+            <h4
+              class="display-5 fw-semibold"
+              data-aos="fade-up"
+              data-aos-delay="100"
+              data-aos-duration="1000"
+            >
+              Meet Luna's Parents
+            </h4>
+          </div>
+          <div class="row g-4">
+            <div
+              class="col-md-6"
+              data-aos="fade-right"
+              data-aos-delay="200"
+              data-aos-duration="900"
+            >
+              <div class="card border h-100 p-0">
+                <img
+                  src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-3.jpg')}
+                  class="card-img-top rounded-top-4"
+                  alt="Luna's Mom"
+                  style="object-fit: cover; height: 300px;"
+                />
+                <div class="card-body p-3">
+                  <h5 class="fw-semibold mb-1">Luna's Mom: Willow</h5>
+                  <p class="mb-0">
+                    Willow is a gentle, nurturing queen who loves to cuddle and watch over her
+                    kittens. She has a beautiful cream coat and a sweet, patient nature.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6" data-aos="fade-left" data-aos-delay="300" data-aos-duration="900">
+              <div class="card border h-100 p-0">
+                <img
+                  src={getAssetPrefix('/assets/img/cat-theme/4/abyssinian-1.jpg')}
+                  class="card-img-top rounded-top-4"
+                  alt="Luna's Dad"
+                  style="object-fit: cover; height: 300px;"
+                />
+                <div class="card-body p-3">
+                  <h5 class="fw-semibold mb-1">Luna's Dad: Finn</h5>
+                  <p class="mb-0">
+                    Finn is a striking Abyssinian cat with a playful spirit and sharp mind. He loves
+                    interactive toys and is always the first to greet visitors with a purr.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
