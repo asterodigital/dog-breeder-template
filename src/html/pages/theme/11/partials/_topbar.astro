@@ -7,7 +7,7 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
 
 <div class="sticky-top shadow-sm z-4">
   <!-- Topbar -->
-  <div class="small bg-dark text-light d-none d-md-block py-2">
+  <div class="text-bg-dark d-none d-md-block py-2">
     <div class="container">
       <div class="row align-items-center text-center text-md-start gx-3 gy-2">
         <!-- Left: Phone & Email -->
@@ -353,13 +353,18 @@ const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
 
           <!-- Get Started Button (Bottom) -->
           <div class="d-block d-lg-none mt-3">
-            <a class="btn btn-lg btn-primary rounded w-100" href="#">Get Started</a>
+            <a
+              class="btn btn-lg btn-primary rounded-0 w-100"
+              href={getPathPrefix('/theme/11/contact')}>Get Started</a
+            >
           </div>
         </div>
       </div>
 
       <div class="d-none d-lg-flex">
-        <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+        <a class="btn btn-lg btn-primary rounded-0" href={getPathPrefix('/theme/11/contact')}
+          >Get Started</a
+        >
       </div>
     </div>
   </nav>

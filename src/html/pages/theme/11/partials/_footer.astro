@@ -118,13 +118,13 @@ import Logo from './_topbar/_logo.astro'
         <div class="d-flex justify-content-between align-items-center mb-3">
           <h5 class="fs-5 mb-0">Gallery</h5>
           <a href={getPathPrefix('/theme/11/gallery')} class="text-primary text-decoration-none"
-            >View Gallery</a
+            >View Gallery<i class="ri-arrow-right-line ms-1"></i></a
           >
         </div>
         <p class="text-body mb-3">Explore heartwarming snapshots of our kittens.</p>
         <div class="row g-2">
           <div class="col-4">
-            <figure class="img-scale rounded-4">
+            <figure class="img-scale">
               <img
                 src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-1.jpg')}
                 class="img-fluid"
@@ -134,7 +134,7 @@ import Logo from './_topbar/_logo.astro'
             </figure>
           </div>
           <div class="col-4">
-            <figure class="img-scale rounded-4">
+            <figure class="img-scale">
               <img
                 src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-2.jpg')}
                 class="img-fluid"
@@ -144,7 +144,7 @@ import Logo from './_topbar/_logo.astro'
             </figure>
           </div>
           <div class="col-4">
-            <figure class="img-scale rounded-4">
+            <figure class="img-scale">
               <img
                 src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-3.jpg')}
                 class="img-fluid"
