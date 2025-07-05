@@ -1,0 +1,366 @@
+---
+import Logo from './_topbar/_logo.astro'
+import { getPathPrefix } from '../../../../../utils/path'
+const rawPath = Astro.url.pathname
+const currentPath = rawPath.replace(/\.html$/, '') // remove .html if present
+---
+
+<div class="sticky-top shadow-sm z-4">
+  <!-- Topbar -->
+  <div class="small bg-dark text-light d-none d-md-block py-2">
+    <div class="container">
+      <div class="row align-items-center text-center text-md-start gx-3 gy-2">
+        <!-- Left: Phone & Email -->
+        <div
+          class="col-12 col-md-auto d-flex justify-content-center justify-content-md-start flex-wrap gap-3"
+        >
+          <div>
+            <i class="ri-phone-fill text-primary me-1"></i>
+            <a href="tel:+12345678901" class="text-light text-decoration-none">+1 (234) 567-8901</a>
+          </div>
+          <div>
+            <i class="ri-mail-fill text-primary me-1"></i>
+            <a href="mailto:hello@email.com" class="text-light text-decoration-none"
+              >hello@email.com</a
+            >
+          </div>
+        </div>
+
+        <!-- Right: Hours & Location -->
+        <div
+          class="col-12 col-md-auto d-flex justify-content-center justify-content-md-end flex-wrap gap-3 ms-md-auto"
+        >
+          <div>
+            <i class="ri-time-fill text-primary me-1"></i>
+            Mon–Fri: 9am–6pm
+          </div>
+          <div>
+            <i class="ri-map-pin-fill text-primary me-1"></i>
+            123 Main Street, Austin, TX
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-body border-top">
+    <div class="container">
+      <!-- Brand Logo or Text -->
+      <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/11/home')}>
+        <Logo />
+      </a>
+
+      <!-- Offcanvas Toggler -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="offcanvas"
+        data-bs-target="#offcanvasNavbar"
+        aria-controls="offcanvasNavbar"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- Offcanvas Menu -->
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar">
+        <div class="offcanvas-header">
+          <a class="navbar-brand d-flex align-items-center" href={getPathPrefix('/theme/11/home')}>
+            <Logo />
+          </a>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between h-100">
+          <!-- For lg+ screens -->
+          <ul
+            class="navbar-nav navbar-highlight flex-grow-1 pe-3 justify-content-center d-none d-lg-flex"
+          >
+            <!-- Home -->
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/home' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/home')}
+              >
+                <i class="ri-home-2-line"></i>
+                <span>Home</span>
+              </a>
+            </li>
+
+            <!-- About Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="aboutDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="ri-information-line"></i>
+                <span>About</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="aboutDropdown">
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/about' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/about')}>About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/breeding-philosophy' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/breeding-philosophy')}>Breeding Philosophy</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/testimonials' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/testimonials')}>Testimonials</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Explore Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="exploreDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="ri-planet-line"></i>
+                <span>Explore</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="exploreDropdown">
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/kittens' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/kittens')}>Kittens</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/gallery' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/gallery')}>Gallery</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/shop' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/shop')}>Shop</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- Blog Dropdown -->
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="blogDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="ri-news-line"></i>
+                <span>Blog</span>
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="blogDropdown">
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/blog-1' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/blog-1')}>Blog – No Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/blog-2' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/blog-2')}>Blog – Left Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/blog-3' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/blog-3')}>Blog – Right Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/post-1' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/post-1')}>Blog Post – No Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/post-2' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/post-2')}>Blog Post – Left Sidebar</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class={`dropdown-item${currentPath === '/theme/11/post-3' ? ' active' : ''}`}
+                    href={getPathPrefix('/theme/11/post-3')}>Blog Post – Right Sidebar</a
+                  >
+                </li>
+              </ul>
+            </li>
+
+            <!-- FAQs -->
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/faq' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/faq')}
+              >
+                <i class="ri-question-answer-line"></i>
+                <span>FAQs</span>
+              </a>
+            </li>
+
+            <!-- Contact -->
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/contact' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/contact')}
+              >
+                <i class="ri-phone-line"></i>
+                <span>Contact</span>
+              </a>
+            </li>
+          </ul>
+
+          <!-- For smaller screens -->
+          <ul class="navbar-nav flex-grow-1 justify-content-start d-flex d-lg-none">
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/home' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/home')}>Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/about' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/about')}>About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/breeding-philosophy' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/breeding-philosophy')}>Breeding Philosophy</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/shop' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/shop')}>Shop</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/kittens' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/kittens')}>Kittens</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/testimonials' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/testimonials')}>Testimonials</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/gallery' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/gallery')}>Gallery</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/faq' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/faq')}>FAQs</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/blog-1' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/blog-1')}>Blog – 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/blog-2' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/blog-2')}>Blog – 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/blog-3' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/blog-3')}>Blog – 3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/post-1' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/post-1')}>Post – 1</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/post-2' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/post-2')}>Post – 2</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/post-3' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/post-3')}>Post – 3</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class={`nav-link${currentPath === '/theme/11/contact' ? ' active' : ''}`}
+                href={getPathPrefix('/theme/11/contact')}>Contact</a
+              >
+            </li>
+          </ul>
+
+          <!-- Contact Details (Bottom) -->
+          <div class="d-block d-md-none bg-secondary-subtle rounded p-3 mt-2">
+            <div class="mb-2">
+              <i class="ri-phone-fill text-primary me-1"></i>
+              <a href="tel:+12345678901" class="text-body text-decoration-none">+1 (234) 567-8901</a
+              >
+            </div>
+            <div class="mb-2">
+              <i class="ri-mail-fill text-primary me-1"></i>
+              <a href="mailto:hello@email.com" class="text-body text-decoration-none"
+                >hello@email.com</a
+              >
+            </div>
+            <div class="mb-2">
+              <i class="ri-time-fill text-primary me-1"></i>
+              Mon–Fri: 9am–6pm
+            </div>
+            <div>
+              <i class="ri-map-pin-fill text-primary me-1"></i>
+              123 Main Street, Austin, TX
+            </div>
+          </div>
+
+          <!-- Get Started Button (Bottom) -->
+          <div class="d-block d-lg-none mt-3">
+            <a class="btn btn-lg btn-primary rounded w-100" href="#">Get Started</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="d-none d-lg-flex">
+        <a class="btn btn-lg btn-primary rounded" href="#">Get Started</a>
+      </div>
+    </div>
+  </nav>
+</div>

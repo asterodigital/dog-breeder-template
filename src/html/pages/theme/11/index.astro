@@ -2,7 +2,7 @@
 import { getPathPrefix } from '../../../../utils/path.js'
 
 // Determine the target redirect URL with environment-specific path prefix
-const redirectTargetPath = getPathPrefix('/theme/10/home')
+const redirectTargetPath = getPathPrefix('/theme/11/home')
 
 // Configuration for meta refresh (in seconds)
 const REDIRECT_DELAY = 0
@@ -13,7 +13,7 @@ const REDIRECT_DELAY = 0
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="refresh" content={`${REDIRECT_DELAY};url=${redirectTargetPath}`} />
-    <title>Theme 10</title>
+    <title>Theme 11</title>
     <style>
       /* Base styles for the redirect page */
       body {
@@ -29,7 +29,7 @@ const REDIRECT_DELAY = 0
       /* Loading animation styles */
       .loading-spinner {
         border: 0.25rem solid var(--bs-gray-200, #f3f3f3);
-        border-top: 0.25rem solid var(--bs-primary, #ec436a);
+        border-top: 0.25rem solid var(--bs-primary, #b874e0);
         border-radius: 50%;
         width: 2.5rem;
         height: 2.5rem;

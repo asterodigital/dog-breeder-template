@@ -1,0 +1,91 @@
+---
+import Layout from './layout.astro'
+import { getAssetPrefix, getPathPrefix } from '../../../../utils/path.js'
+---
+
+<Layout
+  title="About"
+  description="Ethical, loving Himalayan cat breeders in Austin, TX. Discover our kittens, philosophy, and community."
+>
+  <!-- Hero Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-7" data-aos="fade-right" data-aos-duration="1200">
+          <h1 class="display-4 fw-semibold mb-3">About Us</h1>
+          <p class="fs-5 text-muted mb-0">
+            We are a small, ethical cattery in Austin, TX, dedicated to raising healthy, loving
+            Himalayan kittens. Our mission is to share the beauty and gentle spirit of this
+            remarkable breed with families who value compassion, health, and lifelong support.
+          </p>
+        </div>
+        <div class="col-lg-5 text-center" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-2.jpg')}
+            class="img-fluid rounded-4"
+            alt="Himalayan Cat"
+            style="max-width: 350px;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Story Section -->
+  <section class="bg-primary-subtle py-5">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-6 order-lg-2" data-aos="fade-left" data-aos-duration="1200">
+          <h2 class="display-5 fw-semibold mb-2">Our Story</h2>
+          <p class="text-muted">
+            Our journey began with a single Himalayan kitten and a dream to create a loving, ethical
+            breeding program. Over the years, we have grown into a close-knit community of cat
+            lovers, united by our passion for the breed and our commitment to every kitten’s
+            well-being.
+          </p>
+        </div>
+        <div class="col-lg-6 order-lg-1 text-center" data-aos="fade-right" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-1.jpg')}
+            class="img-fluid rounded-4"
+            alt="Himalayan Cat"
+            style="max-width: 350px;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Our Philosophy Section -->
+  <section class="bg-body py-5">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-6" data-aos="fade-right" data-aos-duration="1200">
+          <h2 class="display-5 fw-semibold mb-3">Our Philosophy</h2>
+          <ul class="list-unstyled mb-0">
+            <li class="mb-3">
+              <i class="ri-heart-3-line text-danger me-2"></i>Every kitten is raised in our home,
+              never in cages.
+            </li>
+            <li class="mb-3">
+              <i class="ri-shield-check-line text-success me-2"></i>We prioritize health,
+              temperament, and socialization above all.
+            </li>
+            <li class="mb-3">
+              <i class="ri-user-smile-line text-primary me-2"></i>Lifelong support for every family
+              and kitten.
+            </li>
+          </ul>
+        </div>
+        <div class="col-lg-6 text-center" data-aos="fade-left" data-aos-duration="1200">
+          <img
+            src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-3.jpg')}
+            class="img-fluid rounded-4"
+            alt="Himalayan Cat"
+            style="max-width: 350px;"
+          />
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

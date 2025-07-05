@@ -1,0 +1,165 @@
+---
+import { getAssetPrefix, getPathPrefix } from '../../../../../utils/path.js'
+import Logo from './_topbar/_logo.astro'
+---
+
+<!-- Footer -->
+<footer class="bg-body pt-5 pb-4">
+  <div class="container">
+    <div class="row gy-4">
+      <!-- Logo and Contact Info -->
+      <div class="col-lg-4 col-md-6">
+        <a
+          href={getPathPrefix('/theme/11/home')}
+          class="d-inline-flex align-items-center text-decoration-none"
+        >
+          <Logo />
+        </a>
+        <p class="text-body mt-2 mb-3 pe-lg-4">
+          Dedicated to ethical breeding practices, and the well-being of every kitten we raise —
+          right here in Austin, Texas.
+        </p>
+        <ul class="list-unstyled mt-3">
+          <li class="mb-2">
+            <a href="tel:+12345678901" class="text-body text-decoration-none">
+              <i class="ri-phone-fill text-primary me-2"></i>+1 (234) 567-8901
+            </a>
+          </li>
+          <li class="mb-2">
+            <a href="mailto:hello@email.com" class="text-body text-decoration-none">
+              <i class="ri-mail-fill text-primary me-2"></i>hello@email.com
+            </a>
+          </li>
+          <li class="text-body">
+            <i class="ri-map-pin-fill text-primary me-2"></i>123 Main Street, Austin, TX
+          </li>
+        </ul>
+      </div>
+
+      <!-- Navigation Links -->
+      <div class="col-lg-4 col-md-6">
+        <div class="row">
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Quick Links</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/home')}
+                  class="text-body text-decoration-none d-block mb-2">Home</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/about')}
+                  class="text-body text-decoration-none d-block mb-2">About</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/faq')}
+                  class="text-body text-decoration-none d-block mb-2">FAQs</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/testimonials')}
+                  class="text-body text-decoration-none d-block mb-2">Testimonials</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/contact')}
+                  class="text-body text-decoration-none d-block">Contact</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <h5 class="fs-5 mb-3">Explore</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/blog-1')}
+                  class="text-body text-decoration-none d-block mb-2">Blog</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/breeding-philosophy')}
+                  class="text-body text-decoration-none d-block mb-2">Breeding Philosophy</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/gallery')}
+                  class="text-body text-decoration-none d-block mb-2">Gallery</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/kittens')}
+                  class="text-body text-decoration-none d-block mb-2">Kittens</a
+                >
+              </li>
+              <li>
+                <a
+                  href={getPathPrefix('/theme/11/shop')}
+                  class="text-body text-decoration-none d-block"
+                  >Shop<span class="badge bg-primary ms-2">new</span></a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- Newsletter -->
+      <div class="col-lg-4">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h5 class="fs-5 mb-0">Gallery</h5>
+          <a href={getPathPrefix('/theme/11/gallery')} class="text-primary text-decoration-none"
+            >View Gallery</a
+          >
+        </div>
+        <p class="text-body mb-3">Explore heartwarming snapshots of our kittens.</p>
+        <div class="row g-2">
+          <div class="col-4">
+            <figure class="img-scale rounded-4">
+              <img
+                src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-1.jpg')}
+                class="img-fluid"
+                style="object-fit: cover;"
+                alt="Gallery Image"
+              />
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="img-scale rounded-4">
+              <img
+                src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-2.jpg')}
+                class="img-fluid"
+                style="object-fit: cover;"
+                alt="Gallery Image"
+              />
+            </figure>
+          </div>
+          <div class="col-4">
+            <figure class="img-scale rounded-4">
+              <img
+                src={getAssetPrefix('/assets/img/cat-theme/5/himalayan-3.jpg')}
+                class="img-fluid"
+                style="object-fit: cover;"
+                alt="Gallery Image"
+              />
+            </figure>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="text-muted text-center border-top pt-4 mt-4">
+      <p class="mb-0">&copy; 2025 Company, Inc. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
